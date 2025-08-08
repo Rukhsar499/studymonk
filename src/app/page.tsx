@@ -341,7 +341,7 @@ export default function Home() {
                     The printing and typesetting <br /> industry ?
                   </h6>
                   <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer
+                    Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer
                     took a galley of type and scrambled it to make a type specimen book.
                   </p>
                   <div className="imh-bx">
@@ -386,7 +386,7 @@ export default function Home() {
                         <h6 className="printig">
                           The printing and typesetting <br /> industry ?
                         </h6>
-                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+                        <p>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,</p>
                       </div>
                     </div>
                     <div className="col-lg-7 col-md-7 col-12">
@@ -420,7 +420,7 @@ export default function Home() {
                           <h6 className="printig">Worksheets</h6>
                         </div>
                         <p>
-                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
                         </p>
                       </div>
                     </div>
@@ -438,7 +438,7 @@ export default function Home() {
                           <h6 className="printig">Recorded Class</h6>
                         </div>
                         <p>
-                          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
                         </p>
                       </div>
                     </div>
@@ -479,12 +479,12 @@ export default function Home() {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    As a parent, you want the absolute best for your child's education. The Cambridge Curriculum offers a
+                    As a parent, you want the absolute best for your childs education. The Cambridge Curriculum offers a
                     strong foundation, but you might be wondering: How can I ensure my child not only keeps up but thrives
                     in this demanding curriculum? Is rote memorization enough for success, or are there deeper skills they
                     need to develop?
 
-                    How can I bridge the gap between what's taught in school and the specific needs of my child? Here at
+                    How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
                     Study Monk, we address these concerns and go beyond traditional learning to empower your child on
                     their Cambridge journey.
                   </div>
@@ -511,7 +511,7 @@ export default function Home() {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    How can I bridge the gap between what's taught in school and the specific needs of my child? Here at
+                    How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
                     Study Monk, we address these concerns and go beyond traditional learning to empower your child on
                     their Cambridge journey.
                   </div>
@@ -538,7 +538,7 @@ export default function Home() {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    How can I bridge the gap between what's taught in school and the specific needs of my child? Here at
+                    How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
                     Study Monk, we address these concerns and go beyond traditional learning to empower your child on
                     their Cambridge journey.
                   </div>
@@ -565,7 +565,7 @@ export default function Home() {
                   data-bs-parent="#accordionExample"
                 >
                   <div className="accordion-body">
-                    How can I bridge the gap between what's taught in school and the specific needs of my child? Here at
+                    How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
                     Study Monk, we address these concerns and go beyond traditional learning to empower your child on
                     their Cambridge journey.
                   </div>
