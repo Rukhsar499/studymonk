@@ -1,7 +1,5 @@
 'use client';
 
-
-
 import { useEffect } from "react";
 import { useState } from "react";
 import AOS from "aos";
@@ -96,7 +94,7 @@ export default function Home() {
                           Assess & <br /> Strategize
                         </h4>
                         <p>
-                          We begin with a Diagnostic Assessment & Strategic Blueprint to understand your child's unique needs, then co-create a personalized learning plan.
+                          We begin with a Diagnostic Assessment & Strategic Blueprint to understand your childs unique needs, then co-create a personalized learning plan.
                         </p>
                       </div>
                     </div>
@@ -369,7 +367,7 @@ export default function Home() {
                   />
                   <div className="lorem">
                     <p className="ipsum">
-                      Lorem Ipsum is simply industry. Lorem Ipsum has been the industry's
+                      Lorem Ipsum is simply industry. Lorem Ipsum has been the industrys
                     </p>
                     <p style={{ borderBottom: "1px solid #000", display: "inline-block" }}>
                       GET STARTED
