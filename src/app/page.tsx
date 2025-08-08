@@ -1,12 +1,39 @@
 'use client';
-
+import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import { useEffect } from "react";
 import { useState } from "react";
+import AOS from "aos";
 import Image from "next/image";
 import Header from "../app/component/Header";
 import styles from "./page.module.css";
 import BootstrapClient from '../app/BootstrapClient';
 
+const options = {
+  margin: 10,
+  nav: false,
+  dots: true,
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 4000,
+  smartSpeed: 1050,
+  responsive: {
+    0: { items: 1 },
+    600: { items: 1 },
+    1000: { items: 1 },
+  },
+};
+
+
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation speed (ms)
+      once: true,
+    });
+  }, [])
+
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const toggleAccordion = (index: number) => {
@@ -18,6 +45,35 @@ export default function Home() {
     { title: "Guided Curiosity", content: "This is the content of Accordion 2." },
     { title: "Digital Serenity", content: "This is the content of Accordion 3." },
     { title: "Expressive Confidence", content: "This is the content of Accordion 4." },
+  ];
+
+  const testimonials = [
+    {
+      title: `"For the first time, he wasn't just studying. He was understanding."`,
+      desc: "Hear directly from the Sharma family about the impact of the Study Monks approach on their son's confidence and focus.",
+      points: [
+        { bold: "Reduced From Anxiety:", text: "From stressful nights to calm preparation." },
+        { bold: "+40% Conceptual Clarity:", text: "He now teaches us the concepts." },
+        { bold: "A True Partnership:", text: "We finally feel like we have an expert on our side." },
+      ],
+      img: "/assets/img/aditya.webp",
+      playBtn: "/assets/img/play-btn.png",
+      watchText: "Watch Aditya Story",
+      stage: "Stage VIII",
+    },
+    {
+      title: `"For the first time, he wasn't just studying. He was understanding."`,
+      desc: "Hear directly from the Sharma family about the impact of the Study Monks approach on their son's confidence and focus.",
+      points: [
+        { bold: "Reduced From Anxiety:", text: "From stressful nights to calm preparation." },
+        { bold: "+40% Conceptual Clarity:", text: "He now teaches us the concepts." },
+        { bold: "A True Partnership:", text: "We finally feel like we have an expert on our side." },
+      ],
+      img: "/assets/img/aditya.webp",
+      playBtn: "/assets/img/play-btn.png",
+      watchText: "Watch Manoj Story",
+      stage: "Stage VII",
+    },
   ];
 
   return (
@@ -300,6 +356,60 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="testimo mb">
+      <div className="container">
+        <h2>Parent&apos;s Testimonial</h2>
+        <OwlCarousel className="owl-theme owl-banner" {...options}>
+          {testimonials.map((item, i) => (
+            <div className="item" key={i}>
+              <div className="parent_box">
+                <div className="row">
+                  <div className="col-lg-7 col-md-6 col-12">
+                    <h3 className="for">{item.title}</h3>
+                    <p>{item.desc}</p>
+                    {item.points.map((point, index) => (
+                      <div className="d-flex tivh" key={index}>
+                        <Image
+                          src="/assets/img/tick-square.png"
+                          alt="tick"
+                          width={20}
+                          height={20}
+                          className="me-2"
+                        />
+                        <p>
+                          <b>{point.bold}</b> {point.text}
+                        </p>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="col-lg-1 col-md-1 col-1"></div>
+                  <div className="col-lg-4 col-md-4 col-12">
+                    <div className="texs-img">
+                      <Image
+                        src={item.img}
+                        alt="aditya"
+                        width={400}
+                        height={300}
+                        className="img-fluid"
+                      />
+                      <div className="trdfd">
+                        <Image src={item.playBtn} alt="play-btn" width={50} height={50} />
+                      </div>
+                      <div className="test-txt">
+                        <p className="text-white mb-0">
+                          <b>{item.watchText}</b>
+                        </p>
+                        <p className="text-white">{item.stage}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </OwlCarousel>
+      </div>
+    </section>
     </>
   );
 }
