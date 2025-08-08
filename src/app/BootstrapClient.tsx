@@ -1,12 +1,9 @@
-'use client';
+"use client";
 
-import { useEffect } from 'react';
-
+import { useEffect } from "react";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function BootstrapClient() {
-  useEffect(() => {
-    import("bootstrap/dist/js/bootstrap.bundle.min.js");
-  }, []);
-
+  // no need for useEffect here if just importing bootstrap js globally
   return null;
 }

@@ -23,11 +23,16 @@ export const metadata: Metadata = {
   description: 'Next.js + TypeScript + Bootstrap',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body>
-        <BootstrapClient /> {/* Client-only JS here */}
+      {/* Apply fonts */}
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <BootstrapClient />
         {children}
       </body>
     </html>

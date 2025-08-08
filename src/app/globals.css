@@ -623,14 +623,14 @@ a {
 .accordion-button {
   background-color: #f8f9fa;
   color: #000;
-  --bs-accordion-btn-icon: url("/public/assets/img/arrow-right2.png") !important;
+  --bs-accordion-btn-icon: url("/assets/img/arrow-right2.png") !important;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .accordion-button.active {
-  background-color: #001F3F;
+  background-color: #001F3F !important;
   color: #fff;
-  --bs-accordion-btn-icon: url("/public/assets/img/arrow-circle-down.png") !important;
+  --bs-accordion-btn-icon: url("/assets/img/arrow-circle-down.png") !important;
 }
 .accordion-item {
    border: none;
