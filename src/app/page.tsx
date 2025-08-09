@@ -198,7 +198,7 @@ export default function Home() {
                     <h4 className="assetx">Cambridge Lower Secondary (Stages 7-9)</h4>
                     <p><b>Deepening Knowledge, Building Skills</b></p>
                     <p>As students advance, we shift focus to developing critical thinking...</p>
-                     <button>
+                    <button>
                       <span className="text">View More</span>
                       <span>
                         <Image
@@ -476,9 +476,9 @@ export default function Home() {
         </div>
       </section>
 
-      
-         <ImageSlider /> 
-      
+
+      <ImageSlider />
+
 
       <section className="fad mb">
         <div className="container">
@@ -600,6 +600,31 @@ export default function Home() {
                   </div>
                 </div>
 
+              </div>
+            </div>
+            <div className="col-lg-1 col-md-1 col-1"></div>
+            <div className="col-lg-5 col-md-5 col-12">
+              <div className="faq-sdeimg">
+                <div>
+                <h3>Ready to Replace Academic
+                  Anxiety with Calm Confidence?</h3>
+                <p>
+                  The best way to understand the Study Monks difference is to experience it.</p>
+
+                <p>Schedule a complimentary, no-obligation Clarity Session to speak with one of our academic counselors. Lets build a personalized learning path for your child, together.
+                </p>
+                <button className="btn btn-books" type="button">Schedule Your Free <br />
+                  Clarity Session</button>
+                  </div>
+                <div className="ijhg">
+                  <Image
+                    src="/assets/img/mummy.webp"
+                    alt="testimonial"
+                    width={400}
+                    height={300}
+                    className="img-fluid"
+                  />
+                </div>
               </div>
             </div>
           </div>
