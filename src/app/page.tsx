@@ -59,7 +59,7 @@ export default function Home() {
               Cambridge curriculum <br /> through mindful mentorship.
             </p>
             <button
-              className="btn btn-primary"
+              className="btn-primarys"
               type="button"
               data-aos="zoom-in"
               data-aos-delay="300"
@@ -233,7 +233,7 @@ export default function Home() {
                   <p className="text-white" data-aos="fade-left" data-aos-delay="150">
                     Drop your details now and get a call from our expert counsellors!
                   </p>
-                  <button className="btn btn-book" type="button" data-aos="zoom-in" data-aos-delay="250">
+                  <button className="btn-book" type="button" data-aos="zoom-in" data-aos-delay="250">
                     Book a consultation
                   </button>
                 </div>
@@ -304,13 +304,14 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-6 col-md-6 col-12">
-                <div className="nexy_div_img text-center">
+              <div className="col-lg-1 col-md-1 col-1"></div>
+              <div className="col-lg-5 col-md-5 col-12">
+                <div className="nexy_div_img text-center" data-aos="fade-up" data-aos-delay="350">
                   <Image
                     src="/assets/img/mac.webp"
                     alt="Arrow"
-                    width={400}
-                    height={400}
+                    width={500}
+                    height={500}
                     className="img-fluid"
                   />
                 </div>

@@ -14,9 +14,10 @@ const geistSans = Geist({
 });
 
 const poppins = Poppins({
-  weight: ['400', '500', '600', '700'], // jo weight chahiye add karo
   subsets: ['latin'],
-  display: 'swap',
+  weight: ['400', '500', '700'], // jitne weights chahiye
+  display: "swap",
+  variable: '--font-poppins' // CSS variable ka naam
 });
 
 const geistMono = Geist_Mono({

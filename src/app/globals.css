@@ -38,7 +38,7 @@ body {
 
 a {
   color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -134,11 +134,11 @@ h3 {
   padding: 20px;
   height: 580px;
 }
-.btn-primary {
+.btn-primarys {
   background-color: transparent;
   padding: 10px 30px;
   border-radius: 20px;
-  border: 1px solid #2F2F2F;
+  border: 1px solid #2F2F2F ;
   color: #2F2F2F;
   font-family: "Poppins", sans-serif;
 }
@@ -237,12 +237,22 @@ p {
   font-size: 14px;
   color: #484848;
 }
-
+.nexy_div_img{
+  border-radius: 20px;
+  border:10px solid #CCDAFF;
+  box-shadow: 
+    4px 4px 8px rgba(0, 0, 0, 0.2),   /* bottom-right dark shadow */
+    -4px -4px 8px rgba(255, 255, 255, 0.6); /* top-left light highlight */
+}
+.next_div{
+  margin-top: 30px;
+}
 h1 {
   font-size: 50px;
   line-height: 90px;
   letter-spacing: 1px;
   font-family: 'gilroy-regular';
+  margin-bottom: 20px !important;
 }
 
 .focus {
