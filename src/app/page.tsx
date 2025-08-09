@@ -50,15 +50,20 @@ export default function Home() {
       <section className="banner mb">
         <div className="container">
           <div className="text-center">
-            <h1>
+            <h1 data-aos="fade-up" data-aos-delay="100">
               Find Your <span className="focus">Focus</span>. Find Your{" "}
               <span className="focus">Voice</span>.
             </h1>
-            <p>
+            <p data-aos="fade-up" data-aos-delay="200">
               A serene and safe digital sanctuary where students master the
               Cambridge curriculum <br /> through mindful mentorship.
             </p>
-            <button className="btn btn-primary" type="button">
+            <button
+              className="btn btn-primary"
+              type="button"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
               Experience the difference
             </button>
           </div>
@@ -68,13 +73,13 @@ export default function Home() {
       {/* Frame Section */}
       <section className="frame mb">
         <div className="container">
-          <h2>The Framework for Your Focus & Voice</h2>
+          <h2 data-aos="fade-up" data-aos-delay="500">The Framework for Your Focus & Voice</h2>
           <div className="all-text">
             <div className="row">
               <div className="col-lg-4 col-md-5 col-12">
                 <div className="cir-img">
-                  <Image
-                    src="/assets/img/circle.webp"
+                  <Image data-aos="zoom-in" data-aos-delay="700"
+                    src="/assets/img/circles.webp"
                     alt="Circle"
                     className="img-fluid"
                     width={500}
@@ -85,15 +90,15 @@ export default function Home() {
               <div className="col-lg-1 col-md-1 col-1"></div>
               <div className="col-lg-7 col-md-6 col-12">
                 <div className="fram-text">
-                  <h3 className="cam">The Cambridge Compass</h3>
-                  <p>
+                  <h3 className="cam" data-aos="fade-up" data-aos-delay="100">The Cambridge Compass</h3>
+                  <p data-aos="fade-up" data-aos-delay="150">
                     The pinnacle of learning. Students synthesize knowledge to
                     produce original work, formulate new hypotheses, and design
                     innovative solutions.
                   </p>
                   <div className="row">
                     <div className="col-lg-4 col-md-4 col-4">
-                      <div className="green">
+                      <div className="green" data-aos="fade-up" data-aos-delay="250">
                         <h4 className="assetx">
                           Assess & <br /> Strategize
                         </h4>
@@ -103,7 +108,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-4">
-                      <div className="green bg-grey">
+                      <div className="green bg-grey" data-aos="fade-up" data-aos-delay="300">
                         <h4 className="assetx">
                           Engage & <br /> Build Concepts
                         </h4>
@@ -113,7 +118,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-4">
-                      <div className="green bg-grey">
+                      <div className="green bg-grey" data-aos="fade-up" data-aos-delay="350">
                         <h4 className="assetx">
                           Practice & <br /> Master
                         </h4>
@@ -150,7 +155,7 @@ export default function Home() {
                   text: `Face your exams with unshakable confidence, powered by our Targeted Progression Test Prep and Comprehensive Checkpoint Prep.`,
                 },
               ].map((item, idx) => (
-                <div key={idx} className="col-lg-4 col-md-4 col-4">
+                <div key={idx} className="col-lg-4 col-md-4 col-4" data-aos="fade-right" data-aos-delay="100">
                   <div className="gfd">
                     <h4 className="assetx">{item.title}</h4>
                     <p>{item.text}</p>
@@ -167,18 +172,18 @@ export default function Home() {
         <div className="container">
           <div className="blu-box">
             <div className="text-center">
-              <h2>Tailored Guidance for Your Child&apos;s Cambridge Stage</h2>
-              <p>
+              <h2 data-aos="fade-down" data-aos-delay="100">Tailored Guidance for Your Child&apos;s Cambridge Stage</h2>
+              <p data-aos="fade-down" data-aos-delay="150">
                 We understand that a student&apos;s needs evolve dramatically as they progress through the Cambridge curriculum...
               </p>
             </div>
             <div className="blu-box">
               <div className="row">
-                <div className="col-lg-6 col-md-6 col-12">
+                <div className="col-lg-6 col-md-6 col-12" data-aos="fade-right" data-aos-delay="200">
                   <div className="bg-white bh-c">
                     <h4 className="assetx">Cambridge Primary (Stages 4-6)</h4>
                     <p><b>Building a Love for Learning</b></p>
-                    <p>For our youngest learners, we focus on sparking curiosity...</p>
+                    <p>For our youngest learners, we focus on sparking curiosity and building unshakable confidence. Our mentors create a nurturing environment where foundational concepts in English, Maths, and Science are explored in an engaging, interactive way.</p>
                     <button>
                       <span className="text">View More</span>
                       <span>
@@ -193,11 +198,11 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="col-lg-6 col-md-6 col-12">
+                <div className="col-lg-6 col-md-6 col-12" data-aos="fade-left" data-aos-delay="250">
                   <div className="bg-white bh-c">
                     <h4 className="assetx">Cambridge Lower Secondary (Stages 7-9)</h4>
                     <p><b>Deepening Knowledge, Building Skills</b></p>
-                    <p>As students advance, we shift focus to developing critical thinking...</p>
+                    <p>As students advance, we shift focus to developing critical thinking and analytical skills. We guide them through the increasing rigor of English, Maths, and Science, preparing them for the challenges of IGCSE and beyond.</p>
                     <button>
                       <span className="text">View More</span>
                       <span>
@@ -224,17 +229,17 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-8 col-md-6 col-12">
                 <div className="lim-txt text-white">
-                  <h3 id="lij">Limited Seats. Endless Possibilities.</h3>
-                  <p className="text-white">
+                  <h3 id="lij" data-aos="fade-left" data-aos-delay="100">Limited Seats. Endless Possibilities.</h3>
+                  <p className="text-white" data-aos="fade-left" data-aos-delay="150">
                     Drop your details now and get a call from our expert counsellors!
                   </p>
-                  <button className="btn btn-book" type="button">
+                  <button className="btn btn-book" type="button" data-aos="zoom-in" data-aos-delay="250">
                     Book a consultation
                   </button>
                 </div>
               </div>
               <div className="col-lg-4 col-md-3 col-12">
-                <div className="lim-img">
+                <div className="lim-img" data-aos="fade-up" data-aos-delay="300">
                   <Image
                     src="/assets/img/girl.webp"
                     alt="Girl"
@@ -254,9 +259,9 @@ export default function Home() {
       <section className="promise mb">
         <div className="container">
           <div className="pro-i">
-            <h2>Our Promise</h2>
-            <p className="learning">Learning experience built on Four pillars</p>
-            <div className="pt-i">
+            <h2 data-aos="fade-down" data-aos-delay="100">Our Promise</h2>
+            <p className="learning" data-aos="fade-down" data-aos-delay="150">Learning experience built on Four pillars</p>
+            <div className="pt-i" data-aos="zoom-in" data-aos-delay="200">
               <Image
                 src="/assets/img/arrow-im.png"
                 alt="Arrow"
@@ -271,12 +276,12 @@ export default function Home() {
             <div className="row">
               <div className="col-lg-6 col-md-6 col-12">
                 <div className="pro-text">
-                  <p>
+                  <p data-aos="fade-left" data-aos-delay="250">
                     True education is not a race for grades; it is the art of building a confident,
                     curious, and resilient mind.
                   </p>
 
-                  <div className="accordions">
+                  <div className="accordions" data-aos="fade-left" data-aos-delay="300">
                     {accordionData.map((item, index) => (
                       <div key={index} className="accordion-items">
                         <div
@@ -297,7 +302,17 @@ export default function Home() {
                       </div>
                     ))}
                   </div>
-
+                </div>
+              </div>
+              <div className="col-lg-6 col-md-6 col-12">
+                <div className="nexy_div_img text-center">
+                  <Image
+                    src="/assets/img/mac.webp"
+                    alt="Arrow"
+                    width={400}
+                    height={400}
+                    className="img-fluid"
+                  />
                 </div>
               </div>
             </div>
@@ -605,17 +620,17 @@ export default function Home() {
             <div className="col-lg-1 col-md-1 col-1"></div>
             <div className="col-lg-5 col-md-5 col-12">
               <div className="faq-sdeimg">
-                <div>
-                <h3>Ready to Replace Academic
-                  Anxiety with Calm Confidence?</h3>
-                <p>
-                  The best way to understand the Study Monks difference is to experience it.</p>
+                <div className="mt-3">
+                  <h3>Ready to Replace Academic
+                    Anxiety with Calm Confidence?</h3>
+                  <p>
+                    The best way to understand the Study Monks difference is to experience it.</p>
 
-                <p>Schedule a complimentary, no-obligation Clarity Session to speak with one of our academic counselors. Lets build a personalized learning path for your child, together.
-                </p>
-                <button className="btn btn-books" type="button">Schedule Your Free <br />
-                  Clarity Session</button>
-                  </div>
+                  <p>Schedule a complimentary, no-obligation Clarity Session to speak with one of our academic counselors. Lets build a personalized learning path for your child, together.
+                  </p>
+                  <button className="btn btn-books" type="button">Schedule Your Free <br />
+                    Clarity Session</button>
+                </div>
                 <div className="ijhg">
                   <Image
                     src="/assets/img/mummy.webp"
