@@ -476,12 +476,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mb">
-        <div className="conatiner">
-         <h1 style={{ textAlign: "center" }}>My Next.js Slider</h1>
+      
          <ImageSlider /> 
-        </div>
-      </section>
+      
 
       <section className="fad mb">
         <div className="container">
