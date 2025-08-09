@@ -1,7 +1,9 @@
 @import 'aos/dist/aos.css';
 
-@import "owl.carousel/dist/assets/owl.carousel.css";
-@import "owl.carousel/dist/assets/owl.theme.default.css";
+/* react-slick styles */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -44,6 +46,7 @@ a {
     color-scheme: dark;
   }
 }
+
 /* @font-face {
   font-family: 'gilroy-regular';
   src: url('../gilroy-regular.ttf') format('truetype');
@@ -536,47 +539,54 @@ a {
 .white-box {
   background-color: #fff;
   padding: 20px 15px 10px 15px;
-     clip-path: polygon(0 0, 75% 0, 100% 18%, 100% 100%, 23% 101%, 0 82%);
+  clip-path: polygon(0 0, 75% 0, 100% 18%, 100% 100%, 23% 101%, 0 82%);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 20px;
   z-index: 2;
 }
-.imh-bx img{
+
+.imh-bx img {
   border-radius: 50px 0px 0px 0px;
 }
-.printig{
+
+.printig {
   color: #003C79;
   font-family: 'Poppins';
   line-height: 25px;
 }
-.lorem{
+
+.lorem {
   padding: 40px 15px 30px;
-   background-color: #EBF2FF;
-   margin-top: -30px;
-   clip-path: polygon(0% 0, 100% 0, 100% 68%, 80% 100%, 0 100%, 0 19%);
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   border-radius: 40px;
+  background-color: #EBF2FF;
+  margin-top: -30px;
+  clip-path: polygon(0% 0, 100% 0, 100% 68%, 80% 100%, 0 100%, 0 19%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 40px;
 }
-.ipsum{
+
+.ipsum {
   color: #003C79;
   font-size: 18px;
   font-weight: 500;
 }
-.small-box img{
+
+.small-box img {
   position: relative;
   z-index: 1;
 }
-.fds{
+
+.fds {
   background-color: #fff;
-   border-radius: 20px;
-   padding: 20px 20px 0px;
+  border-radius: 20px;
+  padding: 20px 20px 0px;
 }
-.wh-box{
+
+.wh-box {
   background-color: #fff;
   padding: 20px;
   border-radius: 20px;
-   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-   margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 
 .accordion-body {
@@ -591,6 +601,7 @@ a {
   z-index: 2;
   position: relative;
 }
+
 .accordion {
   --bs-accordion-btn-focus-box-shadow: none !important;
 }
@@ -603,8 +614,8 @@ a {
 .accordion-body {
   background-color: transparent;
   padding: 15px;
- font-family: 'Poppins';
- font-size: 14px;
+  font-family: 'Poppins';
+  font-size: 14px;
 }
 
 .accordion-item {
@@ -620,6 +631,7 @@ a {
   margin-bottom: 0;
   padding-bottom: 0;
 }
+
 .accordion-button {
   background-color: #f8f9fa;
   color: #000;
@@ -632,10 +644,77 @@ a {
   color: #fff;
   --bs-accordion-btn-icon: url("/assets/img/arrow-circle-down.png") !important;
 }
+
 .accordion-item {
-   border: none;
+  border: none;
 }
 
+.blue button {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #18181a;
+    color: #18181a;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    padding: 14px;
+    background: #fff;
+    -moz-user-select: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.blue button span:first-child {
+ position: relative;
+ transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+ z-index: 10;
+}
+
+.blue button span:last-child {
+ color: white;
+ display: block;
+ position: absolute;
+ bottom: 0;
+ transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+ z-index: 100;
+ opacity: 0;
+ top: 48%;
+ left: 50%;
+ transform: translateY(225%) translateX(-50%);
+ height: 16px;
+ line-height: 20px;
+}
+
+.blue button:after {
+ content: "";
+ position: absolute;
+ bottom: -50%;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-color: #003C79;
+ transform-origin: bottom center;
+ transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+ transform: skewY(9.3deg) scaleY(0);
+ z-index: 50;
+}
+.blue button span img{
+  transform: rotate(-45deg);
+}
+.blue button:hover:after {
+ transform-origin: bottom center;
+ transform: skewY(9.3deg) scaleY(2);
+}
+
+.blue button:hover span:last-child {
+ transform: translateX(-50%) translateY(-50%);
+ opacity: 1;
+ transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+}
 
 
 

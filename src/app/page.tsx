@@ -9,6 +9,8 @@ import Header from "../app/component/Header";
 import Footer from "../app/component/footer/Footer";
 import styles from "./page.module.css";
 import BootstrapClient from '../app/BootstrapClient';
+import ImageSlider from "../app/component/ImageSlider";
+
 
 
 
@@ -22,7 +24,7 @@ export default function Home() {
     });
   }, [])
 
-  
+
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
@@ -36,11 +38,11 @@ export default function Home() {
     { title: "Digital Serenity", content: "This is the content of Accordion 3." },
     { title: "Expressive Confidence", content: "This is the content of Accordion 4." },
   ];
-  
 
-  
 
-  
+
+
+
   return (
     <>
       <Header />
@@ -177,6 +179,17 @@ export default function Home() {
                     <h4 className="assetx">Cambridge Primary (Stages 4-6)</h4>
                     <p><b>Building a Love for Learning</b></p>
                     <p>For our youngest learners, we focus on sparking curiosity...</p>
+                    <button>
+                      <span className="text">View More</span>
+                      <span>
+                        <Image
+                          src="/assets/img/btnp-arrow.png"
+                          alt="Right arrow"
+                          width={25}
+                          height={25}
+                        />
+                      </span>
+                    </button>
                   </div>
                 </div>
 
@@ -185,6 +198,17 @@ export default function Home() {
                     <h4 className="assetx">Cambridge Lower Secondary (Stages 7-9)</h4>
                     <p><b>Deepening Knowledge, Building Skills</b></p>
                     <p>As students advance, we shift focus to developing critical thinking...</p>
+                     <button>
+                      <span className="text">View More</span>
+                      <span>
+                        <Image
+                          src="/assets/img/btnp-arrow.png"
+                          alt="Right arrow"
+                          width={25}
+                          height={25}
+                        />
+                      </span>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -284,7 +308,7 @@ export default function Home() {
         <div className="container">
           <div className="text-center text-white darkbox">
             <h2 className="text-white">The Heart of Our Promise: The Mentors</h2>
-           <h3 className="yellow">&lt; 20%</h3>
+            <h3 className="yellow">&lt; 20%</h3>
             <h5 className="mentor">Mentor Acceptance Rate</h5>
             <p className="text-white">
               Our mentors are the living embodiment of our promise. They are handpicked not only for their deep subject
@@ -323,124 +347,258 @@ export default function Home() {
       </section>
 
       <section className="grey mb">
-      <div className="container">
-        <div className="grey-box">
-          <div className="text-center">
-            <h2>Your Guide to the Cambridge Journey</h2>
-            <p>
-              The world of Education is complex and you deserve clear, unbiased answers. Our Resources Hub is your library
-              of expert guides, created to empower you to make the best decisions for your child’s future with absolute
-              confidence.
-            </p>
-          </div>
-          <div className="sub-box">
-            <div className="row">
-              <div className="col-lg-4 col-md-4 col-12">
-                <div className="white-box">
-                  <h6 className="printig">
-                    The printing and typesetting <br /> industry ?
-                  </h6>
-                  <p>
-                    Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer
-                    took a galley of type and scrambled it to make a type specimen book.
-                  </p>
-                  <div className="imh-bx">
+        <div className="container">
+          <div className="grey-box">
+            <div className="text-center">
+              <h2>Your Guide to the Cambridge Journey</h2>
+              <p>
+                The world of Education is complex and you deserve clear, unbiased answers. Our Resources Hub is your library
+                of expert guides, created to empower you to make the best decisions for your child’s future with absolute
+                confidence.
+              </p>
+            </div>
+            <div className="sub-box">
+              <div className="row">
+                <div className="col-lg-4 col-md-4 col-12">
+                  <div className="white-box">
+                    <h6 className="printig">
+                      The printing and typesetting <br /> industry ?
+                    </h6>
+                    <p>
+                      Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer
+                      took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                    <div className="imh-bx">
+                      <Image
+                        src="/assets/img/tree.webp"
+                        alt="tree"
+                        className="img-fluid"
+                        width={500}
+                        height={300}
+                        priority
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div className="col-lg-3 col-md-2 col-12">
+                  <div className="small-box">
                     <Image
-                      src="/assets/img/tree.webp"
-                      alt="tree"
+                      src="/assets/img/boy.webp"
+                      alt="boy"
                       className="img-fluid"
-                      width={500}
-                      height={300}
+                      width={300}
+                      height={400}
                       priority
                     />
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-3 col-md-2 col-12">
-                <div className="small-box">
-                  <Image
-                    src="/assets/img/boy.webp"
-                    alt="boy"
-                    className="img-fluid"
-                    width={300}
-                    height={400}
-                    priority
-                  />
-                  <div className="lorem">
-                    <p className="ipsum">
-                      Lorem Ipsum is simply industry. Lorem Ipsum has been the industrys
-                    </p>
-                    <p style={{ borderBottom: "1px solid #000", display: "inline-block" }}>
-                      GET STARTED
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="col-lg-5 col-md-5 col-12">
-                <div className="fds">
-                  <div className="row">
-                    <div className="col-lg-5 col-md-5 col-12">
-                      <div className="gfsds">
-                        <h6 className="printig">
-                          The printing and typesetting <br /> industry ?
-                        </h6>
-                        <p>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,</p>
-                      </div>
-                    </div>
-                    <div className="col-lg-7 col-md-7 col-12">
-                      <div className="ijh">
-                        <Image
-                          src="/assets/img/vfd.webp"
-                          alt="girl n boy"
-                          className="img-fluid"
-                          width={500}
-                          height={350}
-                          priority
-                        />
-                      </div>
+                    <div className="lorem">
+                      <p className="ipsum">
+                        Lorem Ipsum is simply industry. Lorem Ipsum has been the industrys
+                      </p>
+                      <p style={{ borderBottom: "1px solid #000", display: "inline-block" }}>
+                        GET STARTED
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="work">
-                  <div className="row">
-                    <div className="col-lg-6 col-md-6 col-12">
-                      <div className="wh-box">
-                        <div className="d-flex align-items-center">
+                <div className="col-lg-5 col-md-5 col-12">
+                  <div className="fds">
+                    <div className="row">
+                      <div className="col-lg-5 col-md-5 col-12">
+                        <div className="gfsds">
+                          <h6 className="printig">
+                            The printing and typesetting <br /> industry ?
+                          </h6>
+                          <p>Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,</p>
+                        </div>
+                      </div>
+                      <div className="col-lg-7 col-md-7 col-12">
+                        <div className="ijh">
                           <Image
-                            src="/assets/img/worksheet.png"
-                            alt="worksheet"
-                            className="me-2 mb-2"
-                            width={50}
-                            height={50}
+                            src="/assets/img/vfd.webp"
+                            alt="girl n boy"
+                            className="img-fluid"
+                            width={500}
+                            height={350}
                             priority
                           />
-                          <h6 className="printig">Worksheets</h6>
                         </div>
-                        <p>
-                          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
-                        </p>
                       </div>
                     </div>
-                    <div className="col-lg-6 col-md-6 col-12">
-                      <div className="wh-box">
-                        <div className="d-flex align-items-center">
-                          <Image
-                            src="/assets/img/video-call 1.png"
-                            alt="video-call"
-                            className="me-2 mb-2"
-                            width={50}
-                            height={50}
-                            priority
-                          />
-                          <h6 className="printig">Recorded Class</h6>
+                  </div>
+
+                  <div className="work">
+                    <div className="row">
+                      <div className="col-lg-6 col-md-6 col-12">
+                        <div className="wh-box">
+                          <div className="d-flex align-items-center">
+                            <Image
+                              src="/assets/img/worksheet.png"
+                              alt="worksheet"
+                              className="me-2 mb-2"
+                              width={50}
+                              height={50}
+                              priority
+                            />
+                            <h6 className="printig">Worksheets</h6>
+                          </div>
+                          <p>
+                            Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+                          </p>
                         </div>
-                        <p>
-                          Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
-                        </p>
                       </div>
+                      <div className="col-lg-6 col-md-6 col-12">
+                        <div className="wh-box">
+                          <div className="d-flex align-items-center">
+                            <Image
+                              src="/assets/img/video-call 1.png"
+                              alt="video-call"
+                              className="me-2 mb-2"
+                              width={50}
+                              height={50}
+                              priority
+                            />
+                            <h6 className="printig">Recorded Class</h6>
+                          </div>
+                          <p>
+                            Lorem Ipsum has been the industrys standard dummy text ever since the 1500s,
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb">
+        <div className="conatiner">
+         <h1 style={{ textAlign: "center" }}>My Next.js Slider</h1>
+         <ImageSlider /> 
+        </div>
+      </section>
+
+      <section className="fad mb">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-md-6 col-12">
+              <h2 className="text-center">Frequently Asked Questions</h2>
+              <div className="accordion" id="accordionExample">
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingOne">
+                    <button
+                      className="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Why Choose Study Monk for Your Child&apos;s Cambridge Curriculum Journey?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    className="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      As a parent, you want the absolute best for your childs education. The Cambridge Curriculum offers a
+                      strong foundation, but you might be wondering: How can I ensure my child not only keeps up but thrives
+                      in this demanding curriculum? Is rote memorization enough for success, or are there deeper skills they
+                      need to develop?
+
+                      How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
+                      Study Monk, we address these concerns and go beyond traditional learning to empower your child on
+                      their Cambridge journey.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingTwo">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      3 Reasons Why We&apos;re the Perfect Partner?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
+                      Study Monk, we address these concerns and go beyond traditional learning to empower your child on
+                      their Cambridge journey.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingThree">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      How does Study Monks help with preparing for Cambridge exams?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
+                      Study Monk, we address these concerns and go beyond traditional learning to empower your child on
+                      their Cambridge journey.
+                    </div>
+                  </div>
+                </div>
+
+                <div className="accordion-item">
+                  <h2 className="accordion-header" id="headingFour">
+                    <button
+                      className="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      How are classes conducted on the Study Monks platform?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    className="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div className="accordion-body">
+                      How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
+                      Study Monk, we address these concerns and go beyond traditional learning to empower your child on
+                      their Cambridge journey.
                     </div>
                   </div>
                 </div>
@@ -449,136 +607,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section className="fad mb">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-6 col-md-6 col-12">
-            <h2 className="text-center">Frequently Asked Questions</h2>
-            <div className="accordion" id="accordionExample">
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingOne">
-                  <button
-                    className="accordion-button"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseOne"
-                    aria-expanded="true"
-                    aria-controls="collapseOne"
-                  >
-                    Why Choose Study Monk for Your Child&apos;s Cambridge Curriculum Journey?
-                  </button>
-                </h2>
-                <div
-                  id="collapseOne"
-                  className="accordion-collapse collapse show"
-                  aria-labelledby="headingOne"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    As a parent, you want the absolute best for your childs education. The Cambridge Curriculum offers a
-                    strong foundation, but you might be wondering: How can I ensure my child not only keeps up but thrives
-                    in this demanding curriculum? Is rote memorization enough for success, or are there deeper skills they
-                    need to develop?
-
-                    How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
-                    Study Monk, we address these concerns and go beyond traditional learning to empower your child on
-                    their Cambridge journey.
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingTwo">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseTwo"
-                    aria-expanded="false"
-                    aria-controls="collapseTwo"
-                  >
-                    3 Reasons Why We&apos;re the Perfect Partner?
-                  </button>
-                </h2>
-                <div
-                  id="collapseTwo"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingTwo"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
-                    Study Monk, we address these concerns and go beyond traditional learning to empower your child on
-                    their Cambridge journey.
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingThree">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseThree"
-                    aria-expanded="false"
-                    aria-controls="collapseThree"
-                  >
-                    How does Study Monks help with preparing for Cambridge exams?
-                  </button>
-                </h2>
-                <div
-                  id="collapseThree"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingThree"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
-                    Study Monk, we address these concerns and go beyond traditional learning to empower your child on
-                    their Cambridge journey.
-                  </div>
-                </div>
-              </div>
-
-              <div className="accordion-item">
-                <h2 className="accordion-header" id="headingFour">
-                  <button
-                    className="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseFour"
-                    aria-expanded="false"
-                    aria-controls="collapseFour"
-                  >
-                    How are classes conducted on the Study Monks platform?
-                  </button>
-                </h2>
-                <div
-                  id="collapseFour"
-                  className="accordion-collapse collapse"
-                  aria-labelledby="headingFour"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div className="accordion-body">
-                    How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
-                    Study Monk, we address these concerns and go beyond traditional learning to empower your child on
-                    their Cambridge journey.
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-   
-     <Footer />
+      <Footer />
     </>
   );
 }
