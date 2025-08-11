@@ -76,7 +76,7 @@ export default function TestimonialSlider() {
             <div className="parent_box" key={idx}>
               <div className="row">
                 {/* Left Column */}
-                <div className="col-lg-7 col-md-6 col-12">
+                <div className="col-lg-8 col-md-6 col-12">
                   <h3 className="for">{slide.heading}</h3>
                   <p>{slide.description}</p>
 
@@ -100,7 +100,7 @@ export default function TestimonialSlider() {
                 <div className="col-lg-1 col-md-1 col-1"></div>
 
                 {/* Right Column */}
-                <div className="col-lg-4 col-md-4 col-12">
+                <div className="col-lg-3 col-md-4 col-12">
                   <div className="texs-img position-relative">
                     <Image
                       src={slide.personImg}

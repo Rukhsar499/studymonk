@@ -10,6 +10,8 @@ import Footer from "../app/component/footer/Footer";
 import styles from "./page.module.css";
 import BootstrapClient from '../app/BootstrapClient';
 import ImageSlider from "../app/component/ImageSlider";
+import FullWidthImageSection from "../app/component/FullWidthImageSection";
+import WidthImageSection from "../app/component/WidthImageSection";
 
 
 
@@ -90,7 +92,7 @@ export default function Home() {
               <div className="col-lg-1 col-md-1 col-1"></div>
               <div className="col-lg-7 col-md-6 col-12">
                 <div className="fram-text">
-                  <h3 className="cam" data-aos="fade-up" data-aos-delay="100">The Cambridge Compass</h3>
+                  <h3 className="cam" data-aos="fade-up" data-aos-delay="100">The Focus Chamber</h3>
                   <p data-aos="fade-up" data-aos-delay="150">
                     The pinnacle of learning. Students synthesize knowledge to
                     produce original work, formulate new hypotheses, and design
@@ -98,7 +100,7 @@ export default function Home() {
                   </p>
                   <div className="row">
                     <div className="col-lg-4 col-md-4 col-4">
-                      <div className="green" data-aos="fade-up" data-aos-delay="250">
+                      <div className="green bg-grey" data-aos="fade-up" data-aos-delay="250">
                         <h4 className="assetx">
                           Assess & <br /> Strategize
                         </h4>
@@ -136,7 +138,7 @@ export default function Home() {
       </section>
 
       {/* Champ Section */}
-      <section className="champ mb">
+      <section className="champ">
         <div className="container">
           <div className="tersd">
             <div className="row">
@@ -166,6 +168,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FullWidthImageSection
+        src="/assets/img/STUDY.webp"
+        alt="Right arrow"
+
+        width="100%"
+        objectFit="cover"
+      />
 
       {/* Blue Section */}
       <section className="blue mb">
@@ -221,6 +231,14 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <WidthImageSection
+        src="/assets/img/MONKS.webp"
+        alt="Right arrow"
+
+        width="100%"
+        objectFit="cover"
+      />
 
       {/* Limited Seats Section */}
       <section className="linvit mb">
@@ -308,12 +326,24 @@ export default function Home() {
               <div className="col-lg-5 col-md-5 col-12">
                 <div className="nexy_div_img text-center" data-aos="fade-up" data-aos-delay="350">
                   <Image
-                    src="/assets/img/mac.webp"
+                    src="/assets/img/macs.webp"
                     alt="Arrow"
                     width={500}
                     height={500}
                     className="img-fluid"
                   />
+                  <div className="master">
+                    <h6 className="mind" data-aos="zoom-in" data-aos-delay="500">Mindful <br /> Mastery</h6>
+                  </div>
+                  <div className="master1">
+                    <h6 className="mind" data-aos="zoom-in" data-aos-delay="550">Guided <br /> Curiosity</h6>
+                  </div>
+                  <div className="master3">
+                    <h6 className="mind" data-aos="zoom-in" data-aos-delay="600">Digital   <br />Serenity</h6>
+                  </div>
+                  <div className="master2">
+                    <h6 className="mind" data-aos="zoom-in" data-aos-delay="650">Expressive  <br />Confidence</h6>
+                  </div>
                 </div>
               </div>
             </div>
@@ -323,10 +353,10 @@ export default function Home() {
       <section className="dark mb">
         <div className="container">
           <div className="text-center text-white darkbox">
-            <h2 className="text-white">The Heart of Our Promise: The Mentors</h2>
-            <h3 className="yellow">&lt; 20%</h3>
-            <h5 className="mentor">Mentor Acceptance Rate</h5>
-            <p className="text-white">
+            <h2 className="text-white" data-aos="fade-up" data-aos-delay="100">The Heart of Our Promise: The Mentors</h2>
+            <h3 className="yellow" data-aos="fade-up"  data-aos-delay="100">&lt; 20%</h3>
+            <h5 className="mentor" data-aos="fade-up" data-aos-delay="100">Mentor Acceptance Rate</h5>
+            <p className="text-white" data-aos="fade-up" data-aos-delay="100">
               Our mentors are the living embodiment of our promise. They are handpicked not only for their deep subject
               expertise but for their rare ability to guide and nurture young minds. Fewer than 20% of applicants meet
               our
@@ -335,39 +365,56 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <FullWidthImageSection
+        src="/assets/img/STUDY.webp"
+        alt="Right arrow"
+
+        width="100%"
+        objectFit="cover"
+      />
+
       <section className="study mb">
         <div className="container">
           <h2 data-aos="fade-up">The Study Monks Impact: A Snapshot</h2>
 
           <div className="impact-container">
             <div className="circle" data-aos="zoom-in" data-aos-delay="100">94%</div>
-            <div className="circle mid" data-aos="zoom-in" data-aos-delay="300">3X</div>
-            <div className="circle large" data-aos="zoom-in" data-aos-delay="500">4.8/5</div>
-          </div>
+            <div className="label1" data-aos="fade-up" data-aos-delay="600">
+              <Image src="/assets/img/arrow3.png" alt="arrow3" width={100}
+                height={120} />
+              <p> of students report a significant increase <br /> in subject confidence.</p>
+            </div>
 
-          <div className="labels">
-            <div className="label" data-aos="fade-up" data-aos-delay="600">
-              <div className="line"></div>
-              of students report a significant increase in subject confidence.
+            <div className="circle mid" data-aos="zoom-in" data-aos-delay="300">3X</div>
+            <div className="label2" data-aos="fade-up" data-aos-delay="600">
+              <Image src="/assets/img/arrow1.png" alt="arrow3" width={5}
+                height={80} />
+              <p> of students report a significant increase <br /> in subject confidence.</p>
             </div>
-            <div className="label" data-aos="fade-up" data-aos-delay="800">
-              <div className="line"></div>
-              more likely to actively participate in class discussions.
-            </div>
-            <div className="label" data-aos="fade-up" data-aos-delay="1000">
-              <div className="line"></div>
-              average satisfaction rating from our parent community.
+            <div className="circle large" data-aos="zoom-in" data-aos-delay="500">4.8/5</div>
+            <div className="label3" data-aos="fade-up" data-aos-delay="600">
+              <Image src="/assets/img/arrow2.png" alt="arrow3" width={100}
+                height={120} />
+              <p> of students report a significant increase <br /> in subject confidence.</p>
             </div>
           </div>
         </div>
       </section>
 
+      <WidthImageSection
+        src="/assets/img/MONKS.webp"
+        alt="Right arrow"
+       
+        width="100%"
+        objectFit="cover"
+      />
+
       <section className="grey mb">
         <div className="container">
           <div className="grey-box">
             <div className="text-center">
-              <h2>Your Guide to the Cambridge Journey</h2>
-              <p>
+              <h2 data-aos="fade-in" data-aos-delay="100">Your Guide to the Cambridge Journey</h2>
+              <p data-aos="fade-up" data-aos-delay="200">
                 The world of Education is complex and you deserve clear, unbiased answers. Our Resources Hub is your library
                 of expert guides, created to empower you to make the best decisions for your child’s future with absolute
                 confidence.
@@ -376,7 +423,7 @@ export default function Home() {
             <div className="sub-box">
               <div className="row">
                 <div className="col-lg-4 col-md-4 col-12">
-                  <div className="white-box">
+                  <div className="white-box" data-aos="zoom-in" data-aos-delay="300">
                     <h6 className="printig">
                       The printing and typesetting <br /> industry ?
                     </h6>
@@ -398,7 +445,7 @@ export default function Home() {
                 </div>
 
                 <div className="col-lg-3 col-md-2 col-12">
-                  <div className="small-box">
+                  <div className="small-box" data-aos="zoom-in" data-aos-delay="400">
                     <Image
                       src="/assets/img/boy.webp"
                       alt="boy"
@@ -422,7 +469,7 @@ export default function Home() {
                   <div className="fds">
                     <div className="row">
                       <div className="col-lg-5 col-md-5 col-12">
-                        <div className="gfsds">
+                        <div className="gfsds" data-aos="fade-in" data-aos-delay="500">
                           <h6 className="printig">
                             The printing and typesetting <br /> industry ?
                           </h6>
@@ -430,7 +477,7 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="col-lg-7 col-md-7 col-12">
-                        <div className="ijh">
+                        <div className="ijh" data-aos="fade-out" data-aos-delay="550">
                           <Image
                             src="/assets/img/vfd.webp"
                             alt="girl n boy"
@@ -447,7 +494,7 @@ export default function Home() {
                   <div className="work">
                     <div className="row">
                       <div className="col-lg-6 col-md-6 col-12">
-                        <div className="wh-box">
+                        <div className="wh-box" data-aos="zoom-in" data-aos-delay="600">
                           <div className="d-flex align-items-center">
                             <Image
                               src="/assets/img/worksheet.png"
@@ -465,7 +512,7 @@ export default function Home() {
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6 col-12">
-                        <div className="wh-box">
+                        <div className="wh-box" data-aos="zoom-in" data-aos-delay="700">
                           <div className="d-flex align-items-center">
                             <Image
                               src="/assets/img/video-call 1.png"
@@ -500,10 +547,10 @@ export default function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
-              <h2 className="text-center">Frequently Asked Questions</h2>
+              <h2 className="text-center" data-aos="fade-in" data-aos-delay="100">Frequently Asked Questions</h2>
               <div className="accordion" id="accordionExample">
 
-                <div className="accordion-item">
+                <div className="accordion-item" data-aos="fade-left" data-aos-delay="200">
                   <h2 className="accordion-header" id="headingOne">
                     <button
                       className="accordion-button"
@@ -535,7 +582,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="accordion-item">
+                <div className="accordion-item" data-aos="fade-left" data-aos-delay="300">
                   <h2 className="accordion-header" id="headingTwo">
                     <button
                       className="accordion-button collapsed"
@@ -562,7 +609,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="accordion-item">
+                <div className="accordion-item" data-aos="fade-left" data-aos-delay="300">
                   <h2 className="accordion-header" id="headingThree">
                     <button
                       className="accordion-button collapsed"
@@ -589,7 +636,7 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="accordion-item">
+                <div className="accordion-item" data-aos="fade-left" data-aos-delay="400">
                   <h2 className="accordion-header" id="headingFour">
                     <button
                       className="accordion-button collapsed"
@@ -620,16 +667,16 @@ export default function Home() {
             </div>
             <div className="col-lg-1 col-md-1 col-1"></div>
             <div className="col-lg-5 col-md-5 col-12">
-              <div className="faq-sdeimg">
+              <div className="faq-sdeimg" data-aos="fade-in" data-aos-delay="500">
                 <div className="mt-3">
-                  <h3>Ready to Replace Academic
+                  <h3 className="reacf">Ready to Replace Academic
                     Anxiety with Calm Confidence?</h3>
                   <p>
                     The best way to understand the Study Monks difference is to experience it.</p>
 
                   <p>Schedule a complimentary, no-obligation Clarity Session to speak with one of our academic counselors. Lets build a personalized learning path for your child, together.
                   </p>
-                  <button className="btn btn-books" type="button">Schedule Your Free <br />
+                  <button className="btn-books" type="button">Schedule Your Free <br />
                     Clarity Session</button>
                 </div>
                 <div className="ijhg">

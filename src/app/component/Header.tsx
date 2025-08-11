@@ -9,11 +9,11 @@ function Header() {
     <header>
       <section className="sticky-navbar">
         <div className="navbars">
-          <div className="container-fluid">
+          <div className="container">
             <nav className="navbar navbar-expand-lg">
               <div className="container-fluid">
                 <Link className="navbar-brand" href="/">
-                  <Image src="/assets/img/logo.png" alt="Company Logo" width={120} height={50} />
+                  <Image src="/assets/img/logo.png" alt="Company Logo" width={160} height={50} />
                 </Link>
 
                 <button
@@ -47,13 +47,31 @@ function Header() {
                         <li><Link className="dropdown-item" href="/amc">AMC’s</Link></li>
                       </ul>
                     </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/our-mentors">Our Mentors</Link>
+                    </li>
+                    <li className="nav-item dropdown">
+                      <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Resource Hub
+                      </a>
+                      <ul className="dropdown-menu">
+                        <li><Link className="dropdown-item" href="/troubleshooting">Troubleshooting</Link></li>
+                        <li><Link className="dropdown-item" href="/installation-and-commissioning">Installation & Commissioning</Link></li>
+                        <li><Link className="dropdown-item" href="/mechanical-modification">Mechanical Modification</Link></li>
+                        <li><Link className="dropdown-item" href="/amc">AMC’s</Link></li>
+                      </ul>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/plans-and-pricing">Plans & Pricing</Link>
+                    </li>
+
                   </ul>
                 </div>
-
-                <button className="btn btn-login" type="button">
+                <button className="btn btn-login" type="button" style={{ color: '#fff' }}>
                   <Image src="/assets/img/login.png" alt="Login Icon" width={20} height={20} className="me-2" />
                   Login
                 </button>
+
               </div>
             </nav>
           </div>

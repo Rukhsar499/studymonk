@@ -12,16 +12,16 @@ function Footer() {
           {/* Logo and description */}
           <div className="col-lg-3 col-md-4 col-12">
             <div className="footrd bhb">
-              <Image src="/assets/img/logo.png" alt="Logo" width={150} height={50} />
+              <Image src="/assets/img/logo1.png" alt="Logo" width={190} height={30} />
               <p className="text-white">
-                Lorem Ipsum has been the industrys standard dummy text ever since the 1500s...
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quibusdam assumenda laudantium reprehenderit? Reprehenderit ipsum, accusamus sequi suscipit labore illum!
               </p>
             </div>
           </div>
 
           {/* Useful Links */}
           <div className="col-lg-3 col-md-4 col-12">
-            <div className="footrd">
+            <div className="footrd used">
               <h3>Useful Links</h3>
               <div className="footeil">
                 <ul>
