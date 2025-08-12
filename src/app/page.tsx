@@ -144,23 +144,46 @@ export default function Home() {
             <div className="row">
               {[
                 {
-                  title: "The Focus Chamber",
-                  text: `Our Focused Learning Modules and Interactive 
-                  Micro-Classes ensure you master every concept in a distraction-free setting.`,
+                  title: "The Cambridge Compass",
+                  text: [
+                    "Our proprietary",
+                    "Cambridge aligned framework",
+                    "is designed to provide purpose, direction, and clarity at every stage of your child's academic journey",
+                  ],
                 },
                 {
                   title: "The Cambridge Code",
-                  text: `Get our proprietary blueprint of Curated Content, designed for the most efficient path to success.`,
+                  text: [
+                    "Get our proprietary",
+                    "Curated content,",
+                    "designed for each Strand, Unit & Objective meticulously offering a clear and coherent pathway to success.",
+                  ],
                 },
                 {
                   title: "The Mastery Method",
-                  text: `Face your exams with unshakable confidence, powered by our Targeted Progression Test Prep and Comprehensive Checkpoint Prep.`,
+                  text: [
+                    "Face your exams with unshakable confidence, powered by our Targeted",
+                    "Progression Test Prep",
+                    "and Comprehensive",
+                    "Checkpoint Prep.",
+                  ],
                 },
               ].map((item, idx) => (
-                <div key={idx} className="col-lg-4 col-md-4 col-4" data-aos="fade-right" data-aos-delay="100">
+                <div key={idx} className="col-lg-4 col-md-4 col-4">
                   <div className="gfd">
                     <h4 className="assetx">{item.title}</h4>
-                    <p>{item.text}</p>
+                    <p>
+                      {item.text.map((t, i) => (
+                        <span key={i}>
+                          {i === 1 || i === 3 ? (
+                            <strong style={{ color: "#003C79" }}>{t}</strong>
+                          ) : (
+                            t
+                          )}
+                          {i < item.text.length - 1 && " "}
+                        </span>
+                      ))}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -190,7 +213,7 @@ export default function Home() {
             <div className="blu-box">
               <div className="row">
                 <div className="col-lg-6 col-md-6 col-12" data-aos="fade-right" data-aos-delay="200">
-                  <div className="bg-white bh-c">
+                  <div className=" bh-c h-100">
                     <h4 className="assetx">Cambridge Primary (Stages 4-6)</h4>
                     <p><b>Building a Love for Learning</b></p>
                     <p>For our youngest learners, we focus on sparking curiosity and building unshakable confidence. Our mentors create a nurturing environment where foundational concepts in English, Maths, and Science are explored in an engaging, interactive way.</p>
@@ -209,7 +232,7 @@ export default function Home() {
                 </div>
 
                 <div className="col-lg-6 col-md-6 col-12" data-aos="fade-left" data-aos-delay="250">
-                  <div className="bg-white bh-c">
+                  <div className=" bh-c h-100">
                     <h4 className="assetx">Cambridge Lower Secondary (Stages 7-9)</h4>
                     <p><b>Deepening Knowledge, Building Skills</b></p>
                     <p>As students advance, we shift focus to developing critical thinking and analytical skills. We guide them through the increasing rigor of English, Maths, and Science, preparing them for the challenges of IGCSE and beyond.</p>
@@ -281,7 +304,7 @@ export default function Home() {
             <p className="learning" data-aos="fade-down" data-aos-delay="150">Learning experience built on Four pillars</p>
             <div className="pt-i" data-aos="zoom-in" data-aos-delay="200">
               <Image
-                src="/assets/img/arrow-im.png"
+                src="/assets/img/arrow-ims.webp"
                 alt="Arrow"
                 width={100}
                 height={100}
@@ -303,7 +326,7 @@ export default function Home() {
                     {accordionData.map((item, index) => (
                       <div key={index} className="accordion-items">
                         <div
-                          className="accordion-headers"
+                          className="accordion-headers bvzx"
                           onClick={() => toggleAccordion(index)}
                           style={{ cursor: "pointer" }}
                         >
@@ -352,9 +375,9 @@ export default function Home() {
       </section>
       <section className="dark mb">
         <div className="container">
-          <div className="text-center text-white darkbox">
+          <div className="text-center text-white mx-auto darkbox">
             <h2 className="text-white" data-aos="fade-up" data-aos-delay="100">The Heart of Our Promise: The Mentors</h2>
-            <h3 className="yellow" data-aos="fade-up"  data-aos-delay="100">&lt; 20%</h3>
+            <h3 className="yellow" data-aos="fade-up" data-aos-delay="100">&lt; 20%</h3>
             <h5 className="mentor" data-aos="fade-up" data-aos-delay="100">Mentor Acceptance Rate</h5>
             <p className="text-white" data-aos="fade-up" data-aos-delay="100">
               Our mentors are the living embodiment of our promise. They are handpicked not only for their deep subject
@@ -389,13 +412,15 @@ export default function Home() {
             <div className="label2" data-aos="fade-up" data-aos-delay="600">
               <Image src="/assets/img/arrow1.png" alt="arrow3" width={5}
                 height={80} />
-              <p> of students report a significant increase <br /> in subject confidence.</p>
+              <p> more likely to actively participate in <br />
+                class discussions.  </p>
             </div>
             <div className="circle large" data-aos="zoom-in" data-aos-delay="500">4.8/5</div>
             <div className="label3" data-aos="fade-up" data-aos-delay="600">
               <Image src="/assets/img/arrow2.png" alt="arrow3" width={100}
                 height={120} />
-              <p> of students report a significant increase <br /> in subject confidence.</p>
+              <p> average satisfaction rating from our
+                <br /> parent community.</p>
             </div>
           </div>
         </div>
@@ -404,10 +429,12 @@ export default function Home() {
       <WidthImageSection
         src="/assets/img/MONKS.webp"
         alt="Right arrow"
-       
+
         width="100%"
         objectFit="cover"
       />
+
+       <ImageSlider />
 
       <section className="grey mb">
         <div className="container">
@@ -540,7 +567,7 @@ export default function Home() {
       </section>
 
 
-      <ImageSlider />
+     
 
 
       <section className="fad mb">

@@ -36,29 +36,39 @@ function Header() {
                     <li className="nav-item">
                       <Link className="nav-link" href="/our-story">Our Story</Link>
                     </li>
-                    <li className="nav-item dropdown">
-                      <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <li className="nav-item dropdown custom-dropdown">
+                      <a
+                        className="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
                         The Cambridge Pathway
                       </a>
-                      <ul className="dropdown-menu">
-                        <li><Link className="dropdown-item" href="/troubleshooting">Troubleshooting</Link></li>
-                        <li><Link className="dropdown-item" href="/installation-and-commissioning">Installation & Commissioning</Link></li>
-                        <li><Link className="dropdown-item" href="/mechanical-modification">Mechanical Modification</Link></li>
-                        <li><Link className="dropdown-item" href="/amc">AMC’s</Link></li>
+                      <ul className="dropdown-menu vbgf">
+                        <li>
+                          <Link className="dropdown-item" href="/cambridge-primary">
+                            Cambridge Primary
+                          </Link>
+                        </li>
+                        <li>
+                          <Link className="dropdown-item" href="/cambridge-secondary">
+                            Cambridge Secondary
+                          </Link>
+                        </li>
                       </ul>
                     </li>
                     <li className="nav-item">
                       <Link className="nav-link" href="/our-mentors">Our Mentors</Link>
                     </li>
-                    <li className="nav-item dropdown">
+                    <li className="nav-item dropdown custom-dropdown">
                       <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Resource Hub
                       </a>
-                      <ul className="dropdown-menu">
-                        <li><Link className="dropdown-item" href="/troubleshooting">Troubleshooting</Link></li>
-                        <li><Link className="dropdown-item" href="/installation-and-commissioning">Installation & Commissioning</Link></li>
-                        <li><Link className="dropdown-item" href="/mechanical-modification">Mechanical Modification</Link></li>
-                        <li><Link className="dropdown-item" href="/amc">AMC’s</Link></li>
+                      <ul className="dropdown-menu vbgf">
+                        <li><Link className="dropdown-item" href="/cambridge-primary">Cambridge Primary</Link></li>
+                        <li><Link className="dropdown-item" href="/cambridge-secondary">Cambridge Secondary</Link></li>
                       </ul>
                     </li>
                     <li className="nav-item">
