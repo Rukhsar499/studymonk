@@ -35,9 +35,21 @@ export default function Home() {
   };
 
   const accordionData = [
-    { title: "Mindful Mastery", content: "This is the content of Accordion 1." },
-    { title: "Guided Curiosity", content: "This is the content of Accordion 2." },
-    { title: "Digital Serenity", content: "This is the content of Accordion 3." },
+    {
+    title: "Mindful Mastery",
+    content: `We move beyond rote learning to ensure deep conceptual 
+understanding. Our mentors foster a calm, focused approach that builds lasting 
+knowledge and unshakable confidence.`
+  },
+    { title: "Guided Curiosity", 
+      content: `A great education sparks a lifelong desire to learn. We encourage 
+students to ask "why," explore ideas, and connect subjects to the world around 
+them, turning learning into a journey of discovery.`},
+    { title: "Digital Serenity", 
+    content: `Our platform is a safe, distraction-free space designed for focus. We 
+provide a tranquil environment where students can learn, express themselves, 
+and thrive without digital noise. 
+`},
     { title: "Expressive Confidence", content: "This is the content of Accordion 4." },
   ];
 
@@ -298,88 +310,120 @@ export default function Home() {
 
       {/* Promise Section */}
       <section className="promise mb">
-        <div className="container">
-          <div className="pro-i">
-            <h2 data-aos="fade-down" data-aos-delay="100">Our Promise</h2>
-            <p className="learning" data-aos="fade-down" data-aos-delay="150">Learning experience built on Four pillars</p>
-            <div className="pt-i" data-aos="zoom-in" data-aos-delay="200">
-              <Image
-                src="/assets/img/arrow-ims.webp"
-                alt="Arrow"
-                width={100}
-                height={100}
-                className="img-fluid"
-              />
-            </div>
+      <div className="container">
+        <div className="pro-i">
+          <h2 data-aos="fade-down">Our Promise</h2>
+          <p className="learning">
+            Learning experience built on Four pillars
+          </p>
+          <div className="pt-i">
+            <Image
+              src="/assets/img/arrow-ims.webp"
+              alt="Arrow"
+              width={100}
+              height={100}
+              className="img-fluid"
+            />
           </div>
+        </div>
 
-          <div className="next_div">
-            <div className="row">
-              <div className="col-lg-6 col-md-6 col-12">
-                <div className="pro-text">
-                  <p data-aos="fade-left" data-aos-delay="250">
-                    True education is not a race for grades; it is the art of building a confident,
-                    curious, and resilient mind.
-                  </p>
+        <div className="next_div">
+          <div className="row">
+            {/* Left Side Accordion */}
+            <div className="col-lg-6 col-md-6 col-12">
+              <div className="pro-text">
+                <p>
+                  True education is not a race for grades; it is the art of building a confident,
+                  curious, and resilient mind.
+                </p>
 
-                  <div className="accordions" data-aos="fade-left" data-aos-delay="300">
-                    {accordionData.map((item, index) => (
-                      <div key={index} className="accordion-items">
-                        <div
-                          className="accordion-headers bvzx"
-                          onClick={() => toggleAccordion(index)}
-                          style={{ cursor: "pointer" }}
-                        >
-                          {item.title}
-                          <span className="accordion-icons">
-                            {activeIndex === index ? "−" : "+"}
-                          </span>
-                        </div>
-                        {activeIndex === index && (
-                          <div className="accordion-contents active">
-                            <p>{item.content}</p>
-                          </div>
-                        )}
+                <div className="accordions">
+                  {accordionData.map((item, index) => (
+                    <div key={index} className="accordion-items">
+                      <div
+                        className="accordion-headers bvzx"
+                        onClick={() => toggleAccordion(index)}
+                        style={{ cursor: "pointer" }}
+                      >
+                        {item.title}
+                        <span className="accordion-icons">
+                          {activeIndex === index ? "−" : "+"}
+                        </span>
                       </div>
-                    ))}
-                  </div>
+                      {activeIndex === index && (
+                        <div className="accordion-contents active">
+                          <p>{item.content}</p>
+                        </div>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </div>
-              <div className="col-lg-1 col-md-1 col-1"></div>
-              <div className="col-lg-5 col-md-5 col-12">
-                <div className="nexy_div_img text-center" data-aos="fade-up" data-aos-delay="350">
-                  <Image
-                    src="/assets/img/macs.webp"
-                    alt="Arrow"
-                    width={500}
-                    height={500}
-                    className="img-fluid"
-                  />
-                  <div className="master">
-                    <h6 className="mind" data-aos="zoom-in" data-aos-delay="500">Mindful <br /> Mastery</h6>
-                  </div>
-                  <div className="master1">
-                    <h6 className="mind" data-aos="zoom-in" data-aos-delay="550">Guided <br /> Curiosity</h6>
-                  </div>
-                  <div className="master3">
-                    <h6 className="mind" data-aos="zoom-in" data-aos-delay="600">Digital   <br />Serenity</h6>
-                  </div>
-                  <div className="master2">
-                    <h6 className="mind" data-aos="zoom-in" data-aos-delay="650">Expressive  <br />Confidence</h6>
-                  </div>
+            </div>
+
+            <div className="col-lg-1 col-md-1 col-1"></div>
+
+            {/* Right Side Image + Titles */}
+            <div className="col-lg-5 col-md-5 col-12">
+              <div className="nexy_div_img text-center" data-aos="fade-up" data-aos-delay="350">
+                <Image
+                  src="/assets/img/macs.webp"
+                  alt="Arrow"
+                  width={500}
+                  height={500}
+                  className="img-fluid"
+                />
+
+                {/* Each text block checks if it's active */}
+                <div className={`master ${activeIndex === 0 ? "active-text" : ""}`}>
+                  <h6 className="mind">Mindful <br /> Mastery</h6>
+                </div>
+                <div className={`master1 ${activeIndex === 1 ? "active-text" : ""}`}>
+                  <h6 className="mind">Guided <br /> Curiosity</h6>
+                </div>
+                <div className={`master3 ${activeIndex === 2 ? "active-text" : ""}`}>
+                  <h6 className="mind">Digital <br /> Serenity</h6>
+                </div>
+                <div className={`master2 ${activeIndex === 3 ? "active-text" : ""}`}>
+                  <h6 className="mind">Expressive <br /> Confidence</h6>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Styles for animation */}
+     <style jsx>{`
+  .active-text {
+    color: #000;
+    animation: pulseGlow 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0% { 
+      transform: scale(1);
+      text-shadow: 0 0 0px rgba(0, 255, 128, 0.2);
+    }
+    50% { 
+      transform: scale(1.1);
+      text-shadow: 0 0 12px rgba(0, 255, 128, 0.6);
+      color: #00cc66;
+    }
+    100% { 
+      transform: scale(1);
+      text-shadow: 0 0 0px rgba(0, 255, 128, 0.2);
+    }
+  }
+`}</style>
+    </section>
       <section className="dark mb">
         <div className="container">
           <div className="text-center text-white mx-auto darkbox">
-            <h2 className="text-white" data-aos="fade-up" data-aos-delay="100">The Heart of Our Promise: The Mentors</h2>
-            <h3 className="yellow" data-aos="fade-up" data-aos-delay="100">&lt; 20%</h3>
-            <h5 className="mentor" data-aos="fade-up" data-aos-delay="100">Mentor Acceptance Rate</h5>
-            <p className="text-white" data-aos="fade-up" data-aos-delay="100">
+            <h2 className="text-white">The Heart of Our Promise: The Mentors</h2>
+            <h3 className="yellow">&lt; 20%</h3>
+            <h5 className="mentor">Mentor Acceptance Rate</h5>
+            <p className="text-white">
               Our mentors are the living embodiment of our promise. They are handpicked not only for their deep subject
               expertise but for their rare ability to guide and nurture young minds. Fewer than 20% of applicants meet
               our

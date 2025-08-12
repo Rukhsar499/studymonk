@@ -1735,6 +1735,13 @@ background: linear-gradient(351deg, rgba(234, 240, 255, 1) 33%, rgba(151, 171, 2
     top: 30%;
     left: 64%;
 }
-@media (min-width: 1200px) and (max-width: 1400px) {}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .nav-item a {
+    margin-right: 13px;
+  }
+  .stdyu-img{
+    width: 100%;
+  }
+}
 
 @media screen and (max-width: 767px) {}
