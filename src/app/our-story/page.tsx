@@ -273,13 +273,13 @@ export default function Page() {
                             </div>
                             <div>
                                 <p>
-                                    Our vision is to become India’s most trusted partner for Cambridge families,
+                                    Our vision is to become India&apos;s most trusted partner for Cambridge families,
                                     bridging the gap between a world-class education and local, accessible expertise.
                                 </p>
                                 <p>
                                     We are committed to cultivating students who are not only academically successful
                                     but are also focused, curious, and confident global citizens. Because when students
-                                    feel understood, they don’t just improve—they excel.
+                                    feel understood, they don&apos;s just improve—they excel.
                                 </p>
                             </div>
                         </div>
