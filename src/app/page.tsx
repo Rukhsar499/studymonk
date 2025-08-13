@@ -646,7 +646,7 @@ and thrive without digital noise.
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
-              <h2 className="text-center">Frequently Asked Questions</h2>
+              <h2 className="text-center fres">Frequently Asked Questions</h2>
               <div className="accordion" id="accordionExample">
 
                 <div className="accordion-item">
