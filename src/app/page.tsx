@@ -477,22 +477,22 @@ and thrive without digital noise.
           <h2 data-aos="fade-up">The Study Monks Impact: A Snapshot</h2>
 
           <div className="impact-container">
-            <div className="circle" data-aos="zoom-in" data-aos-delay="100">94%</div>
-            <div className="label1" data-aos="fade-up" data-aos-delay="600">
+            <div className="circle">94%</div>
+            <div className="label1">
               <Image src="/assets/img/arrow3.png" alt="arrow3" width={100}
                 height={120} />
               <p> of students report a significant increase <br /> in subject confidence.</p>
             </div>
 
-            <div className="circle mid" data-aos="zoom-in" data-aos-delay="300">3X</div>
-            <div className="label2" data-aos="fade-up" data-aos-delay="600">
+            <div className="circle mid">3X</div>
+            <div className="label2">
               <Image src="/assets/img/arrow1.png" alt="arrow3" width={5}
                 height={80} />
               <p> more likely to actively participate in <br />
                 class discussions.  </p>
             </div>
-            <div className="circle large" data-aos="zoom-in" data-aos-delay="500">4.8/5</div>
-            <div className="label3" data-aos="fade-up" data-aos-delay="600">
+            <div className="circle large">4.8/5</div>
+            <div className="label3">
               <Image src="/assets/img/arrow2.png" alt="arrow3" width={100}
                 height={120} />
               <p> average satisfaction rating from our
@@ -653,7 +653,7 @@ and thrive without digital noise.
               <h2 className="text-center">Frequently Asked Questions</h2>
               <div className="accordion" id="accordionExample">
 
-                <div className="accordion-item" data-aos="fade-left" data-aos-delay="200">
+                <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">
                     <button
                       className="accordion-button"
@@ -685,7 +685,7 @@ and thrive without digital noise.
                   </div>
                 </div>
 
-                <div className="accordion-item" data-aos="fade-left" data-aos-delay="300">
+                <div className="accordion-item">
                   <h2 className="accordion-header" id="headingTwo">
                     <button
                       className="accordion-button collapsed"
@@ -712,7 +712,7 @@ and thrive without digital noise.
                   </div>
                 </div>
 
-                <div className="accordion-item" data-aos="fade-left" data-aos-delay="300">
+                <div className="accordion-item">
                   <h2 className="accordion-header" id="headingThree">
                     <button
                       className="accordion-button collapsed"
@@ -739,7 +739,7 @@ and thrive without digital noise.
                   </div>
                 </div>
 
-                <div className="accordion-item" data-aos="fade-left" data-aos-delay="400">
+                <div className="accordion-item">
                   <h2 className="accordion-header" id="headingFour">
                     <button
                       className="accordion-button collapsed"
