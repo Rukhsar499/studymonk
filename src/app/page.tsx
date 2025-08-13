@@ -12,6 +12,9 @@ import BootstrapClient from '../app/BootstrapClient';
 import ImageSlider from "../app/component/ImageSlider";
 import FullWidthImageSection from "../app/component/FullWidthImageSection";
 import WidthImageSection from "../app/component/WidthImageSection";
+import Rings from "./component/Rings";
+import BottomAccordion from "./component/BottomAccordion ";
+import StickyFooter from "./component/StickyFooter";
 
 
 
@@ -19,46 +22,7 @@ import WidthImageSection from "../app/component/WidthImageSection";
 
 export default function Home() {
 
-  useEffect(() => {
-    const rings = document.querySelectorAll<HTMLDivElement>(".ring");
 
-    const handleClick = (ring: HTMLDivElement) => {
-      // Reset all to default
-      rings.forEach((r) => (r.style.backgroundColor = "#D7ECE5"));
-
-      const typeClass = ring.classList[1] as
-        | "create"
-        | "evaluate"
-        | "analyze"
-        | "apply"
-        | "understand"
-        | "remember";
-
-      const colors: Record<typeof typeClass, string> = {
-        create: "#AEDAC1",
-        evaluate: "#91C9AE",
-        analyze: "#B1DDCC",
-        apply: "#BBDEC8",
-        understand: "#C5E5D5",
-        remember: "#E9F1EF",
-      };
-
-      if (typeClass && colors[typeClass]) {
-        ring.style.backgroundColor = colors[typeClass];
-      }
-    };
-
-    rings.forEach((ring) =>
-      ring.addEventListener("click", () => handleClick(ring))
-    );
-
-    // Cleanup on unmount
-    return () => {
-      rings.forEach((ring) =>
-        ring.removeEventListener("click", () => handleClick(ring))
-      );
-    };
-  }, []);
 
 
 
@@ -118,20 +82,13 @@ and thrive without digital noise.
         </div>
       </section>
       {/* Frame Section */}
-      <section className="frame">
+      <section className="frame mb">
         <div className="container">
           <h2>The Framework for Your Focus & Voice</h2>
           <div className="all-text">
             <div className="row">
               <div className="col-lg-4 col-md-5 col-12">
-                <div className="target-section">
-                  <div className="ring create">Create</div>
-                  <div className="ring evaluate">Evaluate</div>
-                  <div className="ring analyze">Analyze</div>
-                  <div className="ring apply">Apply</div>
-                  <div className="ring understand">Understand</div>
-                  <div className="ring remember">Remember</div>
-                </div>
+                <Rings />
               </div>
               <div className="col-lg-1 col-md-1 col-1"></div>
               <div className="col-lg-7 col-md-6 col-12">
@@ -142,7 +99,7 @@ and thrive without digital noise.
                     produce original work, formulate new hypotheses, and design
                     innovative solutions.
                   </p>
-                  <div className="row">
+                  <div className="row gy-3">
                     <div className="col-lg-4 col-md-4 col-4">
                       <div className="green bg-grey">
                         <h4 className="assetx">
@@ -213,7 +170,7 @@ and thrive without digital noise.
                   ],
                 },
               ].map((item, idx) => (
-                <div key={idx} className="col-lg-4 col-md-4 col-4">
+                <div key={idx} className="col-lg-4 col-md-4 col-12">
                   <div className="gfd">
                     <h4 className="assetx">{item.title}</h4>
                     <p>
@@ -255,7 +212,7 @@ and thrive without digital noise.
               </p>
             </div>
             <div className="blu-box">
-              <div className="row">
+              <div className="row gy-3">
                 <div className="col-lg-6 col-md-6 col-12">
                   <div className=" bh-c h-100">
                     <h4 className="assetx">Cambridge Primary (Stages 4-6)</h4>
@@ -345,12 +302,12 @@ and thrive without digital noise.
         <div className="container">
           <div className="pro-i text-center">
             <span className="our">Our Promise</span>  <Image
-                src="/assets/img/arrow-ims.webp"
-                alt="Arrow"
-                width={100}
-                height={100}
-                className="img-fluid ades"
-              />  <span className="learning">
+              src="/assets/img/arrow-ims.webp"
+              alt="Arrow"
+              width={100}
+              height={100}
+              className="img-fluid ades"
+            />  <span className="learning">
               Learning experience built on Four pillars
             </span>
           </div>
@@ -647,122 +604,7 @@ and thrive without digital noise.
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <h2 className="text-center fres">Frequently Asked Questions</h2>
-              <div className="accordion" id="accordionExample">
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingOne">
-                    <button
-                      className="accordion-button"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
-                    >
-                      Why Choose Study Monk for Your Child&apos;s Cambridge Curriculum Journey?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseOne"
-                    className="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body">
-                      As a parent, you want the absolute best for your childs education. The Cambridge Curriculum offers a
-                      strong foundation, but you might be wondering: How can I ensure my child not only keeps up but thrives
-                      in this demanding curriculum? Is rote memorization enough for success, or are there deeper skills they
-                      need to develop?
-
-                      How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
-                      Study Monk, we address these concerns and go beyond traditional learning to empower your child on
-                      their Cambridge journey.
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingTwo">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo"
-                      aria-expanded="false"
-                      aria-controls="collapseTwo"
-                    >
-                      3 Reasons Why We&apos;re the Perfect Partner?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseTwo"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingTwo"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body">
-                      How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
-                      Study Monk, we address these concerns and go beyond traditional learning to empower your child on
-                      their Cambridge journey.
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingThree">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree"
-                      aria-expanded="false"
-                      aria-controls="collapseThree"
-                    >
-                      How does Study Monks help with preparing for Cambridge exams?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseThree"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingThree"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body">
-                      How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
-                      Study Monk, we address these concerns and go beyond traditional learning to empower your child on
-                      their Cambridge journey.
-                    </div>
-                  </div>
-                </div>
-
-                <div className="accordion-item">
-                  <h2 className="accordion-header" id="headingFour">
-                    <button
-                      className="accordion-button collapsed"
-                      type="button"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#collapseFour"
-                      aria-expanded="false"
-                      aria-controls="collapseFour"
-                    >
-                      How are classes conducted on the Study Monks platform?
-                    </button>
-                  </h2>
-                  <div
-                    id="collapseFour"
-                    className="accordion-collapse collapse"
-                    aria-labelledby="headingFour"
-                    data-bs-parent="#accordionExample"
-                  >
-                    <div className="accordion-body">
-                      How can I bridge the gap between whats taught in school and the specific needs of my child? Here at
-                      Study Monk, we address these concerns and go beyond traditional learning to empower your child on
-                      their Cambridge journey.
-                    </div>
-                  </div>
-                </div>
-
-              </div>
+              <BottomAccordion/>
             </div>
             <div className="col-lg-1 col-md-1 col-1"></div>
             <div className="col-lg-5 col-md-5 col-12">
@@ -792,7 +634,7 @@ and thrive without digital noise.
           </div>
         </div>
       </section>
-
+<StickyFooter />
       <Footer />
     </>
   );
