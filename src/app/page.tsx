@@ -22,7 +22,7 @@ export default function Home() {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation speed (ms)
-      once: true,
+      once: false,
     });
   }, [])
 
@@ -36,17 +36,19 @@ export default function Home() {
 
   const accordionData = [
     {
-    title: "Mindful Mastery",
-    content: `We move beyond rote learning to ensure deep conceptual 
+      title: "Mindful Mastery",
+      content: `We move beyond rote learning to ensure deep conceptual 
 understanding. Our mentors foster a calm, focused approach that builds lasting 
 knowledge and unshakable confidence.`
-  },
-    { title: "Guided Curiosity", 
+    },
+    {
+      title: "Guided Curiosity",
       content: `A great education sparks a lifelong desire to learn. We encourage 
 students to ask "why," explore ideas, and connect subjects to the world around 
 them, turning learning into a journey of discovery.`},
-    { title: "Digital Serenity", 
-    content: `Our platform is a safe, distraction-free space designed for focus. We 
+    {
+      title: "Digital Serenity",
+      content: `Our platform is a safe, distraction-free space designed for focus. We 
 provide a tranquil environment where students can learn, express themselves, 
 and thrive without digital noise. 
 `},
@@ -61,38 +63,35 @@ and thrive without digital noise.
     <>
       <Header />
       {/* Banner Section */}
-      <section className="banner mb">
-        <div className="container">
-          <div className="text-center">
-            <h1 data-aos="fade-up" data-aos-delay="100">
-              Find Your <span className="focus">Focus</span>. Find Your{" "}
-              <span className="focus">Voice</span>.
-            </h1>
-            <p data-aos="fade-up" data-aos-delay="200">
-              A serene and safe digital sanctuary where students master the
-              Cambridge curriculum <br /> through mindful mentorship.
-            </p>
-            <button
-              className="btn-primarys"
-              type="button"
-              data-aos="zoom-in"
-              data-aos-delay="300"
-            >
-              Experience the difference
-            </button>
-          </div>
+      <section className="focus-section mb">
+        <div className="circles">
+          <span className="circles circle1"></span>
+          <span className="circles circle2"></span>
+          <span className="circles circle3"></span>
+        </div>
+
+        <div className="content">
+          <h1>
+            Find Your <span className="focus">Focus.</span> Find Your <span className="focus">Voice.</span>
+          </h1>
+          <p className="mt-3">
+            You chose the Cambridge path for its depth and global advantage. Our
+            specialist mentors cultivate the focus and confidence your child needs
+            to master its challenges and unlock their full potential.
+          </p>
+          <button className="btn-primarys"
+              type="button">Experience the difference</button>
         </div>
       </section>
-
       {/* Frame Section */}
       <section className="frame mb">
         <div className="container">
-          <h2 data-aos="fade-up" data-aos-delay="500">The Framework for Your Focus & Voice</h2>
+          <h2>The Framework for Your Focus & Voice</h2>
           <div className="all-text">
             <div className="row">
               <div className="col-lg-4 col-md-5 col-12">
                 <div className="cir-img">
-                  <Image data-aos="zoom-in" data-aos-delay="700"
+                  <Image
                     src="/assets/img/circles.webp"
                     alt="Circle"
                     className="img-fluid"
@@ -104,15 +103,15 @@ and thrive without digital noise.
               <div className="col-lg-1 col-md-1 col-1"></div>
               <div className="col-lg-7 col-md-6 col-12">
                 <div className="fram-text">
-                  <h3 className="cam" data-aos="fade-up" data-aos-delay="100">The Focus Chamber</h3>
-                  <p data-aos="fade-up" data-aos-delay="150">
+                  <h3 className="cam">The Focus Chamber</h3>
+                  <p>
                     The pinnacle of learning. Students synthesize knowledge to
                     produce original work, formulate new hypotheses, and design
                     innovative solutions.
                   </p>
                   <div className="row">
                     <div className="col-lg-4 col-md-4 col-4">
-                      <div className="green bg-grey" data-aos="fade-up" data-aos-delay="250">
+                      <div className="green bg-grey">
                         <h4 className="assetx">
                           Assess & <br /> Strategize
                         </h4>
@@ -122,7 +121,7 @@ and thrive without digital noise.
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-4">
-                      <div className="green bg-grey" data-aos="fade-up" data-aos-delay="300">
+                      <div className="green bg-grey">
                         <h4 className="assetx">
                           Engage & <br /> Build Concepts
                         </h4>
@@ -132,7 +131,7 @@ and thrive without digital noise.
                       </div>
                     </div>
                     <div className="col-lg-4 col-md-4 col-4">
-                      <div className="green bg-grey" data-aos="fade-up" data-aos-delay="350">
+                      <div className="green bg-grey">
                         <h4 className="assetx">
                           Practice & <br /> Master
                         </h4>
@@ -310,91 +309,91 @@ and thrive without digital noise.
 
       {/* Promise Section */}
       <section className="promise mb">
-      <div className="container">
-        <div className="pro-i">
-          <h2 data-aos="fade-down">Our Promise</h2>
-          <p className="learning">
-            Learning experience built on Four pillars
-          </p>
-          <div className="pt-i">
-            <Image
-              src="/assets/img/arrow-ims.webp"
-              alt="Arrow"
-              width={100}
-              height={100}
-              className="img-fluid"
-            />
+        <div className="container">
+          <div className="pro-i">
+            <h2 data-aos="fade-down">Our Promise</h2>
+            <p className="learning">
+              Learning experience built on Four pillars
+            </p>
+            <div className="pt-i">
+              <Image
+                src="/assets/img/arrow-ims.webp"
+                alt="Arrow"
+                width={100}
+                height={100}
+                className="img-fluid"
+              />
+            </div>
           </div>
-        </div>
 
-        <div className="next_div">
-          <div className="row">
-            {/* Left Side Accordion */}
-            <div className="col-lg-6 col-md-6 col-12">
-              <div className="pro-text">
-                <p>
-                  True education is not a race for grades; it is the art of building a confident,
-                  curious, and resilient mind.
-                </p>
+          <div className="next_div">
+            <div className="row">
+              {/* Left Side Accordion */}
+              <div className="col-lg-6 col-md-6 col-12">
+                <div className="pro-text">
+                  <p>
+                    True education is not a race for grades; it is the art of building a confident,
+                    curious, and resilient mind.
+                  </p>
 
-                <div className="accordions">
-                  {accordionData.map((item, index) => (
-                    <div key={index} className="accordion-items">
-                      <div
-                        className="accordion-headers bvzx"
-                        onClick={() => toggleAccordion(index)}
-                        style={{ cursor: "pointer" }}
-                      >
-                        {item.title}
-                        <span className="accordion-icons">
-                          {activeIndex === index ? "−" : "+"}
-                        </span>
-                      </div>
-                      {activeIndex === index && (
-                        <div className="accordion-contents active">
-                          <p>{item.content}</p>
+                  <div className="accordions">
+                    {accordionData.map((item, index) => (
+                      <div key={index} className="accordion-items">
+                        <div
+                          className="accordion-headers bvzx"
+                          onClick={() => toggleAccordion(index)}
+                          style={{ cursor: "pointer" }}
+                        >
+                          {item.title}
+                          <span className="accordion-icons">
+                            {activeIndex === index ? "−" : "+"}
+                          </span>
                         </div>
-                      )}
-                    </div>
-                  ))}
+                        {activeIndex === index && (
+                          <div className="accordion-contents active">
+                            <p>{item.content}</p>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div className="col-lg-1 col-md-1 col-1"></div>
+              <div className="col-lg-1 col-md-1 col-1"></div>
 
-            {/* Right Side Image + Titles */}
-            <div className="col-lg-5 col-md-5 col-12">
-              <div className="nexy_div_img text-center" data-aos="fade-up" data-aos-delay="350">
-                <Image
-                  src="/assets/img/macs.webp"
-                  alt="Arrow"
-                  width={500}
-                  height={500}
-                  className="img-fluid"
-                />
+              {/* Right Side Image + Titles */}
+              <div className="col-lg-5 col-md-5 col-12">
+                <div className="nexy_div_img text-center" data-aos="fade-up" data-aos-delay="350">
+                  <Image
+                    src="/assets/img/macs.webp"
+                    alt="Arrow"
+                    width={500}
+                    height={500}
+                    className="img-fluid"
+                  />
 
-                {/* Each text block checks if it's active */}
-                <div className={`master ${activeIndex === 0 ? "active-text" : ""}`}>
-                  <h6 className="mind">Mindful <br /> Mastery</h6>
-                </div>
-                <div className={`master1 ${activeIndex === 1 ? "active-text" : ""}`}>
-                  <h6 className="mind">Guided <br /> Curiosity</h6>
-                </div>
-                <div className={`master3 ${activeIndex === 2 ? "active-text" : ""}`}>
-                  <h6 className="mind">Digital <br /> Serenity</h6>
-                </div>
-                <div className={`master2 ${activeIndex === 3 ? "active-text" : ""}`}>
-                  <h6 className="mind">Expressive <br /> Confidence</h6>
+                  {/* Each text block checks if it's active */}
+                  <div className={`master ${activeIndex === 0 ? "active-text" : ""}`}>
+                    <h6 className="mind">Mindful <br /> Mastery</h6>
+                  </div>
+                  <div className={`master1 ${activeIndex === 1 ? "active-text" : ""}`}>
+                    <h6 className="mind">Guided <br /> Curiosity</h6>
+                  </div>
+                  <div className={`master3 ${activeIndex === 2 ? "active-text" : ""}`}>
+                    <h6 className="mind">Digital <br /> Serenity</h6>
+                  </div>
+                  <div className={`master2 ${activeIndex === 3 ? "active-text" : ""}`}>
+                    <h6 className="mind">Expressive <br /> Confidence</h6>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Styles for animation */}
-     <style jsx>{`
+        {/* Styles for animation */}
+        <style jsx>{`
   .active-text {
     color: #000;
     animation: pulseGlow 1.5s ease-in-out infinite;
@@ -416,7 +415,7 @@ and thrive without digital noise.
     }
   }
 `}</style>
-    </section>
+      </section>
       <section className="dark mb">
         <div className="container">
           <div className="text-center text-white mx-auto darkbox">
@@ -478,7 +477,7 @@ and thrive without digital noise.
         objectFit="cover"
       />
 
-       <ImageSlider />
+      <ImageSlider />
 
       <section className="grey mb">
         <div className="container">
@@ -611,7 +610,7 @@ and thrive without digital noise.
       </section>
 
 
-     
+
 
 
       <section className="fad mb">

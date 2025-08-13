@@ -118,16 +118,95 @@ h3 {
   width: 100%;
 }
 
-.banner {
-  background-image: url("/assets/img/bg-banner.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 100px 0px 40px;
-  height: 700px;
+/* banner section starts */
+.focus-section {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, #eef2ff, #c7d2fe);
+  height: 750px;
   display: flex;
   align-items: center;
 }
+
+.circles {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.circles {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: pulse 4s infinite ease-in-out; /* animation lagaya */
+}
+
+/* Circles sizes & delays */
+.circle1 {
+  width: 380px;
+  height: 380px;
+  background-image: url("/assets/img/circles2.png");
+  animation-delay: 0s;
+}
+
+.circle2 {
+  width: 520px;
+  height: 520px;
+  background-image: url("/assets/img/circles1.png");
+  animation-delay: 1s;
+}
+
+.circle3 {
+  width: 650px;
+  height: 650px;
+  background-image: url("/assets/img/circles.png");
+  animation-delay: 1.5s;
+}
+
+/* Ripple animation without moving */
+@keyframes pulse {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 780px;
+  margin: auto;
+}
+
+.content h2 {
+  font-size: 2rem;
+  color: #0f172a;
+}
+
+.content p {
+  font-size: 1rem;
+  color: #334155;
+  margin: 15px 0 25px;
+}
+
+.content button {
+  background: transparent;
+  border: 1px solid #0f172a;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* banner section ends */
 
 .faq-sdeimg {
   background-image: url("/assets/img/mummy-bg.webp");
@@ -347,6 +426,7 @@ h1 {
   line-height: 90px;
   letter-spacing: 1px;
   font-family: 'gilroy-regular';
+  font-weight: 600;
   margin-bottom: 20px !important;
 }
 
@@ -445,7 +525,7 @@ h2 {
 
 .bg-grey {
   background-color: #F4F4F4;
-  transition: 3s ease-in-out;
+  transition: 1.5s ease-in-out;
 }
 
 .bg-grey:hover {
