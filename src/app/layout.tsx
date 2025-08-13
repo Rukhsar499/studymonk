@@ -27,7 +27,7 @@ const geistMono = Geist_Mono({
 
 // Metadata with type
 export const metadata: Metadata = {
-  title: 'Bootstrap Modal Example',
+  title: 'Study Monk',
   description: 'Next.js + TypeScript + Bootstrap',
 };
 
