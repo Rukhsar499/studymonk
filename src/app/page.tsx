@@ -311,7 +311,7 @@ and thrive without digital noise.
       <section className="promise mb">
         <div className="container">
           <div className="pro-i">
-            <h2 data-aos="fade-down">Our Promise</h2>
+            <h2>Our Promise</h2>
             <p className="learning">
               Learning experience built on Four pillars
             </p>
@@ -364,7 +364,7 @@ and thrive without digital noise.
 
               {/* Right Side Image + Titles */}
               <div className="col-lg-5 col-md-5 col-12">
-                <div className="nexy_div_img text-center" data-aos="fade-up" data-aos-delay="350">
+                <div className="nexy_div_img text-center">
                   <Image
                     src="/assets/img/macs.webp"
                     alt="Arrow"
