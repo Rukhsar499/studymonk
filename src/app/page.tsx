@@ -92,7 +92,7 @@ and thrive without digital noise.
               <div className="col-lg-4 col-md-5 col-12">
                 <div className="cir-img">
                   <Image
-                    src="/assets/img/circles.webp"
+                    src="/assets/img/img-1.webp"
                     alt="Circle"
                     className="img-fluid"
                     width={500}
