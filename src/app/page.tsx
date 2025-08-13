@@ -216,14 +216,14 @@ and thrive without digital noise.
         <div className="container">
           <div className="blu-box">
             <div className="text-center">
-              <h2 data-aos="fade-down" data-aos-delay="100">Tailored Guidance for Your Child&apos;s Cambridge Stage</h2>
-              <p data-aos="fade-down" data-aos-delay="150">
+              <h2>Tailored Guidance for Your Child&apos;s Cambridge Stage</h2>
+              <p>
                 We understand that a student&apos;s needs evolve dramatically as they progress through the Cambridge curriculum...
               </p>
             </div>
             <div className="blu-box">
               <div className="row">
-                <div className="col-lg-6 col-md-6 col-12" data-aos="fade-right" data-aos-delay="200">
+                <div className="col-lg-6 col-md-6 col-12">
                   <div className=" bh-c h-100">
                     <h4 className="assetx">Cambridge Primary (Stages 4-6)</h4>
                     <p><b>Building a Love for Learning</b></p>
@@ -242,7 +242,7 @@ and thrive without digital noise.
                   </div>
                 </div>
 
-                <div className="col-lg-6 col-md-6 col-12" data-aos="fade-left" data-aos-delay="250">
+                <div className="col-lg-6 col-md-6 col-12">
                   <div className=" bh-c h-100">
                     <h4 className="assetx">Cambridge Lower Secondary (Stages 7-9)</h4>
                     <p><b>Deepening Knowledge, Building Skills</b></p>
@@ -281,17 +281,17 @@ and thrive without digital noise.
             <div className="row">
               <div className="col-lg-8 col-md-6 col-12">
                 <div className="lim-txt text-white">
-                  <h3 id="lij" data-aos="fade-left" data-aos-delay="100">Limited Seats. Endless Possibilities.</h3>
-                  <p className="text-white" data-aos="fade-left" data-aos-delay="150">
+                  <h3 id="lij">Limited Seats. Endless Possibilities.</h3>
+                  <p className="text-white">
                     Drop your details now and get a call from our expert counsellors!
                   </p>
-                  <button className="btn-book" type="button" data-aos="zoom-in" data-aos-delay="250">
+                  <button className="btn-book" type="button">
                     Book a consultation
                   </button>
                 </div>
               </div>
               <div className="col-lg-4 col-md-3 col-12">
-                <div className="lim-img" data-aos="fade-up" data-aos-delay="300">
+                <div className="lim-img">
                   <Image
                     src="/assets/img/girl.webp"
                     alt="Girl"
@@ -483,8 +483,8 @@ and thrive without digital noise.
         <div className="container">
           <div className="grey-box">
             <div className="text-center">
-              <h2 data-aos="fade-in" data-aos-delay="100">Your Guide to the Cambridge Journey</h2>
-              <p data-aos="fade-up" data-aos-delay="200">
+              <h2>Your Guide to the Cambridge Journey</h2>
+              <p>
                 The world of Education is complex and you deserve clear, unbiased answers. Our Resources Hub is your library
                 of expert guides, created to empower you to make the best decisions for your child’s future with absolute
                 confidence.
@@ -493,7 +493,7 @@ and thrive without digital noise.
             <div className="sub-box">
               <div className="row">
                 <div className="col-lg-4 col-md-4 col-12">
-                  <div className="white-box" data-aos="zoom-in" data-aos-delay="300">
+                  <div className="white-box">
                     <h6 className="printig">
                       The printing and typesetting <br /> industry ?
                     </h6>
@@ -515,7 +515,7 @@ and thrive without digital noise.
                 </div>
 
                 <div className="col-lg-3 col-md-2 col-12">
-                  <div className="small-box" data-aos="zoom-in" data-aos-delay="400">
+                  <div className="small-box">
                     <Image
                       src="/assets/img/boy.webp"
                       alt="boy"
@@ -539,7 +539,7 @@ and thrive without digital noise.
                   <div className="fds">
                     <div className="row">
                       <div className="col-lg-5 col-md-5 col-12">
-                        <div className="gfsds" data-aos="fade-in" data-aos-delay="500">
+                        <div className="gfsds">
                           <h6 className="printig">
                             The printing and typesetting <br /> industry ?
                           </h6>
@@ -547,7 +547,7 @@ and thrive without digital noise.
                         </div>
                       </div>
                       <div className="col-lg-7 col-md-7 col-12">
-                        <div className="ijh" data-aos="fade-out" data-aos-delay="550">
+                        <div className="ijh">
                           <Image
                             src="/assets/img/vfd.webp"
                             alt="girl n boy"
@@ -564,7 +564,7 @@ and thrive without digital noise.
                   <div className="work">
                     <div className="row">
                       <div className="col-lg-6 col-md-6 col-12">
-                        <div className="wh-box" data-aos="zoom-in" data-aos-delay="600">
+                        <div className="wh-box">
                           <div className="d-flex align-items-center">
                             <Image
                               src="/assets/img/worksheet.png"
@@ -582,7 +582,7 @@ and thrive without digital noise.
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-6 col-12">
-                        <div className="wh-box" data-aos="zoom-in" data-aos-delay="700">
+                        <div className="wh-box">
                           <div className="d-flex align-items-center">
                             <Image
                               src="/assets/img/video-call 1.png"
@@ -617,7 +617,7 @@ and thrive without digital noise.
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
-              <h2 className="text-center" data-aos="fade-in" data-aos-delay="100">Frequently Asked Questions</h2>
+              <h2 className="text-center">Frequently Asked Questions</h2>
               <div className="accordion" id="accordionExample">
 
                 <div className="accordion-item" data-aos="fade-left" data-aos-delay="200">
@@ -737,7 +737,7 @@ and thrive without digital noise.
             </div>
             <div className="col-lg-1 col-md-1 col-1"></div>
             <div className="col-lg-5 col-md-5 col-12">
-              <div className="faq-sdeimg" data-aos="fade-in" data-aos-delay="500">
+              <div className="faq-sdeimg">
                 <div className="mt-3">
                   <h3 className="reacf">Ready to Replace Academic
                     Anxiety with Calm Confidence?</h3>

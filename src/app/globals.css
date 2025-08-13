@@ -133,7 +133,7 @@ h3 {
 .circles {
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 47%;
   transform: translate(-50%, -50%);
   z-index: 0;
 }
@@ -144,7 +144,7 @@ h3 {
   background-position: center;
   border-radius: 50%;
   opacity: 0.6;
-  animation: pulse 4s infinite ease-in-out; /* animation lagaya */
+  animation: pulse 3s infinite ease-in-out; /* animation lagaya */
 }
 
 /* Circles sizes & delays */
