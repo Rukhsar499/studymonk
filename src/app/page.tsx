@@ -343,20 +343,16 @@ and thrive without digital noise.
       {/* Promise Section */}
       <section className="promise mb">
         <div className="container">
-          <div className="pro-i">
-            <h2>Our Promise</h2>
-            <p className="learning">
-              Learning experience built on Four pillars
-            </p>
-            <div className="pt-i">
-              <Image
+          <div className="pro-i text-center">
+            <span className="our">Our Promise</span>  <Image
                 src="/assets/img/arrow-ims.webp"
                 alt="Arrow"
                 width={100}
                 height={100}
-                className="img-fluid"
-              />
-            </div>
+                className="img-fluid ades"
+              />  <span className="learning">
+              Learning experience built on Four pillars
+            </span>
           </div>
 
           <div className="next_div">

@@ -320,13 +320,13 @@ button.btn.btn-login {
 
 .pt-i {
   position: absolute;
-  top: -30%;
-  right: 38%;
+  top: -40%;
+  left: 38%;
 }
 
 .pt-i img {
-  width: 170px;
-    height: 65px;
+  width: 120px;
+    height: 40px;
 }
 
 .next_div {
@@ -480,7 +480,19 @@ h2 {
   font-family: 'Gilroy-Bold';
   margin-bottom: 20px;
 }
-
+.our{
+  color: #001F3F !important;
+  font-size: 36px !important;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Gilroy-Bold';
+  margin-bottom: 20px;
+}
+.ades{
+  position: relative;
+  margin-top: -70px;
+}
 .green {
   background-color: #EEF7D3;
   padding: 15px;
