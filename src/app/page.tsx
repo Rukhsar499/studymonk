@@ -205,7 +205,7 @@ and thrive without digital noise.
       </section>
 
       <FullWidthImageSection
-        src="/assets/img/STUDY.webp"
+        src="/assets/img/studys.webp"
         alt="Right arrow"
 
         width="100%"
@@ -433,7 +433,7 @@ and thrive without digital noise.
         </div>
       </section>
       <FullWidthImageSection
-        src="/assets/img/STUDY.webp"
+        src="/assets/img/studys.webp"
         alt="Right arrow"
 
         width="100%"
