@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export default function FullWidthImageSection({
-  src = "/assets/img/study.webp",
+  src = "/assets/img/studys.webp",
   alt = "Image",
   height = "300px",
   width= "100%",
