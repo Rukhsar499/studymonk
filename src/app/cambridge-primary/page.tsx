@@ -32,7 +32,7 @@ export default function Page() {
                                     <h1 id="child"> Your Child is Learning What to Think. <br />
                                         We Teach Them How to Think.</h1>
                                     <p>
-                                        In exclusive, mentor-led micro-classes, we transform Cambridge Primary students from passive learners into confident, collaborative thinkers. We are Cambridge specialists—it's all we do. We build the minds that will lead tomorrow.
+                                        In exclusive, mentor-led micro-classes, we transform Cambridge Primary students from passive learners into confident, collaborative thinkers. We are Cambridge specialists—it&apos;s all we do. We build the minds that will lead tomorrow.
                                     </p>
                                     <button
                                         className="btn-primarys"
