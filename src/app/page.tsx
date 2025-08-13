@@ -20,11 +20,45 @@ import WidthImageSection from "../app/component/WidthImageSection";
 export default function Home() {
 
   useEffect(() => {
-    AOS.init({
-      duration: 1000, // Animation speed (ms)
-      once: false,
-    });
-  }, [])
+    const rings = document.querySelectorAll<HTMLDivElement>(".ring");
+
+    const handleClick = (ring: HTMLDivElement) => {
+      // Reset all to default
+      rings.forEach((r) => (r.style.backgroundColor = "#D7ECE5"));
+
+      const typeClass = ring.classList[1] as
+        | "create"
+        | "evaluate"
+        | "analyze"
+        | "apply"
+        | "understand"
+        | "remember";
+
+      const colors: Record<typeof typeClass, string> = {
+        create: "#AEDAC1",
+        evaluate: "#91C9AE",
+        analyze: "#B1DDCC",
+        apply: "#BBDEC8",
+        understand: "#C5E5D5",
+        remember: "#E9F1EF",
+      };
+
+      if (typeClass && colors[typeClass]) {
+        ring.style.backgroundColor = colors[typeClass];
+      }
+    };
+
+    rings.forEach((ring) =>
+      ring.addEventListener("click", () => handleClick(ring))
+    );
+
+    // Cleanup on unmount
+    return () => {
+      rings.forEach((ring) =>
+        ring.removeEventListener("click", () => handleClick(ring))
+      );
+    };
+  }, []);
 
 
 
@@ -80,24 +114,23 @@ and thrive without digital noise.
             to master its challenges and unlock their full potential.
           </p>
           <button className="btn-primarys"
-              type="button">Experience the difference</button>
+            type="button">Experience the difference</button>
         </div>
       </section>
       {/* Frame Section */}
-      <section className="frame mb">
+      <section className="frame">
         <div className="container">
           <h2>The Framework for Your Focus & Voice</h2>
           <div className="all-text">
             <div className="row">
               <div className="col-lg-4 col-md-5 col-12">
-                <div className="cir-img">
-                  <Image
-                    src="/assets/img/img-1.webp"
-                    alt="Circle"
-                    className="img-fluid"
-                    width={500}
-                    height={500}
-                  />
+                <div className="target-section">
+                  <div className="ring create">Create</div>
+                  <div className="ring evaluate">Evaluate</div>
+                  <div className="ring analyze">Analyze</div>
+                  <div className="ring apply">Apply</div>
+                  <div className="ring understand">Understand</div>
+                  <div className="ring remember">Remember</div>
                 </div>
               </div>
               <div className="col-lg-1 col-md-1 col-1"></div>
