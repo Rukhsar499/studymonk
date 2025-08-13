@@ -12,6 +12,7 @@ import BootstrapClient from '../app/BootstrapClient';
 import ImageSlider from "../app/component/ImageSlider";
 import FullWidthImageSection from "../app/component/FullWidthImageSection";
 import WidthImageSection from "../app/component/WidthImageSection";
+import Rings from "./component/Rings";
 
 
 
@@ -19,46 +20,6 @@ import WidthImageSection from "../app/component/WidthImageSection";
 
 export default function Home() {
 
-  useEffect(() => {
-    const rings = document.querySelectorAll<HTMLDivElement>(".ring");
-
-    const handleClick = (ring: HTMLDivElement) => {
-      // Reset all to default
-      rings.forEach((r) => (r.style.backgroundColor = "#D7ECE5"));
-
-      const typeClass = ring.classList[1] as
-        | "create"
-        | "evaluate"
-        | "analyze"
-        | "apply"
-        | "understand"
-        | "remember";
-
-      const colors: Record<typeof typeClass, string> = {
-        create: "#AEDAC1",
-        evaluate: "#91C9AE",
-        analyze: "#B1DDCC",
-        apply: "#BBDEC8",
-        understand: "#C5E5D5",
-        remember: "#E9F1EF",
-      };
-
-      if (typeClass && colors[typeClass]) {
-        ring.style.backgroundColor = colors[typeClass];
-      }
-    };
-
-    rings.forEach((ring) =>
-      ring.addEventListener("click", () => handleClick(ring))
-    );
-
-    // Cleanup on unmount
-    return () => {
-      rings.forEach((ring) =>
-        ring.removeEventListener("click", () => handleClick(ring))
-      );
-    };
-  }, []);
 
 
 
@@ -88,10 +49,6 @@ and thrive without digital noise.
 `},
     { title: "Expressive Confidence", content: "This is the content of Accordion 4." },
   ];
-
-
-
-
 
   return (
     <>
@@ -124,14 +81,7 @@ and thrive without digital noise.
           <div className="all-text">
             <div className="row">
               <div className="col-lg-4 col-md-5 col-12">
-                <div className="target-section">
-                  <div className="ring create">Create</div>
-                  <div className="ring evaluate">Evaluate</div>
-                  <div className="ring analyze">Analyze</div>
-                  <div className="ring apply">Apply</div>
-                  <div className="ring understand">Understand</div>
-                  <div className="ring remember">Remember</div>
-                </div>
+                <Rings />
               </div>
               <div className="col-lg-1 col-md-1 col-1"></div>
               <div className="col-lg-7 col-md-6 col-12">
@@ -652,7 +602,6 @@ and thrive without digital noise.
             <div className="col-lg-6 col-md-6 col-12">
               <h2 className="text-center">Frequently Asked Questions</h2>
               <div className="accordion" id="accordionExample">
-
                 <div className="accordion-item">
                   <h2 className="accordion-header" id="headingOne">
                     <button

@@ -207,42 +207,8 @@ h3 {
   cursor: pointer;
 }
 /* banner section ends */
-/* second */
-.target-section {
-  position: relative;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.ring {
-  position: absolute;
-  border: 2px solid white;
-  border-radius: 50%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  font-family: "Poppins";
-  font-size: 12px;
-  font-weight: 500;
-  color: black;
-  text-align: center;
-  padding-top: 15px;
-  background-color: #D7ECE5; /* Default color */
-  transition: background-color 0.3s ease;
-  cursor: pointer;
-}
 
-/* Sizes only (no colors here) */
-.create { width: 400px; height: 400px; }
-.evaluate { width: 320px; height: 320px; }
-.analyze { width: 240px; height: 240px; }
-.apply { width: 160px; height: 160px; }
-.understand { width: 180px; height: 180px; }
-.remember { width: 100px; height: 100px; }
 /* second ends */
 .faq-sdeimg {
   background-image: url("/assets/img/mummy-bg.webp");
