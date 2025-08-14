@@ -826,7 +826,7 @@ transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
 }
 
 .testimo {
-  margin-top: -150px;
+    margin-top: -230px;
 }
 
 
@@ -1150,12 +1150,15 @@ a {
 
 .blue {
   position: relative;
-  margin-top: -150px;
+  margin-top: -230px;
+}
+.linvit{
+  margin-top: -200px;
 }
 
 .study {
   position: relative;
-  margin-top: -120px;
+  margin-top: -220px;
 }
 
 /* .dropdown-toggle.show::after {

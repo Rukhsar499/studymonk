@@ -33,7 +33,7 @@ export default function StickyFooter() {
 
         {/* Call Button */}
         <a
-          href="tel:+919876543210"
+          href="tel:+919663869498"
           className="btn btn-primary  text-center gap-4 px-3 py-2 w-100 shadow"
         >
           Call

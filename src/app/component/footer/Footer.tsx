@@ -68,13 +68,13 @@ function Footer() {
                 <p id="btd">info@studymonks.com</p>
               </Link>
             </div>
-            <div className="social">
+            {/* <div className="social">
               <h3>Social Links</h3>
               <span><Link href="#"><Image src="/assets/img/facebook.png" width={27} height={27} alt="facebook" /></Link></span>
               <span><Link href="#"><Image src="/assets/img/whatsapp.png" width={27} height={27} alt="whatsapp" /></Link></span>
               <span><Link href="#"><Image src="/assets/img/twiitter.png" width={27} height={27} alt="twitter" /></Link></span>
               <span><Link href="#"><Image src="/assets/img/instagram.png" width={27} height={27} alt="instagram" /></Link></span>
-            </div>
+            </div> */}
           </div>
         </div>
         <hr className="hr-li" />
