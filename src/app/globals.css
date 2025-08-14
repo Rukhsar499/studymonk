@@ -320,6 +320,7 @@ button.btn.btn-login {
   font-size: 14px;
   color: #fff;
   border: none;
+  text-transform: capitalize !important;
 }
 
 .btn-books {
@@ -332,7 +333,7 @@ button.btn.btn-login {
   color: #fff;
   text-align: left;
   border: none;
-  text-transform: capitalize;
+  text-transform: capitalize !important;
 }
 
 .learning {
