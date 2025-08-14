@@ -919,9 +919,9 @@ a {
 
 .trdfd {
   position: absolute;
-  bottom:1%;
-  right: 0%;
-  transform: translate(-18%, 83%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-15%, -30%);
   text-align: center;
 }
 
