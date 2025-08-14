@@ -93,7 +93,7 @@ and thrive without digital noise.
         </div>
       </section>
       {/* Frame Section */}
-      <section className="frame mb">
+      <section className="frame">
         <div className="container">
           <h2>The Framework for Your Focus & Voice</h2>
           <div className="all-text">

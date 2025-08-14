@@ -52,7 +52,7 @@ const MobSlider = () => {
           dynamicBullets: true,
         }}
         autoplay={{
-          delay: 3000,
+          delay: 9000,
           disableOnInteraction: false,
         }}
         loop={true}
