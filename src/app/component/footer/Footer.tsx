@@ -14,7 +14,7 @@ function Footer() {
             <div className="footrd bhb">
               <Image src="/assets/img/logo1.png" alt="Logo" width={190} height={30} />
               <p className="text-white">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quibusdam assumenda laudantium reprehenderit? Reprehenderit ipsum, accusamus sequi suscipit labore illum!
+                We&apos;re always in search for talented and motivated people. Don&apos;t be shy. Introduce yourself!
               </p>
             </div>
           </div>
@@ -54,12 +54,12 @@ function Footer() {
             <h3>Contact Us</h3>
             <div className="d-flex">
               <Image src="/assets/img/location1.png" alt="Location" width={20} height={20} className="me-2 imhg" />
-              <p id="btd">Bangalore, India</p>
+              <p id="btd">#311, Kanakapura Road, Bengaluru</p>
             </div>
             <div className="d-flex">
               <Image src="/assets/img/call-calling1.png" alt="Call" width={20} height={20} className="me-2 imhg" />
-              <Link href="tel:+917003810162" className="rishra">
-                <p id="btd">+91 7003810162</p>
+              <Link href="tel:+919663869498" className="rishra">
+                <p id="btd">+91 96638 69498</p>
               </Link>
             </div>
             <div className="d-flex">
