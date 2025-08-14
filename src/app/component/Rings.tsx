@@ -39,7 +39,6 @@ export default function Rings() {
   const [activeRing, setActiveRing] = useState<RingType>("evaluate");
   const [containerSize, setContainerSize] = useState(MOBILE_BASE_SIZE);
 
-  // Client-only resize listener
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -49,49 +48,57 @@ export default function Rings() {
       setContainerSize(newSize);
     };
 
-    handleResize();
+    handleResize(); // run on mount
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const rings = useMemo(() => ringList.map(ring => ({
-    ...ring,
-    size: containerSize * ring.sizeRatio
-  })), [containerSize]);
+  const rings = useMemo(
+    () =>
+      ringList.map((ring) => ({
+        ...ring,
+        size: containerSize * ring.sizeRatio,
+      })),
+    [containerSize]
+  );
 
   const cx = containerSize / 2;
   const cy = containerSize / 2;
+  const pad = containerSize * 0.02;
 
   const paths = useMemo(() => {
-    const pad = containerSize * 0.02;
-    return rings.reduce<Record<RingType, string>>((acc, ring) => {
-      const r = ring.size / 2 - pad;
-      acc[ring.type] = circlePathD(cx, cy, Math.max(r, 0));
+    return rings.reduce<Record<string, string>>((acc, ring) => {
+      const r = Math.max(ring.size / 2 - pad, 0);
+      acc[ring.type] = circlePathD(cx, cy, r);
       return acc;
-    }, {} as Record<RingType, string>);
-  }, [cx, cy, rings]);
+    }, {});
+  }, [cx, cy, pad, rings]);
 
   return (
     <div
       className={styles.targetSection}
-      style={{ width: `${containerSize}px`, height: `${containerSize}px` }}
+      style={{ width: containerSize, height: containerSize }}
     >
-      {rings.map((ring) => (
-        <div
-          key={ring.type}
-          className={`${styles.ring} ${styles[ring.type] || ""}`}
-          style={{
-            width: `${ring.size}px`,
-            height: `${ring.size}px`,
-            background: ring.type === "outer"
-              ? "rgba(215,236,229,0.4)"
-              : activeRing === ring.type
-                ? colors[ring.type]
-                : "#D7ECE5",
-          }}
-          onClick={() => ring.type !== "outer" && setActiveRing(ring.type)}
-        />
-      ))}
+      {rings.map((ring) => {
+        const isActive = activeRing === ring.type;
+        return (
+          <div
+            key={ring.type}
+            className={`${styles.ring} ${styles[ring.type] || ""}`}
+            style={{
+              width: ring.size,
+              height: ring.size,
+              background:
+                ring.type === "outer"
+                  ? "rgba(215,236,229,0.4)"
+                  : isActive
+                  ? colors[ring.type as RingType]
+                  : "#D7ECE5",
+            }}
+            onClick={() => ring.type !== "outer" && setActiveRing(ring.type as RingType)}
+          />
+        );
+      })}
 
       <svg
         className={styles.svgOverlay}
@@ -116,7 +123,7 @@ export default function Rings() {
             className={styles.ringText}
             style={{
               fontWeight: activeRing === ring.type ? 700 : 500,
-              fontSize: `${containerSize * 0.024}px`,
+              fontSize: containerSize * 0.024,
             }}
           >
             <textPath
