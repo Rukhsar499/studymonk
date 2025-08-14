@@ -2093,17 +2093,17 @@ padding: 20px;
 .circle {
     width: 150px;
     height: 150px;
-   margin-bottom: 5px;
+   margin-bottom: 10px;
   }
   .circle.mid {
     width: 170px;
     height: 170px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .circle.large {
     width: 190px;
     height: 190px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .testimo {
     margin-top: 50px;

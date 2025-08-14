@@ -500,16 +500,34 @@ and thrive without digital noise.
           <div className="text-center">
             <div className="c1-2">
               <div className="circle">94%</div>
-              <p> of students report a significant increase <br /> in subject confidence.</p>
+              <Image
+                src="/assets/img/small-arrow.png"
+                alt="Right arrow"
+                width={16}
+                height={31}
+              />
+              <p className="mt-2"> of students report a significant increase <br /> in subject confidence.</p>
             </div>
             <div className="c1-3">
               <div className="circle mid">3X</div>
-              <p> more likely to actively participate in <br />
+              <Image
+                src="/assets/img/small-arrow.png"
+                alt="Right arrow"
+                width={16}
+                height={31}
+              />
+              <p className="mt-2"> more likely to actively participate in <br />
                 class discussions.  </p>
             </div>
             <div className="c1-4">
               <div className="circle large">4.8/5</div>
-              <p> average satisfaction rating from our
+              <Image
+                src="/assets/img/small-arrow.png"
+                alt="Right arrow"
+                width={16}
+                height={31}
+              />
+              <p className="mt-2"> average satisfaction rating from our
                 <br /> parent community.</p>
             </div>
           </div>
