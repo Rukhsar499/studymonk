@@ -41,6 +41,7 @@ export default function TestimonialSlider() {
   dots: false,
   infinite: true,
   autoplay: false,
+  dot: false,
   autoplaySpeed: 4000,
   speed: 1050,
   slidesToShow: 1,

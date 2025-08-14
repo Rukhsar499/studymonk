@@ -720,7 +720,7 @@ transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
 }
 
 .dark {
-  background-color: #172437;
+  background-color: #91B0FF;
   padding: 100px 20px;
 
 }
@@ -2108,9 +2108,9 @@ padding: 20px;
     height: 190px;
     margin-bottom: 10px;
   }
-  .testimo {
-    margin-top: 50px;
-}
+      .testimo {
+        margin-top: -48px;
+    }
 .for {
   font-size: 19px;
 }

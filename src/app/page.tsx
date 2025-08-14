@@ -16,6 +16,8 @@ import Rings from "./component/Rings";
 import BottomAccordion from "./component/BottomAccordion ";
 import StickyFooter from "./component/StickyFooter";
 import MobSlider from "./component/Mobslider";
+import PopupForm from "./component/PopupForm";
+import { Button } from "@mui/material";
 
 
 
@@ -24,7 +26,15 @@ import MobSlider from "./component/Mobslider";
 export default function Home() {
 
 
+const [open, setOpen] = useState(false);
 
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
 
 
   const [activeIndex, setActiveIndex] = useState<number>(0);
@@ -303,7 +313,7 @@ and thrive without digital noise.
                   <p className="text-white">
                     Drop your details now and get a call from our expert counsellors!
                   </p>
-                  <button className="btn-book" type="button">
+                  <button className="btn-book" type="button" variant="contained" onClick={handleClickOpen}>
                     Book a consultation
                   </button>
                 </div>
@@ -709,7 +719,7 @@ and thrive without digital noise.
 
                   <p>Schedule a complimentary, no-obligation Clarity Session to speak with one of our academic counselors. Lets build a personalized learning path for your child, together.
                   </p>
-                  <button className="btn-books" type="button">Schedule Your Free <br />
+                  <button className="btn-books" type="button" variant="contained" onClick={handleClickOpen}>Schedule Your Free <br />
                     Clarity Session</button>
                 </div>
                 <div className="ijhg">
@@ -725,7 +735,9 @@ and thrive without digital noise.
             </div>
           </div>
         </div>
+        <PopupForm open={open} handleClose={handleClose} />
       </section>
+      
       <StickyFooter />
       <Footer />
     </>
