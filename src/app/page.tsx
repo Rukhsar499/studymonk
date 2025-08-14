@@ -15,6 +15,7 @@ import WidthImageSection from "../app/component/WidthImageSection";
 import Rings from "./component/Rings";
 import BottomAccordion from "./component/BottomAccordion ";
 import StickyFooter from "./component/StickyFooter";
+import MobSlider from "./component/Mobslider";
 
 
 
@@ -99,7 +100,7 @@ and thrive without digital noise.
                     produce original work, formulate new hypotheses, and design
                     innovative solutions.
                   </p>
-                  <div className="row gy-3">
+                  <div className="row gy-3 d-none d-lg-flex">
                     <div className="col-lg-4 col-md-4 col-4">
                       <div className="green bg-grey">
                         <h4 className="assetx">
@@ -130,6 +131,9 @@ and thrive without digital noise.
                         </p>
                       </div>
                     </div>
+                  </div>
+                  <div className="row gy-3 d-flex d-lg-none">
+                  <MobSlider />
                   </div>
                 </div>
               </div>
@@ -604,7 +608,7 @@ and thrive without digital noise.
           <div className="row">
             <div className="col-lg-6 col-md-6 col-12">
               <h2 className="text-center fres">Frequently Asked Questions</h2>
-              <BottomAccordion/>
+              <BottomAccordion />
             </div>
             <div className="col-lg-1 col-md-1 col-1"></div>
             <div className="col-lg-5 col-md-5 col-12">

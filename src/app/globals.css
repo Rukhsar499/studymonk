@@ -2019,4 +2019,8 @@ a {
   .fixed-bottom{
   display:block;
 }
+
+.all-text {
+  margin-top: 0px;
+}
 }

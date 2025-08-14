@@ -1,39 +1,48 @@
+/* Rings.module.css */
 .targetSection {
-    position: relative;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  max-height: 500px;
+  width: 90vw;
+  height: 90vw;
+}
+
+/* Circles */
+.ring {
+  position: absolute;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Optional hover feedback */
+.ring:hover {
+  transform: scale(1.01);
+}
+
+/* SVG text overlay */
+.svgOverlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none; /* so clicks go to .ring below */
+}
+
+/* Text styling */
+.ringText {
+  font-family: "Poppins", sans-serif;
+  fill: #000; /* text color */
+  dominant-baseline: hanging;
+}
+
+@media (min-width: 768px) {
+  .targetSection {
     width: 500px;
     height: 500px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
-  
-  /* Circles */
-  .ring {
-    position: absolute;
-    border: 2px solid white;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  /* Optional hover feedback */
-  .ring:hover {
-    transform: scale(1.01);
-  }
-  
-  /* SVG text overlay */
-  .svgOverlay {
-    position: absolute;
-    inset: 0;
-    pointer-events: none; /* so clicks go to .ring below */
-  }
-  
-  /* Text styling */
-  .ringText {
-    font-family: "Poppins", sans-serif;
-    font-size: 12px;
-    fill: #000; /* text color */
-    dominant-baseline: hanging;
-  }
-  
+}
