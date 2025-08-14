@@ -313,9 +313,9 @@ and thrive without digital noise.
                   <p className="text-white">
                     Drop your details now and get a call from our expert counsellors!
                   </p>
-                  <button className="btn-book" type="button" variant="contained" onClick={handleClickOpen}>
+                  <Button className="btn-book" type="button" variant="contained" onClick={handleClickOpen}>
                     Book a consultation
-                  </button>
+                  </Button>
                 </div>
               </div>
               <div className="col-lg-4 col-md-3 col-12">
@@ -719,8 +719,8 @@ and thrive without digital noise.
 
                   <p>Schedule a complimentary, no-obligation Clarity Session to speak with one of our academic counselors. Lets build a personalized learning path for your child, together.
                   </p>
-                  <button className="btn-books" type="button" variant="contained" onClick={handleClickOpen}>Schedule Your Free <br />
-                    Clarity Session</button>
+                  <Button className="btn-books" type="button" variant="contained" onClick={handleClickOpen}>Schedule Your Free <br />
+                    Clarity Session</Button>
                 </div>
                 <div className="ijhg">
                   <Image

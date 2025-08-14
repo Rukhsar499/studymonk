@@ -332,6 +332,7 @@ button.btn.btn-login {
   color: #fff;
   text-align: left;
   border: none;
+  text-transform: capitalize;
 }
 
 .learning {
