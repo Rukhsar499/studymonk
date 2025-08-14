@@ -109,6 +109,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                         <img
                             src="assets/img/study11.png"
                             alt="Study"
+                            className="d-none d-lg-flex"
                             style={{
                                 width: "100%",
                                 height: "100%",
