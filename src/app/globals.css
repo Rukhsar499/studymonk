@@ -2047,6 +2047,7 @@ a {
 
   .dark {
    padding: 60px 20px;
+   text-align: center;
   }
   .learning {
   display:block;
@@ -2112,5 +2113,12 @@ padding: 20px;
 }
 .c1-2, .c1-3, .c1-4{
  margin-bottom: 20px;
+}
+.btn-success, .btn-warning, .btn-primary{
+  border-radius: 0 !important;
+}
+.btn-primary{
+  background-color: #001F3F !important;
+  border: none !important;
 }
 }

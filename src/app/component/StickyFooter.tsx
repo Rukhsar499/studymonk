@@ -18,19 +18,15 @@ export default function StickyFooter() {
           className="btn btn-success d-flex align-items-center gap-3 w-100 px-3 py-2  shadow"
           style={{ transition: "0.3s" }}
         >
-          <FaWhatsapp size={20} />
+         
           WhatsApp
         </Link>
 
         {/* Login Button - Highlighted */}
         <Link
           href="/login"
-          className="btn btn-warning text-dark fw-bold px-4 py-2  w-100 shadow-lg border"
-          style={{
-            fontSize: "1.1rem",
-            transform: "scale(1.1)",
-            boxShadow: "0 0 15px rgba(255,193,7,0.7)",
-          }}
+          className="btn btn-warning text-dark fw-bold px-4 py-2  w-100"
+          
         >
           Login
         </Link>
@@ -38,9 +34,9 @@ export default function StickyFooter() {
         {/* Call Button */}
         <a
           href="tel:+919876543210"
-          className="btn btn-primary d-flex align-items-center gap-4 px-3 py-2 w-100 shadow"
+          className="btn btn-primary  text-center gap-4 px-3 py-2 w-100 shadow"
         >
-          📞 Call
+          Call
         </a>
 
       </div>
