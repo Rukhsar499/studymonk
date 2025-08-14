@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import {
     Button,
     Dialog,
@@ -12,6 +13,7 @@ import {
 } from "@mui/material";
 import { TransitionProps } from "@mui/material/transitions";
 import CloseIcon from "@mui/icons-material/Close";
+
 const Transition = React.forwardRef(function Transition(
     props: TransitionProps & { children: React.ReactElement<any, any> },
     ref: React.Ref<unknown>
@@ -33,13 +35,18 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
         message: "",
     });
 
-    React.useEffect(() => {
-        if (open) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "";
-        }
+    // ✅ New: Track screen size safely (no SSR crash)
+    const [isMobile, setIsMobile] = React.useState(false);
 
+    React.useEffect(() => {
+        const checkSize = () => setIsMobile(window.innerWidth < 768);
+        checkSize(); // initial
+        window.addEventListener("resize", checkSize);
+        return () => window.removeEventListener("resize", checkSize);
+    }, []);
+
+    React.useEffect(() => {
+        document.body.style.overflow = open ? "hidden" : "";
         return () => {
             document.body.style.overflow = "";
         };
@@ -59,12 +66,8 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
     const inputStyle = {
         backgroundColor: "#f8f8f8",
         borderRadius: "12px",
-        "& .MuiOutlinedInput-notchedOutline": {
-            border: "none",
-        },
-        "&:hover .MuiOutlinedInput-notchedOutline": {
-            border: "none",
-        },
+        "& .MuiOutlinedInput-notchedOutline": { border: "none" },
+        "&:hover .MuiOutlinedInput-notchedOutline": { border: "none" },
         "&.Mui-focused": {
             boxShadow: "0 0 0 0.2rem rgba(0, 33, 71, 0.25)",
         },
@@ -97,45 +100,48 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
 
             <DialogContent sx={{ p: 0 }}>
                 <div style={{ display: "flex", flexWrap: "wrap" }}>
-                    <div
-                        style={{
-                            flex: "1 1 50%",
-                            position: "relative",
-                            minHeight: "520px",
-                            overflow: "hidden",
-                            color: "#fff",
-                            display: window.innerWidth < 768 ? "none" : "block"
-                        }}
-                    >
-                        <img
-                            src="assets/img/study11.png"
-                            alt="Study"
-                            style={{
-                                width: "100%",
-                                height: "100%",
-                                objectFit: "cover",
-                                display: "block",
-                            }}
-                        />
+                    {/* ✅ Display condition using isMobile state */}
+                    {!isMobile && (
                         <div
                             style={{
-                                width: "80%",
-                                position: "absolute",
-                                bottom: "0%",
-                                left: "0%",
-                                textAlign: "left",
-                                padding: "1rem 1.5rem",
-                                color: "#FFF",
+                                flex: "1 1 50%",
+                                position: "relative",
+                                minHeight: "520px",
+                                overflow: "hidden",
+                                color: "#fff",
                             }}
                         >
-                            <h3 style={{ margin: 0, marginBottom: "0.5rem", fontSize: "1.5rem" }}>
-                                Welcome to Our Program
-                            </h3>
-                            <span style={{ fontSize: "1rem" }}>
-                                Learn, Grow, and Succeed with Us!
-                            </span>
+                            <div style={{ position: "relative", width: "100%", height: "100%" }}>
+                                <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+                                    <Image
+                                        src="/assets/img/study11.png"
+                                        alt="Study"
+                                        fill
+                                        style={{ objectFit: "cover" }}
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                style={{
+                                    width: "80%",
+                                    position: "absolute",
+                                    bottom: "0%",
+                                    left: "0%",
+                                    textAlign: "left",
+                                    padding: "1rem 1.5rem",
+                                    color: "#FFF",
+                                }}
+                            >
+                                <h3 style={{ margin: 0, marginBottom: "0.5rem", fontSize: "1.5rem" }}>
+                                    Welcome to Our Program
+                                </h3>
+                                <span style={{ fontSize: "1rem" }}>
+                                    Learn, Grow, and Succeed with Us!
+                                </span>
+                            </div>
                         </div>
-                    </div>
+                    )}
+
                     <div
                         style={{
                             flex: "1 1 50%",

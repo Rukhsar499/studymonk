@@ -281,7 +281,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 20px;
+  padding: 20px 30px;
   height: 580px;
 }
 
@@ -382,7 +382,7 @@ button.btn.btn-login {
 .ijhg img {
   float: right;
   position: relative;
-  margin-top: -31px;
+  margin-top: -45px;
 }
 
 .footeil ul li a {

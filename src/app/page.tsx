@@ -719,7 +719,7 @@ and thrive without digital noise.
 
                   <p>Schedule a complimentary, no-obligation Clarity Session to speak with one of our academic counselors. Lets build a personalized learning path for your child, together.
                   </p>
-                  <Button className="btn-books" type="button" variant="contained" onClick={handleClickOpen}>Schedule Your Free <br />
+                  <Button className="btn-books mt-3" type="button" variant="contained" onClick={handleClickOpen}>Schedule Your Free <br />
                     Clarity Session</Button>
                 </div>
                 <div className="ijhg">

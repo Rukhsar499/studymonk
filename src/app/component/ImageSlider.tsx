@@ -38,32 +38,31 @@ export default function TestimonialSlider() {
   const [videoUrl, setVideoUrl] = useState("");
 
   const settings = {
-  dots: false,
-  infinite: true,
-  autoplay: false,
-  dot: false,
-  autoplaySpeed: 4000,
-  speed: 1050,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  nextArrow: <ArrowRight />,
-  prevArrow: <ArrowLeft />,
-  responsive: [
-    {
-      breakpoint: 768, // mobile breakpoint
-      settings: {
-        arrows: true, // 👈 mobile pe arrows show karenge
-        dots: true,
+    dots: false,
+    infinite: true,
+    autoplay: false,
+    dot: false,
+    autoplaySpeed: 4000,
+    speed: 1050,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    nextArrow: <ArrowRight />,
+    prevArrow: <ArrowLeft />,
+    responsive: [
+      {
+        breakpoint: 768, // mobile breakpoint
+        settings: {
+          arrows: true, // 👈 mobile pe arrows show karenge
+          dots: true,
+        },
       },
-    },
-  ],
-};
+    ],
+  };
 
   const slides = [
     {
       heading: `"The sessions have definitely shown a great improvement in her academic performance."`,
-      description: "Hear directly from Ms. Saritha Poosa's family about the impact of Study Monks approach on their daughter's confidence and focus. " +
-"A parent shares the tangible results and newfound confidence her daughter gained after enrolling with Study Monks.",
+      description: ["Hear directly from Ms. Saritha Poosa's family about the impact of Study Monks approach on their daughter's confidence and focus.", "A parent shares the tangible results and newfound confidence her daughter gained after enrolling with Study Monks."],
       points: [
         { title: "Learning to Applying:", text: "She doesn't just memorize vocabulary; she now uses new words with confidence and in the right context." },
         { title: "Renewed Interest:", text: " Their interactive approach transformed reading into a subject she finds genuinely interesting and engaging." },
@@ -71,10 +70,10 @@ export default function TestimonialSlider() {
       ],
       personImg: "/assets/img/test1.png",
       playBtn: "/assets/img/play-btn.png",
-      watchText: "Watch Ditya's Story",
-      stage: "Stage VIII",
+      watchText: "Ditya's Story",
+
       video: "/assets/video/tetsione.mp4", // demo video
-       videoWidth: 800, // 👈 width add kiya
+      videoWidth: 800, // 👈 width add kiya
       videoHeight: 450, // 👈 height add kiya
     },
     {
@@ -88,8 +87,8 @@ export default function TestimonialSlider() {
       ],
       personImg: "/assets/img/test1.png",
       playBtn: "/assets/img/play-btn.png",
-      watchText: "Watch Manoj Story",
-      stage: "Stage VII",
+      watchText: "Manoj Story",
+
       video: "/assets/video/tetsione.mp4", // demo video
     },
   ];
@@ -114,7 +113,14 @@ export default function TestimonialSlider() {
               <div className="row align-items-center">
                 <div className="col-lg-7 col-md-6 col-12">
                   <h3 className="for">{slide.heading}</h3>
-                  <p>{slide.description}</p>
+                  {Array.isArray(slide.description) ? (
+                    slide.description.map((line, index) => (
+                      <p key={index}>{line}</p>
+                    ))
+                  ) : (
+                    <p>{slide.description}</p>
+                  )}
+
                   {slide.points.map((p, i) => (
                     <div className="d-flex tivh mb-2" key={i}>
                       <Image src="/assets/img/tick-square.png" alt="tick" width={20} height={20} className="me-2" />
@@ -159,7 +165,7 @@ export default function TestimonialSlider() {
           }}
         >
           <div style={{ position: "relative", maxWidth: "90%", maxHeight: "80%" }}>
-            <video src={videoUrl} autoPlay controls  style={{ width: "100%", height: "auto", maxHeight: "500px" }} />
+            <video src={videoUrl} autoPlay controls style={{ width: "100%", height: "auto", maxHeight: "500px" }} />
             <button
               onClick={handleCloseVideo}
               style={{
