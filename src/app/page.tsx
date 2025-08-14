@@ -537,7 +537,7 @@ and thrive without digital noise.
       </section>
       <ImageSlider />
 
-      <section className="grey mb">
+      {/* <section className="grey mb">
         <div className="container">
           <div className="grey-box">
             <div className="text-center">
@@ -665,7 +665,7 @@ and thrive without digital noise.
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
 
