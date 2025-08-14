@@ -25,7 +25,7 @@ export default function StickyFooter() {
         {/* Login Button - Highlighted */}
         <Link
           href="/login"
-          className="btn btn-warning text-dark fw-bold px-4 py-2  w-100 shadow-lg border border-light"
+          className="btn btn-warning text-dark fw-bold px-4 py-2  w-100 shadow-lg border"
           style={{
             fontSize: "1.1rem",
             transform: "scale(1.1)",

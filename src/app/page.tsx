@@ -133,7 +133,7 @@ and thrive without digital noise.
                     </div>
                   </div>
                   <div className="row gy-3 d-flex d-lg-none">
-                  <MobSlider />
+                    <MobSlider />
                   </div>
                 </div>
               </div>
@@ -200,10 +200,22 @@ and thrive without digital noise.
       <FullWidthImageSection
         src="/assets/img/studys.webp"
         alt="Right arrow"
-
+        className="d-none d-lg-flex"
         width="100%"
         objectFit="cover"
       />
+
+      <section className="pkh">
+        <Image
+          src="/assets/img/s1.png"
+          alt="Right arrow"
+          className="d-flex d-lg-none full-width-img"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+        />
+      </section>
 
       {/* Blue Section */}
       <section className="blue mb">
@@ -263,10 +275,22 @@ and thrive without digital noise.
       <WidthImageSection
         src="/assets/img/MONKS.webp"
         alt="Right arrow"
-
+        className="d-none d-lg-flex"
         width="100%"
         objectFit="cover"
       />
+
+      <section className="pkh">
+        <Image
+          src="/assets/img/m1.png"
+          alt="Right arrow"
+          className="d-flex d-lg-none full-width-img"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+        />
+      </section>
 
       {/* Limited Seats Section */}
       <section className="linvit mb">
@@ -424,12 +448,24 @@ and thrive without digital noise.
       <FullWidthImageSection
         src="/assets/img/studys.webp"
         alt="Right arrow"
-
+        className="d-none d-lg-flex"
         width="100%"
         objectFit="cover"
       />
 
-      <section className="study mb">
+      <section className="pkh">
+        <Image
+          src="/assets/img/s1.png"
+          alt="Right arrow"
+          className="d-flex d-lg-none full-width-img"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+        />
+      </section>
+
+      <section className="study mb d-none d-lg-flex">
         <div className="container">
           <h2 data-aos="fade-up">The Study Monks Impact: A Snapshot</h2>
 
@@ -459,14 +495,46 @@ and thrive without digital noise.
         </div>
       </section>
 
+      <section className="study1 mb d-lg-none">
+        <div className="conatiner">
+          <div className="text-center">
+            <div className="c1-2">
+              <div className="circle">94%</div>
+              <p> of students report a significant increase <br /> in subject confidence.</p>
+            </div>
+            <div className="c1-3">
+              <div className="circle mid">3X</div>
+              <p> more likely to actively participate in <br />
+                class discussions.  </p>
+            </div>
+            <div className="c1-4">
+              <div className="circle large">4.8/5</div>
+              <p> average satisfaction rating from our
+                <br /> parent community.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <WidthImageSection
         src="/assets/img/MONKS.webp"
         alt="Right arrow"
-
+        className="d-none d-lg-flex"
         width="100%"
         objectFit="cover"
       />
 
+      <section className="pkh">
+        <Image
+          src="/assets/img/m1.png"
+          alt="Right arrow"
+          className="d-flex d-lg-none full-width-img"
+          width={0}
+          height={0}
+          sizes="100vw"
+          style={{ width: "100%", height: "auto" }}
+        />
+      </section>
       <ImageSlider />
 
       <section className="grey mb">
@@ -606,11 +674,11 @@ and thrive without digital noise.
       <section className="fad mb">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6 col-md-6 col-12">
+            <div className="col-lg-7 col-md-6 col-12">
               <h2 className="text-center fres">Frequently Asked Questions</h2>
               <BottomAccordion />
             </div>
-            <div className="col-lg-1 col-md-1 col-1"></div>
+            {/* <div className="col-lg-1 col-md-1 col-1"></div> */}
             <div className="col-lg-5 col-md-5 col-12">
               <div className="faq-sdeimg">
                 <div className="mt-3">
@@ -638,7 +706,7 @@ and thrive without digital noise.
           </div>
         </div>
       </section>
-<StickyFooter />
+      <StickyFooter />
       <Footer />
     </>
   );

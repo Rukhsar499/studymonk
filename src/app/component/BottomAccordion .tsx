@@ -16,11 +16,13 @@ const CustomAccordionSummary = styled(AccordionSummary, {
 })<CustomAccordionSummaryProps>(({ isexpanded }) => ({
     backgroundColor: isexpanded ? "#001F3F" : "#fff",
     color: isexpanded ? "#fff" : "#001F3F",
+    
     "&:hover": {
         backgroundColor: "#001F3F",
         color: "#fff",
         "& .MuiSvgIcon-root": {
             color: "#fff",
+           
         },
     },
     "& .MuiSvgIcon-root": {
