@@ -71,7 +71,7 @@ export default function TestimonialSlider() {
       ],
       personImg: "/assets/img/test1.png",
       playBtn: "/assets/img/play-btn.png",
-      watchText: "Watch Aditya Story",
+      watchText: "Watch Ditya's Story",
       stage: "Stage VIII",
       video: "/assets/video/tetsione.mp4", // demo video
        videoWidth: 800, // 👈 width add kiya

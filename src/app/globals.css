@@ -2126,4 +2126,9 @@ padding: 20px;
   background-color: #001F3F !important;
   border: none !important;
 }
+@media (max-width: 768px) {
+  .popup-form-right {
+    flex: 1 1 100% !important;
+  }
+}
 }

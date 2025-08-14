@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import {
     Button,
     Dialog,
@@ -105,14 +106,17 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                             overflow: "hidden",
                             color: "#fff",
                         }}
+                        className="popup-form-right"
                     >
-                        <img
-                            src="assets/img/study11.png"
+                        <Image
+                            src="/assets/img/study11.png"
                             alt="Study"
+                            width={800}       // apni image ka actual width pixel me
+                            height={500}      // apni image ka actual height pixel me
                             className="d-none d-lg-flex"
                             style={{
                                 width: "100%",
-                                height: "100%",
+                                height: "auto",
                                 objectFit: "cover",
                                 display: "block",
                             }}
