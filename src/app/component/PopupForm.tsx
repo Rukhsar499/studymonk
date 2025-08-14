@@ -102,8 +102,8 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                         style={{
                             flex: "1 1 50%",
                             position: "relative",
-                            minHeight: "520px",
-                            overflow: "hidden",
+                            // minHeight: "520px",
+                            // overflow: "hidden",
                             color: "#fff",
                         }}
                         className="popup-form-right"
@@ -112,11 +112,11 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                             src="/assets/img/study11.png"
                             alt="Study"
                             width={800}       // apni image ka actual width pixel me
-                            height={500}      // apni image ka actual height pixel me
+                            height={600}      // apni image ka actual height pixel me
                             className="d-none d-lg-flex"
                             style={{
                                 width: "100%",
-                                height: "auto",
+                                height: "400",
                                 objectFit: "cover",
                                 display: "block",
                             }}
