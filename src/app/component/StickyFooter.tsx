@@ -13,7 +13,7 @@ export default function StickyFooter() {
 
         {/* WhatsApp Button */}
         <Link
-          href="https://wa.me/919876543210"
+          href="https://wa.me/9535672142"
           target="_blank"
           className="btn btn-success d-flex align-items-center gap-3 w-100 px-3 py-2  shadow"
           style={{ transition: "0.3s" }}
@@ -33,7 +33,7 @@ export default function StickyFooter() {
 
         {/* Call Button */}
         <a
-          href="tel:+919663869498"
+          href="tel:+919535672142"
           className="btn btn-primary  text-center gap-4 px-3 py-2 w-100 shadow"
         >
           Call

@@ -58,8 +58,8 @@ function Footer() {
             </div>
             <div className="d-flex">
               <Image src="/assets/img/call-calling1.png" alt="Call" width={20} height={20} className="me-2 imhg" />
-              <Link href="tel:+919663869498" className="rishra">
-                <p id="btd">+91 96638 69498</p>
+              <Link href="tel:+919535672142" className="rishra">
+                <p id="btd">+919535672142</p>
               </Link>
             </div>
             <div className="d-flex">
