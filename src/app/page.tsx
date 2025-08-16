@@ -715,8 +715,7 @@ and thrive without digital noise.
             <div className="col-lg-5 col-md-5 col-12">
               <div className="faq-sdeimg">
                 <div className="mt-2">
-                  <h3 className="reacf">Ready to Replace Academic
-                    Anxiety with Calm Confidence?</h3>
+                  <h3 className="reacf">Home: The Cambridge Path is a Promise. We Help Your Child Fulfil It.</h3>
                   <p>
                     You chose the Cambridge curriculum for its promise of a world-class education. Ensuring your child thrives in it is the next bridge to cross. Don&apos;t let another term go by with the same nagging questions. Your 7-day complimentary trial begins with a strategic conversation with our expert mentor. </p>
 

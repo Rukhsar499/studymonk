@@ -151,7 +151,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                             background: "#fff",
                         }}
                     >
-                        <h3
+                        <h3 className="p-kj"
                             style={{
                                 color: "#002147",
                                 textAlign: "center",

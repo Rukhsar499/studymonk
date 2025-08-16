@@ -2150,7 +2150,14 @@ padding: 20px;
   margin-bottom: 20px;
 }
 .faq-sdeimg {
-   height: 680px;
+   height: 615px;
+   padding: 20px;
+}
+.ijhg img{
+  width: 310px;
+}
+.p-kj{
+  font-size: 19px;
 }
 @media (max-width: 768px) {
   .popup-form-right {
