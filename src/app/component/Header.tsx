@@ -79,7 +79,7 @@ function Header() {
                 </div>
                 <button className="btn btn-login" type="button" style={{ color: '#fff' }}>
                   <Image src="/assets/img/login.png" alt="Login Icon" width={20} height={20} className="me-2" />
-                  Login
+                  Free Trial
                 </button>
 
               </div>

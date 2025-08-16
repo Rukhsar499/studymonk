@@ -28,7 +28,7 @@ export default function StickyFooter() {
           className="btn btn-warning text-dark fw-bold px-4 py-2  w-100"
           
         >
-          Login
+          Free Trial
         </Link>
 
         {/* Call Button */}
