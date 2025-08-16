@@ -712,7 +712,7 @@ and thrive without digital noise.
               <BottomAccordion />
             </div>
             {/* <div className="col-lg-1 col-md-1 col-1"></div> */}
-            <div className="col-lg-5 col-md-5 col-12">
+            <div className="col-lg-5 col-md-6 col-12">
               <div className="faq-sdeimg">
                 <div className="mt-2">
                   <h3 className="reacf">Home: The Cambridge Path is a Promise. We Help Your Child Fulfil It.</h3>

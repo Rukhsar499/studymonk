@@ -382,8 +382,39 @@ button.btn.btn-login {
 .ijhg img {
   float: right;
   position: relative;
-  margin-top: -45px;
+  margin-top: -69px;
 }
+
+@media only screen and (max-width: 1441px) {
+  .ijhg img {
+    float: right;
+    right: -20px;
+    position: relative;
+    margin-top: -60px;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .ijhg img {
+    float: right !important;
+    right: -40px !important;
+    position: relative !important;
+    margin-top: -131px !important;
+  }
+}
+
+
+/* Mobile devices (max-width 768px) */
+@media only screen and (max-width: 768px) {
+  .ijhg img {
+    float: right;
+    right: -20px;
+    position: relative;
+    margin-top: -111px;
+  }
+}
+
+
 .gfdb .MuiInputBase-root {
   font-size: 14px; /* input text size */
 }
