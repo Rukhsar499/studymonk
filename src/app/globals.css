@@ -379,6 +379,12 @@ button.btn.btn-login {
   border-radius: 20px;
 }
 
+/* .ijhg {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+} */
+
 .ijhg img {
   float: right;
   position: relative;
@@ -408,7 +414,7 @@ button.btn.btn-login {
     float: right;
     right: -20px;
     position: relative;
-    margin-top: -111px;
+    margin-top: -76px;
   }
 }
 

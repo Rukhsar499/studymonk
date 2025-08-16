@@ -711,20 +711,36 @@ and thrive without digital noise.
               <h2 className="text-center fres">Frequently Asked Questions</h2>
               <BottomAccordion />
             </div>
-            {/* <div className="col-lg-1 col-md-1 col-1"></div> */}
             <div className="col-lg-5 col-md-6 col-12">
-              <div className="faq-sdeimg">
+              <div className="faq-sdeimg position-relative">
                 <div className="mt-2">
-                  <h3 className="reacf">Home: The Cambridge Path is a Promise. We Help Your Child Fulfil It.</h3>
+                  <h3 className="reacf">
+                    Home: The Cambridge Path is a Promise. We Help Your Child Fulfil It.
+                  </h3>
                   <p>
-                    You chose the Cambridge curriculum for its promise of a world-class education. Ensuring your child thrives in it is the next bridge to cross. Don&apos;t let another term go by with the same nagging questions. Your 7-day complimentary trial begins with a strategic conversation with our expert mentor. </p>
-
-                  <p>Discover how our focused approach builds not just knowledge, but the unshakable confidence to use it. Let&apos;s build their roadmap to success today.
+                    You chose the Cambridge curriculum for its promise of a world-class
+                    education. Ensuring your child thrives in it is the next bridge to
+                    cross. Don&apos;t let another term go by with the same nagging
+                    questions. Your 7-day complimentary trial begins with a strategic
+                    conversation with our expert mentor.
                   </p>
-                  <Button className="btn-books mt-3" type="button" variant="contained" onClick={handleClickOpen}>Create My Child&apos;s  <br />
-                    Success Plan</Button>
+
+                  <p>
+                    Discover how our focused approach builds not just knowledge, but the
+                    unshakable confidence to use it. Let&apos;s build their roadmap to
+                    success today.
+                  </p>
+                  <Button
+                    className="btn-books mt-3"
+                    type="button"
+                    variant="contained"
+                    onClick={handleClickOpen}
+                  >
+                    Create My Child&apos;s <br />
+                    Success Plan
+                  </Button>
                 </div>
-                <div className="ijhg">
+                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
                   <Image
                     src="/assets/img/mummy.webp"
                     alt="testimonial"
@@ -735,6 +751,7 @@ and thrive without digital noise.
                 </div>
               </div>
             </div>
+
           </div>
         </div>
         <PopupForm open={open} handleClose={handleClose} />
