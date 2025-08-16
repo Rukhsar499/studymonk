@@ -715,7 +715,7 @@ and thrive without digital noise.
               <div className="faq-sdeimg position-relative">
                 <div className="mt-2">
                   <h3 className="reacf">
-                    Home: The Cambridge Path is a Promise. We Help Your Child Fulfil It.
+                    The Cambridge Path is a Promise. We Help Your Child Fulfil It.
                   </h3>
                   <p>
                     You chose the Cambridge curriculum for its promise of a world-class

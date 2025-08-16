@@ -41,7 +41,7 @@ const CustomAccordionSummary = styled(AccordionSummary, {
 const accordionData = [
     {
       id: "panel1",
-      title: "Why Choose Study Monks for your Child’s Cambridge Curriculum Journey.",
+      title: "Why Choose Study Monks for your Child’s Cambridge Curriculum Journey ?",
       content: [
         {
           title: "",
