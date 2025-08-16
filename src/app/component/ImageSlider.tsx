@@ -71,7 +71,7 @@ export default function TestimonialSlider() {
       personImg: "/assets/img/test1.png",
       playBtn: "/assets/img/play-btn.png",
       watchText: "Ditya's Story",
-
+     
       video: "/assets/video/tetsione.mp4", // demo video
       videoWidth: 800, // 👈 width add kiya
       videoHeight: 450, // 👈 height add kiya
@@ -88,7 +88,7 @@ export default function TestimonialSlider() {
       personImg: "/assets/img/test1.png",
       playBtn: "/assets/img/play-btn.png",
       watchText: "Manoj Story",
-
+      
       video: "/assets/video/tetsione.mp4", // demo video
     },
   ];
@@ -141,7 +141,7 @@ export default function TestimonialSlider() {
                     </div>
                     <div className="test-txt position-absolute text-white">
                       <p className="mb-0 text-white"><b>{slide.watchText}</b></p>
-                      <p className="text-white">{slide.stage}</p>
+                      <p className="text-white"></p>
                     </div>
                   </div>
                 </div>
