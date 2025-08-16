@@ -26,7 +26,7 @@ import { Button } from "@mui/material";
 export default function Home() {
 
 
-const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -61,7 +61,10 @@ them, turning learning into a journey of discovery.`},
 provide a tranquil environment where students can learn, express themselves, 
 and thrive without digital noise. 
 `},
-    { title: "Expressive Confidence", content: "This is the content of Accordion 4." },
+    {
+      title: "Expressive Confidence",
+      content: `Knowledge becomes powerful when it can be shared and applied. We help students find the words to explain their thinking, defend their ideas, and lead with what they know, both in and out of the classroom. 
+` },
   ];
 
 
@@ -737,7 +740,7 @@ and thrive without digital noise.
         </div>
         <PopupForm open={open} handleClose={handleClose} />
       </section>
-      
+
       <StickyFooter />
       <Footer />
     </>
