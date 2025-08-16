@@ -2146,5 +2146,8 @@ padding: 20px;
   .popup-form-right {
     flex: 1 1 100% !important;
   }
+  .tivh{
+  text-align: left;
+}
 }
 }

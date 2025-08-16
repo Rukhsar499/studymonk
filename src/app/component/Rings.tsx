@@ -23,13 +23,13 @@ const colors: Record<RingType, string> = {
 const MOBILE_BASE_SIZE = 300;
 
 const ringList: { type: RingType | "outer"; label: string; sizeRatio: number }[] = [
-  { type: "outer", label: "", sizeRatio: 0.9 },
-  { type: "create", label: "Create", sizeRatio: 0.8 },
-  { type: "evaluate", label: "Evaluate", sizeRatio: 0.68 },
-  { type: "analyze", label: "Analyze", sizeRatio: 0.56 },
-  { type: "apply", label: "Apply", sizeRatio: 0.44 },
-  { type: "understand", label: "Understand", sizeRatio: 0.32 },
-  { type: "remember", label: "Remember", sizeRatio: 0.2 },
+  { type: "outer", label: "", sizeRatio: 0.95 },
+  { type: "create", label: "Create", sizeRatio: 0.85 },
+  { type: "evaluate", label: "Evaluate", sizeRatio: 0.72 },
+  { type: "analyze", label: "Analyze", sizeRatio: 0.6 },
+  { type: "apply", label: "Apply", sizeRatio: 0.48 },
+  { type: "understand", label: "Understand", sizeRatio: 0.35 },
+  { type: "remember", label: "Remember", sizeRatio: 0.22 },
 ];
 
 const circlePathD = (cx: number, cy: number, r: number) =>
