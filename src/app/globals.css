@@ -397,6 +397,10 @@ button.btn.btn-login {
 .gfdb .MuiOutlinedInput-input {
   padding:10px; /* input padding */
 }
+.css-rizt0-MuiTypography-root{
+  font-family: "Poppins" !important;
+}
+
 .footeil ul li a {
   color: #fff;
 }
