@@ -15,10 +15,10 @@ import { TransitionProps } from "@mui/material/transitions";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Transition = React.forwardRef(function Transition(
-  props: TransitionProps & { children: React.ReactElement },
-  ref: React.Ref<unknown>
+    props: TransitionProps & { children: React.ReactElement },
+    ref: React.Ref<unknown>
 ) {
-  return <Slide direction="left" ref={ref} {...props} />;
+    return <Slide direction="left" ref={ref} {...props} />;
 });
 
 type PopupFormProps = {
@@ -109,18 +109,20 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 minHeight: "520px",
                                 overflow: "hidden",
                                 color: "#fff",
+                                display: "flex",
+                                flexDirection: "column",
                             }}
                         >
+                            {/* ✅ Fixed: Image height same as parent (no extra scroll) */}
                             <div style={{ position: "relative", width: "100%", height: "100%" }}>
-                                <div style={{ position: "relative", width: "100%", height: "100vh" }}>
-                                    <Image
-                                        src="/assets/img/study11.png"
-                                        alt="Study"
-                                        fill
-                                        style={{ objectFit: "cover" }}
-                                    />
-                                </div>
+                                <Image
+                                    src="/assets/img/study11.png"
+                                    alt="Study"
+                                    fill
+                                    style={{ objectFit: "cover" }}
+                                />
                             </div>
+
                             <div
                                 style={{
                                     width: "80%",
