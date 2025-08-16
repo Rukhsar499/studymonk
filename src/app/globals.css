@@ -2145,6 +2145,10 @@ padding: 20px;
 .lim-txt{
  text-align: center;
 }
+.blue button{
+  float: right;
+  margin-bottom: 20px;
+}
 @media (max-width: 768px) {
   .popup-form-right {
     flex: 1 1 100% !important;

@@ -244,7 +244,7 @@ and thrive without digital noise.
                     <h4 className="assetx">Cambridge Primary (Stages 4-6)</h4>
                     <p><b>Building a Love for Learning</b></p>
                     <p>For our youngest learners, we focus on sparking curiosity and building unshakable confidence. Our mentors create a nurturing environment where foundational concepts in English, Maths, and Science are explored in an engaging, interactive way.</p>
-                    <button>
+                    <button className="btgf">
                       <span className="text">View More</span>
                       <span>
                         <Image
@@ -263,7 +263,7 @@ and thrive without digital noise.
                     <h4 className="assetx">Cambridge Lower Secondary (Stages 7-9)</h4>
                     <p><b>Deepening Knowledge, Building Skills</b></p>
                     <p>As students advance, we shift focus to developing critical thinking and analytical skills. We guide them through the increasing rigor of English, Maths, and Science, preparing them for the challenges of IGCSE and beyond.</p>
-                    <button>
+                    <button className="btgf">
                       <span className="text">View More</span>
                       <span>
                         <Image
@@ -711,23 +711,23 @@ and thrive without digital noise.
             {/* <div className="col-lg-1 col-md-1 col-1"></div> */}
             <div className="col-lg-5 col-md-5 col-12">
               <div className="faq-sdeimg">
-                <div className="mt-3">
+                <div className="mt-2">
                   <h3 className="reacf">Ready to Replace Academic
                     Anxiety with Calm Confidence?</h3>
                   <p>
-                    The best way to understand the Study Monks difference is to experience it.</p>
+                    You chose the Cambridge curriculum for its promise of a world-class education. Ensuring your child thrives in it is the next bridge to cross. Don&apos;t let another term go by with the same nagging questions. Your 7-day complimentary trial begins with a strategic conversation with our expert mentor. </p>
 
-                  <p>Schedule a complimentary, no-obligation Clarity Session to speak with one of our academic counselors. Lets build a personalized learning path for your child, together.
+                  <p>Discover how our focused approach builds not just knowledge, but the unshakable confidence to use it. Let&apos;s build their roadmap to success today.
                   </p>
-                  <Button className="btn-books mt-3" type="button" variant="contained" onClick={handleClickOpen}>Schedule Your Free <br />
-                    Clarity Session</Button>
+                  <Button className="btn-books mt-3" type="button" variant="contained" onClick={handleClickOpen}>Create My Child&apos;s  <br />
+                    Success Plan</Button>
                 </div>
                 <div className="ijhg">
                   <Image
                     src="/assets/img/mummy.webp"
                     alt="testimonial"
-                    width={400}
-                    height={300}
+                    width={360}
+                    height={260}
                     className="img-fluid"
                   />
                 </div>
