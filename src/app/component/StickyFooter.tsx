@@ -18,15 +18,15 @@ export default function StickyFooter() {
           className="btn btn-success d-flex align-items-center gap-3 w-100 px-3 py-2  shadow"
           style={{ transition: "0.3s" }}
         >
-         
+
           WhatsApp
         </Link>
 
         {/* Login Button - Highlighted */}
         <Link
-          href="/login"
+          href="/"
           className="btn btn-warning text-dark fw-bold px-4 py-2  w-100"
-          
+
         >
           Free Trial
         </Link>
