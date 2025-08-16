@@ -147,7 +147,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                     <div
                         style={{
                             flex: "1 1 50%",
-                            padding: "2rem",
+                            padding: "20px",
                             background: "#fff",
                         }}
                     >
@@ -155,13 +155,13 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                             style={{
                                 color: "#002147",
                                 textAlign: "center",
-                                marginBottom: "1.5rem",
+                                marginBottom: "8px",
                             }}
                         >
                             Book A FREE Trial Now!
                         </h3>
 
-                        <form>
+                        <form >
                             <TextField
                                 name="name"
                                 label="Name"
@@ -171,6 +171,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 value={formData.name}
                                 onChange={handleChange}
                                 sx={inputStyle}
+                                className="gfdb"
                             />
                             <TextField
                                 name="email"
@@ -182,6 +183,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 value={formData.email}
                                 onChange={handleChange}
                                 sx={inputStyle}
+                                className="gfdb"
                             />
                             <TextField
                                 name="phone"
@@ -193,6 +195,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 value={formData.phone}
                                 onChange={handleChange}
                                 sx={inputStyle}
+                                className="gfdb"
                             />
                             <TextField
                                 select
@@ -204,6 +207,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 value={formData.stage}
                                 onChange={handleChange}
                                 sx={inputStyle}
+                                className="gfdb"
                             >
                                 <MenuItem value="">Select Stage</MenuItem>
                                 <MenuItem value="Beginner">Beginner</MenuItem>
@@ -221,6 +225,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 value={formData.message}
                                 onChange={handleChange}
                                 sx={inputStyle}
+                                className="gfdb"
                             />
 
                             <Button

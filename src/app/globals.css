@@ -384,7 +384,19 @@ button.btn.btn-login {
   position: relative;
   margin-top: -45px;
 }
+.gfdb .MuiInputBase-root {
+  font-size: 14px; /* input text size */
+}
 
+.gfdb .MuiInputLabel-root {
+  font-size: 13px; /* label text size */
+}
+.gfdb .MuiOutlinedInput-input {
+margin-bottom: 0px; /* input padding */
+}
+.gfdb .MuiOutlinedInput-input {
+  padding:10px; /* input padding */
+}
 .footeil ul li a {
   color: #fff;
 }
