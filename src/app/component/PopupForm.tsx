@@ -15,10 +15,10 @@ import { TransitionProps } from "@mui/material/transitions";
 import CloseIcon from "@mui/icons-material/Close";
 
 const Transition = React.forwardRef(function Transition(
-    props: TransitionProps & { children: React.ReactElement<any, any> },
-    ref: React.Ref<unknown>
+  props: TransitionProps & { children: React.ReactElement },
+  ref: React.Ref<unknown>
 ) {
-    return <Slide direction="left" ref={ref} {...props} />;
+  return <Slide direction="left" ref={ref} {...props} />;
 });
 
 type PopupFormProps = {
