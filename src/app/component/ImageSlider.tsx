@@ -76,21 +76,21 @@ export default function TestimonialSlider() {
       videoWidth: 800, // 👈 width add kiya
       videoHeight: 450, // 👈 height add kiya
     },
-    {
-      heading: `"For the first time, he wasn't just studying. He was understanding."`,
-      description:
-        "Hear directly from the Sharma family about the impact of the Study Monks approach on their son's confidence and focus.",
-      points: [
-        { title: "Reduced From Anxiety:", text: "From stressful nights to calm preparation." },
-        { title: "+40% Conceptual Clarity:", text: "He now teaches us the concepts." },
-        { title: "A True Partnership:", text: "We finally feel like we have an expert on our side." },
-      ],
-      personImg: "/assets/img/test1.png",
-      playBtn: "/assets/img/play-btn.png",
-      watchText: "Manoj Story",
+    // {
+    //   heading: `"For the first time, he wasn't just studying. He was understanding."`,
+    //   description:
+    //     "Hear directly from the Sharma family about the impact of the Study Monks approach on their son's confidence and focus.",
+    //   points: [
+    //     { title: "Reduced From Anxiety:", text: "From stressful nights to calm preparation." },
+    //     { title: "+40% Conceptual Clarity:", text: "He now teaches us the concepts." },
+    //     { title: "A True Partnership:", text: "We finally feel like we have an expert on our side." },
+    //   ],
+    //   personImg: "/assets/img/test1.png",
+    //   playBtn: "/assets/img/play-btn.png",
+    //   watchText: "Manoj Story",
       
-      video: "/assets/video/tetsione.mp4", // demo video
-    },
+    //   video: "/assets/video/tetsione.mp4", // demo video
+    // },
   ];
 
   const handlePlayClick = (video: string) => {
