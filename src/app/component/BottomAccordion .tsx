@@ -14,23 +14,29 @@ interface CustomAccordionSummaryProps {
 }
 
 const CustomAccordionSummary = styled(AccordionSummary, {
-    shouldForwardProp: (prop) => prop !== "isexpanded",
+  shouldForwardProp: (prop) => prop !== "isexpanded",
 })<CustomAccordionSummaryProps>(({ isexpanded }) => ({
-    backgroundColor: isexpanded ? "#001F3F" : "#fff",
-    color: isexpanded ? "#fff" : "#001F3F",
-    "&:hover": {
-        backgroundColor: "#001F3F",
-        color: "#fff",
-        "& .MuiSvgIcon-root": {
-            color: "#fff",
-        },
-    },
+  backgroundColor: isexpanded ? "#001F3F" : "#fff",
+  color: isexpanded ? "#fff" : "#001F3F",
+  fontFamily: "Poppins, sans-serif", // 🔹 AccordionSummary ke text pe
+  "& .MuiTypography-root": {
+    fontFamily: "Poppins, sans-serif", // 🔹 Typography component ke liye
+  },
+  "&:hover": {
+    backgroundColor: "#001F3F",
+    color: "#fff",
     "& .MuiSvgIcon-root": {
-        color: isexpanded ? "#fff" : "#001F3F",
-        transition: "color 0.3s ease",
+      color: "#fff",
     },
-    transition: "all 0.3s ease",
+  },
+  "& .MuiSvgIcon-root": {
+    color: isexpanded ? "#fff" : "#001F3F",
+    transition: "color 0.3s ease",
+    
+  },
+  transition: "all 0.3s ease",
 }));
+
 
 const accordionData = [
     {
