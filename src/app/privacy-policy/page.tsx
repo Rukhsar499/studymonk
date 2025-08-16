@@ -153,7 +153,7 @@ function Page() {
                                 className="card shadow-sm mb-4 border-0 rounded-3"
                             >
                                 <div className="card-body">
-                                    <h2 className="h4 mb-3 border-start border-3 border-primary ps-3 fw-semibold">
+                                    <h2 className="mb-3 text-start fw-semibold">
                                         {section.title}
                                     </h2>
                                     <div>{section.content}</div>
