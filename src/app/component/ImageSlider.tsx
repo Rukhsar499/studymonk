@@ -62,7 +62,7 @@ export default function TestimonialSlider() {
   const slides = [
     {
       heading: `"The sessions have definitely shown a great improvement in her academic performance."`,
-      description: ["Hear directly from Ms. Saritha Poosa's family about the impact of Study Monks approach on their daughter's confidence and focus.", "A parent shares the tangible results and newfound confidence her daughter gained after enrolling with Study Monks."],
+      description: ["Hear directly from Ms. Saritha Poosa's family about the impact of Study Monks approach on their daughter's confidence and focus."],
       points: [
         { title: "Learning to Applying:", text: "She doesn't just memorize vocabulary; she now uses new words with confidence and in the right context." },
         { title: "Renewed Interest:", text: " Their interactive approach transformed reading into a subject she finds genuinely interesting and engaging." },
