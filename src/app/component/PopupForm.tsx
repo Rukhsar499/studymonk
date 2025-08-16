@@ -218,7 +218,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 name="message"
                                 label="Message"
                                 multiline
-                                rows={3}
+                                rows={2}
                                 variant="outlined"
                                 fullWidth
                                 margin="normal"
