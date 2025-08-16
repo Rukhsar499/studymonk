@@ -2149,6 +2149,9 @@ padding: 20px;
   float: right;
   margin-bottom: 20px;
 }
+.faq-sdeimg {
+   height: 680px;
+}
 @media (max-width: 768px) {
   .popup-form-right {
     flex: 1 1 100% !important;
