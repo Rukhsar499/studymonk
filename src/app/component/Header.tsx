@@ -60,7 +60,7 @@ function Header() {
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" href="/our-mentors">Our Mentors</Link>
+                      <Link className="nav-link" href="/">Our Mentors</Link>
                     </li>
                     <li className="nav-item dropdown custom-dropdown">
                       <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -72,7 +72,7 @@ function Header() {
                       </ul>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" href="/plans-and-pricing">Plans & Pricing</Link>
+                      <Link className="nav-link" href="/">Plans & Pricing</Link>
                     </li>
 
                   </ul>
