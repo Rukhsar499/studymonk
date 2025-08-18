@@ -4,6 +4,9 @@ const nextConfig = {
     ignoreDuringBuilds: true, // ESLint errors ko ignore karega
   },
   output: "export",
+  images: {
+    unoptimized: true, // 👈 image optimization disable
+  },
 };
 
 module.exports = nextConfig;
