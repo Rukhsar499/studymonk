@@ -34,7 +34,7 @@ function Header() {
                       <Link className="nav-link" href="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" href="/">Our Story</Link>
+                      <Link className="nav-link" href="/our-story">Our Story</Link>
                     </li>
                     <li className="nav-item dropdown custom-dropdown">
                       <a

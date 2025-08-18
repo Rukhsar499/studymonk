@@ -186,7 +186,50 @@ h3 {
     opacity: 0.8;
   }
 }
+.circlest {
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: swing 10s ease-in-out infinite;
+}
 
+.circlestr {
+  width: 550px;
+  height: 550px;
+  background-image: url("/assets/img/Ellipse 80.png");
+  top: 15%;
+  left: 37%;
+  animation-delay: 0s;
+}
+
+.circlestr2 {
+  width: 470px;
+  height: 470px;
+  background-image: url("/assets/img/Ellipse 105.png");
+  top: 20%;
+  right: 10%;
+  animation-delay: 5s;
+}
+
+@keyframes swing {
+  0%   { transform: translateX(0) scale(1); }
+  25%  { transform: translateX(30px) scale(1.05); }
+  50%  { transform: translateX(0) scale(1.1); }
+  75%  { transform: translateX(-30px) scale(1.05); }
+  100% { transform: translateX(0) scale(1); }
+}
+.stry-banner {
+  position: relative;
+  padding: 80px 20px;
+ background: #EAF0FF;
+background: linear-gradient(351deg, rgba(234, 240, 255, 1) 5%, rgba(151, 171, 255, 1) 100%);
+  height: 700px;
+  display: flex;
+  align-items: center;
+  overflow: hidden; /* circle bahar na nikle */
+}
 .content {
   position: relative;
   z-index: 1;
@@ -1672,8 +1715,6 @@ a {
   display: block;
   position: relative;
   z-index: 1;
-  margin: 20px auto;
-
 }
 
 /* Tablet and Desktop Styles */

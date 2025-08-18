@@ -13,25 +13,26 @@ import BootstrapClient from '../BootstrapClient';
 
 export default function Page() {
 
-      useEffect(() => {
+    useEffect(() => {
         AOS.init({
-          duration: 1000, // Animation speed (ms)
-          once: true,
+            duration: 1000, // Animation speed (ms)
+            once: true,
         });
-      }, [])
+    }, [])
 
     return (
         <>
             <Header />
-            <section id="stry-banner">
+            <section className="stry-banner">
                 <div className="container">
+                    <div className="circlest circlestr"></div>
+                    <div className="circlest circlestr2"></div>
+
                     <div className="mb-3">
-                        <h3 data-aos="fade-up" data-aos-delay="100">It Started with a Simple Observation.</h3>
-                        <p data-aos="fade-up" data-aos-delay="200">An Educator’s Concern. A Parent’s Dilemma. A Child’s Potential.</p>
+                        <h1><b>It Started with a Simple Observation.</b></h1>
+                        <p>An Educator’s Concern. A Parent’s Dilemma. A Child’s Potential.</p>
                     </div>
-                    <div className="cta">
-                        <a href="#" data-aos="fade-up" data-aos-delay="300">Experience the Difference</a>
-                    </div>
+                    <button className="btn-primarys" type="button">Experience the difference</button>
                 </div>
             </section>
 
@@ -61,19 +62,31 @@ export default function Page() {
                 </div>
 
                 <FullWidthImageSection
-                    src="/assets/img/STUDY.webp"
+                    src="/assets/img/studys.webp"
                     alt="Right arrow"
-
+                    className="d-none d-lg-flex"
                     width="100%"
                     objectFit="cover"
                 />
 
+                <section className="pkh">
+                    <Image
+                        src="/assets/img/s1.png"
+                        alt="Right arrow"
+                        className="d-flex d-lg-none full-width-img"
+                        width={0}
+                        height={0}
+                        sizes="100vw"
+                        style={{ width: "100%", height: "auto" }}
+                    />
+                </section>
+
                 {/* after image this section */}
                 <div className="guiding-section text-center container">
-                    <h2 className="section-title"  data-aos="fade-up" data-aos-delay="100">
+                    <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">
                         Our Guiding Principle: The Wise Guardian
                     </h2>
-                    <p className="section-intro"  data-aos="fade-up" data-aos-delay="200">
+                    <p className="section-intro" data-aos="fade-up" data-aos-delay="200">
                         Every decision we make is guided by our powerful archetype, a synthesis
                         of two essential roles that every child needs to thrive. A single,
                         powerful idea: <strong>The Wise Guardian.</strong>
@@ -82,7 +95,7 @@ export default function Page() {
                     <div className="row justify-content-center mt-5">
                         {/* The Sage Card */}
                         <div className="col-md-6 mb-4">
-                            <div className="guardian-card h-100"  data-aos="zoom-in" data-aos-delay="300">
+                            <div className="guardian-card h-100" data-aos="zoom-in" data-aos-delay="300">
                                 <h3 className="saga">
                                     The Sage:<br /> Your Expert Guide
                                 </h3>
@@ -120,10 +133,10 @@ export default function Page() {
             <section id="academ">
                 <div className="container academy">
                     <div className="container">
-                        <h2 className="academy-title text-center"  data-aos="fade-down" data-aos-delay="100">More Than an Academy</h2>
+                        <h2 className="academy-title text-center" data-aos="fade-down" data-aos-delay="100">More Than an Academy</h2>
                         <p className="academy-intro text-center">
                             We believe true learning happens when academic rigor meets psychological safety.
-                            Our entire approach is built on the philosophy of the Wise Guardian 
+                            Our entire approach is built on the philosophy of the Wise Guardian
                             a blend of expert guidance and nurturing support.
                         </p>
 
@@ -142,7 +155,7 @@ export default function Page() {
                             {/* Middle Column */}
                             <div className="col-lg-4 d-flex flex-column justify-content-between">
                                 <div className="mindful mb-4" data-aos="fade-left" data-aos-delay="300">
-                                   <h3 className="saga" style={{ color: "#DBFFD6" }}>Mindful Mastery</h3>
+                                    <h3 className="saga" style={{ color: "#DBFFD6" }}>Mindful Mastery</h3>
                                     <p>
                                         We believe that true confidence comes from deep conceptual clarity, not memorisation.
                                         Our mentors guide students to build a foundational understanding of every topic,
@@ -229,7 +242,7 @@ export default function Page() {
                                 </p>
                             </div>
                             <div className="cambridge" data-aos="fade-left" data-aos-delay="400">
-                               <h3 className="saga" style={{ textAlign: "left" }}>A Nurturing, Confidence-Building Environment</h3>
+                                <h3 className="saga" style={{ textAlign: "left" }}>A Nurturing, Confidence-Building Environment</h3>
                                 <p>
                                     We keep our online classes small to ensure every student feels seen and heard. Our
                                     interactive sessions encourage students to find their voice and build confidence alongside a
@@ -241,7 +254,7 @@ export default function Page() {
                         {/* Right Column */}
                         <div className="col-lg-3 text-center order-1 order-md-2">
                             <Image
-                                src="/assets/img/action.png"
+                                src="/assets/img/bigf.webp"
                                 alt="Action Illustration"
                                 width={300}
                                 height={400}
