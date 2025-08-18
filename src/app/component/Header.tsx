@@ -48,12 +48,12 @@ function Header() {
                       </a>
                       <ul className="dropdown-menu vbgf">
                         <li>
-                          <Link className="dropdown-item" href="/cambridge-primary">
+                          <Link className="dropdown-item" href="/">
                             Cambridge Primary
                           </Link>
                         </li>
                         <li>
-                          <Link className="dropdown-item" href="/cambridge-secondary">
+                          <Link className="dropdown-item" href="/">
                             Cambridge Secondary
                           </Link>
                         </li>
@@ -67,8 +67,8 @@ function Header() {
                         Resource Hub
                       </a>
                       <ul className="dropdown-menu vbgf">
-                        <li><Link className="dropdown-item" href="/cambridge-primary">Cambridge Primary</Link></li>
-                        <li><Link className="dropdown-item" href="/cambridge-secondary">Cambridge Secondary</Link></li>
+                        <li><Link className="dropdown-item" href="/">Cambridge Primary</Link></li>
+                        <li><Link className="dropdown-item" href="/">Cambridge Secondary</Link></li>
                       </ul>
                     </li>
                     <li className="nav-item">
