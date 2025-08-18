@@ -481,7 +481,7 @@ and thrive without digital noise.
       <section className="study mb d-none d-lg-flex">
         <div className="container">
           <h2>The Study Monks Impact: A Snapshot</h2>
-          <h2 data-aos="fade-up">The Study Monks Impact: A Snapshot</h2>
+         
 
           <div className="impact-container">
             <div className="circle">94%</div>

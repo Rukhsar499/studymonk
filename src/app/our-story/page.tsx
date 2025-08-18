@@ -38,19 +38,19 @@ export default function Page() {
 
             <section id="observation">
                 {/* decorative img on left side */}
-                <div className="deco-img" data-aos="fade-left" data-aos-delay="600">
+                <div className="deco-img">
                     <Image
                         src="/assets/img/dec-1.png"
                         alt="Decorative"
-                        width={420}
-                        height={550}
+                        width={350}
+                        height={450}
                     />
                 </div>
 
                 <div className="container">
-                    <h2 data-aos="fade-down" data-aos-delay="500">It Started with a Simple Observation.</h2>
+                    <h2>It Started with a Simple Observation.</h2>
                     <div className="obj-text">
-                        <p data-aos="fade-down" data-aos-delay="600">
+                        <p>
                             Our founder, a Cambridge Curriculum Educator, saw Cambridge students
                             with great potential struggling. Not from lack of effort, but from a
                             lack of the right support. She saw the gap between a world-class
