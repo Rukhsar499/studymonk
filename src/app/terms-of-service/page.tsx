@@ -19,7 +19,7 @@ function TermsService() {
                     <p className="welcome">Welcome to Skolaris India Learning Solutions!</p>
 
                     <p className="intro">
-                        These Terms of Service ("Terms") govern your use of the website located at studymonks.com (the "Site"), and the online educational services provided by Skolaris India Learning Solutions, a proprietorship concern registered in Bangalore, Karnataka, India ("Company," "we," "us," or "our"). Our services include live online classes, access to recorded educational content, downloadable worksheets, Multiple-Choice Question (MCQ) banks, and other related educational resources (collectively, the "Services").
+                        These Terms of Service {`("Terms")`} govern your use of the website located at studymonks.com {`(the "Site")`}, and the online educational services provided by Skolaris India Learning Solutions, a proprietorship concern registered in Bangalore, Karnataka, India {`("Company," "we," "us," or "our")`}. Our services include live online classes, access to recorded educational content, downloadable worksheets, Multiple-Choice Question (MCQ) banks, and other related educational resources {`(collectively, the "Services")`}.
                     </p>
 
                     <p className="intro">
@@ -31,7 +31,7 @@ function TermsService() {
                         
                         <div className="subsection">
                             <h3>Binding Agreement</h3>
-                            <p>These Terms constitute a legally binding agreement between you and the Company. You represent that you have read, understood, and agree to be bound by these Terms. To use our Services, you must explicitly accept these Terms through an affirmative action, such as ticking a checkbox during the registration process (a "click-wrap" agreement). This action signifies your binding acceptance.</p>
+                            <p>These Terms constitute a legally binding agreement between you and the Company. You represent that you have read, understood, and agree to be bound by these Terms. To use our Services, you must explicitly accept these Terms through an affirmative action, such as ticking a checkbox during the registration process {`(a "click-wrap" agreement)`}. This action signifies your binding acceptance.</p>
                         </div>
                         
                         <div className="subsection">
@@ -41,7 +41,7 @@ function TermsService() {
                         
                         <div className="subsection">
                             <h3>For Minors</h3>
-                            <p>Our Services are designed for students, many of whom may be minors (individuals under the age of 18). If a user is a minor, this agreement must be accepted by their parent or legal guardian. In such cases, the parent or legal guardian is the contracting party, is responsible for the minor's use of the Services, and is bound by these Terms. By accepting these Terms, you represent that you are the parent or legal guardian of the minor user and provide your consent for them to use the Services in accordance with our policies.</p>
+                            <p>Our Services are designed for students, many of whom may be minors (individuals under the age of 18). If a user is a minor, this agreement must be accepted by their parent or legal guardian. In such cases, the parent or legal guardian is the contracting party, is responsible for the minor&apos;s use of the Services, and is bound by these Terms. By accepting these Terms, you represent that you are the parent or legal guardian of the minor user and provide your consent for them to use the Services in accordance with our policies.</p>
                         </div>
                     </div>
 
@@ -79,7 +79,7 @@ function TermsService() {
                         
                         <div className="subsection">
                             <h3>Account Creation</h3>
-                            <p>To access our Services, you must register for a personal account ("Account"). You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.</p>
+                            <p>To access our Services, you must register for a personal account {`("Account")`}. You agree to provide accurate, current, and complete information during the registration process and to update such information to keep it accurate, current, and complete.</p>
                         </div>
                         
                         <div className="subsection">
