@@ -186,7 +186,7 @@ function TermsService() {
 
                     <div className="section">
                         <h2>10. Disclaimers of Warranties</h2>
-                        <p>The Services and Content are provided on an {`"as-is"`} and "as-available" basis, without any warranties of any kind, either express or implied. The Company does not warrant that:</p>
+                        <p>The Services and Content are provided on an {`"as-is"`} and {`"as-available"`} basis, without any warranties of any kind, either express or implied. The Company does not warrant that:</p>
                         
                         <ul>
                             <li>The Services will be uninterrupted, error-free, or free of viruses or other harmful components.</li>
@@ -197,12 +197,12 @@ function TermsService() {
 
                     <div className="section">
                         <h2>11. Limitation of Liability</h2>
-                        <p>To the fullest extent permitted by law, in no event shall the Company, its proprietor, employees, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Services. The Company's total cumulative liability to you for any and all claims arising from or relating to the Services shall not exceed the total amount of fees paid by you to the Company for the Services in the six (6) months immediately preceding the event giving rise to the claim.</p>
+                        <p>To the fullest extent permitted by law, in no event shall the Company, its proprietor, employees, or affiliates be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or related to your use of the Services. The Company&apos;s total cumulative liability to you for any and all claims arising from or relating to the Services shall not exceed the total amount of fees paid by you to the Company for the Services in the six (6) months immediately preceding the event giving rise to the claim.</p>
                     </div>
 
                     <div className="section">
                         <h2>12. Indemnification</h2>
-                        <p>You agree to defend, indemnify, and hold harmless the Company, its proprietor, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited attorney's fees) arising from: (i) your use of and access to the Services; (ii) your violation of any term of these Terms; or (iii) your violation of any third-party right, including without limitation any copyright, property, or privacy right.</p>
+                        <p>You agree to defend, indemnify, and hold harmless the Company, its proprietor, employees, and agents from and against any and all claims, damages, obligations, losses, liabilities, costs, or debt, and expenses (including but not limited attorney&apos;s fees) arising from: (i) your use of and access to the Services; (ii) your violation of any term of these Terms; or (iii) your violation of any third-party right, including without limitation any copyright, property, or privacy right.</p>
                     </div>
 
                     <div className="section">
