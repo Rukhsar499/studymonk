@@ -6,6 +6,7 @@ import "aos/dist/aos.css";
 import Image from "next/image";
 import Header from "../component/Header";
 import Footer from "../component/footer/Footer";
+import StickyFooter from "../component/StickyFooter";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import styles from "./page.module.css";
 import BootstrapClient from '../BootstrapClient';
@@ -83,10 +84,10 @@ export default function Page() {
 
                 {/* after image this section */}
                 <div className="guiding-section text-center container">
-                    <h2 className="section-title" data-aos="fade-up" data-aos-delay="100">
+                    <h2 className="section-title">
                         Our Guiding Principle: The Wise Guardian
                     </h2>
-                    <p className="section-intro" data-aos="fade-up" data-aos-delay="200">
+                    <p className="section-intro">
                         Every decision we make is guided by our powerful archetype, a synthesis
                         of two essential roles that every child needs to thrive. A single,
                         powerful idea: <strong>The Wise Guardian.</strong>
@@ -95,12 +96,12 @@ export default function Page() {
                     <div className="row justify-content-center mt-5">
                         {/* The Sage Card */}
                         <div className="col-md-6 mb-4">
-                            <div className="guardian-card h-100" data-aos="zoom-in" data-aos-delay="300">
+                            <div className="guardian-card h-100">
                                 <h3 className="saga">
                                     The Sage:<br /> Your Expert Guide
                                 </h3>
                                 <div className="title-underline"></div>
-                                <p>
+                                <p className="text-center">
                                     The Sage represents our unwavering commitment to intellectual
                                     honesty and expertise. It is our promise to provide factually
                                     impeccable knowledge, to demystify the complexities of the
@@ -112,12 +113,12 @@ export default function Page() {
 
                         {/* The Caregiver Card */}
                         <div className="col-md-6 mb-4">
-                            <div className="guardian-card h-100" data-aos="zoom-in" data-aos-delay="400">
+                            <div className="guardian-card h-100">
                                 <h3 className="saga">
                                     The Caregiver:<br /> Your Trusted Protector
                                 </h3>
                                 <div className="title-underline"></div>
-                                <p>
+                                <p className="text-center">
                                     The Caregiver represents our profound commitment to your childs
                                     wellbeing. It is our promise to create a safe, nurturing, and
                                     empathetic environment, to shield students from digital
@@ -142,19 +143,19 @@ export default function Page() {
 
                         <div className="row align-items-center">
                             {/* Left Image */}
-                            <div className="col-lg-4 text-center mb-4 mb-lg-0" data-aos="zoom-left" data-aos-delay="200">
+                            <div className="col-lg-4 text-center mb-4 mb-lg-0">
                                 <Image
                                     src="/assets/img/academy-1.png"
                                     alt="Academy"
-                                    width={350}
-                                    height={350}
+                                    width={370}
+                                    height={370}
                                     className="img-fluid"
                                 />
                             </div>
 
                             {/* Middle Column */}
                             <div className="col-lg-4 d-flex flex-column justify-content-between">
-                                <div className="mindful mb-4" data-aos="fade-left" data-aos-delay="300">
+                                <div className="mindful mb-4">
                                     <h3 className="saga" style={{ color: "#DBFFD6" }}>Mindful Mastery</h3>
                                     <p>
                                         We believe that true confidence comes from deep conceptual clarity, not memorisation.
@@ -163,7 +164,7 @@ export default function Page() {
                                         and builds knowledge that lasts a lifetime.
                                     </p>
                                 </div>
-                                <div className="serenity sere" data-aos="fade-right" data-aos-delay="400">
+                                <div className="serenity sere">
                                     <h3 className="saga">Digital Serenity</h3>
                                     <p>
                                         We believe that true confidence comes from deep conceptual clarity, not memorisation.
@@ -175,19 +176,19 @@ export default function Page() {
                             </div>
 
                             {/* Right Column */}
-                            <div className="col-lg-4 d-flex flex-column justify-content-between">
-                                <div className="serenity mb-4" data-aos="fade-left" data-aos-delay="500">
-                                    <h3 className="saga" >Guided Curiosity</h3>
-                                    <p>
+                            <div className="col-lg-4 d-flex flex-column justify-content-between order-2 order-md-1">
+                                <div className="serenity mb-4 guif">
+                                    <h3 className="saga vcfs" >Guided Curiosity</h3>
+                                    <p className="bed">
                                         We believe that true confidence comes from deep conceptual clarity, not memorisation.
                                         Our mentors guide students to build a foundational understanding of every topic,
                                         fostering a calm, focused approach that reduces academic anxiety
                                         and builds knowledge that lasts a lifetime.
                                     </p>
                                 </div>
-                                <div className="mindful sere" data-aos="fade-right" data-aos-delay="300">
-                                    <h3 className="saga" style={{ color: "#DBFFD6" }}>Expressive Confidence</h3>
-                                    <p>
+                                <div className="mindful sere expr">
+                                    <h3 className="saga cojhf" style={{ color: "#DBFFD6" }}>Expressive Confidence</h3>
+                                    <p className="beli">
                                         We believe that true confidence comes from deep conceptual clarity, not memorisation.
                                         Our mentors guide students to build a foundational understanding of every topic,
                                         fostering a calm, focused approach that reduces academic anxiety
@@ -207,7 +208,7 @@ export default function Page() {
                         <Image
                             src="/assets/img/action-bg.png"
                             alt="Action Background"
-                            width={600}
+                            width={700}
                             height={900}
                             priority
                         />
@@ -215,8 +216,8 @@ export default function Page() {
                 </div>
 
                 <div className="container">
-                    <h2 className="cambridge-title text-center" data-aos="fade-up" data-aos-delay="100">Our Beliefs in Action</h2>
-                    <p className="cambridge-intro text-center" data-aos="fade-up" data-aos-delay="150">
+                    <h2 className="cambridge-title text-center">Our Beliefs in Action</h2>
+                    <p className="cambridge-intro text-center">
                         A philosophy is only as strong as the commitments it inspires.
                         Here is how the principles of the Wise Guardian are woven into the
                         very fabric of Study Monks.
@@ -224,8 +225,8 @@ export default function Page() {
 
                     <div className="row align-items-start">
                         {/* Left Column */}
-                        <div className="col-lg-9 order-2 order-md-1">
-                            <div className="cambridge mb-4" data-aos="fade-left" data-aos-delay="200">
+                        <div className="col-lg-8 order-2 order-md-1">
+                            <div className="cambridge mb-4">
                                 <h3 className="saga" style={{ textAlign: "left" }}>An Unwavering Focus on Cambridge</h3>
                                 <p>
                                     We specialize exclusively in the Cambridge curriculum. This singular focus allows our mentors
@@ -233,7 +234,7 @@ export default function Page() {
                                     cannot match.
                                 </p>
                             </div>
-                            <div className="cambridge mb-4" data-aos="fade-left" data-aos-delay="300">
+                            <div className="cambridge mb-4">
                                 <h3 className="saga" style={{ textAlign: "left" }}>A Commitment to True Expertise</h3>
                                 <p>
                                     Every mentor is rigorously trained in Cambridge pedagogy. We believe so strongly in the Wise
@@ -241,7 +242,7 @@ export default function Page() {
                                     both academic excellence and empathetic guidance.
                                 </p>
                             </div>
-                            <div className="cambridge" data-aos="fade-left" data-aos-delay="400">
+                            <div className="cambridge">
                                 <h3 className="saga" style={{ textAlign: "left" }}>A Nurturing, Confidence-Building Environment</h3>
                                 <p>
                                     We keep our online classes small to ensure every student feels seen and heard. Our
@@ -250,9 +251,9 @@ export default function Page() {
                                 </p>
                             </div>
                         </div>
-
+                 <div className="col-lg-1 col-md-1 col-0"></div>
                         {/* Right Column */}
-                        <div className="col-lg-3 text-center order-1 order-md-2">
+                        <div className="col-lg-3 text-center order-1 order-md-2 bvcz">
                             <Image
                                 src="/assets/img/bigf.webp"
                                 alt="Action Illustration"
@@ -265,11 +266,11 @@ export default function Page() {
                 </div>
             </section>
 
-            <section id="mindful">
+            <section id="mindful" className="lajgfd">
                 <div className="container">
                     <div className="row">
 
-                        <div className="col-lg-5" data-aos="fade-in" data-aos-delay="100">
+                        <div className="col-lg-5">
                             <Image
                                 src="/assets/img/mindful.png"
                                 alt="Mindful Learners"
@@ -280,9 +281,9 @@ export default function Page() {
                         </div>
 
 
-                        <div className="col-lg-7 d-flex flex-column justify-content-center align-items-start" data-aos="fade-up" data-aos-delay="200">
+                        <div className="col-lg-7 d-flex flex-column justify-content-center align-items-start">
                             <div>
-                                <h3 className="saga">Raising a Generation of Confident Mindful Learners</h3>
+                                <h3 className="saga">Raising a Generation of Confident <span className="mijh">Mindful Learners</span></h3>
                             </div>
                             <div>
                                 <p>
@@ -300,11 +301,11 @@ export default function Page() {
                 </div>
             </section>
 
-            <section id="philosophy" className="position-relative">
+            <section id="philosophy" className="position-relative mb">
                 <div className="container">
 
 
-                    <div className="left-img" data-aos="fade-up" data-aos-delay="200">
+                    <div className="left-img">
                         <Image
                             src="/assets/img/l-bh.png"
                             alt="Left Decoration"
@@ -314,7 +315,7 @@ export default function Page() {
                     </div>
 
 
-                    <div className="right-img" data-aos="fade-up" data-aos-delay="300">
+                    <div className="right-img">
                         <Image
                             src="/assets/img/r-bh.png"
                             alt="Right Decoration"
@@ -324,23 +325,24 @@ export default function Page() {
                     </div>
 
 
-                    <h2 data-aos="fade-up" data-aos-delay="400">
+                    <h2>
                         Experience the Difference a <br /> Philosophy Makes
                     </h2>
 
 
-                    <p data-aos="fade-up" data-aos-delay="500">
+                    <p>
                         Reading about our philosophy is one thing. Seeing it in action is another.
                         Take the next step and meet the Wise Guardians who <br /> bring our commitment
                         to life every day.
                     </p>
 
 
-                    <button data-aos="zoom-in" data-aos-delay="600">Meet Our Mentors</button>
+                    <button>Meet Our Mentors</button>
                 </div>
             </section>
 
             <Footer />
+             <StickyFooter />
         </>
     );
 }

@@ -79,8 +79,8 @@ function Footer() {
         </div>
         <hr className="hr-li" />
         <p className="copy text-center text-white">
-          © {new Date().getFullYear()} Copyright@ • All Rights Reserved -{' '}
-          <Link href="/" style={{ color: '#fff' }}>Privacy Policy</Link>
+          © {new Date().getFullYear()} Copyright@Skolaris India Learning Solutions! • All Rights Reserved -{' '}
+          <Link href="/privacy-policy" style={{ color: '#fff' }}>Privacy Policy</Link>
         </p>
       </div>
     </section>

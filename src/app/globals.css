@@ -1358,7 +1358,7 @@ a {
 
 #observation {
   position: relative;
-  padding: 40px 15px;
+  padding: 50px 10px;
   overflow: hidden;
 }
 
@@ -1374,6 +1374,7 @@ a {
 .obj-text {
   display: block;
   text-align: center;
+  width:100%;
 }
 
 #observation p {
@@ -1438,18 +1439,41 @@ a {
 }
 
 .guardian-card {
+  position: relative;
   background: #FEFFFE;
-  background: linear-gradient(351deg, rgba(254, 255, 254, 1) 0%, rgba(254, 252, 248, 1) 52%);
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-  transition: none;
-  border: 1px solid #e6e6e6;
   display: block;
   margin: 0 10px 20px;
+
+  /* Sirf right + bottom shadow */
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.219);
+
+  /* Gradient border */
+  border: 1px solid transparent;
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+  background-image: 
+    linear-gradient(351deg, #FEFFFE, #FEFCF8), 
+    linear-gradient(135deg, #00000050, #66666600);
+
+  /* Animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.guardian-card:hover {
+  transform: translateY(-4px) scale(1.02);
+
+  /* Hover pe thoda zyada strong shadow */
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.384);
+}
+  .saga {
+    font-size: 22px;
+    text-align: center;
+    color: #001F3F;
+    font-family: "Gilroy-Bold";
+  }
 .card-title {
   font-size: 1.3rem;
   font-weight: 600;
@@ -1475,10 +1499,7 @@ a {
 @media (min-width: 768px) {
 
 
-  #observation h2 {
-    font-size: 2rem;
-    padding: 0;
-  }
+  
 
   .obj-text {
     display: flex;
@@ -1526,19 +1547,14 @@ a {
   }
 
   .guardian-card {
-    padding: 25px;
+    padding: 50px 25px 20px 25px;
     text-align: left;
-    margin: 0 auto 30px;
+    margin: 20px 30px;
     max-width: 900px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
-  .saga {
-    font-size: 22px;
-    text-align: center;
-    color: #001F3F;
-    font-family: "Gilroy-Bold";
-  }
+
 
 
   .guardian-card p {
@@ -1745,7 +1761,13 @@ a {
   position: relative;
   z-index: 1;
 }
+.mijh{
+  color: #91B0FF;
+}
 
+  .lajgfd{
+    margin: 0 !important;
+  }
 /* Tablet and Desktop Styles */
 @media (min-width: 768px) {
   #action {
@@ -1775,7 +1797,7 @@ a {
   }
 
   .cambridge {
-    padding: 25px 20px;
+    padding: 30px 40px;
     border-radius: 15px;
     margin: 0 auto;
     max-width: 900px;
@@ -1816,8 +1838,7 @@ a {
 }
 
 #mindful {
-  padding: 30px 0;
-  background-color: #fff;
+background-color: #fff;
   border-radius: 20px;
   margin: 0 15px;
 
@@ -1920,7 +1941,7 @@ a {
 }
 
 #philosophy {
-  padding: 30px 0;
+  
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1994,10 +2015,7 @@ a {
 
 /* Media queries for larger screens */
 @media (min-width: 768px) {
-  #philosophy {
-    padding: 40px 0;
-    border-radius: 30px;
-  }
+  
 
   #philosophy .left-img,
   #philosophy .right-img {
@@ -2094,6 +2112,7 @@ a {
   top: -70px;
   right: 20px;
 }
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .nav-item a {
     margin-right: 8px;
@@ -2103,15 +2122,24 @@ a {
   .stdyu-img {
     width: 100%;
   }
+
   .circlestr {
-    width: 420px;
-    height: 420px;
+    width: 450px;
+    height: 450px;
     background-image: url("/assets/img/Ellipse 80.png");
     top: 15%;
     left: 37%;
-    
+
+  }
+  .circlestr2 {
+    width: 370px;
+    height: 370px;
+  }
+  .cambridge {
+        padding: 20px;
+      }
 }
-}
+
 /* Mobile view: move arrows under the slider */
 @media (max-width: 768px) {
 
@@ -2135,9 +2163,12 @@ a {
   h1 {
     font-size: 40px !important;
   }
-
+.circlestr2 {
+    width: 290px;
+    height: 290px;
+  }
   h2 {
-    font-size: 26px !important;
+    font-size: 24px !important;
   }
 
   .gfd {
@@ -2314,7 +2345,58 @@ a {
   .p-kj {
     font-size: 19px;
   }
-
+.circlestr {
+    width: 280px;
+    height: 280px;
+    top: 56%;
+    left: 11%;
+  }
+  .footer {
+   padding: 40px 0px;
+  
+}
+.guiding-section {
+   margin-top: -30px;
+}
+#observation p {
+    padding: 0px;
+   
+}
+.academy-intro {
+  padding: 0px;
+}
+#academ {
+    padding: 10px;
+}
+.mindful,.serenity {
+    padding: 22px;
+   margin: 0 0px 20px;
+}
+.sere {
+    margin-top: -50px;
+  }
+  .bvcz{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .guif{
+    background-color: #5C795E;
+  }
+  .vcfs{
+    color: #DBFFD6;
+  }
+  .bed{
+    color: #fff !important;
+  }
+  .expr{
+    background-color: #EDF6FF;
+  }
+  .beli{
+    color: #525252 !important;
+  }
+  .cojhf{
+   color: #001F3F !important;
+  }
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;

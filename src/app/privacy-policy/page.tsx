@@ -10,27 +10,30 @@ function Page() {
                 <div className="row justify-content-center">
                     <div className="col-lg-8">
                         {/* Page Title */}
-                        <h1 className="text-center mb-5 fw-bold display-5 text-primary">
-                            Privacy Policy
+                        <h1 className="text-center mb-5 mt-5 fw-bold display-5">
+                            Privacy Policy (Compliant with the DPDP Act, 2023)
                         </h1>
 
                         {/* Last Updated */}
-                        <div className="card shadow-sm mb-4 border-0 rounded-3">
+                        {/* <div className="card shadow-sm mb-4 border-0 rounded-3">
                             <div className="card-body">
                                 <p className="card-text text-muted mb-0">
                                     <strong>Last updated:</strong>{" "}
                                     {new Date().toLocaleDateString()}
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
 
                         {/* Sections */}
                         {[
                             {
-                                title: "1. Introduction",
-                                content: `We respect your privacy and are committed to protecting your personal data. 
-                                This privacy policy will inform you about how we look after your personal data 
-                                when you visit our website and tell you about your privacy rights.`,
+                                title: "Privacy Policy (Compliant with the DPDP Act, 2023)",
+                                content: `Welcome to Skolaris India Learning Solutions!
+
+            This Privacy Policy applies to all users of the services provided by Skolaris India Learning Solutions ("Company," "we," "us," or "our"). It describes our practices for handling your personal data in connection with our website at studymonks.com and our online educational services (collectively, "Services").
+
+           Please read this policy carefully. By providing your consent to this Privacy Policy, you agree to the processing of your personal data as described herein.
+`,
                             },
                             {
                                 title: "2. Data We Collect",
