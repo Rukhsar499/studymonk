@@ -41,7 +41,7 @@ function Footer() {
               <div className="footeil">
                 <ul>
                   <li><Link href="#">Refund Policy</Link></li>
-                  <li><Link href="#">Terms & Conditions</Link></li>
+                  <li><Link href="/terms-of-service">Terms of Service</Link></li>
                   <li><Link href="#">Content Policy</Link></li>
                   <li><Link href="#">Cancellation Policy</Link></li>
                 </ul>
