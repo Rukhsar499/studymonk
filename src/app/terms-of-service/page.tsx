@@ -186,7 +186,7 @@ function TermsService() {
 
                     <div className="section">
                         <h2>10. Disclaimers of Warranties</h2>
-                        <p>The Services and Content are provided on an "as-is" and "as-available" basis, without any warranties of any kind, either express or implied. The Company does not warrant that:</p>
+                        <p>The Services and Content are provided on an {`"as-is"`} and "as-available" basis, without any warranties of any kind, either express or implied. The Company does not warrant that:</p>
                         
                         <ul>
                             <li>The Services will be uninterrupted, error-free, or free of viruses or other harmful components.</li>
