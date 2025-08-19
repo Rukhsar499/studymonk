@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { useState } from "react";
 import Image from "next/image";
 import {
     Button,
@@ -35,12 +36,16 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
         message: "",
     });
 
-    // ✅ New: Track screen size safely (no SSR crash)
+    const [loading, setLoading] = useState(false); // ✅ API loading state
+    const [error, setError] = useState<string | null>(null); // ✅ Error state
+    const [success, setSuccess] = useState(false); // ✅ Success state
+
+    // ✅ Track screen size safely (no SSR crash)
     const [isMobile, setIsMobile] = React.useState(false);
 
     React.useEffect(() => {
         const checkSize = () => setIsMobile(window.innerWidth < 768);
-        checkSize(); // initial
+        checkSize();
         window.addEventListener("resize", checkSize);
         return () => window.removeEventListener("resize", checkSize);
     }, []);
@@ -58,9 +63,42 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = () => {
-        console.log("Form Submitted:", formData);
-        handleClose();
+    const handleSubmit = async () => {
+        setLoading(true);
+        setError(null);
+        setSuccess(false);
+
+        try {
+            const res = await fetch("https://globbotradefin.com/api/leads.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (!res.ok) {
+                throw new Error("Failed to submit form");
+            }
+
+            const data = await res.json();
+            console.log("✅ API Response:", data);
+
+            setSuccess(true);
+            setFormData({
+                name: "",
+                email: "",
+                phone: "",
+                stage: "",
+                message: "",
+            });
+            handleClose(); // popup close
+        } catch (err: any) {
+            console.error(err);
+            setError(err.message || "Something went wrong");
+        } finally {
+            setLoading(false);
+        }
     };
 
     const inputStyle = {
@@ -100,7 +138,6 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
 
             <DialogContent sx={{ p: 0 }}>
                 <div style={{ display: "flex", flexWrap: "wrap" }}>
-                    {/* ✅ Display condition using isMobile state */}
                     {!isMobile && (
                         <div
                             style={{
@@ -113,7 +150,6 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 flexDirection: "column",
                             }}
                         >
-                            {/* ✅ Fixed: Image height same as parent (no extra scroll) */}
                             <div style={{ position: "relative", width: "100%", height: "100%" }}>
                                 <Image
                                     src="/assets/img/study11.png"
@@ -161,7 +197,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                             Book A FREE Trial Now!
                         </h3>
 
-                        <form >
+                        <form>
                             <TextField
                                 name="name"
                                 label="Name"
@@ -228,6 +264,9 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 className="gfdb"
                             />
 
+                            {error && <p style={{ color: "red", textAlign: "center" }}>{error}</p>}
+                            {success && <p style={{ color: "green", textAlign: "center" }}>Form submitted successfully!</p>}
+
                             <Button
                                 fullWidth
                                 sx={{
@@ -246,8 +285,9 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                     },
                                 }}
                                 onClick={handleSubmit}
+                                disabled={loading}
                             >
-                                Submit
+                                {loading ? "Submitting..." : "Submit"}
                             </Button>
                         </form>
                     </div>

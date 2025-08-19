@@ -12,7 +12,7 @@ function Footer() {
           {/* Logo and description */}
           <div className="col-lg-3 col-md-4 col-12">
             <div className="footrd bhb">
-              <Image src="/assets/img/logo1.png" alt="Logo" width={190} height={30} />
+              <Image src="/assets/img/white-logo.png" alt="Logo" width={180} height={50} />
               <p className="text-white">
                 We&apos;re always in search for talented and motivated people. Don&apos;t be shy. Introduce yourself!
               </p>

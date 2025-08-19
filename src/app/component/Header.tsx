@@ -13,7 +13,7 @@ function Header() {
             <nav className="navbar navbar-expand-lg">
               <div className="container-fluid">
                 <Link className="navbar-brand" href="/">
-                  <Image src="/assets/img/logo.png" alt="Company Logo" width={160} height={50} />
+                  <Image src="/assets/img/logos.png" alt="Study Monk" width={160} height={50} />
                 </Link>
 
                 <button
