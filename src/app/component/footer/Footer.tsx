@@ -22,7 +22,7 @@ function Footer() {
           {/* Useful Links */}
           <div className="col-lg-3 col-md-4 col-12">
             <div className="footrd used">
-              <h3>Useful Links</h3>
+              <h3 style={{ color: "#fff" }}>Useful Links</h3>
               <div className="footeil">
                 <ul>
                   <li><Link href="#">Cambridge Pathway</Link></li>
@@ -37,7 +37,7 @@ function Footer() {
           {/* Legal */}
           <div className="col-lg-3 col-md-4 col-12">
             <div className="footrd">
-              <h3>Legal</h3>
+              <h3 style={{ color: "#fff" }}>Legal</h3>
               <div className="footeil">
                 <ul>
                   <li><Link href="#">Refund Policy</Link></li>
@@ -51,7 +51,7 @@ function Footer() {
 
           {/* Contact Us */}
           <div className="col-lg-3 col-md-4 col-12">
-            <h3>Contact Us</h3>
+            <h3 style={{ color: "#fff" }}>Contact Us</h3>
             <div className="d-flex">
               <Image src="/assets/img/location1.png" alt="Location" width={20} height={20} className="me-2 imhg" />
               <p id="btd">#311, Kanakapura Road, Bengaluru</p>
