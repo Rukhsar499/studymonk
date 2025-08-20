@@ -14,7 +14,7 @@ function Footer() {
             <div className="footrd bhb">
               <Image src="/assets/img/white-logo.png" alt="Logo" width={180} height={50} />
               <p className="text-white">
-                We&apos;re always in search for talented and motivated people. Don&apos;t be shy. Introduce yourself!
+               At the heart of our platform are inspiring mentors who guide every student, opening doors to infinite possibilities in learning and growth.
               </p>
             </div>
           </div>

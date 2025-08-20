@@ -34,7 +34,7 @@ function Header() {
                       <Link className="nav-link" href="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" href="/our-story">Our Story</Link>
+                      <Link className="nav-link" href="/">Our Story</Link>
                     </li>
                     <li className="nav-item dropdown custom-dropdown">
                       <a
@@ -48,7 +48,7 @@ function Header() {
                       </a>
                       <ul className="dropdown-menu vbgf">
                         <li>
-                          <Link className="dropdown-item" href="/cambridge-primary">
+                          <Link className="dropdown-item" href="/">
                             Cambridge Primary
                           </Link>
                         </li>
