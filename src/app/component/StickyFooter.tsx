@@ -38,7 +38,7 @@ export default function StickyFooter() {
         <Button type="button"  style={{ backgroundColor: "#fcc300" }}
                     variant="contained"
                     onClick={handleClickOpen}
-          href="/"
+         
           className="btn btn-warning text-dark fw-bold py-2 w-100"
 
         >
