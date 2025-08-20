@@ -2,8 +2,20 @@
 
 import Link from "next/link";
 import { FaWhatsapp } from "react-icons/fa";
+import { Button } from "@mui/material";
+import PopupForm from "../component/PopupForm";
+import { useState } from "react"; 
 
 export default function StickyFooter() {
+    const [open, setOpen] = useState(false);
+  
+    const handleClickOpen = () => {
+      setOpen(true);
+    };
+  
+    const handleClose = () => {
+      setOpen(false);
+    };
   return (
     <footer
       className="fixed-bottom text-white shadow-lg"
@@ -23,13 +35,15 @@ export default function StickyFooter() {
         </Link>
 
         {/* Login Button - Highlighted */}
-        <Link
+        <Button type="button"  style={{ backgroundColor: "#fcc300" }}
+                    variant="contained"
+                    onClick={handleClickOpen}
           href="/"
-          className="btn btn-warning text-dark fw-bold px-4 py-2  w-100"
+          className="btn btn-warning text-dark fw-bold py-2 w-100"
 
         >
           Free Trial
-        </Link>
+        </Button >                                                                                                                
 
         {/* Call Button */}
         <a
@@ -40,6 +54,7 @@ export default function StickyFooter() {
         </a>
 
       </div>
+      <PopupForm open={open} handleClose={handleClose} /> 
     </footer>
   );
 }

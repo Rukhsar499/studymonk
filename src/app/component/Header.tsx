@@ -2,9 +2,22 @@
 
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState } from "react"; 
 import React from 'react';
+import { Button } from "@mui/material";
+import PopupForm from "../component/PopupForm";
+
 
 function Header() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <header>
       <section className="sticky-navbar">
@@ -77,17 +90,21 @@ function Header() {
 
                   </ul>
                 </div>
-                <button className="btn btn-login" type="button" style={{ color: '#fff' }}>
+                <Button className="btn btn-login" type="button"
+                    variant="contained"
+                    onClick={handleClickOpen} style={{ color: '#fff' }}>
                   <Image src="/assets/img/login.png" alt="Login Icon" width={20} height={20} className="me-2" />
                   Free Trial
-                </button>
+                </Button>
 
               </div>
             </nav>
           </div>
         </div>
-      </section>
+        </section>
+       <PopupForm open={open} handleClose={handleClose} /> 
     </header>
+    
   );
 }
 

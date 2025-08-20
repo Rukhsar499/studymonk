@@ -64,42 +64,46 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
     };
 
     const handleSubmit = async () => {
-        setLoading(true);
-        setError(null);
-        setSuccess(false);
+    setLoading(true);
+    setError(null);
+    setSuccess(false);
 
-        try {
-            const res = await fetch("https://studymonks.com/api/leads.php", {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(formData),
-            });
+    try {
+        const res = await fetch("https://studymonks.com/api/leads.php", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formData),
+        });
 
-            if (!res.ok) {
-                throw new Error("Failed to submit form");
-            }
-
-            const data = await res.json();
-            console.log("✅ API Response:", data);
-
-            setSuccess(true);
-            setFormData({
-                name: "",
-                email: "",
-                phone: "",
-                stage: "",
-                message: "",
-            });
-            handleClose(); // popup close
-        } catch (err: any) {
-            console.error(err);
-            setError(err.message || "Something went wrong");
-        } finally {
-            setLoading(false);
+        if (!res.ok) {
+            throw new Error("Failed to submit form");
         }
-    };
+
+        const data = await res.json();
+        console.log("✅ API Response:", data);
+
+        setSuccess(true);
+        setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            stage: "",
+            message: "",
+        });
+        handleClose(); // popup close
+    } catch (err: unknown) {
+        console.error(err);
+        if (err instanceof Error) {
+            setError(err.message);
+        } else {
+            setError("Something went wrong");
+        }
+    } finally {
+        setLoading(false);
+    }
+};
 
     const inputStyle = {
         backgroundColor: "#f8f8f8",

@@ -28,7 +28,7 @@ const geistMono = Geist_Mono({
 // Metadata with type
 export const metadata: Metadata = {
   title: 'Study Monk',
-  description: 'Next.js + TypeScript + Bootstrap',
+  description: 'You chose the Cambridge path for its depth and global advantage',
 };
 
 export default function RootLayout({

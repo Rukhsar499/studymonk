@@ -372,6 +372,7 @@ button.btn.btn-login {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
+  text-transform: capitalize !important;
 }
 
 .btn-book {
