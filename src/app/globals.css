@@ -353,10 +353,13 @@ h3 {
   padding: 10px 30px;
   border-radius: 20px;
   border: 1px solid #2F2F2F;
-  color: #2F2F2F;
-  font-family: "Poppins", sans-serif;
+  color: #2F2F2F !important;
+  font-family: "Poppins", sans-serif !important;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   transform-origin: center;
+  text-transform: capitalize !important;
+  border: none;
+  font-size: 16px !important;
 }
 
 .btn-primarys:hover {

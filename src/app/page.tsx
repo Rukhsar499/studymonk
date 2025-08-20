@@ -91,8 +91,9 @@ and thrive without digital noise.
             specialist mentors cultivate the focus and confidence your child needs
             to master its challenges and unlock their full potential.
           </p>
-          <button className="btn-primarys"
-            type="button">Experience the difference</button>
+          <Button className="btn-primarys"
+            type="button" variant="contained"
+                    onClick={handleClickOpen}>Experience the difference</Button>
         </div>
       </section>
       {/* Frame Section */}
