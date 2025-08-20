@@ -69,7 +69,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
         setSuccess(false);
 
         try {
-            const res = await fetch("https://globbotradefin.com/api/leads.php", {
+            const res = await fetch("https://studymonks.com/api/leads.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
