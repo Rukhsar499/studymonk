@@ -2027,19 +2027,152 @@ background-color: #fff;
 .bvx{
   border-radius: 30px;
 }
-.box_1{
+.box_1 {
+  position: relative;
   background-color: #FAFAFA;
   border-radius: 20px;
-  border: 1px solid #00000038;
   padding: 30px 42px;
-  margin-top: 20px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+  z-index: 1;
 }
-.box_2{
+
+/* hover ke time gradient border */
+.box_1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;        /* same radius */
+  padding: 2px;               /* border ki thickness */
+  background: linear-gradient(90deg, #007bff, #8e2de2);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.box_1:hover::before {
+  opacity: 1;
+}
+
+.box_1:hover {
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* right + bottom shadow */
+}
+.box_2 {
+  position: relative;
   background-color: #FBFFF6;
   border-radius: 20px;
-  border: 1px solid #00000038;
   padding: 30px 42px;
   margin-top: 20px;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+/* hover ke time gradient border */
+.box_2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;        /* same radius */
+  padding: 2px;               /* border ki thickness */
+  background: linear-gradient(90deg, #007bff, #8e2de2);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.box_2:hover::before {
+  opacity: 1;
+}
+
+.box_2:hover {
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2); /* right + bottom shadow */
+}
+.feature-box {
+  margin: 40px 0 20px;
+  width: 90%;
+}
+.gil{
+  font-family: "Gilroy-Bold";
+  font-size: 22px;
+}
+/* Hexagon shape */
+.hexagon {
+    width: 110px;
+    height: 34px;
+    background-color: #0f1a2d;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+   margin-top: 10px;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 34px solid transparent;
+  border-right: 34px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 17px solid #0f1a2d;
+}
+
+.hexagon::after {
+  top: 100%;
+  border-top: 17px solid #0f1a2d;
+}
+.power-img{
+  margin-top: 20px;
+}
+
+.hexagons {
+    width: 100px;
+    height: 34px;
+    background-color: #5C795E;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 22px;
+   margin-top: 10px;
+}
+
+.hexagons::before,
+.hexagons::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 34px solid transparent;
+  border-right: 34px solid transparent;
+}
+
+.hexagons::before {
+  bottom: 100%;
+  border-bottom: 17px solid #5C795E;
+}
+
+.hexagons::after {
+  top: 100%;
+  border-top: 17px solid #5C795E;
 }
 .box_sec{
   margin-left: 30px;

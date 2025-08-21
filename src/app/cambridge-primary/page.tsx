@@ -10,7 +10,7 @@ import PopupForm from "../component/PopupForm";
 import * as React from "react";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
-import { ArrowRight } from "lucide-react";
+
 
 
 export default function Page() {
@@ -220,30 +220,30 @@ export default function Page() {
                                 <div className="row">
                                     <div className="col-lg-6 col-md-6 col-12">
                                         <div className="box_1">
-                                          <h3 className="saga" style={{ textAlign: "left" }}>Answering Without Understanding</h3>
-                                          <hr />
-                                          <p>They can recite facts but struggle to explain the 'why' or apply knowledge to new problems.</p>
+                                            <h3 className="saga" style={{ textAlign: "left" }}>Answering Without Understanding</h3>
+                                            <hr />
+                                            <p>They can recite facts but struggle to explain the {'why'} or apply knowledge to new problems.</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-12">
                                         <div className="box_2">
-                                          <h3 className="saga" style={{ textAlign: "left" }}>Confidence Tied to Grades</h3>
-                                          <hr />
-                                          <p>Self-worth is linked to report cards, not genuine ability to tackle challenges and persevere.</p>
+                                            <h3 className="saga" style={{ textAlign: "left" }}>Confidence Tied to Grades</h3>
+                                            <hr />
+                                            <p>Self-worth is linked to report cards, not genuine ability to tackle challenges and persevere.</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-12">
                                         <div className="box_1">
-                                          <h3 className="saga" style={{ textAlign: "left" }}>Hesitation to <br />Speak Up</h3>
-                                          <hr />
-                                          <p>Reluctant to voice opinions, challenge ideas, or defend reasoning.</p>
+                                            <h3 className="saga" style={{ textAlign: "left" }}>Hesitation to <br />Speak Up</h3>
+                                            <hr />
+                                            <p>Reluctant to voice opinions, challenge ideas, or defend reasoning.</p>
                                         </div>
                                     </div>
                                     <div className="col-lg-6 col-md-6 col-12">
                                         <div className="box_2">
-                                          <h3 className="saga" style={{ textAlign: "left" }}>Caught Between Two Failed Models</h3>
-                                          <hr />
-                                          <p>Lost in large online classes or isolated in one-on-one tuition, missing vital collaborative skills.</p>
+                                            <h3 className="saga" style={{ textAlign: "left" }}>Caught Between Two Failed Models</h3>
+                                            <hr />
+                                            <p>Lost in large online classes or isolated in one-on-one tuition, missing vital collaborative skills.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -252,7 +252,97 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+            <section className="power mb">
+                <div className="container">
+                    <h2>The Power of the Socratic Circles: Personalized <br />
+                        Attention Meets Collaborative Genius.</h2>
+                    <div className="pwer_box">
+                        <div className="row">
+                            <div className="col-lg-5 col-md-4 col-12">
+                                <div className="power-img">
+                                    <Image
+                                        src="/assets/img/girlwithbag.png" // public folder ka path
+                                        alt="Girl with bag"
+                                        width={500}   // required
+                                        height={500}  // required
+                                        className="img-fluid"
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-lg-7 col-md-8 col-12">
+                                <div className="d-flex align-items-start gap-3 feature-box">
+                                    {/* Hexagon with number */}
+                                    <div className="hexagon">
+                                        <span>01</span>
+                                    </div>
 
+                                    {/* Text content */}
+                                    <div>
+                                        <h5 className="fw-bold mb-1 gil">Intimate Micro-Classes</h5>
+                                        <p className="mb-0 text-muted">
+                                            With a maximum of 8 students, our curated cohorts offer the perfect
+                                            balance for deep intellectual development and personalized attention.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="d-flex align-items-start gap-3 feature-box">
+                                    {/* Hexagon with number */}
+                                    <div className="hexagons">
+                                        <span>02</span>
+                                    </div>
+
+                                    {/* Text content */}
+                                    <div>
+                                        <h5 className="fw-bold mb-1 gil">Tailored Mentorship</h5>
+                                        <p className="mb-0 text-muted">
+                                            Your child receives expert, tailored guidance from our Cambridge specialists, ensuring their unique learning needs are met.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="d-flex align-items-start gap-3 feature-box">
+                                    {/* Hexagon with number */}
+                                    <div className="hexagon">
+                                        <span>03</span>
+                                    </div>
+
+                                    {/* Text content */}
+                                    <div>
+                                        <h5 className="fw-bold mb-1 gil">Dynamic Collaboration</h5>
+                                        <p className="mb-0 text-muted">
+                                            Lively peer discussions and collaborative problem-solving foster a dynamic environment where ideas are shared and challenged.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div className="d-flex align-items-start gap-3 feature-box">
+                                    {/* Hexagon with number */}
+                                    <div className="hexagons">
+                                        <span>04</span>
+                                    </div>
+
+                                    {/* Text content */}
+                                    <div>
+                                        <h5 className="fw-bold mb-1 gil">Future-Ready Skills</h5>
+                                        <p className="mb-0 text-muted">
+                                            We build confident communicators, resilient problem-solvers, and the future leaders who will drive tomorrow&apos;s innovations.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="master mb">
+                <div className="container">
+                    <div className="text-center">
+                        <h2>Mastering the Tools of Thought, Together.</h2>
+                        <p>
+                            As exclusive Cambridge specialists, we view core primary years as training grounds for developing powerful and versatile minds. During foundational years, the focus is on sparking a genuine love for learning and unshakable core skills in our kids. We create a nurturing and interactive environment where curiosity is celebrated, and confidence begins to blossom.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
             <PopupForm open={open} handleClose={handleClose} />
             <Footer />
