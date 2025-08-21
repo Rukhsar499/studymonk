@@ -61,12 +61,13 @@ export default function Page() {
                                     <p>
                                         In exclusive, mentor-led micro-classes, we transform Cambridge Primary students from passive learners into confident, collaborative thinkers. We are Cambridge specialists—it&apos;s all we do. We build the minds that will lead tomorrow.
                                     </p>
-                                    <Button className="btn-primarys"
-                                        type="button" variant="contained"
-                                        onClick={handleClickOpen}>Book Free Diagnostic & 7-Day Trial</Button>
+
                                     <p className="mt-4">
                                         See the difference in one conversation. No credit card required.
                                     </p>
+                                    <Button className="btn-primarys"
+                                        type="button" variant="contained"
+                                        onClick={handleClickOpen}>Book Free Diagnostic & 7-Day Trial</Button>
                                 </div>
                             </div>
                             <div className="col-lg-5 col-md-4 col-12">
@@ -333,13 +334,204 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="master mb">
+            <section className="master-bv mb">
                 <div className="container">
                     <div className="text-center">
                         <h2>Mastering the Tools of Thought, Together.</h2>
                         <p>
                             As exclusive Cambridge specialists, we view core primary years as training grounds for developing powerful and versatile minds. During foundational years, the focus is on sparking a genuine love for learning and unshakable core skills in our kids. We create a nurturing and interactive environment where curiosity is celebrated, and confidence begins to blossom.
                         </p>
+                    </div>
+                    <div className="maste_box_sec">
+                        <div className="row">
+                            <div className="col-lg-4 col-md-4 col-12">
+                                <div className="master_boz1">
+                                    <Image
+                                        src="/assets/img/languages-1.png" // public folder ka path
+                                        alt="Girl with bag"
+                                        width={100}   // required
+                                        height={100}  // required
+                                        className="img-fluid mb-2"
+                                    />
+                                    <h3 className="saga" style={{ textAlign: "left" }}>English: The Art <br />of Influence</h3>
+                                    <div className="title-underlines"></div>
+                                    <p>
+                                        Group analysis and debates to deconstruct arguments and build compelling narratives.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div className="col-lg-4 col-md-4 col-12">
+                                <div className="master_boz1">
+                                    <Image
+                                        src="/assets/img/maths 1.png" // public folder ka path
+                                        alt="Girl with bag"
+                                        width={100}   // required
+                                        height={100}  // required
+                                        className="img-fluid mb-2"
+                                    />
+                                    <h3 className="saga" style={{ textAlign: "left" }}>Mathematics: The <br />Science of Logic </h3>
+                                    <div className="title-underlines"></div>
+                                    <p>
+                                        Collaborative problem-solving for multi-step problems, articulating approaches for elegant solutions.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-4 col-12">
+                                <div className="master_boz1">
+                                    <Image
+                                        src="/assets/img/science-book1.png" // public folder ka path
+                                        alt="Girl with bag"
+                                        width={100}   // required
+                                        height={100}  // required
+                                        className="img-fluid mb-2"
+                                    />
+                                    <h3 className="saga" style={{ textAlign: "left" }}>Science: The Practice  <br />of Inquiry</h3>
+                                    <div className="title-underlines"></div>
+                                    <p>
+                                        Group-based inquiry to plan investigations, analyze data, and debate conclusions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="text-center">
+                            <Button className="btn-primarys"
+                                type="button" variant="contained"
+                                onClick={handleClickOpen}>Book Free Diagnostic & 7-Day Trial</Button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="path mb">
+                <div className="container">
+                    <div className="bg-purple">
+                        <div className="text-center">
+                            <h2>The Path from Attention to Achievement</h2>
+                            <p>Our method is a simple, powerful sequence where personalized attention directly builds the confidence and skills needed for success.</p>
+                        </div>
+                        <div className="path_sec">
+                            <div className="row">
+                                <div className="col-lg-3 col-md-3 col-12">
+                                    <div className="path_one">
+                                        <h5>Building Confident <br />
+                                            Communicators</h5>
+                                        <hr />
+                                        <p>
+                                            Tutors identify and address individual learning gaps.
+                                        </p>
+                                        <h5 className="one_first">01</h5>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-3 col-12">
+                                    <div className="path_one path2">
+                                        <h5>Increased
+                                            <br />
+                                            Participation</h5>
+                                        <hr />
+                                        <p>
+                                            Students feel safe to ask, explore, and collaborate.
+                                        </p>
+                                        <h5 className="one_first">02</h5>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-3 col-12">
+                                    <div className="path_one">
+                                        <h5>Boosted
+                                            <br />
+                                            Confidence</h5>
+                                        <hr />
+                                        <p>
+                                            Mastery of concepts builds self-esteem and courage.
+                                        </p>
+                                        <h5 className="one_first">03</h5>
+                                    </div>
+                                </div>
+                                <div className="col-lg-3 col-md-3 col-12">
+                                    <div className="path_one path2">
+                                        <h5>Exam
+                                            <br />
+                                            Readiness</h5>
+                                        <hr />
+                                        <p>
+                                            Tutors identify and address individual learning gaps.
+                                        </p>
+                                        <h5 className="one_first">04</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="meet mb">
+                <div className="container">
+                    <h2>Meet the Wise Guardians: Facilitators of High-Level Thinking</h2>
+                    <div className="meet_box">
+
+                    </div>
+                </div>
+            </section>
+
+            <section className="why mb">
+                <div className="container">
+                    <div className="text-center">
+                        <h2>Why Parents Choose Us</h2>
+                        <p>
+                            Building a foundation of trust through transparency, expertise, and a commitment to your child&apos;s holistic development.
+                        </p>
+                        <div>
+                        </div>
+                    </div>
+                    <div className="meet_sec">
+                        <div className="row">
+                            <div className="col-lg-4 col-md-4 col-12">
+                                <div className="meet_box">
+                                    <Image
+                                        src="/assets/img/shield1.png" // public folder ka path
+                                        alt="Girl with bag"
+                                        width={80}   // required
+                                        height={80}  // required
+                                        className="img-fluid mb-2"
+                                    />
+                                    <h4 className="cxa">Cambridge Specialist Guarantee</h4>
+                                    <p>
+                                        Our mentors are rigorously trained Cambridge subject specialists, ensuring unparalleled expertise in every micro-class.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-4 col-12">
+                                <div className="meet_box">
+                                    <Image
+                                        src="/assets/img/shield1.png" // public folder ka path
+                                        alt="Girl with bag"
+                                        width={80}   // required
+                                        height={80}  // required
+                                        className="img-fluid mb-2"
+                                    />
+                                    <h4 className="cxa">Safety & Privacy Assured</h4>
+                                    <p>
+                                       We prioritize your child&apos;s well-being with comprehensive safety protocols and strict privacy and child protection policies.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-4 col-12">
+                                <div className="meet_box">
+                                    <Image
+                                        src="/assets/img/shield1.png" // public folder ka path
+                                        alt="Girl with bag"
+                                        width={80}   // required
+                                        height={80}  // required
+                                        className="img-fluid mb-2"
+                                    />
+                                    <h4 className="cxa">Proven Parent Satisfaction</h4>
+                                    <p>
+                                       Our high parent retention and satisfaction rates speak to the profound impact we have on our students&apos; intellectual growth.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
