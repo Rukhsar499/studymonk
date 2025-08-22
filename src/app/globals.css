@@ -517,18 +517,24 @@ button.btn.btn-login {
 #partner .hover-arrow {
   position: absolute;
   bottom: 10px;
+  left: 10px; /* 👈 Add this */
+  right: 10px; /* 👈 aur ye, taki content dono side pe align ho */
   opacity: 0;
   transition: opacity 0.3s ease;
-  border-radius: 50%;
-  padding: 6px;
   display: flex;
-  justify-content: space-between;
-}
+  align-items: center;
+  justify-content: space-between; /* Arrow left, text right */
 
+}
+.p-h{
+  padding-top: 40px;
+  width: 80%;
+  margin: auto;
+}
 #partner .hover-arrow img {
   width: 40px;
   height: 40px;
-  margin-right: 200px;
+  margin-right: 10px; /* 👈 fixed margin */
 }
 
 #partner .image-box:hover .hover-arrow {

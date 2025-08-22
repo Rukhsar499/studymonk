@@ -486,8 +486,8 @@ export default function Page() {
                                         height={50}
                                     />
                                     <div>
-                                    <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                    <p className="text-white">English Teacher</p>
+                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white">English Teacher</p>
                                     </div>
                                 </a>
                             </div>
@@ -508,7 +508,10 @@ export default function Page() {
                                         width={50}
                                         height={50}
                                     />
-                                    <p><b>Dr. Ananya Sharma</b></p>
+                                    <div>
+                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white">English Teacher</p>
+                                    </div>
                                 </a>
                             </div>
                         </div>
@@ -528,9 +531,19 @@ export default function Page() {
                                         width={50}
                                         height={50}
                                     />
+                                    <div>
+                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white">English Teacher</p>
+                                    </div>
                                 </a>
                             </div>
                         </div>
+                    </div>
+                    <div className="text-center p-h">
+                        <p>Wise Guardians are expert facilitators, rigorously trained in our Socratic, micro-class methodology. Their mission is to guide conversation, ensuring every child participates, is challenged, and learns from the group's collective intelligence.</p>
+                        <Button className="btn-book" type="button">
+                            Book a consultation
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -550,10 +563,9 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="meet_box">
                                     <Image
-                                        src="/assets/img/shield1.png" // public folder ka path
+                                        src="/assets/img/shield1.png" 
                                         alt="Girl with bag"
-                                        width={80}   // required
-                                        height={80}  // required
+                                        width={80}   
                                         className="img-fluid mb-2"
                                     />
                                     <h4 className="cxa">Cambridge Specialist Guarantee</h4>
