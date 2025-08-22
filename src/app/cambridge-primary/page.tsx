@@ -465,11 +465,72 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="meet mb">
+            <section id="partner">
                 <div className="container">
                     <h2>Meet the Wise Guardians: Facilitators of High-Level Thinking</h2>
-                    <div className="meet_box">
-
+                    <div className="row">
+                        <div className="col-lg-4 col-md-4 col-12">
+                            <div className="image-box mt-3">
+                                <Image
+                                    src="/assets/img/mentor-3.png"
+                                    alt="Guardian"
+                                    width={300}
+                                    height={200}
+                                    className="img-fluid"
+                                />
+                                <a href="https://example.com" className="hover-arrow">
+                                    <Image
+                                        src="/assets/img/part-arrow.png"
+                                        alt="arrow icon"
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <div>
+                                    <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                    <p className="text-white">English Teacher</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-12">
+                            <div className="image-box mt-3">
+                                <Image
+                                    src="/assets/img/mentor-3.png"
+                                    alt="Guardian"
+                                    width={300}
+                                    height={200}
+                                    className="img-fluid"
+                                />
+                                <a href="https://example.com" className="hover-arrow">
+                                    <Image
+                                        src="/assets/img/part-arrow.png"
+                                        alt="arrow icon"
+                                        width={50}
+                                        height={50}
+                                    />
+                                    <p><b>Dr. Ananya Sharma</b></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 col-md-4 col-12">
+                            <div className="image-box mt-3">
+                                <Image
+                                    src="/assets/img/mentor-3.png"
+                                    alt="Guardian"
+                                    width={300}
+                                    height={200}
+                                    className="img-fluid"
+                                />
+                                <a href="https://example.com" className="hover-arrow">
+                                    <Image
+                                        src="/assets/img/part-arrow.png"
+                                        alt="arrow icon"
+                                        width={50}
+                                        height={50}
+                                    />
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -512,7 +573,7 @@ export default function Page() {
                                     />
                                     <h4 className="cxa">Safety & Privacy Assured</h4>
                                     <p>
-                                       We prioritize your child&apos;s well-being with comprehensive safety protocols and strict privacy and child protection policies.
+                                        We prioritize your child&apos;s well-being with comprehensive safety protocols and strict privacy and child protection policies.
                                     </p>
                                 </div>
                             </div>
@@ -527,7 +588,7 @@ export default function Page() {
                                     />
                                     <h4 className="cxa">Proven Parent Satisfaction</h4>
                                     <p>
-                                       Our high parent retention and satisfaction rates speak to the profound impact we have on our students&apos; intellectual growth.
+                                        Our high parent retention and satisfaction rates speak to the profound impact we have on our students&apos; intellectual growth.
                                     </p>
                                 </div>
                             </div>
