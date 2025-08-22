@@ -391,7 +391,62 @@ h3 {
   text-align: center;
   padding: 20px;
 }
-
+.path_sec{
+position: relative;
+}
+.line-arrow {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+.line-arrow2 {
+    position: absolute;
+    bottom: 16%;
+    left: 41.3%;
+}
+.line-arrow3 {
+    position: absolute;
+    bottom: 12%;
+    left: 66.4%;
+}
+.path_sec h5{
+  font-family: "Gilroy-Bold";
+}
+.phg{
+  width: 80%;
+  margin: auto;
+}
+.bluesat-box {
+    background-color: #172437;
+    padding: 40px 60px;
+    border-radius: 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.step-box {
+  background: #FFFFFF;
+  background: linear-gradient(351deg, rgba(255, 255, 255, 1) 0%, rgba(244, 244, 244, 1) 91%);
+  border-radius: 20px 0px 20px 0px;
+  padding: 40px;
+  width: 90%;
+  margin-bottom: 16px;
+  font-weight: 500;
+  color: #333;
+  transition: all 0.3s ease; 
+  cursor: pointer;
+  font-size: 22px;
+}
+.see_bx{
+  margin: auto;
+}
+.step-box:hover {
+  background: #A4C9A7; 
+  color: #fff;         
+  transform: translateX(-50px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  
+}
 .one_first {
   background-color: #fff;
   text-align: center;
@@ -419,13 +474,14 @@ button.btn.btn-login {
 }
 
 .btn-book {
-  border-radius: 20px;
-  padding: 5px 40px;
+  padding: 5px 40px !important;
+  border-radius: 20px !important;
+  padding: 5px 40px !important;
   background: #8A9A5B;
   background: linear-gradient(90deg, rgba(138, 154, 91, 1) 0%, rgba(189, 207, 134, 1) 50%);
   font-family: "Poppins", sans-serif;
   font-size: 14px;
-  color: #fff;
+  color: #fff !important;
   border: none;
   text-transform: capitalize !important;
 }

@@ -421,6 +421,15 @@ export default function Page() {
                                             Tutors identify and address individual learning gaps.
                                         </p>
                                         <h5 className="one_first">01</h5>
+                                        <div className="line-arrow">
+                                            <Image
+                                                src="/assets/img/v-line.png"
+                                                alt="Girl with bag"
+                                                width={230}
+                                                height={230}
+                                                className="img-fluid mb-2"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-12">
@@ -433,6 +442,15 @@ export default function Page() {
                                             Students feel safe to ask, explore, and collaborate.
                                         </p>
                                         <h5 className="one_first">02</h5>
+                                        <div className="line-arrow2">
+                                            <Image
+                                                src="/assets/img/v-2.png"
+                                                alt="Girl with bag"
+                                                width={225}
+                                                height={225}
+                                                className="img-fluid mb-2"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-12">
@@ -445,6 +463,15 @@ export default function Page() {
                                             Mastery of concepts builds self-esteem and courage.
                                         </p>
                                         <h5 className="one_first">03</h5>
+                                        <div className="line-arrow3">
+                                            <Image
+                                                src="/assets/img/v-3.png"
+                                                alt="Girl with bag"
+                                                width={225}
+                                                height={225}
+                                                className="img-fluid mb-2"
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-12">
@@ -542,7 +569,7 @@ export default function Page() {
                     <div className="text-center p-h">
                         <p>Wise Guardians are expert facilitators, rigorously trained in our Socratic, micro-class methodology. Their mission is to guide conversation, ensuring every child participates, is challenged, and learns from the group's collective intelligence.</p>
                         <Button className="btn-book" type="button">
-                            Book a consultation
+                            Learn About Our Mentors
                         </Button>
                     </div>
                 </div>
@@ -563,9 +590,10 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="meet_box">
                                     <Image
-                                        src="/assets/img/shield1.png" 
+                                        src="/assets/img/shield1.png"
                                         alt="Girl with bag"
-                                        width={80}   
+                                        width={60}
+                                        height={60}
                                         className="img-fluid mb-2"
                                     />
                                     <h4 className="cxa">Cambridge Specialist Guarantee</h4>
@@ -579,8 +607,8 @@ export default function Page() {
                                     <Image
                                         src="/assets/img/shield1.png" // public folder ka path
                                         alt="Girl with bag"
-                                        width={80}   // required
-                                        height={80}  // required
+                                        width={60}
+                                        height={60}
                                         className="img-fluid mb-2"
                                     />
                                     <h4 className="cxa">Safety & Privacy Assured</h4>
@@ -594,8 +622,8 @@ export default function Page() {
                                     <Image
                                         src="/assets/img/shield1.png" // public folder ka path
                                         alt="Girl with bag"
-                                        width={80}   // required
-                                        height={80}  // required
+                                        width={60}
+                                        height={60}
                                         className="img-fluid mb-2"
                                     />
                                     <h4 className="cxa">Proven Parent Satisfaction</h4>
@@ -604,6 +632,31 @@ export default function Page() {
                                     </p>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="see mb">
+                <div className="container">
+                    <h2>See How Your Child Thinks. The First Step is Free.</h2>
+                    <div className="text-center phg">
+                        <p>Unlock your child&apos;s true intellectual potential with a complimentary, no-obligation Strategy Session. This is a genuine diagnostic experience, not a sales pitch, designed to reveal how we cultivate high-level thinkers.</p>
+                    </div>
+                    <div className="see_bx">
+                        <div className="row">
+                            <div className="col-lg-2 col-md-2 col-1"></div>
+                            <div className="col-lg-4 col-md-5 col-12">
+                                <div className="bluesat-box">
+                                    <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a Complimentary 7-day trial. This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation Clarity Session where we will:</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-4 col-md-5 col-12">
+                                <div className="step-box">Discuss learning goals.</div>
+                                <div className="step-box">Answer your questions.</div>
+                                <div className="step-box">Tailor the perfect trial.</div>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-1"></div>
                         </div>
                     </div>
                 </div>
