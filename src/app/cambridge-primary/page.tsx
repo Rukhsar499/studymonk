@@ -2,6 +2,7 @@
 import "aos/dist/aos.css";
 import Image from "next/image";
 import { useState } from "react";
+import { useEffect } from "react";
 import Header from "../component/Header";
 import Footer from "../component/footer/Footer";
 import styles from "./page.module.css";
@@ -10,6 +11,7 @@ import PopupForm from "../component/PopupForm";
 import * as React from "react";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
+import BottomAccordion from "../component/BottomAccordion ";
 
 
 
@@ -44,7 +46,25 @@ export default function Page() {
         // Example:
         // fetch("/api/contact", { method: "POST", body: JSON.stringify(formData) });
     };
+    useEffect(() => {
+        const stepBoxes = document.querySelectorAll<HTMLDivElement>(".step-box");
 
+        const handleClick = (event: Event) => {
+            stepBoxes.forEach((b) => b.classList.remove("active"));
+            (event.currentTarget as HTMLDivElement).classList.add("active");
+        };
+
+        stepBoxes.forEach((box) => {
+            box.addEventListener("click", handleClick);
+        });
+
+        // 🧹 Cleanup
+        return () => {
+            stepBoxes.forEach((box) => {
+                box.removeEventListener("click", handleClick);
+            });
+        };
+    }, []);
 
     return (
         <>
@@ -567,10 +587,42 @@ export default function Page() {
                         </div>
                     </div>
                     <div className="text-center p-h">
-                        <p>Wise Guardians are expert facilitators, rigorously trained in our Socratic, micro-class methodology. Their mission is to guide conversation, ensuring every child participates, is challenged, and learns from the group's collective intelligence.</p>
+                        <p>Wise Guardians are expert facilitators, rigorously trained in our Socratic, micro-class methodology. Their mission is to guide conversation, ensuring every child participates, is challenged, and learns from the group&apos;s collective intelligence.</p>
                         <Button className="btn-book" type="button">
                             Learn About Our Mentors
                         </Button>
+                    </div>
+                </div>
+            </section>
+
+            <section className="see mb">
+                <div className="container">
+                    <h2>See How Your Child Thinks. The First Step is Free.</h2>
+                    <div className="text-center phg">
+                        <p>Unlock your child&apos;s true intellectual potential with a complimentary, no-obligation Strategy Session. This is a genuine diagnostic experience, not a sales pitch, designed to reveal how we cultivate high-level thinkers.</p>
+                    </div>
+                    <div className="see_bx">
+                        <div className="row">
+                            <div className="col-lg-2 col-md-2 col-1"></div>
+                            <div className="col-lg-5 col-md-5 col-12">
+                                <div className="bluesat-box">
+                                    <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a Complimentary 7-day trial. This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation Clarity Session where we will:</p>
+                                </div>
+                            </div>
+                            <div className="col-lg-3 col-md-5 col-12">
+                                <div className="step-box active">Discuss learning goals.</div>
+                                <div className="step-box">Answer your questions.</div>
+                                <div className="step-box">Tailor the perfect trial.</div>
+                            </div>
+                            <div className="col-lg-2 col-md-2 col-1"></div>
+                        </div>
+                        <div className="text-center mt-4">
+                            <Button className="btn-book mb-3" type="button" variant="contained"
+                                onClick={handleClickOpen}>
+                                Book FREE Daignostic & day Free Trial
+                            </Button>
+                            <p>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -637,33 +689,61 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="see mb">
+            <section className="fad mb">
                 <div className="container">
-                    <h2>See How Your Child Thinks. The First Step is Free.</h2>
-                    <div className="text-center phg">
-                        <p>Unlock your child&apos;s true intellectual potential with a complimentary, no-obligation Strategy Session. This is a genuine diagnostic experience, not a sales pitch, designed to reveal how we cultivate high-level thinkers.</p>
-                    </div>
-                    <div className="see_bx">
-                        <div className="row">
-                            <div className="col-lg-2 col-md-2 col-1"></div>
-                            <div className="col-lg-4 col-md-5 col-12">
-                                <div className="bluesat-box">
-                                    <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a Complimentary 7-day trial. This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation Clarity Session where we will:</p>
+                    <div className="row">
+                        <div className="col-lg-7 col-md-6 col-12">
+                            <h2 className="text-center fres">Frequently Asked Questions</h2>
+                            <BottomAccordion />
+                        </div>
+                        <div className="col-lg-5 col-md-6 col-12">
+                            <div className="faq-sdeimg position-relative">
+                                <div className="mt-2">
+                                    <h3 className="reacf">
+                                        For Young Minds, Curiosity is a
+                                        Superpower. We Help Them Master It.
+                                    </h3>
+                                    <p>
+                                        This is the magical age where curiosity can either blossom into a lifelong love for learning or fade away. Our mentors are trained to catch every {`why?`} and turn it into a thrilling discovery, ensuring their natural curiosity becomes an unstoppable academic strength.
+                                    </p>
+
+                                    <p>
+                                        Your complimentary 7-day trial begins with a free Discovery Session, designed to unlock the questions your child is most excited to answer.
+                                    </p>
+                                    <Button
+                                        className="btn-books mt-3"
+                                        type="button"
+                                        variant="contained"
+                                        onClick={handleClickOpen}
+                                    >
+                                        Start Your Learning 
+                                         <br />
+                                        Adventure
+                                    </Button>
+                                </div>
+                                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                    <Image
+                                        src="/assets/img/mummy.webp"
+                                        alt="testimonial"
+                                        width={360}
+                                        height={260}
+                                        className="img-fluid"
+                                    />
                                 </div>
                             </div>
-                            <div className="col-lg-4 col-md-5 col-12">
-                                <div className="step-box">Discuss learning goals.</div>
-                                <div className="step-box">Answer your questions.</div>
-                                <div className="step-box">Tailor the perfect trial.</div>
-                            </div>
-                            <div className="col-lg-2 col-md-2 col-1"></div>
                         </div>
+
                     </div>
                 </div>
+
             </section>
+
+
 
             <PopupForm open={open} handleClose={handleClose} />
             <Footer />
+
         </>
     );
+
 }
