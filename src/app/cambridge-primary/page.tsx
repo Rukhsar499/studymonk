@@ -70,7 +70,7 @@ export default function Page() {
         <>
             <Header />
 
-            <section className="primary mb">
+            {/* <section className="primary mb">
                 <div className="container-fluid">
                     <div className="primary-first">
                         <div className="row">
@@ -110,7 +110,7 @@ export default function Page() {
 
                     </div>
                 </div>
-            </section>
+            </section> */}
             <FullWidthImageSection
                 src="/assets/img/studys.webp"
                 alt="Right arrow"
@@ -689,6 +689,35 @@ export default function Page() {
                 </div>
             </section>
 
+            <section className="look mb">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-6 col-12">
+                            <div className="look-txt">
+                                <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme Stage(7-9)  </h2>
+                                <div className="mt-4">
+                                    <Button className="btn-book mb-3" type="button" variant="contained"
+                                        onClick={handleClickOpen}>
+                                        Click Here
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="loo-imh">
+                                <Image
+                                    src="/assets/img/im.webp"
+                                    alt="testimonial"
+                                    width={360}
+                                    height={260}
+                                    className="img-fluid"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section className="fad mb">
                 <div className="container">
                     <div className="row">
@@ -716,16 +745,16 @@ export default function Page() {
                                         variant="contained"
                                         onClick={handleClickOpen}
                                     >
-                                        Start Your Learning 
-                                         <br />
+                                        Start Your Learning
+                                        <br />
                                         Adventure
                                     </Button>
                                 </div>
                                 <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
                                     <Image
-                                        src="/assets/img/mummy.webp"
+                                        src="/assets/img/image26.png"
                                         alt="testimonial"
-                                        width={360}
+                                        width={300}
                                         height={260}
                                         className="img-fluid"
                                     />

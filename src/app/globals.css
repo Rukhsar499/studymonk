@@ -391,39 +391,47 @@ h3 {
   text-align: center;
   padding: 20px;
 }
-.path_sec{
-position: relative;
+
+.path_sec {
+  position: relative;
 }
+
 .line-arrow {
-    position: absolute;
-    bottom: 15%;
-    left: 15%;
+  position: absolute;
+  bottom: 15%;
+  left: 15%;
 }
+
 .line-arrow2 {
-    position: absolute;
-    bottom: 16%;
-    left: 41.3%;
+  position: absolute;
+  bottom: 16%;
+  left: 41.3%;
 }
+
 .line-arrow3 {
-    position: absolute;
-    bottom: 12%;
-    left: 66.4%;
+  position: absolute;
+  bottom: 12%;
+  left: 66.4%;
 }
-.path_sec h5{
+
+.path_sec h5 {
   font-family: "Gilroy-Bold";
 }
-.phg{
+
+.phg {
   width: 80%;
   margin: auto;
 }
+
 .bluesat-box {
-    background-color: #172437;
-    padding: 40px 60px;
-    border-radius: 20px;
-     min-height: 100%; 
-    display: flex;
-    align-items: center;
+  background-color: #172437;
+  padding: 40px 60px;
+  border-radius: 20px;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
 }
+
 .step-box {
   background: #FFFFFF;
   background: linear-gradient(351deg, rgba(255, 255, 255, 1) 0%, rgba(244, 244, 244, 1) 91%);
@@ -432,16 +440,56 @@ position: relative;
   margin-bottom: 16px;
   font-weight: 500;
   color: #333;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
   cursor: pointer;
   font-size: 20px;
 }
 
 .step-box.active {
-  background: #A4C9A7; /* green */
+  background: #A4C9A7;
   color: #fff;
-  transform: translateX(-50px); /* hover jaisa effect */
+  transform: translateX(-50px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.look {
+  position: relative;
+  padding: 60px 0px 40px 0px;
+
+}
+
+.look-txt {
+  padding-top: 50px;
+}
+
+.look::before {
+  content: "";
+  background-image: url("/assets/img/lookbg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  z-index: -1;
+
+}
+
+.look::after {
+  content: "";
+  background-image: url("/assets/img/blu-bg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: -1;
+
 }
 
 .one_first {
@@ -570,24 +618,30 @@ button.btn.btn-login {
 #partner .hover-arrow {
   position: absolute;
   bottom: 10px;
-  left: 10px; /* 👈 Add this */
-  right: 10px; /* 👈 aur ye, taki content dono side pe align ho */
+  left: 10px;
+  /* 👈 Add this */
+  right: 10px;
+  /* 👈 aur ye, taki content dono side pe align ho */
   opacity: 0;
   transition: opacity 0.3s ease;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Arrow left, text right */
+  justify-content: space-between;
+  /* Arrow left, text right */
 
 }
-.p-h{
+
+.p-h {
   padding-top: 40px;
   width: 80%;
   margin: auto;
 }
+
 #partner .hover-arrow img {
   width: 40px;
   height: 40px;
-  margin-right: 10px; /* 👈 fixed margin */
+  margin-right: 10px;
+  /* 👈 fixed margin */
 }
 
 #partner .image-box:hover .hover-arrow {
@@ -2695,6 +2749,69 @@ a {
   .cambridge {
     padding: 20px;
   }
+
+  .primar_tetx {
+    padding: 88px 0px 80px 41px;
+  }
+
+  #child {
+    font-size: 30px !important;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  .box_form_img {
+    margin-top: -172px;
+  }
+
+  .hexagon {
+    width: 130px;
+  }
+
+  .hexagons {
+    width: 115px;
+  }
+
+  .saga {
+    font-size: 21px;
+  }
+
+  .line-arrow {
+    bottom: 18%;
+    left: 15%;
+  }
+
+  .line-arrow img {
+    width: 190px;
+  }
+
+  .line-arrow2 img {
+    width: 190px;
+  }
+
+  .line-arrow2 {
+    position: absolute;
+    bottom: 14%;
+    left: 42.3%;
+  }
+
+  .line-arrow3 img {
+    width: 190px;
+  }
+
+  .step-box {
+    padding: 30px;
+    font-size: 18px;
+  }
+
+  /* .loo-imh img{
+  margin-top: -73px;
+} */
+  /* .look {
+padding: 100px 0px 20px 0px;
+} */
 }
 
 /* Mobile view: move arrows under the slider */
@@ -2972,6 +3089,79 @@ a {
   .cojhf {
     color: #001F3F !important;
   }
+
+  .plk {
+    top: 107%;
+    left: 37%;
+  }
+
+  .primar_tetx {
+    padding: 110px 20px 80px 20px;
+  }
+
+  .form {
+    margin-bottom: 20px;
+  }
+
+  .box_sec {
+    margin-left: 0px;
+  }
+
+  .box_1,
+  .box_2 {
+    padding: 20px;
+
+  }
+
+  .hexagon {
+    width: 276px;
+  }
+
+  .hexagons {
+    width: 230px;
+  }
+
+  .gil {
+    font-size: 20px;
+  }
+
+  .master_boz1 {
+    padding: 20px;
+    margin: 20px;
+
+  }
+
+  .line-arrow,
+  .line-arrow2,
+  .line-arrow3 {
+    display: none;
+  }
+
+  .path2 {
+    margin-top: 0px;
+  }
+
+  .bg-purple {
+    padding: 20px;
+
+  }
+
+  .step-box.active {
+    transform: translateX(0px);
+    margin-top: 20px;
+  }
+
+  .look::before {
+    width: 100%;
+  }
+.look::after {
+   height: 70%;
+   top: 31%;
+   
+}
+.look-txt {
+    padding-top: 0px;
+}  
 
   @media (max-width: 768px) {
     .popup-form-right {
