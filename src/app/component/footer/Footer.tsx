@@ -25,10 +25,10 @@ function Footer() {
               <h3 style={{ color: "#fff" }}>Useful Links</h3>
               <div className="footeil">
                 <ul>
-                  <li><Link href="#">Cambridge Pathway</Link></li>
-                  <li><Link href="#">Our Mentors</Link></li>
-                  <li><Link href="#">Our Philosophy</Link></li>
-                  <li><Link href="#">Contact Us</Link></li>
+                  <li><Link href="#">Our Story</Link></li>
+                  <li><Link href="#">Cambridge Primary</Link></li>
+                  <li><Link href="#">Cambridge Secondary</Link></li>
+                  <li><Link href="#">Career</Link></li>
                 </ul>
               </div>
             </div>
