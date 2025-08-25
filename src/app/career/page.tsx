@@ -198,12 +198,12 @@ export default function Page() {
                                         </div>
 
                                         <div className="mb-3">
-                                            <p><b>What does 'Guided Curiosity' mean to you?</b></p>
+                                            <p><b>What does &apos;Guided Curiosity&apos; mean to you?</b></p>
                                             <p>"It means being a co-discoverer with the student. I don't give them the answer; I give them the next question that helps them find the answer themselves. That's where real learning happens."</p>
                                         </div>
 
                                         <p><b>How is working here different?</b></p>
-                                        <p>"The calm. There's no pressure to just 'get through' material. I have the time and support to actually teach, to see the spark in a student's eyes. It's why I became an educator."</p>
+                                        <p>"The calm. There's no pressure to just &apos;get through&apos; material. I have the time and support to actually teach, to see the spark in a student's eyes. It's why I became an educator."</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-12">
