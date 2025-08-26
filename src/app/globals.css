@@ -459,10 +459,43 @@ h3 {
   text-align: center;
   margin-top: 30px;
 }
+.din-box{
+  background-color: #F8F8F8;
+  border-radius: 15px;
+  padding: 40px;
+}
+.active-box {
+  padding: 40px 20px;
+  border-radius: 20px;
+  background-color: #9DAE6B !important;
+  color: #fff !important;
+  border: none !important;
+}
+.active-box h6,
+.active-box p {
+  color: #fff !important;
+}
+.inactive-box {
+  background-color: #F8F8F8 !important;
+  padding: 40px 20px;
+  border: none !important;
+}
 .gtr{
   background-color: #000000;
   padding: 20px 30px;
   border-radius: 15px;
+  margin: 0px 20px 10px 60px;
+}
+.agrd img{
+  width: 20px;
+  height: 20px;
+}
+
+.why-trs{
+  width:90%;
+}
+.agrd{
+  margin-bottom: 20px;
 }
 .nurtye-box{
   background-image: url("/assets/img/pic1.webp");
@@ -470,7 +503,7 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 40px 0px;
-  height: 600px;
+  height: auto;
 }
 .gr{
   background-color: #F8F8F8;
@@ -2783,7 +2816,7 @@ a {
 }
 
 .career-banner{
-  background-image: url("/assets/img/pic1.webp");
+  background-image: url("/assets/img/Rectangle611.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -2792,7 +2825,10 @@ a {
   display: flex;
   align-items: center;
 }
-
+.dimen{
+  color: #001F3F;
+  margin-bottom: 30px;
+}
 .primar_tetx {
   padding: 210px 44px 80px 122px;
 }

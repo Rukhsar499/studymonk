@@ -1,0 +1,79 @@
+"use client";
+import React, { useState } from "react";
+import { Container, Row, Col, Card } from "react-bootstrap";
+
+const ComparisonSection: React.FC = () => {
+    const [active, setActive] = useState<number>(1); // default active = Study Monks
+
+    const columns = [
+        {
+            title: "Dimension",
+            content: [
+                "Work Environment.",
+                "Primary Goal.",
+                "Professional Growth.",
+                "Key Metric of Success.",
+            ],
+        },
+        {
+            title: "The Study Monks Way",
+            content: [
+                "Calm, focused, collaborative. A culture of “Digital Serenity.”",
+                "Cultivation of student well-being, mastery, and confidence.",
+                "Deepening pedagogical and subject matter expertise. Becoming a ‘Wise Guardian.’",
+                "Measurable growth in student confidence and critical thinking skills.",
+            ],
+        },
+        {
+            title: "The Mass-Market EdTech Way",
+            content: [
+                "High-pressure, noisy, sales-driven. Characterized by ‘brand fatigue.’",
+                "Acquiring users at scale; maximizing volume and transactions.",
+                "Learning to use the platform’s sales script and internal processes.",
+                "Number of demos booked, classes sold, or active user minutes.",
+            ],
+        },
+        {
+            title: "The Tutor Marketplace Way",
+            content: [
+                "Isolated, inconsistent, unsupported.",
+                "Fulfilling hourly contracts; managing individual client relationships.",
+                "No structured development; growth is entirely self-directed.",
+                "Hours billed and client ratings.",
+            ],
+        },
+    ];
+
+    return (
+
+        <Container className="my-5">
+            <div className="din-box">
+                <Row>
+
+
+                    {columns.map((col, index) => (
+                        <Col
+                            key={index}
+                            md={3}
+                            onClick={() => setActive(index)}
+                            style={{ cursor: "pointer" }}
+                        >
+                            <Card
+                                className={`h-100 ${active === index ? "active-box" : "inactive-box"
+                                    }`}
+                            >
+                                <h6 className="fw-bold dimen">{col.title}</h6>
+                                {col.content.map((c, i) => (
+                                    <p key={i} className="mb-4">{c}</p>
+                                ))}
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </div>
+        </Container>
+
+    );
+};
+
+export default ComparisonSection;

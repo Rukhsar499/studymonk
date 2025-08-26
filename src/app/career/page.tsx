@@ -10,7 +10,8 @@ import PopupForm from "../component/PopupForm";
 import * as React from "react";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
-import CareerAccodion from "../career/CareerAccodion";
+// import CareerAccodion from "../career/CareerAccodion";
+import ComparisonSection from "../career/ComparisonSection";
 
 
 
@@ -158,20 +159,83 @@ export default function Page() {
                 </div>
             </section>
 
-            {/* <section className="nurtue mb">
+            <ComparisonSection />
+
+            <section className="nurtue mb">
                 <div className="container">
                     <div className="text-center">
                         <h2>Nurturing Our Guides</h2>
                         <p>We believe that to be a "Wise Guardian" for our students, you must feel supported, valued, and nurtured yourself. Our commitment to well-being is not just for our learners; it is the foundation of our internal culture.</p>
-                      <div className="nurtye-box">
-                        <div className="gtr">
-                       <p><b>Collaborative Curriculum Planning</b></p>
-                          <p>High-pressure, noisy, sales-driven. Characterized by "brand fatigue."</p>
+                    </div>
+                    <div className="nurtye-box">
+                        <div className="row">
+                            <div className="col-lg-5 col-md-5 col-12">
+                                <div className="nurtyes-box">
+                                    <div className="gtr">
+                                        <div className="d-flex agrd">
+                                            <Image
+                                                src="/assets/img/tick-circle2.png"
+                                                alt="Right arrow"
+                                                width={20}
+                                                height={10}
+                                                className="img-fluid me-2"
+                                            />
+                                            <div>
+                                            <p className="mb-0" style={{ color: "#FBDD30" }}><b>Collaborative Curriculum Planning</b></p>
+                                            
+                                                <p className="text-white">High-pressure, noisy, sales-driven. Characterized by "brand fatigue."</p>
+                                            </div>
+                                        </div>
+                                        <div className="d-flex agrd">
+                                            <Image
+                                                src="/assets/img/tick-circle2.png"
+                                                alt="Right arrow"
+                                                width={20}
+                                                height={10}
+                                                className="img-fluid me-2"
+                                            />
+                                            <div>
+                                            <p className="mb-0" style={{ color: "#FBDD30" }}><b>Supportive Check-ins</b></p>
+                                            
+                                                <p className="text-white">Engage in regular conversations focused on your growth and well-being, not surveillance.</p>
+                                            </div>
+                                        </div>
+                                        <div className="d-flex agrd">
+                                            <Image
+                                                src="/assets/img/tick-circle2.png"
+                                                alt="Right arrow"
+                                                width={20}
+                                                height={10}
+                                                className="img-fluid me-2"
+                                            />
+                                            <div>
+                                            <p className="mb-0" style={{ color: "#FBDD30" }}><b>A Community of Peers</b></p>
+                                            
+                                                <p className="text-white">Share insights, challenges, and successes with fellow mentors in a spirit of mutual improvement.</p>
+                                            </div>
+                                        </div>
+                                        <div className="d-flex agrd">
+                                            <Image
+                                                src="/assets/img/tick-circle2.png"
+                                                alt="Right arrow"
+                                                width={20}
+                                                height={10}
+                                                className="img-fluid me-2"
+                                            />
+                                            <div>
+                                            <p className="mb-0" style={{ color: "#FBDD30" }}><b>Protected Deep Work</b></p>
+                                            
+                                                <p className="text-white">We champion "Digital Serenity" and respect your work-life balance as a non-negotiable part of our ethos.</p>
+                                            </div>
+                                        </div>
+                                        
+                                     </div>
+                                </div>
+                            </div>
                         </div>
-                      </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
 
             <section className="mission mb">
                 <div className="container">
@@ -349,7 +413,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="fad mb">
+            {/* <section className="fad mb">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7 col-md-6 col-12">
@@ -394,7 +458,7 @@ export default function Page() {
                     </div>
                 </div>
                 <PopupForm open={open} handleClose={handleClose} />
-            </section>
+            </section> */}
 
             <PopupForm open={open} handleClose={handleClose} />
             <Footer />
