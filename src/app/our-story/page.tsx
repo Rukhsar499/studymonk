@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from "react";
+import { useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Image from "next/image";
@@ -10,9 +11,22 @@ import StickyFooter from "../component/StickyFooter";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import styles from "./page.module.css";
 import BootstrapClient from '../BootstrapClient';
+import { Button } from "@mui/material";
+import PopupForm from "../component/PopupForm";
+import StoryAccordion from "./StoryAccordion";
 
 
 export default function Page() {
+
+    const [open, setOpen] = useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     useEffect(() => {
         AOS.init({
@@ -30,45 +44,43 @@ export default function Page() {
                     <div className="circlest circlestr2"></div>
 
                     <div className="mb-3">
-                        <h1><b>It Started with a Simple Observation.</b></h1>
-                        <p>An Educator’s Concern. A Parent’s Dilemma. A Child’s Potential.</p>
+                        <h1 className="edu"><b>An Educator’s Concern. <br />
+                            A Parent’s Dilemma. A Child’s Potential.</b></h1>
                     </div>
-                    <button className="btn-primarys" type="button">Experience the difference</button>
+                    <Button className="btn-primarys"
+                        type="button" variant="contained"
+                        onClick={handleClickOpen}>Experience the difference</Button>
                 </div>
             </section>
 
-            <section id="observation">
+            <section id="observation" className="mb">
                 {/* decorative img on left side */}
                 <div className="deco-img">
                     <Image
                         src="/assets/img/dec-1.png"
                         alt="Decorative"
-                        width={350}
+                        width={300}
                         height={450}
                     />
                 </div>
 
                 <div className="container">
                     <h2>It Started with a Simple Observation.</h2>
-                    <div className="obj-text">
-                        <p>
-                            Our founder, a Cambridge Curriculum Educator, saw Cambridge students
-                            with great potential struggling. Not from lack of effort, but from a
-                            lack of the right support. She saw the gap between a world-class
-                            curriculum and the local, expert guidance needed to truly master it.
-                            Study Monks was born from that observation—not as a business, but as
-                            the answer.
-                        </p>
+                    <div className="itz">
+                        <div className="obj-text">
+                            <p>
+                                Our founder, a Cambridge Curriculum Educator, saw Cambridge students
+                                with great potential struggling. Not from lack of effort, but from a
+                                lack of the right support. She saw the gap between a world-class
+                                curriculum and the local, expert guidance needed to truly master it.
+                                Study Monks was born from that observation—not as a business, but as
+                                the answer.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <FullWidthImageSection
-                    src="/assets/img/studys.webp"
-                    alt="Right arrow"
-                    className="d-none d-lg-flex"
-                    width="100%"
-                    objectFit="cover"
-                />
+
 
                 <section className="pkh">
                     <Image
@@ -134,7 +146,7 @@ export default function Page() {
             <section id="academ">
                 <div className="container academy">
                     <div className="container">
-                        <h2 className="academy-title text-center" data-aos="fade-down" data-aos-delay="100">More Than an Academy</h2>
+                        <h2 className="academy-title text-center">More Than an Academy</h2>
                         <p className="academy-intro text-center">
                             We believe true learning happens when academic rigor meets psychological safety.
                             Our entire approach is built on the philosophy of the Wise Guardian
@@ -156,7 +168,7 @@ export default function Page() {
                             {/* Middle Column */}
                             <div className="col-lg-4 d-flex flex-column justify-content-between">
                                 <div className="mindful mb-4">
-                                    <h3 className="saga" style={{ color: "#DBFFD6" }}>Mindful Mastery</h3>
+                                    <h3 className="saga" style={{ color: "#fff" }}>Mindful Mastery</h3>
                                     <p>
                                         We believe that true confidence comes from deep conceptual clarity, not memorisation.
                                         Our mentors guide students to build a foundational understanding of every topic,
@@ -186,7 +198,7 @@ export default function Page() {
                                         and builds knowledge that lasts a lifetime.
                                     </p>
                                 </div>
-                                <div className="mindful sere expr">
+                                <div className="mindful mindfuls sere expr">
                                     <h3 className="saga cojhf" style={{ color: "#DBFFD6" }}>Expressive Confidence</h3>
                                     <p className="beli">
                                         We believe that true confidence comes from deep conceptual clarity, not memorisation.
@@ -251,7 +263,7 @@ export default function Page() {
                                 </p>
                             </div>
                         </div>
-                 <div className="col-lg-1 col-md-1 col-0"></div>
+                        <div className="col-lg-1 col-md-1 col-0"></div>
                         {/* Right Column */}
                         <div className="col-lg-3 text-center order-1 order-md-2 bvcz">
                             <Image
@@ -266,16 +278,16 @@ export default function Page() {
                 </div>
             </section>
 
-            <section id="mindful" className="lajgfd">
+            <section className="lajgfd mb">
                 <div className="container">
                     <div className="row">
 
-                        <div className="col-lg-5">
+                        <div className="col-lg-4">
                             <Image
                                 src="/assets/img/mindful.png"
                                 alt="Mindful Learners"
-                                width={500}
-                                height={500}
+                                width={400}
+                                height={400}
                                 className="img-fluid"
                             />
                         </div>
@@ -283,14 +295,14 @@ export default function Page() {
 
                         <div className="col-lg-7 d-flex flex-column justify-content-center align-items-start">
                             <div>
-                                <h3 className="saga">Raising a Generation of Confident <span className="mijh">Mindful Learners</span></h3>
+                                <h3 className="saga"><span className="mijh">Raising a Generation of Confident Mindful Learners</span></h3>
                             </div>
                             <div>
-                                <p>
+                                <p style={{ color: "#fff" }}>
                                     Our vision is to become India&apos;s most trusted partner for Cambridge families,
                                     bridging the gap between a world-class education and local, accessible expertise.
                                 </p>
-                                <p>
+                                <p style={{ color: "#fff" }}>
                                     We are committed to cultivating students who are not only academically successful
                                     but are also focused, curious, and confident global citizens. Because when students
                                     feel understood, they don&apos;s just improve—they excel.
@@ -339,10 +351,57 @@ export default function Page() {
 
                     <button>Meet Our Mentors</button>
                 </div>
+                <PopupForm open={open} handleClose={handleClose} />
+            </section>
+
+            <section className="fad mb">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-7 col-md-6 col-12">
+                            <h2 className="text-center fres">Frequently Asked Questions</h2>
+                            <StoryAccordion />
+                        </div>
+                        <div className="col-lg-5 col-md-6 col-12">
+                            <div className="faq-sdeimg position-relative">
+                                <div className="mt-2">
+                                    <h3 className="reacf">
+                                        Our Philosophy Isn't a Page. It's a Person.
+                                    </h3>
+                                    <p>
+                                        You've read our beliefs. Now, meet them. The heart of Study Monks isn't a methodology; it's the mentor who embodies it. Finding the perfect mentor-student connection is the most critical step, and our most sought-after mentors have limited availability.
+                                    </p>
+
+                                    <p>
+                                        This is your invitation to a personal session with a true Wise Guardian. Let's start the journey.
+                                    </p>
+                                    <Button
+                                        className="btn-books mt-3"
+                                        type="button"
+                                        variant="contained"
+                                        onClick={handleClickOpen}
+                                    >
+                                       Meet a Wise Guardian
+                                    </Button>
+                                </div>
+                                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                    <Image
+                                        src="/assets/img/envato-labs.png"
+                                        alt="testimonial"
+                                        width={360}
+                                        height={260}
+                                        className="img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <PopupForm open={open} handleClose={handleClose} />
             </section>
 
             <Footer />
-             <StickyFooter />
+            <StickyFooter />
         </>
     );
 }

@@ -76,6 +76,9 @@ a {
 h3 {
   font-family: 'Gilroy-Medium';
 }
+.edu{
+  font-family: 'Gilroy-Bold';
+}
 
 .for {
   font-weight: 600;
@@ -1847,7 +1850,7 @@ a {
 .guiding-section {
   position: relative;
   z-index: 2;
-  margin-top: -150px;
+ 
 }
 
 .section-title {
@@ -1931,14 +1934,20 @@ a {
 @media (min-width: 768px) {
 
 
-
+.itz{
+background-image: url("/assets/img/studys.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
   .obj-text {
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    margin: 0 auto;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
   }
 
   #observation p {
@@ -2022,12 +2031,7 @@ a {
 
 }
 
-.academy {
-  background-color: #FBFFF6;
-  border-radius: 20px;
-  padding: 30px 0;
 
-}
 
 .academy-intro {
   max-width: 100%;
@@ -2195,13 +2199,16 @@ a {
 }
 
 .mijh {
-  color: #91B0FF;
+  color: #FFF677;
 }
 
 .lajgfd {
-  margin: 0 !important;
+  background-color: #172437;
+  padding: 40px 0px;
 }
-
+.lajgfd img{
+ border-radius: 10px;
+}
 /* Tablet and Desktop Styles */
 @media (min-width: 768px) {
   #action {
@@ -2304,9 +2311,11 @@ a {
   margin-bottom: 20px;
 
 }
-
+.mindfuls{
+  background-color: #779772 !important;
+}
 .mindful {
-  background-color: #5C795E;
+  background-color: #253352;
 }
 
 .mindful h2 {
@@ -2318,7 +2327,7 @@ a {
 }
 
 .serenity {
-  background-color: #EDF6FF;
+  background-color: #FBFDFF;
 }
 
 .sere {
@@ -2431,21 +2440,19 @@ a {
 }
 
 #philosophy button {
-  background: linear-gradient(to left, #8A9A5B, #BDCF86);
-  color: #fff;
-  padding: 10px 30px;
+  background: #B2BF4D;
+box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+padding: 10px 30px;
   /* Smaller button */
-  font-size: 14px;
-  font-weight: bold;
+  font-size: 16px;
+  
   border: none;
   border-radius: 25px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  color: black;
 }
 
-#philosophy button:hover {
-  background-color: #1f3329;
-}
 
 .box_form_img {
   position: relative;
