@@ -490,7 +490,9 @@ h3 {
   width: 20px;
   height: 20px;
 }
-
+.why-sty{
+  margin-bottom: -79px;
+}
 .why-trs{
   width:90%;
 }
@@ -2876,7 +2878,9 @@ a {
     margin-right: 8px;
     font-size: 14px;
   }
-
+.care-txt {
+    padding-right: 110px;
+}
   .stdyu-img {
     width: 100%;
   }
@@ -3311,7 +3315,44 @@ padding: 100px 0px 20px 0px;
 .look-txt {
     padding-top: 0px;
 }  
-
+.why-trs {
+    width: 100%;
+}
+.why-sty {
+    margin-bottom: 0px;
+}
+.care-box {
+  margin-top: -40px;
+}
+.care-box {
+    padding: 15px 25px;
+  }
+  .black-box{
+    margin-bottom: 20px;
+  }
+  .din-box {
+   padding: 20px;
+}
+.inactive-box, .active-box {
+  padding: 20px ;
+}
+.gtr {
+  padding: 20px;
+  margin: 0px 15px 10px 15px;
+}
+.open {
+  padding: 20px;
+}
+.bl-box {
+   padding: 20px;
+}
+.ment {
+  font-size: 18px;
+  }
+  .btn-primarya {
+   padding: 7px 20px !important;
+  font-size: 12px !important;
+}
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;
