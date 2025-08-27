@@ -468,7 +468,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="path mb">
+            {/* <section className="path mb">
                 <div className="container">
                     <div className="bg-purple">
                         <div className="text-center">
@@ -555,80 +555,115 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section id="partner">
                 <div className="container">
-                    <h2>Meet the Wise Guardians: Facilitators of High-Level Thinking</h2>
-                    <div className="row">
-                        <div className="col-lg-4 col-md-4 col-12">
-                            <div className="image-box mt-3">
-                                <Image
-                                    src="/assets/img/mentor-3.png"
-                                    alt="Guardian"
-                                    width={300}
-                                    height={200}
-                                    className="img-fluid"
-                                />
-                                <a href="https://example.com" className="hover-arrow">
-                                    <Image
-                                        src="/assets/img/part-arrow.png"
-                                        alt="arrow icon"
-                                        width={50}
-                                        height={50}
-                                    />
-                                    <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                        <p className="text-white">English Teacher</p>
-                                    </div>
-                                </a>
+                    <div className="row align-items-center">
+                        <div className="col-lg-5 col-md-4 col-12">
+                            <div className="pt-text">
+                                <h2 style={{ textAlign: "left" }}>Meet the Wise Guardians:
+                                    Your Child's Personal Thinking
+                                    Partner</h2>
+                                <p>Our Wise Guardians are more than a tutor; they are an expert facilitator of intellectual discovery. We are relentlessly selective—just 1 in 5 applicants are chosen—seeking not only deep Cambridge curriculum expertise but the rare ability to manage and elevate a high-potential group discussion.
+                                </p>
+                                <p>
+                                    Every mentor is rigorously trained in our Socratic, micro-class methodology. Their mission is not to lecture, but to guide the conversation, ensuring every child participates, is challenged, and learns from the collective intelligence of the group.
+                                </p>
                             </div>
                         </div>
-                        <div className="col-lg-4 col-md-4 col-12">
-                            <div className="image-box mt-3">
-                                <Image
-                                    src="/assets/img/mentor-3.png"
-                                    alt="Guardian"
-                                    width={300}
-                                    height={200}
-                                    className="img-fluid"
-                                />
-                                <a href="https://example.com" className="hover-arrow">
-                                    <Image
-                                        src="/assets/img/part-arrow.png"
-                                        alt="arrow icon"
-                                        width={50}
-                                        height={50}
-                                    />
-                                    <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                        <p className="text-white">English Teacher</p>
+                        <div className="col-lg-7 col-md-8 col-12">
+                            <div className="row">
+                                <div className="col-lg-6 col-md-6 col-12">
+                                    <div className="image-box mt-3">
+                                        <Image
+                                            src="/assets/img/mentor-3.png"
+                                            alt="Guardian"
+                                           width={250}
+                                            height={200}
+                                            className="img-fluid"
+                                        />
+                                        <a href="https://example.com" className="hover-arrow">
+                                            <Image
+                                                src="/assets/img/part-arrow.png"
+                                                alt="arrow icon"
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <div>
+                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white">English Teacher</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div className="col-lg-4 col-md-4 col-12">
-                            <div className="image-box mt-3">
-                                <Image
-                                    src="/assets/img/mentor-3.png"
-                                    alt="Guardian"
-                                    width={300}
-                                    height={200}
-                                    className="img-fluid"
-                                />
-                                <a href="https://example.com" className="hover-arrow">
-                                    <Image
-                                        src="/assets/img/part-arrow.png"
-                                        alt="arrow icon"
-                                        width={50}
-                                        height={50}
-                                    />
-                                    <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                        <p className="text-white">English Teacher</p>
+                                    <div className="image-box mt-3">
+                                        <Image
+                                            src="/assets/img/mentor-3.png"
+                                            alt="Guardian"
+                                            width={250}
+                                            height={200}
+                                            className="img-fluid"
+                                        />
+                                        <a href="https://example.com" className="hover-arrow">
+                                            <Image
+                                                src="/assets/img/part-arrow.png"
+                                                alt="arrow icon"
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <div>
+                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white">English Teacher</p>
+                                            </div>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
+                                <div className="col-lg-6 col-md-6 col-12">
+                                    <div className="image-box mt-3">
+                                        <Image
+                                            src="/assets/img/mentor-3.png"
+                                            alt="Guardian"
+                                           width={250}
+                                            height={200}
+                                            className="img-fluid"
+                                        />
+                                        <a href="https://example.com" className="hover-arrow">
+                                            <Image
+                                                src="/assets/img/part-arrow.png"
+                                                alt="arrow icon"
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <div>
+                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white">English Teacher</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div className="image-box mt-3">
+                                        <Image
+                                            src="/assets/img/mentor-3.png"
+                                            alt="Guardian"
+                                            width={250}
+                                            height={200}
+                                            className="img-fluid"
+                                        />
+                                        <a href="https://example.com" className="hover-arrow">
+                                            <Image
+                                                src="/assets/img/part-arrow.png"
+                                                alt="arrow icon"
+                                                width={50}
+                                                height={50}
+                                            />
+                                            <div>
+                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white">English Teacher</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -703,8 +738,8 @@ export default function Page() {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="look-txt">
-                                <h2 style={{ textAlign: "left" }}>Looking for our 
-                                <br />Primary Programme (Stages 4-6)?  </h2>
+                                <h2 style={{ textAlign: "left" }}>Looking for our
+                                    <br />Primary Programme (Stages 4-6)?  </h2>
                                 <div className="mt-4">
                                     <Button className="btn-book mb-3" type="button" variant="contained"
                                         onClick={handleClickOpen}>
@@ -746,7 +781,7 @@ export default function Page() {
                                     </p>
 
                                     <p>
-                                        Discover your child's analytical skills, intellectual rigor, and confidence to defend their own, well-reasoned perspective. 
+                                        Discover your child's analytical skills, intellectual rigor, and confidence to defend their own, well-reasoned perspective.
                                     </p>
                                     <Button
                                         className="btn-books mt-3"
@@ -754,7 +789,7 @@ export default function Page() {
                                         variant="contained"
                                         onClick={handleClickOpen}
                                     >
-                                        Build Your Child’s 
+                                        Build Your Child’s
                                         <br />
                                         Intellectual Edge
                                     </Button>
