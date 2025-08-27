@@ -83,23 +83,18 @@ export default function Page() {
                             <div className="col-lg-7 col-md-8 col-12">
                                 <div className="primar_tetx">
                                     <h1 id="child">
-                                        Your Child is Learning What to Think. <br />
-                                        We Teach Them How to Think.
+                                        Beyond Good Grades: Building the
+                                        Confident Thinker for IGCSE Success.
                                     </h1>
                                     <p className="spec">
-                                        In exclusive, mentor-led micro-classes, we transform
-                                        Cambridge Primary students from passive learners into
-                                        confident, collaborative thinkers. We are Cambridge
-                                        specialists—it's all we do. We build the minds that will
-                                        lead tomorrow.
+                                        The Lower Secondary years are a pivotal launchpad. As exclusive Cambridge specialists, we partner with you to transform your child from a diligent student into an agile, articulate thinker. In mentor-led micro-classes of just 8, we build the intellectual confidence and real-world skills needed to excel in the IGCSEs and lead in the future.
                                     </p>
                                     <Button className="btn-primarys" type="button" variant="contained"
                                         onClick={handleClickOpen}>
                                         Book Your Free Academic Blueprint Session
                                     </Button>
                                     <p className="mt-4">
-                                        See the difference in one conversation. No credit card
-                                        required.
+                                        A conversation about their future. No credit card required.
                                     </p>
                                 </div>
                             </div>
@@ -108,7 +103,7 @@ export default function Page() {
                             <div className="col-lg-5 col-md-4 col-12">
                                 <div className="primaryImg">
                                     <Image
-                                        src="/assets/img/bgfd.webp"
+                                        src="/assets/img/image22.png"
                                         alt="Child Learning"
                                         width={600}
                                         height={400}
@@ -147,6 +142,19 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+
+            <section className="hidden mb">
+                <div className="container">
+                    <div className="text-center hid-sec">
+                        <h2>The Hidden Potential: Is Your Child's <br />
+                            Brilliance Trapped by Traditional Methods?</h2>
+                        <p>
+                            Traditional tuition models are broken. One-on-one can be isolating, while large classes leave students anonymous. We have engineered the single most effective environment for intellectual growth: The Socratic Circle. In a curated cohort of just 8 ambitious peers, your child experiences the perfect balance of personalised mentorship and dynamic group collaboration.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
             <FullWidthImageSection
                 src="/assets/img/studys.webp"
                 alt="Right arrow"
