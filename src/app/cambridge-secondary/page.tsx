@@ -418,10 +418,12 @@ export default function Page() {
                                         height={100}  // required
                                         className="img-fluid mb-2"
                                     />
-                                    <h3 className="saga" style={{ textAlign: "left" }}>English: The Art <br />of Influence</h3>
+                                    <h3 className="saga" style={{ textAlign: "left" }}>English</h3>
+                                    <p>English: 
+                                     The Art of Rhetoric & Argument</p>
                                     <div className="title-underlines"></div>
                                     <p>
-                                        Group analysis and debates to deconstruct arguments and build compelling narratives.
+                                        We move beyond comprehension to the art of persuasion. Through structured debates and group analysis of sophisticated texts, students learn to master rhetorical skills, build nuanced arguments, and express complex ideas with clarity and conviction.
                                     </p>
                                 </div>
                             </div>
@@ -435,10 +437,12 @@ export default function Page() {
                                         height={100}  // required
                                         className="img-fluid mb-2"
                                     />
-                                    <h3 className="saga" style={{ textAlign: "left" }}>Mathematics: The <br />Science of Logic </h3>
+                                    <h3 className="saga" style={{ textAlign: "left" }}>Mathematics</h3>
+                                    <p>Mathematics: 
+                                         The Science of Abstract Reasoning</p>
                                     <div className="title-underlines"></div>
                                     <p>
-                                        Collaborative problem-solving for multi-step problems, articulating approaches for elegant solutions.
+                                        We transition from calculation to true mathematical thinking. In their cohorts, students tackle complex, non-routine problems, learning to apply abstract principles, articulate different logical pathways, and build the foundational reasoning skills essential for advanced mathematics.
                                     </p>
                                 </div>
                             </div>
@@ -451,10 +455,13 @@ export default function Page() {
                                         height={100}  // required
                                         className="img-fluid mb-2"
                                     />
-                                    <h3 className="saga" style={{ textAlign: "left" }}>Science: The Practice  <br />of Inquiry</h3>
+                                    <h3 className="saga" style={{ textAlign: "left" }}>Science</h3>
+                                    <p>
+                                        Science: The Practice of Critical Inquiry
+                                    </p>
                                     <div className="title-underlines"></div>
                                     <p>
-                                        Group-based inquiry to plan investigations, analyze data, and debate conclusions.
+                                        We transition from calculation to true mathematical thinking. In their cohorts, students tackle complex, non-routine problems, learning to apply abstract principles, articulate different logical pathways, and build the foundational reasoning skills essential for advanced mathematics.
                                     </p>
                                 </div>
                             </div>
@@ -572,7 +579,8 @@ export default function Page() {
                                 </p>
                             </div>
                         </div>
-                        <div className="col-lg-7 col-md-8 col-12">
+                        <div className="col-lg-1 col-md-1 col-1"></div>
+                        <div className="col-lg-6 col-md-6 col-12">
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 col-12">
                                     <div className="image-box mt-3">
