@@ -10,7 +10,8 @@ import PopupForm from "../component/PopupForm";
 import * as React from "react";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
-import PrimaryAccordion from "../cambridge-primary/PrimaryAccordion";
+import SecondaryAccordion from "../cambridge-secondary/SecondaryAccordion";
+import ConfidenceSection from "../cambridge-secondary/ConfidenceSection";
 
 
 
@@ -630,49 +631,10 @@ export default function Page() {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center p-h">
-                        <p>Wise Guardians are expert facilitators, rigorously trained in our Socratic, micro-class methodology. Their mission is to guide conversation, ensuring every child participates, is challenged, and learns from the group&apos;s collective intelligence.</p>
-                        <Button className="btn-book" type="button">
-                            Learn About Our Mentors
-                        </Button>
-                    </div>
                 </div>
             </section>
 
-            <section className="see mb">
-                <div className="container">
-                    <h2>See How Your Child Thinks. The First Step is Free.</h2>
-                    <div className="sees mb">
-                        <div className="text-center phg">
-                            <p>Unlock your child&apos;s true intellectual potential with a complimentary, no-obligation Strategy Session. This is a genuine diagnostic experience, not a sales pitch, designed to reveal how we cultivate high-level thinkers.</p>
-                        </div>
-                        <div className="see_bx">
-                            <div className="row">
-                                <div className="col-lg-2 col-md-2 col-1"></div>
-                                <div className="col-lg-5 col-md-5 col-12">
-                                    <div className="bluesat-box">
-                                        <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a Complimentary 7-day trial. This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation Clarity Session where we will:</p>
-                                    </div>
-                                </div>
-                                <div className="col-lg-3 col-md-5 col-12">
-                                    <div className="step-box active">Discuss learning goals.</div>
-                                    <div className="step-box">Answer your questions.</div>
-                                    <div className="step-box">Tailor the perfect trial.</div>
-                                </div>
-                                <div className="col-lg-2 col-md-2 col-1"></div>
-                            </div>
-                        </div>
-                        <div className="text-center mt-4">
-                            <Button className="btn-book mb-3" type="button" variant="contained"
-                                onClick={handleClickOpen}>
-                                Book FREE Daignostic & day Free Trial
-                            </Button>
-                            <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
+            <ConfidenceSection />
 
             <section className="why mb">
                 <div className="container">
@@ -741,7 +703,8 @@ export default function Page() {
                     <div className="row">
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="look-txt">
-                                <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme Stage(7-9)  </h2>
+                                <h2 style={{ textAlign: "left" }}>Looking for our 
+                                <br />Primary Programme (Stages 4-6)?  </h2>
                                 <div className="mt-4">
                                     <Button className="btn-book mb-3" type="button" variant="contained"
                                         onClick={handleClickOpen}>
@@ -753,7 +716,7 @@ export default function Page() {
                         <div className="col-lg-3 col-md-3 col-12">
                             <div className="loo-imh">
                                 <Image
-                                    src="/assets/img/im.webp"
+                                    src="/assets/img/image21.png"
                                     alt="testimonial"
                                     width={360}
                                     height={260}
@@ -770,21 +733,20 @@ export default function Page() {
                     <div className="row">
                         <div className="col-lg-7 col-md-6 col-12">
                             <h2 className="text-center fres">Frequently Asked Questions</h2>
-                            <PrimaryAccordion />
+                            <SecondaryAccordion />
                         </div>
                         <div className="col-lg-5 col-md-6 col-12">
                             <div className="faq-sdeimg position-relative">
                                 <div className="mt-2">
                                     <h3 className="reacf">
-                                        For Young Minds, Curiosity is a
-                                        Superpower. We Help Them Master It.
+                                        Lower Secondary Cambridge – Don't Just Learn the Cambridge Curriculum. Challenge It.
                                     </h3>
                                     <p>
-                                        This is the magical age where curiosity can either blossom into a lifelong love for learning or fade away. Our mentors are trained to catch every {`why?`} and turn it into a thrilling discovery, ensuring their natural curiosity becomes an unstoppable academic strength.
+                                        Lower Secondary is where learning deepens—the pivotal stage where students move from collecting facts to constructing arguments. This is the critical foundation for IGCSE success; let's build it together. Your complimentary 7-day trial starts with a free Skill Assessment Session.
                                     </p>
 
                                     <p>
-                                        Your complimentary 7-day trial begins with a free Discovery Session, designed to unlock the questions your child is most excited to answer.
+                                        Discover your child's analytical skills, intellectual rigor, and confidence to defend their own, well-reasoned perspective. 
                                     </p>
                                     <Button
                                         className="btn-books mt-3"
@@ -792,14 +754,14 @@ export default function Page() {
                                         variant="contained"
                                         onClick={handleClickOpen}
                                     >
-                                        Start Your Learning
+                                        Build Your Child’s 
                                         <br />
-                                        Adventure
+                                        Intellectual Edge
                                     </Button>
                                 </div>
                                 <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
                                     <Image
-                                        src="/assets/img/image26.png"
+                                        src="/assets/img/Gemini.png"
                                         alt="testimonial"
                                         width={300}
                                         height={260}

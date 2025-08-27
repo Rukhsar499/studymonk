@@ -41,23 +41,23 @@ const CustomAccordionSummary = styled(AccordionSummary, {
 const accordionData = [
     {
       id: "panel1",
-      title: "1. How do you keep learning joyful for a young child in a group setting online?",
+      title: "1. What does it mean to 'challenge' the curriculum in a group setting?",
       content: [
         {
           title: "",
           description:
-            "We believe that for a young mind, shared discovery is the most powerful form of joy. Our mentors are experts at creating collaborative learning adventures where a small group of 8 students can explore a concept together. The excitement is contagious. When one child has a breakthrough, it inspires the others. Our platform is an intellectual playground designed to nurture their natural curiosity through positive, guided social interaction."
+            "It's where the concept truly comes to life. Challenging the curriculum means moving beyond absorbing facts to deconstructing arguments and debating perspectives. A micro-class is the perfect arena for this. Guided by a mentor, students learn to build on each other's insights, defend their positions with evidence, and sharpen their arguments against the thoughtful critiques of their peers. This is how we forge true intellectual horsepower."
         }
       ]
     },
     {
       id: "panel2",
-      title: "2. My child is naturally curious but can be shy. Will they get lost in a group?",
+      title: "2. How does a micro-class specifically prepare my child for the IGCSE examination style?",
       content: [
         {
           title: "",
           description:
-            "This is a concern we understand deeply, and it's why our micro-classes are intentionally small. A Wise Guardian is trained to ensure every child has the space to contribute. For a shy child, seeing peers share ideas in a safe, supportive environment is incredibly empowering. The goal isn't to force them to speak, but to create a warm, encouraging space where they feel comfortable and confident finding their own voice, at their own pace."
+            "The IGCSEs are designed to reward students who can analyze, synthesize, and build a compelling argument. Our micro-class model is a dedicated training ground for these exact skills. By regularly articulating their ideas to a small group and learning from the perspectives of others, your child develops a deeper, more flexible understanding of the material. They don't just learn the content; they learn how to demonstrate their mastery with the clarity and confidence examiners look for."
         },
        
       ]
