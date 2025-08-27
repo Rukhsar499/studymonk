@@ -42,7 +42,7 @@ export default function ConfidenceSection() {
   return (
     <section className="mb">
       <div className="container ">
-        <div className="{styles.lights}">
+        <div style={{ backgroundColor: "#FBFFF6", borderRadius: "40px" , padding: "40px"}} className="no-padding">
           <h2 className="fw-bold mb-3">
             Invest in Their Confidence. The First Step is on Us.
           </h2>
