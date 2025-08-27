@@ -5,13 +5,12 @@ import { useState } from "react";
 import { useEffect } from "react";
 import Header from "../component/Header";
 import Footer from "../component/footer/Footer";
-import styles from "./page.module.css";
 import BootstrapClient from '../BootstrapClient';
 import PopupForm from "../component/PopupForm";
 import * as React from "react";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
-import BottomAccordion from "../component/BottomAccordion ";
+import PrimaryAccordion from "../cambridge-primary/PrimaryAccordion";
 
 
 
@@ -70,47 +69,61 @@ export default function Page() {
         <>
             <Header />
 
-            {/* <section className="primary mb">
+            <section className="primary mb">
                 <div className="container-fluid">
                     <div className="primary-first">
-                        <div className="row">
+                        <div className="row align-items-center">
+
+                            {/* Left Side Text */}
                             <div className="col-lg-7 col-md-8 col-12">
                                 <div className="primar_tetx">
-                                    <h1 id="child"> Your Child is Learning What to Think. <br />
-                                        We Teach Them How to Think.</h1>
-                                    <p>
-                                        In exclusive, mentor-led micro-classes, we transform Cambridge Primary students from passive learners into confident, collaborative thinkers. We are Cambridge specialists—it&apos;s all we do. We build the minds that will lead tomorrow.
+                                    <h1 id="child">
+                                        Your Child is Learning What to Think. <br />
+                                        We Teach Them How to Think.
+                                    </h1>
+                                    <p className="spec">
+                                        In exclusive, mentor-led micro-classes, we transform
+                                        Cambridge Primary students from passive learners into
+                                        confident, collaborative thinkers. We are Cambridge
+                                        specialists—it's all we do. We build the minds that will
+                                        lead tomorrow.
                                     </p>
-
+                                    <Button className="btn-primarys" type="button" variant="contained"
+                                        onClick={handleClickOpen}>
+                                        Book Your Free Academic Blueprint Session
+                                    </Button>
                                     <p className="mt-4">
-                                        See the difference in one conversation. No credit card required.
+                                        See the difference in one conversation. No credit card
+                                        required.
                                     </p>
-                                    <Button className="btn-primarys"
-                                        type="button" variant="contained"
-                                        onClick={handleClickOpen}>Book Free Diagnostic & 7-Day Trial</Button>
                                 </div>
                             </div>
-                            <div className="col-lg-5 col-md-4 col-12">
-                                <div className="primary-img">
-                                    <Image alt=""
-                                        src="/assets/img/bgfd.webp"
-                                        width={1000}
-                                        height={300} className="img-fluid"
-                                    />
-                                </div>
-                            </div>
-                            <div className="plk">
-                                <Image alt=""
-                                    src="/assets/img/banne-play.png"
-                                    width={80}
-                                    height={80}
-                                />
-                            </div>
-                        </div>
 
+                            {/* Right Side Image */}
+                            <div className="col-lg-5 col-md-4 col-12">
+                                <div className="primaryImg">
+                                    <Image
+                                        src="/assets/img/bgfd.webp"
+                                        alt="Child Learning"
+                                        width={600}
+                                        height={400}
+                                        className="img-fluid w-100"
+                                    />
+                                    <div className="plk">
+                                        <Image
+                                            src="/assets/img/banne-play.png"
+                                            alt="Play Button"
+                                            width={80}
+                                            height={80}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </section> */}
+            </section>
             <FullWidthImageSection
                 src="/assets/img/studys.webp"
                 alt="Right arrow"
@@ -136,8 +149,8 @@ export default function Page() {
                     <div className="row">
                         <div className="col-lg-5 col-md-5 col-12">
                             <div className="form">
-                                <div className="bvx bg-white p-4">
-                                    <h4 className="text-center gft mb-4">
+                                <div className="bvx p-4">
+                                    <h4 className="text-center text-white gft mb-4">
                                         Book A FREE Trial Now!
                                     </h4>
 
@@ -194,9 +207,9 @@ export default function Page() {
                                                 required
                                             >
                                                 <option value=""></option>
-                                                <option value="Hair">Hair</option>
-                                                <option value="Skin">Skin</option>
-                                                <option value="Laser">Laser</option>
+                                                <option value="Cambridge Primary">Cambridge Primary</option>
+                                                <option value="Cambridge Secondary">Cambridge Secondary</option>
+                                              
                                             </select>
                                         </div>
 
@@ -598,6 +611,7 @@ export default function Page() {
             <section className="see mb">
                 <div className="container">
                     <h2>See How Your Child Thinks. The First Step is Free.</h2>
+                    <div className="sees mb">
                     <div className="text-center phg">
                         <p>Unlock your child&apos;s true intellectual potential with a complimentary, no-obligation Strategy Session. This is a genuine diagnostic experience, not a sales pitch, designed to reveal how we cultivate high-level thinkers.</p>
                     </div>
@@ -616,13 +630,15 @@ export default function Page() {
                             </div>
                             <div className="col-lg-2 col-md-2 col-1"></div>
                         </div>
+                         </div>
                         <div className="text-center mt-4">
                             <Button className="btn-book mb-3" type="button" variant="contained"
                                 onClick={handleClickOpen}>
                                 Book FREE Daignostic & day Free Trial
                             </Button>
-                            <p>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</p>
+                            <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
                         </div>
+                   
                     </div>
                 </div>
             </section>
@@ -723,7 +739,7 @@ export default function Page() {
                     <div className="row">
                         <div className="col-lg-7 col-md-6 col-12">
                             <h2 className="text-center fres">Frequently Asked Questions</h2>
-                            <BottomAccordion />
+                            <PrimaryAccordion />
                         </div>
                         <div className="col-lg-5 col-md-6 col-12">
                             <div className="faq-sdeimg position-relative">
