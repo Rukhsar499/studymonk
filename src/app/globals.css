@@ -2520,6 +2520,10 @@ a {
     border: 15px solid #b2bf4d7c;
     border-radius: 34px;
 }
+.forms {
+    border: 15px solid #E6EEFF;
+    border-radius: 34px;
+}
 
 .bvx {
   background-color: #253352;

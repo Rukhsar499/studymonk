@@ -12,6 +12,8 @@ import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
 import SecondaryAccordion from "../cambridge-secondary/SecondaryAccordion";
 import ConfidenceSection from "../cambridge-secondary/ConfidenceSection";
+import StepsSection from "../cambridge-secondary/StepsSection";
+import SocraticCircle from "../cambridge-secondary/SocraticCircle";
 
 
 
@@ -180,7 +182,7 @@ export default function Page() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 col-md-5 col-12">
-                            <div className="form">
+                            <div className="forms">
                                 <div className="bvx p-4">
                                     <h4 className="text-center text-white gft mb-4">
                                         Book A FREE Trial Now!
@@ -279,125 +281,18 @@ export default function Page() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-7 col-md-7 col-12">
-                            <div className="box_sec">
-                                <h2 style={{ textAlign: "left" }}>The Silent Crisis in Today&apos;s Education:
-                                    The Illusion of Learning</h2>
-                                <div className="row">
-                                    <div className="col-lg-6 col-md-6 col-12">
-                                        <div className="box_1">
-                                            <h3 className="saga" style={{ textAlign: "left" }}>Answering Without Understanding</h3>
-                                            <hr />
-                                            <p>They can recite facts but struggle to explain the {'why'} or apply knowledge to new problems.</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6 col-12">
-                                        <div className="box_2">
-                                            <h3 className="saga" style={{ textAlign: "left" }}>Confidence Tied to Grades</h3>
-                                            <hr />
-                                            <p>Self-worth is linked to report cards, not genuine ability to tackle challenges and persevere.</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6 col-12">
-                                        <div className="box_1">
-                                            <h3 className="saga" style={{ textAlign: "left" }}>Hesitation to <br />Speak Up</h3>
-                                            <hr />
-                                            <p>Reluctant to voice opinions, challenge ideas, or defend reasoning.</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-6 col-12">
-                                        <div className="box_2">
-                                            <h3 className="saga" style={{ textAlign: "left" }}>Caught Between Two Failed Models</h3>
-                                            <hr />
-                                            <p>Lost in large online classes or isolated in one-on-one tuition, missing vital collaborative skills.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="col-lg-1 col-md-1 col-1"></div>
+                        <div className="col-lg-6 col-md-7 col-12">
+                           
+                           <StepsSection/> 
+                          
                         </div>
                     </div>
                 </div>
             </section>
-            <section className="power mb">
-                <div className="container">
-                    <h2>The Power of the Socratic Circles: Personalized <br />
-                        Attention Meets Collaborative Genius.</h2>
-                    <div className="pwer_box">
-                        <div className="row">
-                            <div className="col-lg-5 col-md-4 col-12">
-                                <div className="power-img">
-                                    <Image
-                                        src="/assets/img/girlwithbag.png" // public folder ka path
-                                        alt="Girl with bag"
-                                        width={500}   // required
-                                        height={500}  // required
-                                        className="img-fluid"
-                                    />
-                                </div>
-                            </div>
-                            <div className="col-lg-7 col-md-8 col-12">
-                                <div className="d-flex align-items-start gap-3 feature-box">
-                                    {/* Hexagon with number */}
-                                    <div className="hexagon">
-                                        <span>01</span>
-                                    </div>
 
-                                    {/* Text content */}
-                                    <div>
-                                        <h5 className="fw-bold mb-1 gil">Intimate Micro-Classes</h5>
-                                        <p className="mb-0 text-muted">
-                                            With a maximum of 8 students, our curated cohorts offer the perfect
-                                            balance for deep intellectual development and personalized attention.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="d-flex align-items-start gap-3 feature-box">
-                                    {/* Hexagon with number */}
-                                    <div className="hexagons">
-                                        <span>02</span>
-                                    </div>
-
-                                    {/* Text content */}
-                                    <div>
-                                        <h5 className="fw-bold mb-1 gil">Tailored Mentorship</h5>
-                                        <p className="mb-0 text-muted">
-                                            Your child receives expert, tailored guidance from our Cambridge specialists, ensuring their unique learning needs are met.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="d-flex align-items-start gap-3 feature-box">
-                                    {/* Hexagon with number */}
-                                    <div className="hexagon">
-                                        <span>03</span>
-                                    </div>
-
-                                    {/* Text content */}
-                                    <div>
-                                        <h5 className="fw-bold mb-1 gil">Dynamic Collaboration</h5>
-                                        <p className="mb-0 text-muted">
-                                            Lively peer discussions and collaborative problem-solving foster a dynamic environment where ideas are shared and challenged.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="d-flex align-items-start gap-3 feature-box">
-                                    {/* Hexagon with number */}
-                                    <div className="hexagons">
-                                        <span>04</span>
-                                    </div>
-
-                                    {/* Text content */}
-                                    <div>
-                                        <h5 className="fw-bold mb-1 gil">Future-Ready Skills</h5>
-                                        <p className="mb-0 text-muted">
-                                            We build confident communicators, resilient problem-solvers, and the future leaders who will drive tomorrow&apos;s innovations.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <SocraticCircle/>
+            
 
             <section className="master-bv mb">
                 <div className="container">
@@ -419,8 +314,8 @@ export default function Page() {
                                         className="img-fluid mb-2"
                                     />
                                     <h3 className="saga" style={{ textAlign: "left" }}>English</h3>
-                                    <p>English: 
-                                     The Art of Rhetoric & Argument</p>
+                                    <p>English:
+                                        The Art of Rhetoric & Argument</p>
                                     <div className="title-underlines"></div>
                                     <p>
                                         We move beyond comprehension to the art of persuasion. Through structured debates and group analysis of sophisticated texts, students learn to master rhetorical skills, build nuanced arguments, and express complex ideas with clarity and conviction.
@@ -438,8 +333,8 @@ export default function Page() {
                                         className="img-fluid mb-2"
                                     />
                                     <h3 className="saga" style={{ textAlign: "left" }}>Mathematics</h3>
-                                    <p>Mathematics: 
-                                         The Science of Abstract Reasoning</p>
+                                    <p>Mathematics:
+                                        The Science of Abstract Reasoning</p>
                                     <div className="title-underlines"></div>
                                     <p>
                                         We transition from calculation to true mathematical thinking. In their cohorts, students tackle complex, non-routine problems, learning to apply abstract principles, articulate different logical pathways, and build the foundational reasoning skills essential for advanced mathematics.
@@ -587,7 +482,7 @@ export default function Page() {
                                         <Image
                                             src="/assets/img/mentor-3.png"
                                             alt="Guardian"
-                                           width={250}
+                                            width={250}
                                             height={200}
                                             className="img-fluid"
                                         />
@@ -631,7 +526,7 @@ export default function Page() {
                                         <Image
                                             src="/assets/img/mentor-3.png"
                                             alt="Guardian"
-                                           width={250}
+                                            width={250}
                                             height={200}
                                             className="img-fluid"
                                         />

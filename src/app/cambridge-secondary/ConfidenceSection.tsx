@@ -12,25 +12,25 @@ interface Step {
 const steps: Step[] = [
   {
     id: 1,
-    title: "Discovery Session",
+    title: "Discovery <br/> Session",
     description:
       "A senior Wise Guardian conducts a one-on-one session to map your child’s unique cognitive style.",
   },
   {
     id: 2,
-    title: "7 Days Free Trial",
+    title: "7 Days <br/> Free Trial",
     description:
       "Experience the full power of our Socratic micro-classes for a week, completely free after your diagnostic session.",
   },
   {
     id: 3,
-    title: "Methodology Demonstration",
+    title: "Methodology <br/> Demonstration",
     description:
       "Experience firsthand how our Socratic micro-class methodology fosters intellectual agility.",
   },
   {
     id: 4,
-    title: "Potential Blueprint",
+    title: "Potential <br/> Blueprint",
     description:
       "Receive a personalized plan outlining key areas for intellectual growth and development.",
   },
@@ -42,7 +42,7 @@ export default function ConfidenceSection() {
   return (
     <section className="mb">
       <div className="container ">
-        <div style={{ backgroundColor: "#FBFFF6", borderRadius: "40px" , padding: "40px"}} className="no-padding">
+        <div style={{ backgroundColor: "#FBFFF6", borderRadius: "40px", padding: "40px" }} className="no-padding">
           <h2 className="fw-bold mb-3">
             Invest in Their Confidence. The First Step is on Us.
           </h2>
@@ -60,7 +60,10 @@ export default function ConfidenceSection() {
                     }`}
                   onClick={() => setActiveId(step.id)}
                 >
-                  <h5 className={`fw-bold ${styles.tgf}`}>{step.title}</h5>
+                  <h5
+                    className={`fw-bold ${styles.tgf}`}
+                    dangerouslySetInnerHTML={{ __html: step.title }}
+                  ></h5>
                   <p className="mt-2">{step.description}</p>
 
 
