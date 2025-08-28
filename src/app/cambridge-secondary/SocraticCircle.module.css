@@ -1,9 +1,11 @@
 .feature-card {
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease;
   border-radius: 16px;
   padding: 20px;
+  background: #ffffff;
+  color: #0a0a0a;
+  transition: all 0.4s ease-in-out; /* smooth transition */
 }
 
 .feature-card.inactive {
@@ -12,17 +14,18 @@
 }
 
 .feature-card.active {
-  background: #0d1b2a;
-  color: #ffffff;
+  background: #0d1b2a; /* dark bg */
+  color: #ffffff; /* text white */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
 }
 
-.feature-card.active h5,
-.feature-card.active p {
-  color: #ffffff;
+/* icon color change (blue → white on active) */
+.feature-card .feature-icon {
+  filter: brightness(0) saturate(100%) invert(22%) sepia(98%) saturate(2500%) hue-rotate(190deg) brightness(95%) contrast(100%);
+  transition: filter 0.4s ease-in-out;
 }
 
-.feature-icon {
-  width: 50px;
-  height: 50px;
-  object-fit: contain;
+.feature-card.active .feature-icon {
+  filter: brightness(0) invert(1); /* white */
 }
