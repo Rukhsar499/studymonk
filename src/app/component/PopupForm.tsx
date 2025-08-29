@@ -250,9 +250,9 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 className="gfdb"
                             >
                                 <MenuItem value="">Select Stage</MenuItem>
-                                <MenuItem value="Beginner">Beginner</MenuItem>
-                                <MenuItem value="Intermediate">Intermediate</MenuItem>
-                                <MenuItem value="Advanced">Advanced</MenuItem>
+                                <MenuItem value="Cambridge Primary">Cambridge Primary</MenuItem>
+                                <MenuItem value="Cambridge Primary">Cambridge Primary</MenuItem>
+                               
                             </TextField>
                             <TextField
                                 name="message"

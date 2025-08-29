@@ -47,7 +47,7 @@ function Header() {
                       <Link className="nav-link" href="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" href="/our-story">Our Story</Link>
+                      <Link className="nav-link" href="/">Our Story</Link>
                     </li>
                     <li className="nav-item dropdown custom-dropdown">
                       <a
@@ -61,12 +61,12 @@ function Header() {
                       </a>
                       <ul className="dropdown-menu vbgf">
                         <li>
-                          <Link className="dropdown-item" href="/cambridge-primary">
+                          <Link className="dropdown-item" href="/">
                             Cambridge Primary
                           </Link>
                         </li>
                         <li>
-                          <Link className="dropdown-item" href="/cambridge-secondary">
+                          <Link className="dropdown-item" href="/">
                             Cambridge Secondary
                           </Link>
                         </li>
@@ -75,7 +75,10 @@ function Header() {
                     <li className="nav-item">
                       <Link className="nav-link" href="/">Our Mentors</Link>
                     </li>
-                    <li className="nav-item dropdown custom-dropdown">
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/">Blogs</Link>
+                    </li>
+                    {/* <li className="nav-item dropdown custom-dropdown">
                       <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Resource Hub
                       </a>
@@ -83,7 +86,7 @@ function Header() {
                         <li><Link className="dropdown-item" href="/">Cambridge Primary</Link></li>
                         <li><Link className="dropdown-item" href="/">Cambridge Secondary</Link></li>
                       </ul>
-                    </li>
+                    </li> */}
                     <li className="nav-item">
                       <Link className="nav-link" href="/">Plans & Pricing</Link>
                     </li>

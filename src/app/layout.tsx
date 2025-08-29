@@ -27,7 +27,7 @@ const geistMono = Geist_Mono({
 
 // Metadata with type
 export const metadata: Metadata = {
-  title: 'Study Monk',
+  title: 'Study Monks',
   description: 'You chose the Cambridge path for its depth and global advantage',
 };
 
