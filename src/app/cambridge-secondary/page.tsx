@@ -146,7 +146,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="hidden mb">
+            <section className="hidden mb bird">
                 <div className="container">
                     <div className="text-center hid-sec">
                         <h2>The Hidden Potential: Is Your Child's <br />
@@ -154,6 +154,15 @@ export default function Page() {
                         <p>
                             Traditional tuition models are broken. One-on-one can be isolating, while large classes leave students anonymous. We have engineered the single most effective environment for intellectual growth: The Socratic Circle. In a curated cohort of just 8 ambitious peers, your child experiences the perfect balance of personalised mentorship and dynamic group collaboration.
                         </p>
+                    </div>
+                    <div className="bird_img">
+                        <Image
+                            src="/assets/img/bird.png"
+                            alt="Right arrow"
+                            className=""
+                            width={250}
+                            height={500}
+                        />
                     </div>
                 </div>
             </section>
@@ -178,7 +187,7 @@ export default function Page() {
                 />
             </section>
 
-            <section className="box_form_img mb">
+            <section className="box_form_img mb bird">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 col-md-5 col-12">
@@ -402,8 +411,9 @@ export default function Page() {
                                                 height={30}
                                                 className="img-fluid me-3"
                                             />
-                                            <h4>The Personalised <br />
-                                                Blueprint</h4>
+                                            <h4>The Collaborative
+                                                <br />
+                                                Discovery </h4>
 
                                         </div>
                                         <hr className="dotss" />
@@ -415,8 +425,8 @@ export default function Page() {
                                                 height={30}
                                                 className="img-fluid me-3"
                                             />
-                                            <h4>The Personalised <br />
-                                                Blueprint</h4>
+                                            <h4>Mastery & <br />
+                                                Articulation</h4>
 
                                         </div>
                                         <hr className="dotss" />
