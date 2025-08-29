@@ -283,16 +283,16 @@ export default function Page() {
                         </div>
                         <div className="col-lg-1 col-md-1 col-1"></div>
                         <div className="col-lg-6 col-md-7 col-12">
-                           
-                           <StepsSection/> 
-                          
+
+                            <StepsSection />
+
                         </div>
                     </div>
                 </div>
             </section>
 
-            <SocraticCircle/>
-            
+            <SocraticCircle />
+
 
             <section className="master-bv mb">
                 <div className="container">
@@ -314,7 +314,7 @@ export default function Page() {
                                         className="img-fluid mb-2"
                                     />
                                     <h3 className="saga" style={{ textAlign: "left" }}>English</h3>
-                                    <p>English:
+                                    <p>
                                         The Art of Rhetoric & Argument</p>
                                     <div className="title-underlines"></div>
                                     <p>
@@ -333,7 +333,7 @@ export default function Page() {
                                         className="img-fluid mb-2"
                                     />
                                     <h3 className="saga" style={{ textAlign: "left" }}>Mathematics</h3>
-                                    <p>Mathematics:
+                                    <p>
                                         The Science of Abstract Reasoning</p>
                                     <div className="title-underlines"></div>
                                     <p>
@@ -352,7 +352,7 @@ export default function Page() {
                                     />
                                     <h3 className="saga" style={{ textAlign: "left" }}>Science</h3>
                                     <p>
-                                        Science: The Practice of Critical Inquiry
+                                        The Practice of Critical Inquiry
                                     </p>
                                     <div className="title-underlines"></div>
                                     <p>
@@ -369,6 +369,81 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+
+            <section className="phg">
+                <div className="container">
+                    <div className="pik-box">
+                        <div className="text-center">
+                            <h2>Your Child's Journey to Becoming a Confident Thinker</h2>
+                            <p>Our methodology is a deliberate journey designed to unlock your child's potential and build the cognitive architecture for lifelong success.</p>
+                        </div>
+                        <div className="pink_sec">
+                            <div className="row">
+                                <div className="col-lg-4 col-md-4 col-12">
+                                    <div className="shg">
+                                        <div className="d-flex pkjl">
+                                            <Image
+                                                src="/assets/img/pink-arrow.png"
+                                                alt="Guardian"
+                                                width={30}
+                                                height={30}
+                                                className="img-fluid me-3"
+                                            />
+                                            <h4>The Personalised <br />
+                                                Blueprint</h4>
+
+                                        </div>
+                                        <hr className="dotss" />
+                                        <div className="d-flex pkjl">
+                                            <Image
+                                                src="/assets/img/pink-arrow.png"
+                                                alt="Guardian"
+                                                width={30}
+                                                height={30}
+                                                className="img-fluid me-3"
+                                            />
+                                            <h4>The Personalised <br />
+                                                Blueprint</h4>
+
+                                        </div>
+                                        <hr className="dotss" />
+                                        <div className="d-flex pkjl">
+                                            <Image
+                                                src="/assets/img/pink-arrow.png"
+                                                alt="Guardian"
+                                                width={30}
+                                                height={30}
+                                                className="img-fluid me-3"
+                                            />
+                                            <h4>The Personalised <br />
+                                                Blueprint</h4>
+
+                                        </div>
+                                        <hr className="dotss" />
+                                    </div>
+                                </div>
+                                <div className="col-lg-8 col-md-8 col-12">
+                                    <div className="p-test">
+                                        <p>
+                                            Our initial session is a deep dive into your child's unique strengths and learning style. We don't just test what they know; we seek to understand how they think allowing us to  to create a 'Personalised Blueprint' that maps their potential and outlines a clear, inspiring path to achieving it.
+                                        </p>
+                                        <hr className="dotss" />
+                                        <p>
+                                            This is where the magic happens. Our sessions are not lectures; they are dynamic Socratic dialogues. Wise Guardians are expert facilitators who guide the micro-class through a process of collaborative discovery. They use strategic questioning to spark debate, encourage different viewpoints, and help the group arrive at a deeper understanding
+                                        </p>
+                                        <hr className="dotss" />
+                                        <p>
+                                            True mastery isn't just knowing the answer; it's being able to apply and communicate it with confidence. We challenge each cohort with complex, IGCSE-style problems that require them to synthesise their knowledge and present a unified solution. This is where they learn the invaluable skills of teamwork, leadership, and persuasive communication
+                                        </p>
+                                         <hr className="dotss" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
 
             {/* <section className="path mb">
                 <div className="container">

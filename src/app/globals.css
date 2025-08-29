@@ -2693,7 +2693,7 @@ a {
   background-color: #FCFCFC;
   /* yellow box */
   border-radius: 30px;
-  padding: 40px 60px;
+  padding: 30px;
   text-align: left;
   margin: 30px;
   position: relative;
@@ -2736,7 +2736,28 @@ a {
   margin-bottom: 20px;
   border: 1px dotted #000;
 }
-
+.shg{
+  background-color: #fff;
+  padding: 20px;
+}
+.dotss{
+    border: 2px dotted #000;
+}
+.pkjl img{
+  height: 30px;
+}
+.pkjl{
+ padding: 20px;
+}
+.p-test{
+  padding: 20px;
+}
+.pik-box{
+  background-image: url("/assets/img/pink.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px;
+}
 .box_sec {
   margin-left: 30px;
 }
