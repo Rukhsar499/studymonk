@@ -428,14 +428,18 @@ export default function Page() {
                                             Our initial session is a deep dive into your child's unique strengths and learning style. We don't just test what they know; we seek to understand how they think allowing us to  to create a 'Personalised Blueprint' that maps their potential and outlines a clear, inspiring path to achieving it.
                                         </p>
                                         <hr className="dotss" />
+                                    </div>
+                                    <div className="p-test">
                                         <p>
                                             This is where the magic happens. Our sessions are not lectures; they are dynamic Socratic dialogues. Wise Guardians are expert facilitators who guide the micro-class through a process of collaborative discovery. They use strategic questioning to spark debate, encourage different viewpoints, and help the group arrive at a deeper understanding
                                         </p>
                                         <hr className="dotss" />
+                                    </div>
+                                    <div className="p-test">
                                         <p>
                                             True mastery isn't just knowing the answer; it's being able to apply and communicate it with confidence. We challenge each cohort with complex, IGCSE-style problems that require them to synthesise their knowledge and present a unified solution. This is where they learn the invaluable skills of teamwork, leadership, and persuasive communication
                                         </p>
-                                         <hr className="dotss" />
+                                        <hr className="dotss" />
                                     </div>
                                 </div>
                             </div>

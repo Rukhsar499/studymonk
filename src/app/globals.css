@@ -2751,6 +2751,7 @@ a {
 }
 .p-test{
   padding: 20px;
+  width: 80%;
 }
 .pik-box{
   background-image: url("/assets/img/pink.png");

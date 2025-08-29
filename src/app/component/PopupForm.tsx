@@ -251,7 +251,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                             >
                                 <MenuItem value="">Select Stage</MenuItem>
                                 <MenuItem value="Cambridge Primary">Cambridge Primary</MenuItem>
-                                <MenuItem value="Cambridge Primary">Cambridge Primary</MenuItem>
+                                <MenuItem value="Cambridge Secondary">Cambridge Secondary</MenuItem>
                                
                             </TextField>
                             <TextField
