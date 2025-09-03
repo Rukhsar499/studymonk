@@ -643,7 +643,7 @@ export default function Page() {
                                 <div className="col-lg-2 col-md-2 col-1"></div>
                                 <div className="col-lg-5 col-md-5 col-12">
                                     <div className="bluesat-box">
-                                        <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a Complimentary 7-day trial. This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation Clarity Session where we will:</p>
+                                        <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a <span style={{ color: "#FDFFBF" }}>Complimentary 7-day trial.</span> This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation <span style={{ color: "#FDFFBF" }}>Clarity Session</span> where we will:</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-5 col-12">
@@ -728,34 +728,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="look mb">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6 col-12">
-                            <div className="look-txt">
-                                <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme Stage(7-9)  </h2>
-                                <div className="mt-4">
-                                    <Button className="btn-book mb-3" type="button" variant="contained"
-                                        onClick={handleClickOpen}>
-                                        Click Here
-                                    </Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 col-12">
-                            <div className="loo-imh">
-                                <Image
-                                    src="/assets/img/im.webp"
-                                    alt="testimonial"
-                                    width={360}
-                                    height={260}
-                                    className="img-fluid"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
 
             <section className="fad mb">
                 <div className="container">
@@ -805,7 +778,34 @@ export default function Page() {
                 </div>
 
             </section>
-
+<section className="look mb">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-6 col-md-6 col-12">
+                            <div className="look-txt">
+                                <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme Stage(7-9)  </h2>
+                                <div className="mt-4">
+                                    <Button className="btn-book mb-3" type="button" variant="contained"
+                                        onClick={handleClickOpen}>
+                                        Click Here
+                                    </Button>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-3 col-12">
+                            <div className="loo-imh">
+                                <Image
+                                    src="/assets/img/im.webp"
+                                    alt="testimonial"
+                                    width={360}
+                                    height={260}
+                                    className="img-fluid"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 
             <PopupForm open={open} handleClose={handleClose} />

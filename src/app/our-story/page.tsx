@@ -269,8 +269,8 @@ export default function Page() {
                             <Image
                                 src="/assets/img/bigf.webp"
                                 alt="Action Illustration"
-                                width={300}
-                                height={400}
+                                width={280}
+                                height={350}
                                 className="img-fluid action-img"
                             />
                         </div>
