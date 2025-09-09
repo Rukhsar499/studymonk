@@ -42,7 +42,7 @@ export default function Page() {
                                     Before you choose a plan, see the integrated value we provide.
                                     Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
                                 </p>
-                                 <button className="mentr">Read More</button>
+                                 <button className="mentr">Learn More</button>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
@@ -53,7 +53,7 @@ export default function Page() {
                                     Before you choose a plan, see the integrated value we provide.
                                     Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
                                 </p>
-                                 <button className="mentr">Read More</button>
+                                 <button className="mentr">Learn More</button>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
@@ -64,7 +64,7 @@ export default function Page() {
                                     Before you choose a plan, see the integrated value we provide.
                                     Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
                                 </p>
-                                 <button className="mentr">Read More</button>
+                                 <button className="mentr">Learn More</button>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
@@ -75,7 +75,7 @@ export default function Page() {
                                     Before you choose a plan, see the integrated value we provide.
                                     Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
                                 </p>
-                                 <button className="mentr">Read More</button>
+                                 <button className="mentr">Learn More</button>
                             </div>
                         </div>
                     </div>
