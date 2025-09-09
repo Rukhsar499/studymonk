@@ -262,8 +262,12 @@ h3 {
 .blog_box img{
   width:100%;
 }
-
-
+#btds{
+ color:#000;
+}
+.get-text{
+  border-right: 1px solid #000;
+}
 
 
 
