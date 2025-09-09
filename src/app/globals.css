@@ -487,7 +487,7 @@ h3 {
   background-color: transparent !important;
   padding: 10px 30px !important;
   border-radius: 20px !important;
-  border: 1px solid #2F2F2F;
+  border: 1px solid #2F2F2F !important;
   color: #2F2F2F !important;
   font-family: "Poppins", sans-serif !important;
   transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1) !important;
@@ -2615,11 +2615,104 @@ a {
   height: auto;
   width: 100%;
 }
-
+.contents {
+    position: relative;
+    z-index: 1;
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+}
+.contents img{
+  margin-left: 5px;
+}
 .spec {
   width: 80%;
 }
-
+.growth{
+  position: relative;
+  margin-top: -230px;
+}
+.sep-box{
+  background-color: #172437;
+  padding: 8px;
+  border-radius: 12px;
+}
+.seps-box{
+  background-color: #E4EF8C;
+  padding: 8px;
+  border-radius: 12px;
+}
+#pyh{
+  color: #E4EF8C;
+  font-family: "Gilroy-Bold";
+  margin-bottom: 30px;
+}
+#pyhs{
+  color: #01356C;
+  font-family: "Gilroy-Bold";
+  margin-bottom: 30px;
+}
+.prtr{
+  justify-content: center;
+}
+.notex{
+  background-color: #FFDEDE;
+  color: #E12E32;
+  padding: 7px 10px;
+  border-radius: 15px;
+  margin-top: 20px;
+  width: 80%;
+  margin: auto;
+  font-size: 16px;
+}
+.gr-boxz{
+  background-color: #FCFFE9;
+  border-left: 6px solid #98A723;
+  border-radius: 12px;
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+}
+.blue-ijh{
+  background-color: #F2F7FF;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 100px;
+  font-family: "Poppins";
+}
+.blue-ijh ul li{
+  padding-top: 10px;
+  font-weight: 500;
+}
+.sectd{
+  color: #98A723;
+  font-family: "Gilroy-Bold";
+  margin-bottom: 10px;
+}
+.gr-boxz img{
+  margin-right: 20px;
+}
+.seps-box{
+  margin-bottom: 30px;
+}
+.canb{
+  justify-content: space-around;
+  gap: 3px;
+}
+.sep-border {
+    border: 1px solid #FFFEF8;
+    border-radius: 12px;
+    padding: 40px;
+}
+.seps-border {
+    border: 1px solid #000000;
+    border-radius: 12px;
+    padding: 40px;
+}
+.sep{
+  position: relative;
+  margin-top: -200px;
+}
 .box_form_img {
   position: relative;
   margin-top: -180px;
