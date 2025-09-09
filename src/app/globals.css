@@ -2692,6 +2692,25 @@ a {
 .gr-boxz img{
   margin-right: 20px;
 }
+.tab-sec{
+  background-color: #172437;
+  padding: 30px 0px;
+}
+.nav-tabs {
+  border-bottom:none !important;
+  justify-content: center;
+}
+.nav-tabs .nav-link .active{
+  border-radius: 10px !important;
+  background-color: #E4EF8C !important;
+  color: #000;
+}
+.nav-tabs .nav-link{
+  border-radius: 20px !important;
+  background-color: #FEFFF3 !important;
+  color: #000;
+  padding: 10px 20px !important;
+}
 .seps-box{
   margin-bottom: 30px;
 }

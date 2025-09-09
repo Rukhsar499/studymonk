@@ -56,6 +56,7 @@ export default function PlansTabs() {
   };
 
   return (
+    <section className="tab-sec mb">
     <Container className="my-5">
       {/* Desktop Tabs */}
       <div className="d-none d-md-block">
@@ -64,8 +65,8 @@ export default function PlansTabs() {
           activeKey={activeStage}
           onSelect={(selectedKey) => setActiveStage(selectedKey as Stage)}
         >
-          <Nav.Item>
-            <Nav.Link eventKey="stage4">Stage 4</Nav.Link>
+          <Nav.Item >
+            <Nav.Link className="active" eventKey="stage4">Stage 4</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link eventKey="stage5">Stage 5</Nav.Link>
@@ -104,5 +105,6 @@ export default function PlansTabs() {
       {/* Stage Content */}
       <div className="mt-4">{renderContent()}</div>
     </Container>
+    </section>
   );
 }
