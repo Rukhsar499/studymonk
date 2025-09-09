@@ -5,6 +5,7 @@ import Header from "../component/Header";
 import Footer from "../component/footer/Footer";
 import BootstrapClient from '../BootstrapClient';
 import * as React from "react";
+import StickyFooter from "../component/StickyFooter";
 
 
 
@@ -14,7 +15,7 @@ export default function Page() {
         <>
             <Header />
 
-            <section className="focus-section mb blog-rc">
+            <section className=" mb blog-rc">
                 <div className="circles">
                     <span className="circles circle1"></span>
                     <span className="circles circle2"></span>
@@ -37,6 +38,7 @@ export default function Page() {
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="blog_box">
                                 <Image src="/assets/img/blog-img.png" alt="Login Icon" width={600} height={500} className="img-fluid me-2" />
+                                <p className="atur">Author: Admin | 22nd august 2025</p>
                                 <h2 className="blof-heading">This is a blog title</h2>
                                 <p>
                                     Before you choose a plan, see the integrated value we provide.
@@ -48,6 +50,7 @@ export default function Page() {
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="blog_box">
                                 <Image src="/assets/img/blog-img.png" alt="Login Icon" width={600} height={500} className="img-fluid me-2" />
+                                <p className="atur">Author: Admin | 22nd august 2025</p>
                                 <h2 className="blof-heading">This is a blog title</h2>
                                 <p>
                                     Before you choose a plan, see the integrated value we provide.
@@ -59,6 +62,7 @@ export default function Page() {
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="blog_box">
                                 <Image src="/assets/img/blog-img.png" alt="Login Icon" width={600} height={500} className="img-fluid me-2" />
+                                <p className="atur">Author: Admin | 22nd august 2025</p>
                                 <h2 className="blof-heading">This is a blog title</h2>
                                 <p>
                                     Before you choose a plan, see the integrated value we provide.
@@ -70,6 +74,7 @@ export default function Page() {
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="blog_box">
                                 <Image src="/assets/img/blog-img.png" alt="Login Icon" width={600} height={500} className="img-fluid me-2" />
+                                <p className="atur">Author: Admin | 22nd august 2025</p>
                                 <h2 className="blof-heading">This is a blog title</h2>
                                 <p>
                                     Before you choose a plan, see the integrated value we provide.
@@ -98,7 +103,7 @@ export default function Page() {
 
 
 
-
+       <StickyFooter />
             <Footer />
 
         </>
