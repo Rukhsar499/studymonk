@@ -349,7 +349,7 @@ export default function Page() {
                     </p>
 
 
-                    <button>Meet Our Mentors</button>
+                    <button className="mentr">Meet Our Mentors</button>
                 </div>
                 <PopupForm open={open} handleClose={handleClose} />
             </section>

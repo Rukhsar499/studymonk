@@ -2497,7 +2497,7 @@ a {
   margin-bottom: 20px;
 }
 
-#philosophy button {
+.mentr {
   background: #B2BF4D;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.39);
   padding: 10px 30px;
@@ -2555,7 +2555,21 @@ a {
   transition: all 0.3s ease;
   z-index: 1;
 }
-
+.blof-heading{
+  text-align: left;
+  font-size: 28px !important;
+}
+.blog_box img{
+  margin-bottom: 15px;
+}
+.blog_box{
+  margin-bottom: 50px;
+  padding: 20xp;
+}
+.blog-rc {
+    height: 500px;
+    margin-top: 70px;
+}
 /* hover ke time gradient border */
 .box_1::before {
   content: "";
@@ -2789,7 +2803,10 @@ a {
   padding: 20px 0px 20px 20px;
   width: 80%;
 }
-
+#blogs{
+  color: #003C79;
+  font-family: "Gilroy-Bold";
+}
 .pik-box {
   background-image: url("/assets/img/pink.png");
   background-repeat: no-repeat;
