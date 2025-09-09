@@ -268,9 +268,16 @@ h3 {
 .get-text{
   border-right: 1px solid #000;
 }
-
-
-
+.cont{
+  text-align: left;
+  margin-bottom: 20px;
+}
+.plkvn{
+  margin-bottom: 20px;
+}
+.maps{
+  margin-top: 20px;
+}
 
 
 
@@ -2585,18 +2592,18 @@ a {
 }
 
 .mentr {
-  background: #B2BF4D;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.39);
-  padding: 10px 30px;
+  background: #B2BF4D !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.39) !important;
+  padding: 10px 30px !important;
   /* Smaller button */
-  font-size: 16px;
-  font-family: "Poppins";
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  color: #131500;
-  z-index: 2;
+  font-size: 16px !important;
+  font-family: "Poppins" !important;
+  border: none !important;
+  border-radius: 25px !important;
+  text-transform: capitalize !important;
+  transition: background-color 0.3s ease !important;
+  color: #131500 !important;
+  z-index: 2 !important;
 }
 
 .see_bx {
@@ -2617,7 +2624,11 @@ a {
   position: relative;
   margin-top: -180px;
 }
-
+.con-text h5{
+  margin-bottom: 20px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
 .form {
   border: 15px solid #b2bf4d7c;
   border-radius: 34px;
@@ -3066,8 +3077,18 @@ a {
   color: #001F3F;
   margin-bottom: 30px;
 }
+.about-us{
+  position: relative;
+  margin-top: -200px;
+ 
+}
+/* .condhj{
+   background-image: url("/assets/img/MONKS.webp");
+  background-repeat: no-repeat;
 
-
+  
+  
+} */
 #child {
   font-size: 30px;
   color: #000;
@@ -3676,7 +3697,14 @@ padding: 100px 0px 20px 0px;
 .blog_box {
 padding: 5px;
 }
-
+.about-us {
+   margin-top: -40px;
+}
+.get-text {
+    border-right: none;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;
