@@ -8,11 +8,12 @@ import { useState } from "react";
 import { useEffect } from "react";
 import * as React from "react";
 import StickyFooter from "../component/StickyFooter";
-import Link from 'next/link';
 import PopupForm from "../component/PopupForm";
 import { Button } from "@mui/material";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import WidthImageSection from "../component/WidthImageSection";
+import PriceAccordion from "../plans-and-pricing/PriceAccordion";
+import PriceTab from "../plans-and-pricing/PriceTab";
 
 
 
@@ -260,6 +261,7 @@ export default function Page() {
                     </div>
                 </div>
             </section>
+             <PriceTab />
 
             <section className="trasc mb">
                 <div className="container">
@@ -320,18 +322,18 @@ export default function Page() {
                                     />
                                 </div>
                             </div>
-                            
+
                             <div className="col-lg-5 col-md-5 col-12 mx-auto">
                                 <div className="blue-ijh">
-                                 <ul>
-                                    <li>Live, Interactive Small Group Classes</li>
-                                    <li>Mentorship from a Cambridge Specialist</li>
-                                    <li>Custom Library of Curriculum-Aligned Resources</li>
-                                    <li>Regular, Personalized Progress Reports</li>
-                                    <li>A Safe, Secure, and Distraction-Free Digital Platform</li>
-                                    <li>Mentorship from a Cambridge Specialist</li>
-                                    <li>Access to a Supportive Peer Learning Community</li>
-                                 </ul>
+                                    <ul>
+                                        <li>Live, Interactive Small Group Classes</li>
+                                        <li>Mentorship from a Cambridge Specialist</li>
+                                        <li>Custom Library of Curriculum-Aligned Resources</li>
+                                        <li>Regular, Personalized Progress Reports</li>
+                                        <li>A Safe, Secure, and Distraction-Free Digital Platform</li>
+                                        <li>Mentorship from a Cambridge Specialist</li>
+                                        <li>Access to a Supportive Peer Learning Community</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -339,7 +341,54 @@ export default function Page() {
                 </div>
             </section>
 
+            <section className="fad mb">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-7 col-md-6 col-12">
+                            <h2 className="text-center fres">Frequently Asked Questions</h2>
+                            <PriceAccordion />
+                        </div>
+                        <div className="col-lg-5 col-md-6 col-12">
+                            <div className="faq-sdeimg position-relative">
+                                <div className="mt-2">
+                                    <h3 className="reacf">
+                                        For Young Minds, Curiosity is a
+                                        Superpower. We Help Them Master It.
+                                    </h3>
+                                    <p>
+                                        This is the magical age where curiosity can either blossom into a lifelong love for learning or fade away. Our mentors are trained to catch every {`why?`} and turn it into a thrilling discovery, ensuring their natural curiosity becomes an unstoppable academic strength.
+                                    </p>
 
+                                    <p>
+                                        Your complimentary 7-day trial begins with a free Discovery Session, designed to unlock the questions your child is most excited to answer.
+                                    </p>
+                                    <Button
+                                        className="btn-books mt-3"
+                                        type="button"
+                                        variant="contained"
+                                        onClick={handleClickOpen}
+                                    >
+                                        Start Your Learning
+                                        <br />
+                                        Adventure
+                                    </Button>
+                                </div>
+                                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                    <Image
+                                        src="/assets/img/image26.png"
+                                        alt="testimonial"
+                                        width={300}
+                                        height={260}
+                                        className="img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <PopupForm open={open} handleClose={handleClose} />
+            </section>
 
 
 
