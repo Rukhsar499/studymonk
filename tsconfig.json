@@ -30,7 +30,8 @@
   "**/*.ts",
   "**/*.tsx",
   "**/*.d.ts",
-  ".next/types/**/*.ts"
+  ".next/types/**/*.ts",
+  "types/**/*.d.ts"
 ]
 
 }

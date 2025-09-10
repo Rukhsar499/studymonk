@@ -12,6 +12,7 @@ import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
 // import CareerAccodion from "../career/CareerAccodion";
 import ComparisonSection from "../career/ComparisonSection";
+import Face from "../career/Face";
 
 
 
@@ -181,8 +182,8 @@ export default function Page() {
                                                 className="img-fluid me-2"
                                             />
                                             <div>
-                                            <p className="mb-0" style={{ color: "#FBDD30" }}><b>Collaborative Curriculum Planning</b></p>
-                                            
+                                                <p className="mb-0" style={{ color: "#FBDD30" }}><b>Collaborative Curriculum Planning</b></p>
+
                                                 <p className="text-white">High-pressure, noisy, sales-driven. Characterized by "brand fatigue."</p>
                                             </div>
                                         </div>
@@ -195,8 +196,8 @@ export default function Page() {
                                                 className="img-fluid me-2"
                                             />
                                             <div>
-                                            <p className="mb-0" style={{ color: "#FBDD30" }}><b>Supportive Check-ins</b></p>
-                                            
+                                                <p className="mb-0" style={{ color: "#FBDD30" }}><b>Supportive Check-ins</b></p>
+
                                                 <p className="text-white">Engage in regular conversations focused on your growth and well-being, not surveillance.</p>
                                             </div>
                                         </div>
@@ -209,8 +210,8 @@ export default function Page() {
                                                 className="img-fluid me-2"
                                             />
                                             <div>
-                                            <p className="mb-0" style={{ color: "#FBDD30" }}><b>A Community of Peers</b></p>
-                                            
+                                                <p className="mb-0" style={{ color: "#FBDD30" }}><b>A Community of Peers</b></p>
+
                                                 <p className="text-white">Share insights, challenges, and successes with fellow mentors in a spirit of mutual improvement.</p>
                                             </div>
                                         </div>
@@ -223,13 +224,13 @@ export default function Page() {
                                                 className="img-fluid me-2"
                                             />
                                             <div>
-                                            <p className="mb-0" style={{ color: "#FBDD30" }}><b>Protected Deep Work</b></p>
-                                            
+                                                <p className="mb-0" style={{ color: "#FBDD30" }}><b>Protected Deep Work</b></p>
+
                                                 <p className="text-white">We champion "Digital Serenity" and respect your work-life balance as a non-negotiable part of our ethos.</p>
                                             </div>
                                         </div>
-                                        
-                                     </div>
+
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -237,7 +238,9 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="mission mb">
+            <Face />
+
+            {/* <section className="mission mb">
                 <div className="container">
                     <div className="gr">
                         <div className="text-center">
@@ -302,7 +305,7 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
 
             <section className="open mb">
                 <div className="container">
@@ -409,7 +412,14 @@ export default function Page() {
                         We invite you to begin your path.
                     </p>
 
-                    <button>Apply to join us</button>
+                    <Button
+                        className="btn-books mt-3"
+                        type="button"
+                        variant="contained"
+                        onClick={handleClickOpen}
+                    >
+                        Apply to join us
+                    </Button>
                 </div>
             </section>
 
