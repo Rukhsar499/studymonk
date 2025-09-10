@@ -23,17 +23,17 @@ export default function PlansTabs() {
                                     <p>
                                         This holistic package fosters unshakeable confidence and a lifelong love of learning that goes far beyond exams.
                                     </p>
-                                    <p>
+                                    <p className="fw-bold text-success">
                                         <strong>Math • English • Science</strong>
                                     </p>
                                     <div className="twelvex">
                                         <p>Monthly Price</p>
                                         <h3 id="pyhs" className="mb-2">₹12,000</h3>
                                         <p>
-                                            You save ₹370 every month (that's ₹4,440 a year!)
+                                            You save ₹370 every month (that's <span className="text-success">₹4,440</span> a year!)
                                         </p>
                                     </div>
-                                    <button className="btn btn-success mt-3">
+                                    <button className="btn-frd mt-3">
                                         Claim Your Child’s Free Trial
                                     </button>
                                 </div>

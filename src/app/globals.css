@@ -2755,7 +2755,14 @@ a {
   width: 500px;
 
 }
-
+.btn-frd{
+  background-color: #172437;
+  color: #fff ;
+  padding: 10px 30px;
+  font-family: "Poppins";
+  border: none;
+  border-radius: 20px;
+}
 .seps-box {
   margin-bottom: 30px;
 }
