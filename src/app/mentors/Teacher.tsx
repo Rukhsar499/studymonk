@@ -79,7 +79,7 @@ export default function TeacherList() {
                                                 <h5 className="finb">{teacher.name}</h5>
                                                 <p className=" finb">{teacher.qualification}</p>
                                                 <p className="finb">{teacher.intro}</p>
-                                                <Button variant="primary" onClick={() => handleShow(teacher)} className="btgf">
+                                                <Button  variant="primary" onClick={() => handleShow(teacher)} className="b-ment">
                                                     <span className="text">View More</span>
                                                    
                                                 </Button>
