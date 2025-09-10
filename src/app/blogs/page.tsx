@@ -5,6 +5,7 @@ import Header from "../component/Header";
 import Footer from "../component/footer/Footer";
 import BootstrapClient from '../BootstrapClient';
 import * as React from "react";
+import Link from 'next/link';
 import StickyFooter from "../component/StickyFooter";
 
 
@@ -38,49 +39,65 @@ export default function Page() {
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="blog_box">
                                 <Image src="/assets/img/blog-img.png" alt="Login Icon" width={600} height={500} className="img-fluid me-2" />
-                                <p className="atur">Author: Admin | 22nd august 2025</p>
-                                <h2 className="blof-heading">This is a blog title</h2>
+                                <div>
+                                    <p className="atur mb-0">Author: Admin | 22nd august 2025</p>
+                                </div>
+                                <div className="mt-2">
+                                    <h2 className="blof-heading mnb">This is a blog title</h2>
+                                </div>
                                 <p>
                                     Before you choose a plan, see the integrated value we provide.
                                     Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
                                 </p>
-                                 <button className="mentr">Learn More</button>
+                                <Link href="/blog-details" ><button className="mentr">Learn More</button></Link>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="blog_box">
                                 <Image src="/assets/img/blog-img.png" alt="Login Icon" width={600} height={500} className="img-fluid me-2" />
-                                <p className="atur">Author: Admin | 22nd august 2025</p>
-                                <h2 className="blof-heading">This is a blog title</h2>
+                                <div>
+                                    <p className="atur mb-0">Author: Admin | 22nd august 2025</p>
+                                </div>
+                                <div className="mt-2">
+                                    <h2 className="blof-heading mnb">This is a blog title</h2>
+                                </div>
                                 <p>
                                     Before you choose a plan, see the integrated value we provide.
                                     Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
                                 </p>
-                                 <button className="mentr">Learn More</button>
+                                <Link href="/blog-details" ><button className="mentr">Learn More</button></Link>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="blog_box">
                                 <Image src="/assets/img/blog-img.png" alt="Login Icon" width={600} height={500} className="img-fluid me-2" />
-                                <p className="atur">Author: Admin | 22nd august 2025</p>
-                                <h2 className="blof-heading">This is a blog title</h2>
+                                <div>
+                                    <p className="atur mb-0">Author: Admin | 22nd august 2025</p>
+                                </div>
+                                <div className="mt-2">
+                                    <h2 className="blof-heading mnb">This is a blog title</h2>
+                                </div>
                                 <p>
                                     Before you choose a plan, see the integrated value we provide.
                                     Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
                                 </p>
-                                 <button className="mentr">Learn More</button>
+                                <Link href="/blog-details" ><button className="mentr">Learn More</button></Link>
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="blog_box">
                                 <Image src="/assets/img/blog-img.png" alt="Login Icon" width={600} height={500} className="img-fluid me-2" />
-                                <p className="atur">Author: Admin | 22nd august 2025</p>
-                                <h2 className="blof-heading">This is a blog title</h2>
+                                <div>
+                                    <p className="atur mb-0">Author: Admin | 22nd august 2025</p>
+                                </div>
+                                <div className="mt-2">
+                                    <h2 className="blof-heading mnb">This is a blog title</h2>
+                                </div>
                                 <p>
                                     Before you choose a plan, see the integrated value we provide.
                                     Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
                                 </p>
-                                 <button className="mentr">Learn More</button>
+                                <Link href="/blog-details" ><button className="mentr">Learn More</button></Link>
                             </div>
                         </div>
                     </div>
@@ -103,7 +120,7 @@ export default function Page() {
 
 
 
-       <StickyFooter />
+            <StickyFooter />
             <Footer />
 
         </>

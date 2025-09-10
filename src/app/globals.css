@@ -2755,6 +2755,13 @@ a {
   width: 500px;
 
 }
+.blog-text-detail img{
+  width:100%;
+  margin-bottom:10px;
+}
+.blog-text-detail{
+  margin-right: 20px;
+}
 .btn-frd{
   background-color: #172437;
   color: #fff ;
@@ -3888,7 +3895,9 @@ padding: 100px 0px 20px 0px;
     border-bottom: 1px solid #000;
     margin-bottom: 20px;
   }
-
+.mnb{
+  margin-top: 20px;
+}
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;
