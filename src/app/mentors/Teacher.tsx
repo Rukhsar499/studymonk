@@ -65,7 +65,8 @@ export default function TeacherList() {
                     <h2 className="finb">Find the Right Guide for Your Child</h2>
                     <div className="row">
                         {teachers.map((teacher) => (
-                            <div key={teacher.id} className="col-12 col-md-6 m-bvx">
+                            <div key={teacher.id} className="col-12 col-md-6">
+                                <div className="m-bvx">
                                 <div className="row">
                                     <div className="col-lg-5 col-md-5 col-12">
                                         <div className="card p-3 shadow-sm">
@@ -83,6 +84,7 @@ export default function TeacherList() {
                                             </Button>
                                         </div>
                                     </div>
+                                </div>
                                 </div>
                             </div>
                         ))}
