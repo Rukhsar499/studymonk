@@ -15,6 +15,8 @@ type Teacher = {
     title: string;
     desc: string;
     stage: string;
+    teach: string;
+    credentials: string[];
 };
 
 const teachers: Teacher[] = [
@@ -29,6 +31,13 @@ const teachers: Teacher[] = [
         title: "What Parents & Students Say",
         desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
         stage: "— Parent of a Stage 9 Student",
+        teach: "Credentials & Experience",
+        credentials: [
+            "10+ years of teaching Astrophysics",
+            "Author of 3 research papers",
+            "Guest lecturer at IIT Delhi",
+            "Mentor to 500+ students worldwide",
+        ],
     },
     {
         id: 2,
@@ -41,6 +50,13 @@ const teachers: Teacher[] = [
         title: "What Parents & Students Say",
         desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
         stage: "— Parent of a Stage 9 Student",
+        teach: "Credentials & Experience",
+        credentials: [
+            "10+ years of teaching Astrophysics",
+            "Author of 3 research papers",
+            "Guest lecturer at IIT Delhi",
+            "Mentor to 500+ students worldwide",
+        ],
     },
     {
         id: 3,
@@ -53,6 +69,13 @@ const teachers: Teacher[] = [
         title: "What Parents & Students Say",
         desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
         stage: "— Parent of a Stage 9 Student",
+        teach: "Credentials & Experience",
+        credentials: [
+            "10+ years of teaching Astrophysics",
+            "Author of 3 research papers",
+            "Guest lecturer at IIT Delhi",
+            "Mentor to 500+ students worldwide",
+        ],
     },
     {
         id: 4,
@@ -65,6 +88,13 @@ const teachers: Teacher[] = [
         title: "What Parents & Students Say",
         desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
         stage: "— Parent of a Stage 9 Student",
+        teach: "Credentials & Experience",
+        credentials: [
+            "10+ years of teaching Astrophysics",
+            "Author of 3 research papers",
+            "Guest lecturer at IIT Delhi",
+            "Mentor to 500+ students worldwide",
+        ],
     },
 ];
 
@@ -123,23 +153,31 @@ export default function TeacherList() {
             </div>
 
             {/* Modal */}
-            <Modal show={show} onHide={handleClose} size="lg" centered>
+            <Modal show={show} onHide={handleClose} size="lg" centered className="myg">
                 <Modal.Header closeButton>
                     <Modal.Title></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     {selectedTeacher && (
                         <div className="row">
-                            <div className="col-md-4">
-                                <Image
-                                    src={selectedTeacher.photo}
-                                    alt={selectedTeacher.name}
-                                    width={300}
-                                    height={200}
-                                    className="img-fluid rounded mb-3"
-                                />
+                            <div className="col-md-5">
+                                <div className="bgs-grey p-3 rounded">
+                                    <Image
+                                        src={selectedTeacher.photo}
+                                        alt={selectedTeacher.name}
+                                        width={300}
+                                        height={200}
+                                        className="img-fluid rounded mb-3"
+                                    />
+                                    <h4 className="h-msnt">{selectedTeacher.teach}</h4>
+                                    <ul>
+                                        {selectedTeacher.credentials.map((item, index) => (
+                                            <li key={index}>{item}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
-                            <div className="col-md-8">
+                            <div className="col-md-7">
                                 <h5 className="mn-name fw-bold">{selectedTeacher?.name}</h5>
                                 <h6>{selectedTeacher.qualification}</h6>
 

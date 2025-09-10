@@ -2723,6 +2723,19 @@ a {
   font-size: 20px;
   font-family: "Gilroy-Bold";
 }
+
+.myg .btn-close {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 50px;
+    
+  }
+  .bgs-grey{
+    background-color: #D9D9D9;
+  }.modal-body {
+    padding: 0px 20px 20px !important;
+}
 .see_bx {
   background-image: url("/assets/img/discuss-bg.png");
   background-repeat: no-repeat;
