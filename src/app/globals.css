@@ -4089,6 +4089,20 @@ font-size: 15px;
   background-color: #FEFFF3 !important;
   font-family: "Poppins";
 }
+.mnt {
+  margin-top: -26px;
+  padding: 20px;
+}
+.bgs-grey {
+  margin-bottom: 20px;
+}
+.myg .btn-close {
+    right: 3%;
+    top: 0%;
+    width: 12px;
+    height: 12px;
+   
+}
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;

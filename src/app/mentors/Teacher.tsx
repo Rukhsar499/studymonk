@@ -159,7 +159,7 @@ export default function TeacherList() {
                 </Modal.Header>
                 <Modal.Body>
                     {selectedTeacher && (
-                        <div className="row">
+                        <div className="row g-3">
                             <div className="col-md-4">
                                 <div className="bgs-grey p-3 rounded h-100">
                                     <Image
