@@ -316,7 +316,7 @@ export default function Page() {
                                     <Image
                                         src="/assets/img/more-img.png"
                                         alt="Right arrow"
-                                        width={400}
+                                        width={380}
                                         height={450}
                                         className="img-fluid"
                                     />

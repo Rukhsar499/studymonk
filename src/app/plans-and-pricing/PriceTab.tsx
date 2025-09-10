@@ -29,8 +29,8 @@ export default function PlansTabs() {
                                         <Image
                                             src="/assets/img/tick-circle2.png"
                                             alt="Right arrow"
-                                            width={30}
-                                            height={30}
+                                            width={25}
+                                            height={25}
                                             className="me-2"
                                         />
                                         <h5 className="fw-bold text-success">Math</h5>
@@ -39,8 +39,8 @@ export default function PlansTabs() {
                                         <Image
                                             src="/assets/img/tick-circle2.png"
                                             alt="Right arrow"
-                                            width={30}
-                                            height={30}
+                                             width={25}
+                                            height={25}
                                             className="me-2"
                                         />
                                         <h5 className="fw-bold text-success">English</h5>
@@ -49,8 +49,8 @@ export default function PlansTabs() {
                                          <Image
                                             src="/assets/img/tick-circle2.png"
                                             alt="Right arrow"
-                                            width={30}
-                                            height={30}
+                                             width={25}
+                                            height={25}
                                             className="me-2"
                                         />
                                         <h5 className="fw-bold text-success">Science</h5>

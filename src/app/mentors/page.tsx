@@ -1,0 +1,165 @@
+'use client';
+
+import Image from "next/image";
+import Header from "../component/Header";
+import Footer from "../component/footer/Footer";
+import BootstrapClient from '../BootstrapClient';
+import { useState } from "react";
+import { useEffect } from "react";
+import * as React from "react";
+import StickyFooter from "../component/StickyFooter";
+import PopupForm from "../component/PopupForm";
+import { Button } from "@mui/material";
+import FullWidthImageSection from "../component/FullWidthImageSection";
+import WidthImageSection from "../component/WidthImageSection";
+
+
+
+
+
+export default function Page() {
+    const [open, setOpen] = useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleOpen = () => setIsOpen(true);
+    const handleClose2 = () => setIsOpen(false);
+
+    const [formData, setFormData] = useState({
+        name: "",
+        phone: "",
+        email: "",
+        service: "",
+        message: "",
+    });
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    };
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        console.log("Form Data Submitted: ", formData);
+
+        // 👉 Yaha aap API call kar sakte ho (fetch/axios ke through)
+        // Example:
+        // fetch("/api/contact", { method: "POST", body: JSON.stringify(formData) });
+    };
+    useEffect(() => {
+        const stepBoxes = document.querySelectorAll<HTMLDivElement>(".step-box");
+
+        const handleClick = (event: Event) => {
+            stepBoxes.forEach((b) => b.classList.remove("active"));
+            (event.currentTarget as HTMLDivElement).classList.add("active");
+        };
+
+        stepBoxes.forEach((box) => {
+            box.addEventListener("click", handleClick);
+        });
+
+        // 🧹 Cleanup
+        return () => {
+            stepBoxes.forEach((box) => {
+                box.removeEventListener("click", handleClick);
+            });
+        };
+    }, []);
+    return (
+        <>
+            <Header />
+
+            <section className="blog-rc blog-rcs">
+                <div className="circles">
+                    <span className="circles circle1"></span>
+                    <span className="circles circle2"></span>
+                    <span className="circles circle3"></span>
+                </div>
+
+                <div className="content">
+                    <h1 id="blogs">
+                        Our Mentors
+                    </h1>
+                    <p className="mt-3" style={{ color: "#001F3F" }}>
+                        The Heart of the Study Monks Promise
+                    </p>
+                </div>
+            </section>
+            <FullWidthImageSection
+                src="/assets/img/studys.webp"
+                alt="Right arrow"
+                className="d-none d-lg-flex"
+                width="100%"
+                objectFit="cover"
+            />
+
+            <section className="pkh">
+                <Image
+                    src="/assets/img/s1.png"
+                    alt="Right arrow"
+                    className="d-flex d-lg-none full-width-img"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
+                />
+            </section>
+
+            <section className="growth mb">
+                <div className="container">
+                    <div className="text-center">
+                        <h2>More Than Tuition. An Investment in Growth.</h2>
+                        <p>
+                            Before you choose a plan, see the integrated value we provide. Each bundle includes academic excellence, confidence-building skills, and wellness mentorship at a fraction of the cost of sourcing them separately.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <WidthImageSection
+                src="/assets/img/MONKS.webp"
+                alt="Right arrow"
+                className="d-none d-lg-flex"
+                width="100%"
+                objectFit="cover"
+            />
+
+            <section className="pkh">
+                <Image
+                    src="/assets/img/m1.png"
+                    alt="Right arrow"
+                    className="d-flex d-lg-none full-width-img"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
+                />
+            </section>
+
+
+          
+
+         
+
+        
+
+       
+
+
+
+
+
+            <StickyFooter />
+            <Footer />
+
+        </>
+    );
+
+}
