@@ -87,9 +87,12 @@ export default function HoverSlider() {
 
                                     <div className="card-overlay">
                                         {activeId === card.id && (
-                                            <div className="overlay-content text-center">
-                                                <h5 className="fw-bold">{card.title}</h5>
+                                            <div className="overlay-content">
+                                                <div className="text-center">
+                                                <h5 className="fw-bold mb-2">{card.title}</h5>
                                                 <p className="text-muted">{card.short}</p>
+                                                <hr />
+                                                </div>
                                                 {card.full.map((para, i) => (
                                                     <p key={i} className="full-text">
                                                         {para}

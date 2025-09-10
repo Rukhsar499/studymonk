@@ -3645,7 +3645,7 @@ padding: 100px 0px 20px 0px;
 .custom-card .card-overlay {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  /* width: 100%; */
   padding: 15px;
   background: white; /* white background on overlay */
   transition: all 0.4s ease;
