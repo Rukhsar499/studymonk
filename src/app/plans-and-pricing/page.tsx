@@ -373,7 +373,7 @@ export default function Page() {
                                         Adventure
                                     </Button>
                                 </div>
-                                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                <div className="ijhg hgy position-absolute" style={{ right: "10px", bottom: "10px" }}>
                                     <Image
                                         src="/assets/img/image26.png"
                                         alt="testimonial"

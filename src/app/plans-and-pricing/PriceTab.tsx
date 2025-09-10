@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
+import Image from "next/image";
 
 type Stage = "stage4" | "stage5" | "stage6" | "stage7" | "stage8" | "stage9";
 
@@ -23,9 +24,38 @@ export default function PlansTabs() {
                                     <p>
                                         This holistic package fosters unshakeable confidence and a lifelong love of learning that goes far beyond exams.
                                     </p>
-                                    <p className="fw-bold text-success">
-                                        <strong>Math • English • Science</strong>
-                                    </p>
+                                    <div className="d-flex bgfxz">
+                                    <div className="fw-bold text-success d-flex mathc">
+                                        <Image
+                                            src="/assets/img/tick-circle2.png"
+                                            alt="Right arrow"
+                                            width={30}
+                                            height={30}
+                                            className="me-2"
+                                        />
+                                        <h5 className="fw-bold text-success">Math</h5>
+                                        </div>
+                                        <div className="fw-bold text-success d-flex mathc">
+                                        <Image
+                                            src="/assets/img/tick-circle2.png"
+                                            alt="Right arrow"
+                                            width={30}
+                                            height={30}
+                                            className="me-2"
+                                        />
+                                        <h5 className="fw-bold text-success">English</h5>
+                                        </div>
+                                        <div className="fw-bold text-success d-flex mathc">
+                                         <Image
+                                            src="/assets/img/tick-circle2.png"
+                                            alt="Right arrow"
+                                            width={30}
+                                            height={30}
+                                            className="me-2"
+                                        />
+                                        <h5 className="fw-bold text-success">Science</h5>
+                                    </div>
+                                    </div>
                                     <div className="twelvex">
                                         <p>Monthly Price</p>
                                         <h3 id="pyhs" className="mb-2">₹12,000</h3>
@@ -40,17 +70,14 @@ export default function PlansTabs() {
                             </div>
                         </Col>
                         <Col md={6} className="p-3">
-                            <div className="p-4 border rounded bg-white">
-                                <h5>Build a Custom Plan</h5>
-                                <ul className="list-unstyled">
-                                    <li>📘 Math - ₹2,490</li>
-                                    <li>📗 English - ₹2,490</li>
-                                    <li>📕 Sports & Culture - ₹5,990</li>
-                                </ul>
-                                <h4 className="text-primary">Your Monthly: ₹2,490</h4>
-                                <button className="btn btn-primary mt-3">
-                                    Claim Your Free Trial
-                                </button>
+                            <div className="secd-bcx text-center">
+                              <h3 id="pyhs" className="mb-2">Build a Custom Plan</h3> 
+                              <p>
+                               Focus on specific areas with a flexible plan you design.
+                              </p>
+                               <button className="mentr">
+                                        Claim Your Child’s Free Trial
+                                    </button>
                             </div>
                         </Col>
                     </Row>
