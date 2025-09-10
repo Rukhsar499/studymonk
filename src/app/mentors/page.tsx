@@ -180,7 +180,7 @@ export default function Page() {
                     </p>
 
 
-                    <button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Schedule a clarity session</button>
+                    <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Schedule a clarity session</Button>
                 </div>
                 <PopupForm open={open} handleClose={handleClose} />
             </section>
