@@ -2630,7 +2630,12 @@ a {
   color: #131500 !important;
   z-index: 2 !important;
 }
-
+.finb{
+  color: #fff !important;
+}
+.m-bvx{
+  margin-top: 40px;
+}
 .see_bx {
   background-image: url("/assets/img/discuss-bg.png");
   background-repeat: no-repeat;

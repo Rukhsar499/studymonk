@@ -30,6 +30,22 @@ const teachers: Teacher[] = [
          photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
+    {
+        id: 3,
+        name: "Dr. Rahul Verma",
+        qualification: "PhD, Mathematics",
+        intro: "Making numbers fun and easy for students with real-world applications.",
+         photo: "assets/img/mentor-1.png",
+        video: "https://www.w3schools.com/html/mov_bbb.mp4",
+    },
+    {
+        id: 4,
+        name: "Dr. Rahul Verma",
+        qualification: "PhD, Mathematics",
+        intro: "Making numbers fun and easy for students with real-world applications.",
+         photo: "assets/img/mentor-1.png",
+        video: "https://www.w3schools.com/html/mov_bbb.mp4",
+    },
 ];
 
 export default function TeacherList() {
@@ -46,10 +62,10 @@ export default function TeacherList() {
         <section className="ment mb">
             <div className="container">
                 <div className="mnt">
-                    <h2>Find the Right Guide for Your Child</h2>
+                    <h2 className="finb">Find the Right Guide for Your Child</h2>
                     <div className="row">
                         {teachers.map((teacher) => (
-                            <div key={teacher.id} className="col-12 col-md-6 mb-4">
+                            <div key={teacher.id} className="col-12 col-md-6 m-bvx">
                                 <div className="row">
                                     <div className="col-lg-5 col-md-5 col-12">
                                         <div className="card p-3 shadow-sm">
@@ -59,9 +75,9 @@ export default function TeacherList() {
                                     </div>
                                     <div className="col-lg-7 col-md-7 col-12">
                                         <div className="mn-txt">
-                                            <h5>{teacher.name}</h5>
-                                            <p className="text-muted">{teacher.qualification}</p>
-                                            <p>{teacher.intro}</p>
+                                            <h5 className="finb">{teacher.name}</h5>
+                                            <p className=" finb">{teacher.qualification}</p>
+                                            <p className="finb">{teacher.intro}</p>
                                             <Button variant="primary" onClick={() => handleShow(teacher)}>
                                                 View Profile
                                             </Button>
