@@ -27,7 +27,7 @@ const teachers: Teacher[] = [
         name: "Dr. Rahul Verma",
         qualification: "PhD, Mathematics",
         intro: "Making numbers fun and easy for students with real-world applications.",
-         photo: "assets/img/mentor-1.png",
+        photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
     {
@@ -35,7 +35,7 @@ const teachers: Teacher[] = [
         name: "Dr. Rahul Verma",
         qualification: "PhD, Mathematics",
         intro: "Making numbers fun and easy for students with real-world applications.",
-         photo: "assets/img/mentor-1.png",
+        photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
     {
@@ -43,7 +43,7 @@ const teachers: Teacher[] = [
         name: "Dr. Rahul Verma",
         qualification: "PhD, Mathematics",
         intro: "Making numbers fun and easy for students with real-world applications.",
-         photo: "assets/img/mentor-1.png",
+        photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
 ];
@@ -67,24 +67,26 @@ export default function TeacherList() {
                         {teachers.map((teacher) => (
                             <div key={teacher.id} className="col-12 col-md-6">
                                 <div className="m-bvx">
-                                <div className="row">
-                                    <div className="col-lg-5 col-md-5 col-12">
-                                        <div className="card p-3 shadow-sm">
-                                            <Image src={teacher.photo} alt={teacher.name} className="img-fluid rounded mb-3" width={300}
-                                                height={200} />
+                                    <div className="row">
+                                        <div className="col-lg-5 col-md-5 col-12">
+                                            <div className="card p-3 shadow-sm">
+                                                <Image src={teacher.photo} alt={teacher.name} className="img-fluid rounded mb-3" width={300}
+                                                    height={200} />
+                                            </div>
+                                        </div>
+                                        <div className="col-lg-7 col-md-7 col-12">
+                                            <div className="mn-txt">
+                                                <h5 className="finb">{teacher.name}</h5>
+                                                <p className=" finb">{teacher.qualification}</p>
+                                                <p className="finb">{teacher.intro}</p>
+                                                <Button variant="primary" onClick={() => handleShow(teacher)} className="btgf">
+                                                    <span className="text">View More</span>
+                                                   
+                                                </Button>
+
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-7 col-md-7 col-12">
-                                        <div className="mn-txt">
-                                            <h5 className="finb">{teacher.name}</h5>
-                                            <p className=" finb">{teacher.qualification}</p>
-                                            <p className="finb">{teacher.intro}</p>
-                                            <Button variant="primary" onClick={() => handleShow(teacher)}>
-                                                View Profile
-                                            </Button>
-                                        </div>
-                                    </div>
-                                </div>
                                 </div>
                             </div>
                         ))}

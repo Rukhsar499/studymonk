@@ -2635,6 +2635,9 @@ a {
 }
 .m-bvx{
   margin-top: 40px;
+   background-color: #B2BF4D;
+   padding: 20px;
+   border-radius: 12px;
 }
 .see_bx {
   background-image: url("/assets/img/discuss-bg.png");
