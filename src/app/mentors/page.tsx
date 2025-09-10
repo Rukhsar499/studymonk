@@ -118,7 +118,7 @@ export default function Page() {
                     <div className="text-center">
                         <h2>Meet the Wise Guardians</h2>
                         <p>
-                            Our mentors are the living embodiment of our philosophy. They are handpicked not only for their deep subject expertise but for their rare ability to guide and inspire. We believe so strongly in this that <span style={{ color: "#003C79" }} className="fw-bold">only one out of 5 applicants</span> meet our rigorous standards for both academic excellence and empathetic guidance. Below, you will find dedicated partners for your child's educational journey.
+                            Our mentors are the living embodiment of our philosophy. They are handpicked not only for their deep subject expertise but for their rare ability to guide and inspire. We believe so strongly in this that <span style={{ color: "#003C79" }} className="fw-bold">only one out of 5 applicants</span> meet our rigorous standards for both academic excellence and empathetic guidance. Below, you will find dedicated partners for your child&apos;s educational journey.
                         </p>
                     </div>
                 </div>
