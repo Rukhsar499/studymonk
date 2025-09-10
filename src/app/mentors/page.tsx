@@ -12,6 +12,7 @@ import PopupForm from "../component/PopupForm";
 import { Button } from "@mui/material";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import WidthImageSection from "../component/WidthImageSection";
+import Teacher from "../mentors/Teacher";
 
 
 
@@ -143,9 +144,9 @@ export default function Page() {
                 />
             </section>
 
+            <Teacher />
 
-          
- <section id="philosophy" className="position-relative mb">
+            <section id="philosophy" className="position-relative mb">
                 <div className="container">
 
 
@@ -170,12 +171,12 @@ export default function Page() {
 
 
                     <h2>
-                       Ready to Find the Perfect Teacher?
+                        Ready to Find the Perfect Teacher?
                     </h2>
 
 
                     <p>
-                       Schedule a complimentary Clarity Session to speak with one of our academic counselors and discuss how we can tailor a learning path for your child.
+                        Schedule a complimentary Clarity Session to speak with one of our academic counselors and discuss how we can tailor a learning path for your child.
                     </p>
 
 
@@ -183,11 +184,11 @@ export default function Page() {
                 </div>
                 <PopupForm open={open} handleClose={handleClose} />
             </section>
-         
 
-        
 
-       
+
+
+
 
 
 
