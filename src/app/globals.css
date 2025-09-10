@@ -1860,11 +1860,11 @@ a {
 }
 
 
-.b-ment {
+.mnt Button {
   position: relative;
   overflow: hidden;
-  border: 1px solid #18181a;
-  color: #18181a;
+  border: 1px solid #fff;
+  color: #fff;
   display: inline-block;
   font-size: 12px;
   cursor: pointer;
@@ -1872,20 +1872,20 @@ a {
   width: 65px;
   height: 65px;
   padding: 14px;
-  background: #fff;
+  background: #003C79;
   -moz-user-select: none;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
 }
 
-.b-ment span:first-child {
+.mnt Button span:first-child {
   position: relative;
   transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
   z-index: 10;
 }
 
-.b-ment span:last-child {
+.mnt Button span:last-child {
   color: white;
   display: block;
   position: absolute;
@@ -1900,7 +1900,7 @@ a {
   line-height: 20px;
 }
 
-.b-ment:after {
+.mnt Button:after {
   content: "";
   position: absolute;
   bottom: -50%;
@@ -1913,18 +1913,13 @@ a {
   transform: skewY(9.3deg) scaleY(0);
   z-index: 50;
 }
-
-.b-ment span img {
-  transform: rotate(-45deg);
-}
-
-.b-ment:hover:after {
+.mnt Button:hover:after {
   transform-origin: bottom center;
   transform: skewY(9.3deg) scaleY(2);
 }
 
-.b-ment:hover span:last-child {
-  transform: translateX(-50%) translateY(-50%);
+.mnt Button:hover span:last-child {
+  transform: translateX(-50%) translateY(-100%);
   opacity: 1;
   transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
 }
@@ -2703,11 +2698,21 @@ a {
 .finb{
   color: #fff !important;
 }
-.m-bvx{
+.m-bvx {
   margin-top: 40px;
-   background-color: #B2BF4D;
-   padding: 20px;
-   border-radius: 12px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.m-bvx.active {
+  background-color: #B2BF4D; /* ✅ Active green background */
+  border: none;
+}
+
+.m-bvx.inactive {
+  background-color: transparent; /* ✅ Inactive transparent */
+  border: 1px solid #fff; /* ✅ Green border */
 }
 .see_bx {
   background-image: url("/assets/img/discuss-bg.png");

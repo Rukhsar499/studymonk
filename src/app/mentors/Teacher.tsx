@@ -20,7 +20,7 @@ const teachers: Teacher[] = [
         qualification: "PhD, Astrophysics",
         intro: "I help students see the universe in a grain of sand, connecting physics to the current world.",
         photo: "assets/img/mentor-1.png",
-        video: "https://www.w3schools.com/html/mov_bbb.mp4", // sample video
+        video: "https://www.w3schools.com/html/mov_bbb.mp4", 
     },
     {
         id: 2,
@@ -32,17 +32,17 @@ const teachers: Teacher[] = [
     },
     {
         id: 3,
-        name: "Dr. Rahul Verma",
-        qualification: "PhD, Mathematics",
-        intro: "Making numbers fun and easy for students with real-world applications.",
+        name: "Dr. Kavita Mehta",
+        qualification: "PhD, Chemistry",
+        intro: "Helping students connect molecules with daily life chemistry.",
         photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
     {
         id: 4,
-        name: "Dr. Rahul Verma",
-        qualification: "PhD, Mathematics",
-        intro: "Making numbers fun and easy for students with real-world applications.",
+        name: "Dr. Rohan Gupta",
+        qualification: "PhD, Biology",
+        intro: "Exploring the wonders of life sciences with students.",
         photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
     },
@@ -51,10 +51,12 @@ const teachers: Teacher[] = [
 export default function TeacherList() {
     const [show, setShow] = useState(false);
     const [selectedTeacher, setSelectedTeacher] = useState<Teacher | null>(null);
+    const [activeTeacherId, setActiveTeacherId] = useState<number>(teachers[0].id);
 
     const handleClose = () => setShow(false);
     const handleShow = (teacher: Teacher) => {
         setSelectedTeacher(teacher);
+        setActiveTeacherId(teacher.id); // ✅ active teacher set
         setShow(true);
     };
 
@@ -66,24 +68,30 @@ export default function TeacherList() {
                     <div className="row">
                         {teachers.map((teacher) => (
                             <div key={teacher.id} className="col-12 col-md-6">
-                                <div className="m-bvx">
+                                <div
+                                    className={`m-bvx ${activeTeacherId === teacher.id ? "active" : "inactive"}`}
+                                >
                                     <div className="row">
                                         <div className="col-lg-5 col-md-5 col-12">
                                             <div className="card p-3 shadow-sm">
-                                                <Image src={teacher.photo} alt={teacher.name} className="img-fluid rounded mb-3" width={300}
-                                                    height={200} />
+                                                <Image
+                                                    src={teacher.photo}
+                                                    alt={teacher.name}
+                                                    className="img-fluid rounded mb-3"
+                                                    width={300}
+                                                    height={200}
+                                                />
                                             </div>
                                         </div>
                                         <div className="col-lg-7 col-md-7 col-12">
                                             <div className="mn-txt">
                                                 <h5 className="finb">{teacher.name}</h5>
-                                                <p className=" finb">{teacher.qualification}</p>
+                                                <p className="finb">{teacher.qualification}</p>
                                                 <p className="finb">{teacher.intro}</p>
-                                                <Button  variant="primary" onClick={() => handleShow(teacher)} className="b-ment">
-                                                    <span className="text">View More</span>
-                                                   
+                                                <Button onClick={() => handleShow(teacher)} className="b-ment">
+                                                    <span className="text">View Profile</span>
+                                                    <span>View Profile</span>
                                                 </Button>
-
                                             </div>
                                         </div>
                                     </div>
@@ -101,31 +109,28 @@ export default function TeacherList() {
                 </Modal.Header>
                 <Modal.Body>
                     {selectedTeacher && (
-                        <>
-                            <div className="row">
-                                <div className="col-md-4">
-                                    <Image
-                                        src={selectedTeacher.photo}
-                                        alt={selectedTeacher.name}
-                                        width={300}
-                                        height={200}
-                                        className="img-fluid rounded mb-3"
-                                    />
-                                </div>
-                                <div className="col-md-8">
-                                    <h6>{selectedTeacher.qualification}</h6>
-                                    <p>{selectedTeacher.intro}</p>
-                                    <video controls width="100%">
-                                        <source src={selectedTeacher.video} type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                </div>
+                        <div className="row">
+                            <div className="col-md-4">
+                                <Image
+                                    src={selectedTeacher.photo}
+                                    alt={selectedTeacher.name}
+                                    width={300}
+                                    height={200}
+                                    className="img-fluid rounded mb-3"
+                                />
                             </div>
-                        </>
+                            <div className="col-md-8">
+                                <h6>{selectedTeacher.qualification}</h6>
+                                <p>{selectedTeacher.intro}</p>
+                                <video controls width="100%">
+                                    <source src={selectedTeacher.video} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
                     )}
                 </Modal.Body>
-
             </Modal>
-        </section >
+        </section>
     );
 }
