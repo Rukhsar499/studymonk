@@ -2714,6 +2714,15 @@ a {
   background-color: transparent; /* ✅ Inactive transparent */
   border: 1px solid #fff; /* ✅ Green border */
 }
+.modal-header {
+  border-bottom: none !important;
+  padding: 0px !important;
+}
+.h-msnt{
+  color: #01356C;
+  font-size: 20px;
+  font-family: "Gilroy-Bold";
+}
 .see_bx {
   background-image: url("/assets/img/discuss-bg.png");
   background-repeat: no-repeat;
@@ -2723,7 +2732,10 @@ a {
   height: auto;
   width: 100%;
 }
-
+.mn-name{
+  color: #01356C;
+  font-family: "Gilroy-Bold";
+}
 .contents {
   position: relative;
   z-index: 1;

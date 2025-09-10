@@ -11,6 +11,10 @@ type Teacher = {
     intro: string;
     photo: string;
     video: string;
+    heading: string;
+    title: string;
+    desc: string;
+    stage: string;
 };
 
 const teachers: Teacher[] = [
@@ -20,7 +24,11 @@ const teachers: Teacher[] = [
         qualification: "PhD, Astrophysics",
         intro: "I help students see the universe in a grain of sand, connecting physics to the current world.",
         photo: "assets/img/mentor-1.png",
-        video: "https://www.w3schools.com/html/mov_bbb.mp4", 
+        video: "https://www.w3schools.com/html/mov_bbb.mp4",
+        heading: "My Teaching Philosophy",
+        title: "What Parents & Students Say",
+        desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
+        stage: "— Parent of a Stage 9 Student",
     },
     {
         id: 2,
@@ -29,6 +37,10 @@ const teachers: Teacher[] = [
         intro: "Making numbers fun and easy for students with real-world applications.",
         photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
+        heading: "My Teaching Philosophy",
+        title: "What Parents & Students Say",
+        desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
+        stage: "— Parent of a Stage 9 Student",
     },
     {
         id: 3,
@@ -37,6 +49,10 @@ const teachers: Teacher[] = [
         intro: "Helping students connect molecules with daily life chemistry.",
         photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
+        heading: "My Teaching Philosophy",
+        title: "What Parents & Students Say",
+        desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
+        stage: "— Parent of a Stage 9 Student",
     },
     {
         id: 4,
@@ -45,6 +61,10 @@ const teachers: Teacher[] = [
         intro: "Exploring the wonders of life sciences with students.",
         photo: "assets/img/mentor-1.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
+        heading: "My Teaching Philosophy",
+        title: "What Parents & Students Say",
+        desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
+        stage: "— Parent of a Stage 9 Student",
     },
 ];
 
@@ -105,7 +125,7 @@ export default function TeacherList() {
             {/* Modal */}
             <Modal show={show} onHide={handleClose} size="lg" centered>
                 <Modal.Header closeButton>
-                    <Modal.Title>{selectedTeacher?.name}</Modal.Title>
+                    <Modal.Title></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     {selectedTeacher && (
@@ -120,12 +140,19 @@ export default function TeacherList() {
                                 />
                             </div>
                             <div className="col-md-8">
+                                <h5 className="mn-name fw-bold">{selectedTeacher?.name}</h5>
                                 <h6>{selectedTeacher.qualification}</h6>
-                                <p>{selectedTeacher.intro}</p>
+
                                 <video controls width="100%">
+                                    <h6>Video Introduction</h6>
                                     <source src={selectedTeacher.video} type="video/mp4" />
                                     Your browser does not support the video tag.
                                 </video>
+                                <h4 className="h-msnt">{selectedTeacher.heading}</h4>
+                                <p>{selectedTeacher.intro}</p>
+                                <h4 className="h-msnt">{selectedTeacher.title}</h4>
+                                <p className="mb-1">{selectedTeacher.desc}</p>
+                                <p className="fw-bold small-text">{selectedTeacher.stage}</p>
                             </div>
                         </div>
                     )}
