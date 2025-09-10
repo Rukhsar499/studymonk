@@ -2609,7 +2609,13 @@ a {
 
   margin-bottom: 20px;
 }
-
+.mnt{
+  background-color: #001D36;
+  padding: 50px;
+  position: relative;
+  margin-top: -150px;
+  border-radius: 20px;
+}
 .mentr {
   background: #B2BF4D !important;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.39) !important;
