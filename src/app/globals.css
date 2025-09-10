@@ -3952,6 +3952,17 @@ font-size: 15px;
     position: relative;
     margin-top: -60px;
 }
+#etteb{
+  font-size: 22px !important;
+}
+.blog-rcs {
+    height: 530px;
+    margin-top: 36px;
+}
+.tab-dow{
+  background-color: #FEFFF3 !important;
+  font-family: "Poppins";
+}
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;

@@ -77,7 +77,7 @@ export default function Page() {
         <>
             <Header />
 
-            <section className="blog-rc">
+            <section className="blog-rc blog-rcs">
                 <div className="circles">
                     <span className="circles circle1"></span>
                     <span className="circles circle2"></span>
@@ -85,13 +85,13 @@ export default function Page() {
                 </div>
 
                 <div className="contents text-center">
-                    <h1>
+                    <h1 id="etteb">
                         The Perfect Balance of Personal Attention and Peer Collaboration.
                     </h1>
                     <p className="mt-3" style={{ color: "#001F3F" }}>
                         Most parents believe the goal of tutoring is to master a subject. But the true challenge of a Cambridge education lies deeper—it's in learning to analyze, debate, and defend a perspective with confidence. That is the deeper value your investment delivers.
                     </p>
-                    <p>
+                    <p style={{ color: "#001F3F" }}>
                         Give your child the confidence to excel with expert-led online Micro Classes in English, Math, and Science, designed for focused, small-group learning.
                     </p>
                     <Button className="btn-primarys"

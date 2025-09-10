@@ -122,7 +122,7 @@ export default function PlansTabs() {
                 {/* Mobile Dropdown */}
                 <div className="d-block d-md-none mb-3">
                     <select
-                        className="form-select"
+                        className="form-select tab-dow"
                         value={activeStage}
                         onChange={(e) => setActiveStage(e.target.value as Stage)}
                     >
