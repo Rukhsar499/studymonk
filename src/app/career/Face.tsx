@@ -20,9 +20,9 @@ const cards: Card[] = [
         title: "Dr. Ananya Sharma",
         short: "Astrophysics Guide",
         full: [
-      "I help students see the universe in a grain of sand, connecting physics to the current world.",
-      "My teaching focuses on curiosity and critical thinking.",
-    ],
+            "I help students see the universe in a grain of sand, connecting physics to the current world.",
+            "My teaching focuses on curiosity and critical thinking.",
+        ],
     },
     {
         id: 2,
@@ -30,19 +30,19 @@ const cards: Card[] = [
         title: "Dr. Rahul Verma",
         short: "Mathematics Mentor",
         full: [
-      "I help students see the universe in a grain of sand, connecting physics to the current world.",
-      "My teaching focuses on curiosity and critical thinking.",
-    ],
+            "I help students see the universe in a grain of sand, connecting physics to the current world.",
+            "My teaching focuses on curiosity and critical thinking.",
+        ],
     },
     {
         id: 3,
         img: "/assets/img/Ellipse109.png",
         title: "Dr. Kavita Mehta",
         short: "Chemistry Specialist",
-       full: [
-      "I help students see the universe in a grain of sand, connecting physics to the current world.",
-      "My teaching focuses on curiosity and critical thinking.",
-    ],
+        full: [
+            "I help students see the universe in a grain of sand, connecting physics to the current world.",
+            "My teaching focuses on curiosity and critical thinking.",
+        ],
     },
 ];
 
@@ -72,8 +72,7 @@ export default function HoverSlider() {
                         {cards.map((card) => (
                             <SplideSlide key={card.id}>
                                 <div
-                                    className={`custom-card ${activeId === card.id ? "active" : ""
-                                        }`}
+                                    className={`custom-card ${activeId === card.id ? "active" : ""}`}
                                     onMouseEnter={() => setActiveId(card.id)}
                                 >
                                     <Image
@@ -85,15 +84,18 @@ export default function HoverSlider() {
                                     />
                                     <h5>{card.title}</h5>
                                     <p>{card.short}</p>
+
                                     <div className="card-overlay">
-                                        {activeId === card.id ? (
-                                            <p className="full-text">{card.full}</p>
-                                            
-                                        ) : (
-                                            <>
-                                                {/* <h5>{card.title}</h5>
-                                                <p>{card.short}</p> */}
-                                            </>
+                                        {activeId === card.id && (
+                                            <div className="overlay-content text-center">
+                                                <h5 className="fw-bold">{card.title}</h5>
+                                                <p className="text-muted">{card.short}</p>
+                                                {card.full.map((para, i) => (
+                                                    <p key={i} className="full-text">
+                                                        {para}
+                                                    </p>
+                                                ))}
+                                            </div>
                                         )}
                                     </div>
                                 </div>
