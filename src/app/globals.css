@@ -3653,6 +3653,7 @@ padding: 100px 0px 20px 0px;
 .facs{
   background-color: #F8F8F8;
   padding: 30px;
+  font-family: "Gilroy-Bold";
 }
 .custom-card .card-overlay h5,
 .custom-card .card-overlay p {
@@ -3674,6 +3675,7 @@ padding: 100px 0px 20px 0px;
 .full-text {
   font-size: 14px;
   color: #333;
+  text-align: left;
 }
 
 @media screen and (max-width: 767px) {
