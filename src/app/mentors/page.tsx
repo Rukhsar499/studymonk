@@ -145,7 +145,44 @@ export default function Page() {
 
 
           
+ <section id="philosophy" className="position-relative mb">
+                <div className="container">
 
+
+                    <div className="left-img">
+                        <Image
+                            src="/assets/img/l-bh.png"
+                            alt="Left Decoration"
+                            width={300}
+                            height={300}
+                        />
+                    </div>
+
+
+                    <div className="right-img">
+                        <Image
+                            src="/assets/img/r-bh.png"
+                            alt="Right Decoration"
+                            width={300}
+                            height={300}
+                        />
+                    </div>
+
+
+                    <h2>
+                       Ready to Find the Perfect Teacher?
+                    </h2>
+
+
+                    <p>
+                       Schedule a complimentary Clarity Session to speak with one of our academic counselors and discuss how we can tailor a learning path for your child.
+                    </p>
+
+
+                    <button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Schedule a clarity session</button>
+                </div>
+                <PopupForm open={open} handleClose={handleClose} />
+            </section>
          
 
         
