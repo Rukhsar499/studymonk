@@ -153,15 +153,15 @@ export default function TeacherList() {
             </div>
 
             {/* Modal */}
-            <Modal show={show} onHide={handleClose} size="lg" centered className="myg">
+            <Modal show={show} onHide={handleClose} size="xl" centered className="myg">
                 <Modal.Header closeButton>
                     <Modal.Title></Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     {selectedTeacher && (
                         <div className="row">
-                            <div className="col-md-5">
-                                <div className="bgs-grey p-3 rounded">
+                            <div className="col-md-4">
+                                <div className="bgs-grey p-3 rounded h-100">
                                     <Image
                                         src={selectedTeacher.photo}
                                         alt={selectedTeacher.name}
@@ -177,11 +177,11 @@ export default function TeacherList() {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-md-7">
+                            <div className="col-md-8">
                                 <h5 className="mn-name fw-bold">{selectedTeacher?.name}</h5>
                                 <h6>{selectedTeacher.qualification}</h6>
 
-                                <video controls width="100%">
+                                <video controls width="100%" className="mb-2">
                                     <h6>Video Introduction</h6>
                                     <source src={selectedTeacher.video} type="video/mp4" />
                                     Your browser does not support the video tag.
