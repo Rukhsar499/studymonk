@@ -366,14 +366,14 @@ export default function Page() {
                             <div className="faq-sdeimg position-relative">
                                 <div className="mt-2">
                                     <h3 className="reacf">
-                                        Our Philosophy Isn't a Page. It's a Person.
+                                        Our Philosophy Isn&apos;t a Page. It&apos;s a Person.
                                     </h3>
                                     <p>
-                                        You've read our beliefs. Now, meet them. The heart of Study Monks isn't a methodology; it's the mentor who embodies it. Finding the perfect mentor-student connection is the most critical step, and our most sought-after mentors have limited availability.
+                                        You&apos;ve read our beliefs. Now, meet them. The heart of Study Monks isn&apos;t a methodology; it&apos;s the mentor who embodies it. Finding the perfect mentor-student connection is the most critical step, and our most sought-after mentors have limited availability.
                                     </p>
 
                                     <p>
-                                        This is your invitation to a personal session with a true Wise Guardian. Let's start the journey.
+                                        This is your invitation to a personal session with a true Wise Guardian. Let&apos;s start the journey.
                                     </p>
                                     <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Meet a Wise Guardian</Button>
                                 </div>
