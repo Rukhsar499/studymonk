@@ -375,14 +375,7 @@ export default function Page() {
                                     <p>
                                         This is your invitation to a personal session with a true Wise Guardian. Let's start the journey.
                                     </p>
-                                    <Button
-                                        className="btn-books mt-3"
-                                        type="button"
-                                        variant="contained"
-                                        onClick={handleClickOpen}
-                                    >
-                                       Meet a Wise Guardian
-                                    </Button>
+                                    <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Meet a Wise Guardian</Button>
                                 </div>
                                 <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
                                     <Image
