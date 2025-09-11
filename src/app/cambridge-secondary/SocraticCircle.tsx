@@ -24,7 +24,7 @@ const features: Feature[] = [
     title: "Debate Sparks  <br/> Discovery",
     description:
       "Critical thinking develops through structured debates and discussions.",
-    icon: "/assets/img/PeerLearning.png",
+    icon: "/assets/img/Debate2.png",
   },
   {
     id: 3,
