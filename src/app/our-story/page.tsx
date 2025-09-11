@@ -59,8 +59,8 @@ export default function Page() {
                     <Image
                         src="/assets/img/dec-1.png"
                         alt="Decorative"
-                        width={300}
-                        height={450}
+                        width={250}
+                        height={430}
                     />
                 </div>
 

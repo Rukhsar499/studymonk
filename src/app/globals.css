@@ -2042,7 +2042,7 @@ a {
   font-size: 1rem;
   line-height: 1.5;
   color: #555;
-  max-width: 100%;
+ 
   padding: 0 15px;
   margin-bottom: 20px;
 }
@@ -2542,9 +2542,7 @@ a {
 
 }
 
-.mindfuls {
-  background-color: #FBFDFF !important;
-}
+
 
 .lajgfd img {
   margin-bottom: 20px;
@@ -3522,7 +3520,9 @@ a {
   .care-txt {
     padding-right: 110px;
   }
-
+.section-intro{
+  width: 64% !important;
+}
   .stdyu-img {
     width: 100%;
   }
