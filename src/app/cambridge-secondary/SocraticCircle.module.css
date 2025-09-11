@@ -1,49 +1,47 @@
-.feature-card {
+.featureCard {
   border: none;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   padding: 40px;
-  background: #ffffff;
+  background: transparent;
   color: #0a0a0a;
-  transition: all 0.4s ease-in-out; /* smooth transition */
-  
+  transition: all 0.4s ease-in-out;
+  border-radius: 20px;
+  height: 100%;
 }
 
-.inactive {
-  background: #ffffff;
-  color: #0a0a0a;
-  margin-top: 40px;
-  padding: 40px;
+/* default -> description hidden */
+.featureDesc {
+  display: none;
+  transition: opacity 0.3s ease;
 }
 
-.active {
-  background: #0d1b2a !important;  /* force dark bg */
-  color: #ffffff !important;       /* force white text */
+/* ACTIVE (default ya hover) */
+.featureCard:hover,
+.featureCard.active {
+  background: #0d1b2a !important;
+  color: #ffffff !important;
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  padding:  40px;
-border-radius: 40px;
-
+  border-radius: 40px;
 }
-.active {
-  p,
-  h6 {
-    color: #fff !important;
-  }
+
+/* icon hover/active effect */
+.featureCard:hover .featureIcon,
+.featureCard.active .featureIcon {
+  filter: brightness(0) invert(1);
+}
+
+/* description visible only on hover or default active */
+.featureCard:hover .featureDesc,
+.featureCard.active .featureDesc {
+  display: block;
+  color: #fff !important;
 }
 .yell{
-    background-color: #FCFFF8;
+  background-color: #FCFFF8;
     padding: 40px 20px;
     border-radius: 20px;
-   height: 450px;
-   margin-bottom: 100px;
-}
-/* icon color change (blue → white on active) */
-.featureIcon {
-  transition: filter 0.3s ease-in-out;
-  margin-bottom: 10px;
-}
-
-.active .featureIcon {
-  filter: brightness(0) invert(1); /* active hone par white */
+    height: 450px;
+    margin-bottom: 100px;
 }
