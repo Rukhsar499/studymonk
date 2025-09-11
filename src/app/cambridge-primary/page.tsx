@@ -562,7 +562,7 @@ export default function Page() {
                                     height={200}
                                     className="img-fluid"
                                 />
-                                <a href="https://example.com" className="hover-arrow">
+                                <Link href="/mentors"><div className="hover-arrow">
                                     <Image
                                         src="/assets/img/part-arrow.png"
                                         alt="arrow icon"
@@ -573,7 +573,8 @@ export default function Page() {
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
-                                </a>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-12">
@@ -585,7 +586,7 @@ export default function Page() {
                                     height={200}
                                     className="img-fluid"
                                 />
-                                <a href="https://example.com" className="hover-arrow">
+                                <Link href="/mentors"><div className="hover-arrow">
                                     <Image
                                         src="/assets/img/part-arrow.png"
                                         alt="arrow icon"
@@ -596,7 +597,8 @@ export default function Page() {
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
-                                </a>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4 col-12">
@@ -608,7 +610,7 @@ export default function Page() {
                                     height={200}
                                     className="img-fluid"
                                 />
-                                <a href="https://example.com" className="hover-arrow">
+                                <Link href="/mentors"><div className="hover-arrow">
                                     <Image
                                         src="/assets/img/part-arrow.png"
                                         alt="arrow icon"
@@ -619,7 +621,8 @@ export default function Page() {
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
-                                </a>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
