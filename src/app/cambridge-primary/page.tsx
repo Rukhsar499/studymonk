@@ -573,7 +573,7 @@ export default function Page() {
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
-                                    </div>
+                                </div>
                                 </Link>
                             </div>
                         </div>
@@ -597,7 +597,7 @@ export default function Page() {
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
-                                    </div>
+                                </div>
                                 </Link>
                             </div>
                         </div>
@@ -621,7 +621,7 @@ export default function Page() {
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
-                                    </div>
+                                </div>
                                 </Link>
                             </div>
                         </div>
@@ -635,7 +635,7 @@ export default function Page() {
 
             <section className="see mb">
                 <div className="container">
-                    <h2>See How Your Child Thinks. The First Step is <span style={{color : "#336963"}}>Free</span>.</h2>
+                    <h2>See How Your Child Thinks. The First Step is <span style={{ color: "#336963" }}>Free</span>.</h2>
                     <div className="sees mb">
                         <div className="text-center phg">
                             <p>Unlock your child&apos;s true intellectual potential with a complimentary, no-obligation Strategy Session. This is a genuine diagnostic experience, not a sales pitch, designed to reveal how we cultivate high-level thinkers.</p>
@@ -657,9 +657,9 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="text-center mt-4">
-                             <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
+                            <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
                             <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book  FREE Daignostic & day Free Trial</Button>
-                           
+
                         </div>
 
                     </div>
@@ -728,7 +728,7 @@ export default function Page() {
                 </div>
             </section>
 
-            
+
 
             <section className="fad mb">
                 <div className="container">
@@ -778,31 +778,33 @@ export default function Page() {
                 </div>
 
             </section>
-<section className="look mb">
+            <section className="look mb">
                 <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6 col-12">
-                            <div className="look-txt">
-                                <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme Stage(7-9)  </h2>
-                                <div className="mt-4">
-                                    <Button className="btn-book mb-3" type="button" variant="contained"
-                                        onClick={handleClickOpen}>
-                                        Click Here
-                                    </Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 col-12">
+                    <div className="row align-items-center">
+                        <div className="col-lg-4 col-md-3 col-12">
                             <div className="loo-imh">
                                 <Image
-                                    src="/assets/img/im.webp"
+                                    src="/assets/img/im.png"
                                     alt="testimonial"
-                                    width={360}
+                                    width={450}
                                     height={260}
                                     className="img-fluid"
                                 />
                             </div>
                         </div>
+                        <div className="col-lg-1 col-md-1 col-1"></div>
+                        <div className="col-lg-6 col-md-6 col-12">
+                            <div className="look-txt">
+                                <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme Stage(7-9)  </h2>
+                                <div className="mt-4">
+                                    <Link href="/cambridge-secondary"><button className="btn-book mb-3" type="button">
+
+                                        Click Here
+                                    </button></Link>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </section>
