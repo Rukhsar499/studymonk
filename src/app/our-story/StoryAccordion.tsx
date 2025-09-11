@@ -41,44 +41,24 @@ const CustomAccordionSummary = styled(AccordionSummary, {
 const accordionData = [
     {
       id: "panel1",
-      title: "Why Choose Study Monks for your Child’s Cambridge Curriculum Journey ?",
+      title: "1. What qualities define a 'Wise Guardian' beyond academic expertise?",
       content: [
         {
           title: "",
           description:
-            "As a parent, you want the absolute best for your child's education. The Cambridge Curriculum offers a strong foundation, but you might be wondering: How can I ensure my child not only keeps up but thrives in this demanding curriculum? Is rote memorization enough for success, or are there deeper skills they need to develop? How can I bridge the gap between what's taught in school and the specific needs of my child? Here at Study Monk, we address these concerns and go beyond traditional learning to empower your child on their Cambridge journey."
+            "Academic expertise is our baseline. A Wise Guardian is a master facilitator, skilled in guiding a small group of curious minds. They possess the empathy to understand each student's unique perspective, the patience to let a discussion unfold, and the wisdom to ensure every voice is heard. They don't just teach a subject; they cultivate a safe, collaborative space where our philosophy becomes a shared experience."
         }
       ]
     },
+    
     {
       id: "panel2",
-      title: "3 Reasons Why We Are The Perfect Partners",
-      content: [
-        {
-          title: "Building Blocks of Knowledge: One Engaging Lesson at a Time",
-          description:
-            "We take the complexity out of the Cambridge Curriculum with engaging, bite-sized lessons that act as building blocks for a strong foundation. Imagine your child asking Why? and How? - a sign that their natural curiosity is flourishing. This sets them on a path of learning that benefits their academic and professional careers."
-        },
-        {
-          title: "Beyond the Textbook: Equipping Your Child with Future-Ready Skills",
-          description:
-            "We equip your child with critical thinking, problem-solving, communication, and collaboration skills essential for success in the 21st century. Imagine your child confidently tackling complex problems and building skills that will distinguish them in any challenge they encounter."
-        },
-        {
-          title: "Bridging the Gap: Personalized Learning that Complements the Classroom",
-          description:
-            "Think of us as a powerful complement to classroom learning. We bridge the gap between classroom lessons and your child’s specific needs. Our personalized learning approach ensures targeted improvement, closes gaps, and accelerates progress."
-        }
-      ]
-    },
-    {
-      id: "panel3",
-      title: "How much flexibility does Study Monks offer on choosing subjects for my child?",
+      title: "2. Why a micro-class of 8 instead of one-on-one tuition?",
       content: [
         {
           title: "",
           description:
-            "Ultimately, the choice is yours! We offer individual enrolment in English, Mathematics, and Science. However, for a truly enriching experience that strengthens core skills and aligns with the spirit of the Cambridge Curriculum, we highly recommend all three subjects! Opting for all three unlocks a secret weapon – tutor flexibility that allows tutors to adjust the pace within a class and maximise the benefits of our finely tuned monthly calendars."
+            "This is a deliberate pedagogical choice. While one-on-one can be good for remedial help, the Cambridge curriculum is designed to foster critical thinking and debate. In a micro-class, students learn to build on each other's ideas, challenge assumptions respectfully, and articulate their own viewpoints with clarity. It's a dynamic environment that mirrors the collaborative settings of top universities and modern workplaces, building essential skills for life."
         }
       ]
     }

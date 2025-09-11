@@ -14,6 +14,7 @@ import BootstrapClient from '../BootstrapClient';
 import { Button } from "@mui/material";
 import PopupForm from "../component/PopupForm";
 import StoryAccordion from "./StoryAccordion";
+import Link from 'next/link';
 
 
 export default function Page() {
@@ -349,7 +350,7 @@ export default function Page() {
                     </p>
 
 
-                    <button className="mentr">Meet Our Mentors</button>
+                    <Link href="/mentors"><button className="mentr">Meet Our Mentors</button></Link>
                 </div>
                 <PopupForm open={open} handleClose={handleClose} />
             </section>
