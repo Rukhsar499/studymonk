@@ -654,11 +654,9 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="text-center mt-4">
-                            <Button className="btn-book mb-3" type="button" variant="contained"
-                                onClick={handleClickOpen}>
-                                Book FREE Daignostic & day Free Trial
-                            </Button>
-                            <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
+                             <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
+                            <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book  FREE Daignostic & day Free Trial</Button>
+                           
                         </div>
 
                     </div>
@@ -695,7 +693,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="meet_box">
                                     <Image
-                                        src="/assets/img/shield1.png" // public folder ka path
+                                        src="/assets/img/cloud-security 2.png" // public folder ka path
                                         alt="Girl with bag"
                                         width={60}
                                         height={60}
@@ -710,7 +708,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="meet_box">
                                     <Image
-                                        src="/assets/img/shield1.png" // public folder ka path
+                                        src="/assets/img/choice2.png" // public folder ka path
                                         alt="Girl with bag"
                                         width={60}
                                         height={60}
