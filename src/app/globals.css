@@ -3537,7 +3537,12 @@ a {
   top: -70px;
   right: 20px;
 }
-
+@media (min-width: 1400px) and (max-width: 1500px) {
+.care-txt {
+    
+    width: 77%;
+}
+}
 @media (min-width: 1200px) and (max-width: 1400px) {
   .nav-item a {
     margin-right: 8px;
@@ -3546,10 +3551,7 @@ a {
 .bird_img {
    top: -29%;
 }
-.care-txt {
-    
-    width: 77%;
-}
+
 .pkjl h4 {
    font-size: 20px;
 }
@@ -3566,7 +3568,10 @@ a {
   .section-intro {
     width: 64% !important;
   }
-
+.care-txt {
+    
+    width: 77%;
+}
   .stdyu-img {
     width: 100%;
   }
