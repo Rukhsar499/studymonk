@@ -1054,7 +1054,7 @@ button.btn.btn-login {
 @media only screen and (max-width: 768px) {
   .ijhg img {
     float: right;
-    right: -20px;
+    right: -9px;
     position: relative;
     margin-top: -76px;
   }
@@ -2431,8 +2431,10 @@ a {
 }
 
 .lajgfd {
-  background-color: #172437;
-  padding: 40px 0px;
+  background-image: url("/assets/img/blu-bg.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 60px 0px;
 }
 
 .lajgfd img {
@@ -2551,7 +2553,9 @@ a {
 .mindful {
   background-color: #253352;
 }
-
+.mindfuls{
+  background-color: #779772;
+}
 .mindful h2 {
   color: #DBFFD6;
 }
@@ -3926,7 +3930,7 @@ padding: 100px 0px 20px 0px;
   }
 
   .expr {
-    background-color: #EDF6FF;
+    background-color: #FBFDFF;
   }
 
   .beli {
@@ -4154,6 +4158,13 @@ font-size: 15px;
     width: 12px;
     height: 12px;
    
+}
+.lajgfd{
+  background-color: #001F3F;
+  background-image: none;
+}
+.edu{
+  font-size: 30px !important;
 }
   @media (max-width: 768px) {
     .popup-form-right {
