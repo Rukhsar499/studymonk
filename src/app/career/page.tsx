@@ -175,7 +175,7 @@ export default function Page() {
                                     <div className="gtr">
                                         <div className="d-flex agrd">
                                             <Image
-                                                src="/assets/img/tick-circle2.png"
+                                                src="/assets/img/yellow-circle.png"
                                                 alt="Right arrow"
                                                 width={20}
                                                 height={10}
@@ -189,7 +189,7 @@ export default function Page() {
                                         </div>
                                         <div className="d-flex agrd">
                                             <Image
-                                                src="/assets/img/tick-circle2.png"
+                                                src="/assets/img/yellow-circle.png"
                                                 alt="Right arrow"
                                                 width={20}
                                                 height={10}
@@ -203,7 +203,7 @@ export default function Page() {
                                         </div>
                                         <div className="d-flex agrd">
                                             <Image
-                                                src="/assets/img/tick-circle2.png"
+                                                src="/assets/img/yellow-circle.png"
                                                 alt="Right arrow"
                                                 width={20}
                                                 height={10}
@@ -217,7 +217,7 @@ export default function Page() {
                                         </div>
                                         <div className="d-flex agrd">
                                             <Image
-                                                src="/assets/img/tick-circle2.png"
+                                                src="/assets/img/yellow-circle.png"
                                                 alt="Right arrow"
                                                 width={20}
                                                 height={10}
