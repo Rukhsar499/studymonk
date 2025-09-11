@@ -1,7 +1,9 @@
 "use client";
-import { useState } from "react";
+
 import styles from "../cambridge-secondary/ConfidenceSection.module.css";
 import { Button } from "@mui/material";
+import { useState } from "react";
+import { useEffect } from "react";
 
 interface Step {
   id: number;
@@ -10,6 +12,7 @@ interface Step {
 }
 
 const steps: Step[] = [
+  
   {
     id: 1,
     title: "Discovery <br/> Session",
@@ -40,9 +43,7 @@ export default function ConfidenceSection() {
   const [activeId, setActiveId] = useState<number>(2); // default 7 Days Free Trial active
 
   return (
-    <section className="mb">
-      <div className="container ">
-        <div style={{ backgroundColor: "#FBFFF6", borderRadius: "40px", padding: "40px" }} className="no-padding">
+          <div>
           <h2 className="fw-bold mb-3">
             Invest in Their Confidence. The First Step is on Us.
           </h2>
@@ -71,14 +72,9 @@ export default function ConfidenceSection() {
               </div>
             ))}
           </div>
-          <div className="text-center">
-            <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
-            <Button className="btn-book" type="button">
-              Learn About Our Mentors
-            </Button>
           </div>
-        </div>
-      </div>
-    </section>
+         
+      
+      
   );
 }

@@ -549,7 +549,7 @@ export default function Page() {
                 </div>
             </section> */}
 
-            <section id="partner">
+            <section id="partner" className="mb">
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-5 col-md-4 col-12">
@@ -662,7 +662,17 @@ export default function Page() {
                 </div>
             </section>
 
-            <ConfidenceSection />
+            <section className="mb">
+                <div className="container">
+                    <div style={{ backgroundColor: "#FBFFF6", borderRadius: "40px", padding: "40px" }} className="no-padding">
+                        <ConfidenceSection />
+                        <div className="text-center">
+                            <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
+                            <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book  FREE Daignostic & day Free Trial</Button>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <section className="why mb">
                 <div className="container">
@@ -694,7 +704,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="meet_box">
                                     <Image
-                                        src="/assets/img/cloud-security 2.png" 
+                                        src="/assets/img/cloud-security 2.png"
                                         alt="Girl with bag"
                                         width={60}
                                         height={60}
@@ -709,7 +719,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="meet_box">
                                     <Image
-                                        src="/assets/img/choice2.png" 
+                                        src="/assets/img/choice2.png"
                                         alt="Girl with bag"
                                         width={60}
                                         height={60}
