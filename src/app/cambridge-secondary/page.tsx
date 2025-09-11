@@ -14,6 +14,7 @@ import SecondaryAccordion from "../cambridge-secondary/SecondaryAccordion";
 import ConfidenceSection from "../cambridge-secondary/ConfidenceSection";
 import StepsSection from "../cambridge-secondary/StepsSection";
 import SocraticCircle from "../cambridge-secondary/SocraticCircle";
+import Link from 'next/link';
 
 
 
@@ -693,7 +694,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="meet_box">
                                     <Image
-                                        src="/assets/img/shield1.png" // public folder ka path
+                                        src="/assets/img/cloud-security 2.png" 
                                         alt="Girl with bag"
                                         width={60}
                                         height={60}
@@ -708,7 +709,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="meet_box">
                                     <Image
-                                        src="/assets/img/shield1.png" // public folder ka path
+                                        src="/assets/img/choice2.png" 
                                         alt="Girl with bag"
                                         width={60}
                                         height={60}
@@ -725,35 +726,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="look mb">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-6 col-md-6 col-12">
-                            <div className="look-txt">
-                                <h2 style={{ textAlign: "left" }}>Looking for our
-                                    <br />Primary Programme (Stages 4-6)?  </h2>
-                                <div className="mt-4">
-                                    <Button className="btn-book mb-3" type="button" variant="contained"
-                                        onClick={handleClickOpen}>
-                                        Click Here
-                                    </Button>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-lg-3 col-md-3 col-12">
-                            <div className="loo-imh">
-                                <Image
-                                    src="/assets/img/image21.png"
-                                    alt="testimonial"
-                                    width={360}
-                                    height={260}
-                                    className="img-fluid"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
 
             <section className="fad mb">
                 <div className="container">
@@ -803,7 +776,37 @@ export default function Page() {
 
             </section>
 
+            <section className="look mb">
+                <div className="container">
+                    <div className="row align-items-center">
+                        <div className="col-lg-4 col-md-3 col-12">
+                            <div className="loo-imh ">
+                                <Image
+                                    src="/assets/img/secdary-img.png"
+                                    alt="testimonial"
+                                    width={450}
+                                    height={260}
+                                    className="img-fluid"
+                                />
+                            </div>
+                        </div>
+                        <div className="col-lg-1 col-md-1 col-1"></div>
+                        <div className="col-lg-6 col-md-6 col-12">
+                            <div className="look-txt">
+                                <h2 style={{ textAlign: "left" }}>Looking for our <br />
+                                    Primary Programme (Stages 4-6)?</h2>
+                                <div className="mt-4">
+                                    <Link href="/cambridge-primary"><button className="btn-book mb-3" type="button">
 
+                                        Click Here
+                                    </button></Link>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
 
             <PopupForm open={open} handleClose={handleClose} />
             <Footer />
