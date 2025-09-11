@@ -646,7 +646,7 @@ export default function Page() {
                                 <div className="col-lg-2 col-md-2 col-1"></div>
                                 <div className="col-lg-5 col-md-5 col-12">
                                     <div className="bluesat-box">
-                                        <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a <span style={{ color: "#FDFFBF" }}>Complimentary 7-day trial.</span> This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation <span style={{ color: "#FDFFBF" }}>Clarity Session</span> where we will:</p>
+                                        <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a <span style={{ color: "#FDFFBF" }}><b>Complimentary 7-day trial.</b></span> This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation <span style={{ color: "#FDFFBF" }}><b>Clarity Session</b></span> where we will:</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-5 col-12">
