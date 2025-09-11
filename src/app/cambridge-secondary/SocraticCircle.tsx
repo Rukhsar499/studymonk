@@ -83,9 +83,9 @@ export default function SocraticCircle() {
                       <Image
                         src={feature.icon}
                         alt={feature.title}
-                        width={50}
-                        height={50}
-                        className={styles.featureIcon}
+                        width={60}
+                        height={60}
+                         className={`mb-2 ${styles.featureIcon}`}
                       />
                       <h5
                         className="heard mb-2"
