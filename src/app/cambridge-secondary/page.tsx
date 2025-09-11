@@ -430,7 +430,7 @@ export default function Page() {
                                                 Articulation</h4>
 
                                         </div>
-                                       
+
                                     </div>
                                 </div>
                                 <div className="col-lg-8 col-md-8 col-12">
@@ -451,7 +451,7 @@ export default function Page() {
                                             <p>
                                                 True mastery isn&apos;t just knowing the answer; it&apos;s being able to apply and communicate it with confidence. We challenge each cohort with complex, IGCSE-style problems that require them to synthesise their knowledge and present a unified solution. This is where they learn the invaluable skills of teamwork, leadership, and persuasive communication
                                             </p>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -604,7 +604,7 @@ export default function Page() {
                                             height={200}
                                             className="img-fluid"
                                         />
-                                        <a href="https://example.com" className="hover-arrow">
+                                        <Link href="/mentors"><div className="hover-arrow">
                                             <Image
                                                 src="/assets/img/part-arrow.png"
                                                 alt="arrow icon"
@@ -615,7 +615,8 @@ export default function Page() {
                                                 <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                                 <p className="text-white">English Teacher</p>
                                             </div>
-                                        </a>
+                                        </div>
+                                        </Link>
                                     </div>
                                     <div className="image-box mt-3">
                                         <Image
@@ -625,7 +626,7 @@ export default function Page() {
                                             height={200}
                                             className="img-fluid"
                                         />
-                                        <a href="https://example.com" className="hover-arrow">
+                                        <Link href="/mentors"><div className="hover-arrow">
                                             <Image
                                                 src="/assets/img/part-arrow.png"
                                                 alt="arrow icon"
@@ -636,7 +637,8 @@ export default function Page() {
                                                 <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                                 <p className="text-white">English Teacher</p>
                                             </div>
-                                        </a>
+                                        </div>
+                                        </Link>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 col-md-6 col-12">
@@ -648,7 +650,7 @@ export default function Page() {
                                             height={200}
                                             className="img-fluid"
                                         />
-                                        <a href="https://example.com" className="hover-arrow">
+                                        <Link href="/mentors"><div className="hover-arrow">
                                             <Image
                                                 src="/assets/img/part-arrow.png"
                                                 alt="arrow icon"
@@ -659,7 +661,8 @@ export default function Page() {
                                                 <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                                 <p className="text-white">English Teacher</p>
                                             </div>
-                                        </a>
+                                        </div>
+                                        </Link>
                                     </div>
                                     <div className="image-box mt-3">
                                         <Image
@@ -669,7 +672,7 @@ export default function Page() {
                                             height={200}
                                             className="img-fluid"
                                         />
-                                        <a href="https://example.com" className="hover-arrow">
+                                        <Link href="/mentors"><div className="hover-arrow">
                                             <Image
                                                 src="/assets/img/part-arrow.png"
                                                 alt="arrow icon"
@@ -680,7 +683,8 @@ export default function Page() {
                                                 <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                                 <p className="text-white">English Teacher</p>
                                             </div>
-                                        </a>
+                                        </div>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
