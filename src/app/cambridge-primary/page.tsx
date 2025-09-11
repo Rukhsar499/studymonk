@@ -11,6 +11,7 @@ import * as React from "react";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
 import PrimaryAccordion from "../cambridge-primary/PrimaryAccordion";
+import Link from 'next/link';
 
 
 
@@ -624,16 +625,14 @@ export default function Page() {
                     </div>
                     <div className="text-center p-h">
                         <p>Wise Guardians are expert facilitators, rigorously trained in our Socratic, micro-class methodology. Their mission is to guide conversation, ensuring every child participates, is challenged, and learns from the group&apos;s collective intelligence.</p>
-                        <Button className="btn-book" type="button">
-                            Learn About Our Mentors
-                        </Button>
+                        <Link href="/mentors"><button className="mentr">Learn About Our Mentors</button></Link>
                     </div>
                 </div>
             </section>
 
             <section className="see mb">
                 <div className="container">
-                    <h2>See How Your Child Thinks. The First Step is Free.</h2>
+                    <h2>See How Your Child Thinks. The First Step is <span style={{color : "#336963"}}>Free</span>.</h2>
                     <div className="sees mb">
                         <div className="text-center phg">
                             <p>Unlock your child&apos;s true intellectual potential with a complimentary, no-obligation Strategy Session. This is a genuine diagnostic experience, not a sales pitch, designed to reveal how we cultivate high-level thinkers.</p>
