@@ -12,6 +12,7 @@ import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
 import PrimaryAccordion from "../cambridge-primary/PrimaryAccordion";
 import Link from 'next/link';
+import StickyFooter from "../component/StickyFooter";
 
 
 
@@ -549,7 +550,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section id="partner">
+            <section id="partner" className="mb">
                 <div className="container">
                     <h2>Meet the Wise Guardians: Facilitators of High-Level Thinking</h2>
                     <div className="row">
@@ -762,7 +763,7 @@ export default function Page() {
                                         Adventure
                                     </Button>
                                 </div>
-                                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                <div className="ijhg hgy position-absolute" style={{ right: "10px", bottom: "10px" }}>
                                     <Image
                                         src="/assets/img/image26.png"
                                         alt="testimonial"
@@ -782,7 +783,7 @@ export default function Page() {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-lg-4 col-md-3 col-12">
-                            <div className="loo-imh">
+                            <div className="loo-imh ">
                                 <Image
                                     src="/assets/img/im.png"
                                     alt="testimonial"
@@ -812,6 +813,7 @@ export default function Page() {
 
             <PopupForm open={open} handleClose={handleClose} />
             <Footer />
+            <StickyFooter />
 
         </>
     );

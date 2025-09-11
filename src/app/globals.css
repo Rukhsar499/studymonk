@@ -874,9 +874,7 @@ button.btn.btn-login {
   margin-top: -69px;
 }
 
-#partner {
-  padding: 30px 0px;
-}
+
 
 #partner .image-box {
   position: relative;
@@ -4017,6 +4015,8 @@ padding: 100px 0px 20px 0px;
 
   .bg-purple {
     padding: 20px;
+    background-image: none;
+    background-color: #f9f4fe;
 
   }
 
@@ -4094,10 +4094,10 @@ padding: 100px 0px 20px 0px;
     margin-top: -40px;
   }
 
-  .pwer_box::after {
-    bottom: -58%;
-    left: 7%;
-  }
+  .pwer_box:after {
+        bottom: -40%;
+        left: 44%;
+    }
 
   .blog_box {
     padding: 5px;
@@ -4210,7 +4210,9 @@ padding: 100px 0px 20px 0px;
   .edu {
     font-size: 30px !important;
   }
-
+.loo-imh img{
+ margin-bottom: 20px;
+}
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;
