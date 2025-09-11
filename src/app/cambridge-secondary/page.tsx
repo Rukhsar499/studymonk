@@ -380,7 +380,7 @@ export default function Page() {
                 </div>
             </section>
 
-            <section className="phg">
+            <section className="phg mb">
                 <div className="container">
                     <div className="pik-box">
                         <div className="text-center">
@@ -393,7 +393,7 @@ export default function Page() {
                                     <div className="shg">
                                         <div className="d-flex pkjl">
                                             <Image
-                                                src="/assets/img/pink-arrow.png"
+                                                src="/assets/img/Group3467.png"
                                                 alt="Guardian"
                                                 width={30}
                                                 height={30}
@@ -406,7 +406,7 @@ export default function Page() {
                                         <hr className="dotss" />
                                         <div className="d-flex pkjl">
                                             <Image
-                                                src="/assets/img/pink-arrow.png"
+                                                src="/assets/img/Group3467.png"
                                                 alt="Guardian"
                                                 width={30}
                                                 height={30}
@@ -420,7 +420,7 @@ export default function Page() {
                                         <hr className="dotss" />
                                         <div className="d-flex pkjl">
                                             <Image
-                                                src="/assets/img/pink-arrow.png"
+                                                src="/assets/img/Group3467.png"
                                                 alt="Guardian"
                                                 width={30}
                                                 height={30}
@@ -438,19 +438,19 @@ export default function Page() {
                                         <p>
                                             Our initial session is a deep dive into your child&apos;s unique strengths and learning style. We don&apos;t just test what they know; we seek to understand how they think allowing us to  to create a 'Personalised Blueprint' that maps their potential and outlines a clear, inspiring path to achieving it.
                                         </p>
-                                        <hr className="dotss" />
+                                        <hr className="text-bla" />
                                     </div>
                                     <div className="p-test">
                                         <p>
                                             This is where the magic happens. Our sessions are not lectures; they are dynamic Socratic dialogues. Wise Guardians are expert facilitators who guide the micro-class through a process of collaborative discovery. They use strategic questioning to spark debate, encourage different viewpoints, and help the group arrive at a deeper understanding
                                         </p>
-                                        <hr className="dotss" />
+                                        <hr className="text-bla" />
                                     </div>
                                     <div className="p-test">
                                         <p>
                                             True mastery isn&apos;t just knowing the answer; it&apos;s being able to apply and communicate it with confidence. We challenge each cohort with complex, IGCSE-style problems that require them to synthesise their knowledge and present a unified solution. This is where they learn the invaluable skills of teamwork, leadership, and persuasive communication
                                         </p>
-                                        <hr className="dotss" />
+                                        <hr className="text-bla" />
                                     </div>
                                 </div>
                             </div>
@@ -548,6 +548,32 @@ export default function Page() {
                     </div>
                 </div>
             </section> */}
+             <section className="trasc mb">
+                            <div className="container">
+                                <div className="gr-boxz">
+                                    <div className="d-flex">
+                                        <div>
+                                            <Image
+                                                src="/assets/img/tick-circle.svg"
+                                                alt="Right arrow"
+                                                width={40}
+                                                height={40}
+            
+                                            />
+                                        </div>
+                                        <div>
+                                            <h3 className="sectd">See the Transformation: Start Your No-Risk 7-Day Trial</h3>
+                                            <p className="mb-0">
+                                                Experience our teaching methodology firsthand. If it's not the perfect fit, simply walk away. </p>
+                                            <p>No commitment, no questions asked.</p>
+            
+                                        </div>
+                                    </div>
+                                    <div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
 
             <section id="partner" className="mb">
                 <div className="container">
