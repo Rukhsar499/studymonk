@@ -242,7 +242,7 @@ export default function Page() {
                                         </div>
 
                                         <div className="mb-3">
-                                            <label className="form-label">stage</label>
+                                            <label className="form-label">Stage</label>
                                             <select
                                                 className="form-select form-select-sm"
                                                 name="service"
