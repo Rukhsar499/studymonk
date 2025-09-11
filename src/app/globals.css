@@ -595,13 +595,13 @@ h3 {
 
 .din-box {
   background-color: #F8F8F8;
-  border-radius: 15px;
+  border-radius: 20px;
   padding: 40px;
 }
 
 .active-box {
   padding: 40px 20px;
-  border-radius: 20px;
+  border-radius: 20px !important;
   background-color: #9DAE6B !important;
   color: #fff !important;
   border: none !important;
@@ -1854,12 +1854,12 @@ a {
 .mnt Button {
   position: relative;
   overflow: hidden;
-  border: 1px solid #fff;
+  border: 1px solid #fff !important;
   color: #fff;
   display: inline-block;
   font-size: 12px;
   cursor: pointer;
-  border-radius: 50px;
+  border-radius: 50px !important;
   width: 65px;
   height: 65px;
   padding: 14px;
@@ -3543,7 +3543,18 @@ a {
     margin-right: 8px;
     font-size: 13px;
   }
-
+.bird_img {
+   top: -29%;
+}
+.pkjl h4 {
+   font-size: 20px;
+}
+.p-test {
+  width: 100%;
+}
+.p-k-bhg {
+    margin-top: 8px;
+}
   .care-txt {
     padding-right: 110px;
   }
@@ -4219,6 +4230,27 @@ padding: 100px 0px 20px 0px;
   }
 .loo-imh img{
  margin-bottom: 20px;
+}
+.bird_img{
+  display:none;
+}
+.phg {
+     width: 100%; 
+    }
+    .pik-box {
+    padding: 20px;
+    background-image: none;
+    background-color: #f9f4fe;
+    }
+    .p-test {
+  width: 100%;
+  padding: 0px;
+}
+.pnj-btn{
+  margin-top: 20px;
+}
+.pnj-btnd{
+  margin-bottom: 40px;
 }
   @media (max-width: 768px) {
     .popup-form-right {

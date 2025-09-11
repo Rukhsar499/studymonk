@@ -45,3 +45,9 @@
     height: 450px;
     margin-bottom: 100px;
 }
+@media (max-width: 768px) {
+  .yell{
+    height: auto;
+    margin-bottom: 50px;
+}
+}

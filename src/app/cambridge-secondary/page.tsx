@@ -192,7 +192,7 @@ export default function Page() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-5 col-md-5 col-12">
-                            <div className="forms">
+                            <div className="forms pnj-btnd">
                                 <div className="bvx p-4">
                                     <h4 className="text-center text-white gft mb-4">
                                         Book A FREE Trial Now!
@@ -371,7 +371,7 @@ export default function Page() {
                                 </div>
                             </div>
                         </div>
-                        <div className="text-center">
+                        <div className="text-center pnj-btn">
                             <Button className="btn-primarys"
                                 type="button" variant="contained"
                                 onClick={handleClickOpen}>Book Free Diagnostic & 7-Day Trial</Button>
@@ -566,7 +566,7 @@ export default function Page() {
                             <div>
                                 <h3 className="sectd">See the Transformation: Start Your No-Risk 7-Day Trial</h3>
                                 <p className="mb-0">
-                                    Experience our teaching methodology firsthand. If it's not the perfect fit, simply walk away. </p>
+                                    Experience our teaching methodology firsthand. If it&apos;s not the perfect fit, simply walk away. </p>
                                 <p>No commitment, no questions asked.</p>
 
                             </div>
@@ -780,7 +780,7 @@ export default function Page() {
                                         Lower Secondary Cambridge – Don&apos;t Just Learn the Cambridge Curriculum. Challenge It.
                                     </h3>
                                     <p>
-                                        Lower Secondary is where learning deepens—the pivotal stage where students move from collecting facts to constructing arguments. This is the critical foundation for IGCSE success; let's build it together. Your complimentary 7-day trial starts with a free Skill Assessment Session.
+                                        Lower Secondary is where learning deepens—the pivotal stage where students move from collecting facts to constructing arguments. This is the critical foundation for IGCSE success; let&apos;s build it together. Your complimentary 7-day trial starts with a free Skill Assessment Session.
                                     </p>
 
                                     <p>
@@ -797,7 +797,7 @@ export default function Page() {
                                         Intellectual Edge
                                     </Button>
                                 </div>
-                                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                <div className="ijhg hgy position-absolute" style={{ right: "10px", bottom: "10px" }}>
                                     <Image
                                         src="/assets/img/Gemini.png"
                                         alt="testimonial"

@@ -56,7 +56,7 @@ const ComparisonSection: React.FC = () => {
                             key={index}
                             md={3}
                             onClick={() => setActive(index)}
-                            style={{ cursor: "pointer" }}
+                            style={{ cursor: "pointer" }} className="dimensio"
                         >
                             <Card
                                 className={`h-100 ${active === index ? "active-box" : "inactive-box"
@@ -64,7 +64,7 @@ const ComparisonSection: React.FC = () => {
                             >
                                 <h6 className="fw-bold dimen">{col.title}</h6>
                                 {col.content.map((c, i) => (
-                                    <p key={i} className="mb-4">{c}</p>
+                                    <p key={i} className="mb-5">{c}</p>
                                 ))}
                             </Card>
                         </Col>
