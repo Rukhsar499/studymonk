@@ -150,7 +150,7 @@ export default function Page() {
             <section className="hidden mb bird">
                 <div className="container">
                     <div className="text-center hid-sec">
-                        <h2>The Hidden Potential: Is Your Child's <br />
+                        <h2>The Hidden Potential: Is Your Child&apos;s <br />
                             Brilliance Trapped by Traditional Methods?</h2>
                         <p>
                             Traditional tuition models are broken. One-on-one can be isolating, while large classes leave students anonymous. We have engineered the single most effective environment for intellectual growth: The Socratic Circle. In a curated cohort of just 8 ambitious peers, your child experiences the perfect balance of personalised mentorship and dynamic group collaboration.
@@ -384,8 +384,8 @@ export default function Page() {
                 <div className="container">
                     <div className="pik-box">
                         <div className="text-center">
-                            <h2>Your Child's Journey to Becoming a Confident Thinker</h2>
-                            <p>Our methodology is a deliberate journey designed to unlock your child's potential and build the cognitive architecture for lifelong success.</p>
+                            <h2>Your Child&apos;s Journey to Becoming a Confident Thinker</h2>
+                            <p>Our methodology is a deliberate journey designed to unlock your child&apos;s potential and build the cognitive architecture for lifelong success.</p>
                         </div>
                         <div className="pink_sec">
                             <div className="row">
@@ -436,7 +436,7 @@ export default function Page() {
                                 <div className="col-lg-8 col-md-8 col-12">
                                     <div className="p-test">
                                         <p>
-                                            Our initial session is a deep dive into your child's unique strengths and learning style. We don't just test what they know; we seek to understand how they think allowing us to  to create a 'Personalised Blueprint' that maps their potential and outlines a clear, inspiring path to achieving it.
+                                            Our initial session is a deep dive into your child&apos;s unique strengths and learning style. We don&apos;t just test what they know; we seek to understand how they think allowing us to  to create a 'Personalised Blueprint' that maps their potential and outlines a clear, inspiring path to achieving it.
                                         </p>
                                         <hr className="dotss" />
                                     </div>
@@ -448,7 +448,7 @@ export default function Page() {
                                     </div>
                                     <div className="p-test">
                                         <p>
-                                            True mastery isn't just knowing the answer; it's being able to apply and communicate it with confidence. We challenge each cohort with complex, IGCSE-style problems that require them to synthesise their knowledge and present a unified solution. This is where they learn the invaluable skills of teamwork, leadership, and persuasive communication
+                                            True mastery isn&apos;t just knowing the answer; it&apos;s being able to apply and communicate it with confidence. We challenge each cohort with complex, IGCSE-style problems that require them to synthesise their knowledge and present a unified solution. This is where they learn the invaluable skills of teamwork, leadership, and persuasive communication
                                         </p>
                                         <hr className="dotss" />
                                     </div>
@@ -555,7 +555,7 @@ export default function Page() {
                         <div className="col-lg-5 col-md-4 col-12">
                             <div className="pt-text">
                                 <h2 style={{ textAlign: "left" }}>Meet the Wise Guardians:
-                                    Your Child's Personal Thinking
+                                    Your Child&apos;s Personal Thinking
                                     Partner</h2>
                                 <p>Our Wise Guardians are more than a tutor; they are an expert facilitator of intellectual discovery. We are relentlessly selective—just 1 in 5 applicants are chosen—seeking not only deep Cambridge curriculum expertise but the rare ability to manage and elevate a high-potential group discussion.
                                 </p>
@@ -727,7 +727,7 @@ export default function Page() {
                                     />
                                     <h4 className="cxa">Proven Parent Satisfaction</h4>
                                     <p>
-                                        Our high parent retention and satisfaction rates speak to the profound impact we have on our students&apos; intellectual growth.
+                                        Our high parent retention and satisfaction rates speak to the profound impact we have on our student&apos;s intellectual growth.
                                     </p>
                                 </div>
                             </div>
@@ -749,14 +749,14 @@ export default function Page() {
                             <div className="faq-sdeimg position-relative">
                                 <div className="mt-2">
                                     <h3 className="reacf">
-                                        Lower Secondary Cambridge – Don't Just Learn the Cambridge Curriculum. Challenge It.
+                                        Lower Secondary Cambridge – Don&apos;t Just Learn the Cambridge Curriculum. Challenge It.
                                     </h3>
                                     <p>
                                         Lower Secondary is where learning deepens—the pivotal stage where students move from collecting facts to constructing arguments. This is the critical foundation for IGCSE success; let's build it together. Your complimentary 7-day trial starts with a free Skill Assessment Session.
                                     </p>
 
                                     <p>
-                                        Discover your child's analytical skills, intellectual rigor, and confidence to defend their own, well-reasoned perspective.
+                                        Discover your child&apos;s analytical skills, intellectual rigor, and confidence to defend their own, well-reasoned perspective.
                                     </p>
                                     <Button
                                         className="btn-books mt-3"
@@ -764,7 +764,7 @@ export default function Page() {
                                         variant="contained"
                                         onClick={handleClickOpen}
                                     >
-                                        Build Your Child’s
+                                        Build Your Child&apos;s
                                         <br />
                                         Intellectual Edge
                                     </Button>
