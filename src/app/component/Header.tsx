@@ -76,7 +76,10 @@ function Header() {
                       <Link className="nav-link" href="/mentors">Our Mentors</Link>
                     </li>
                     <li className="nav-item">
-                      <Link className="nav-link" href="/blogs">Blogs</Link>
+                      <Link className="nav-link" href="/blogs">Resource Hub</Link>
+                    </li>
+                    <li className="nav-item">
+                      <Link className="nav-link" href="/career">Career</Link>
                     </li>
                     {/* <li className="nav-item dropdown custom-dropdown">
                       <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

@@ -3523,7 +3523,7 @@ a {
 @media (min-width: 1200px) and (max-width: 1400px) {
   .nav-item a {
     margin-right: 8px;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .care-txt {
