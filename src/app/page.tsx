@@ -316,9 +316,7 @@ and thrive without digital noise.
                   <p className="text-white">
                     Drop your details now and get a call from our expert counsellors!
                   </p>
-                  <Button className="btn-book" type="button" variant="contained" onClick={handleClickOpen}>
-                    Book a consultation
-                  </Button>
+                  <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book a consultation</Button>
                 </div>
               </div>
               <div className="col-lg-4 col-md-3 col-12">
