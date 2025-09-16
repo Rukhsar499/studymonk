@@ -82,7 +82,7 @@ export default function Page() {
                         <div className="row align-items-center">
 
                             {/* Left Side Text */}
-                            <div className="col-lg-7 col-md-8 col-12">
+                            <div className="col-lg-8 col-md-8 col-12">
                                 <div className="primar_tetx">
                                     <h1 id="child">
                                         Your Child is Learning What to Think. <br />
@@ -107,10 +107,10 @@ export default function Page() {
                             </div>
 
                             {/* Right Side Image */}
-                            <div className="col-lg-5 col-md-4 col-12">
+                            <div className="col-lg-4 col-md-4 col-12">
                                 <div className="primaryImg">
                                     <Image
-                                        src="/assets/img/bgfd.webp"
+                                        src="/assets/img/bgfd.png"
                                         alt="Child Learning"
                                         width={600}
                                         height={400}
@@ -410,6 +410,10 @@ export default function Page() {
                                         width={100}   // required
                                         height={100}  // required
                                         className="img-fluid mb-2"
+                                        style={{
+                                            background: "transparent",
+                                            mixBlendMode: "multiply", // try 'darken', 'screen', 'overlay' bhi
+                                        }}
                                     />
                                     <h3 className="saga" style={{ textAlign: "left" }}>English: The Art <br />of Influence</h3>
                                     <div className="title-underlines"></div>
@@ -427,6 +431,10 @@ export default function Page() {
                                         width={100}   // required
                                         height={100}  // required
                                         className="img-fluid mb-2"
+                                        style={{
+                                            background: "transparent",
+                                            mixBlendMode: "multiply", // try 'darken', 'screen', 'overlay' bhi
+                                        }}
                                     />
                                     <h3 className="saga" style={{ textAlign: "left" }}>Mathematics: The <br />Science of Logic </h3>
                                     <div className="title-underlines"></div>
@@ -443,6 +451,10 @@ export default function Page() {
                                         width={100}   // required
                                         height={100}  // required
                                         className="img-fluid mb-2"
+                                        style={{
+                                            background: "transparent",
+                                            mixBlendMode: "multiply", // try 'darken', 'screen', 'overlay' bhi
+                                        }}
                                     />
                                     <h3 className="saga" style={{ textAlign: "left" }}>Science: The Practice  <br />of Inquiry</h3>
                                     <div className="title-underlines"></div>
@@ -564,7 +576,7 @@ export default function Page() {
                                     className="img-fluid"
                                 />
                                 <Link href="/mentors"><div className="hover-arrow">
-                                    
+
                                     <div>
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
@@ -589,7 +601,7 @@ export default function Page() {
                                     className="img-fluid"
                                 />
                                 <Link href="/mentors"><div className="hover-arrow">
-                                    
+
                                     <div>
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
@@ -614,7 +626,7 @@ export default function Page() {
                                     className="img-fluid"
                                 />
                                 <Link href="/mentors"><div className="hover-arrow">
-                                  
+
                                     <div>
                                         <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
                                         <p className="text-white">English Teacher</p>
