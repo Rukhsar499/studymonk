@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import Image from "next/image";
-import styles from "../cambridge-secondary/SocraticCircle.module.css";
+import styles from "../cambridge-lower-secondary/SocraticCircle.module.css";
 
 type Feature = {
   id: number;

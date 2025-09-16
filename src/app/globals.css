@@ -2124,8 +2124,9 @@ a {
 
 .saga {
   font-size: 22px;
-  text-align: center;
+  /* text-align: center; */
   color: #001F3F;
+  margin-bottom: 15px !important;
   font-family: "Gilroy-Bold";
 }
 

@@ -27,7 +27,7 @@ function Footer() {
                 <ul>
                   <li><Link href="#">Our Story</Link></li>
                   <li><Link href="#">Cambridge Primary</Link></li>
-                  <li><Link href="#">Cambridge Secondary</Link></li>
+                  <li><Link href="cambridge-lower-secondary">Cambridge Lower Secondary</Link></li>
                   <li><Link href="/contact-us">Contact Us</Link></li>
                 </ul>
               </div>

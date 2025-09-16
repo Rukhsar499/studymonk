@@ -10,10 +10,10 @@ import PopupForm from "../component/PopupForm";
 import * as React from "react";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import { Button } from "@mui/material";
-import SecondaryAccordion from "../cambridge-secondary/SecondaryAccordion";
-import ConfidenceSection from "../cambridge-secondary/ConfidenceSection";
-import StepsSection from "../cambridge-secondary/StepsSection";
-import SocraticCircle from "../cambridge-secondary/SocraticCircle";
+import SecondaryAccordion from "./SecondaryAccordion";
+import ConfidenceSection from "./ConfidenceSection";
+import StepsSection from "./StepsSection";
+import SocraticCircle from "./SocraticCircle";
 import Link from 'next/link';
 
 
@@ -252,7 +252,7 @@ export default function Page() {
                                             >
                                                 <option value=""></option>
                                                 <option value="Cambridge Primary">Cambridge Primary</option>
-                                                <option value="Cambridge Secondary">Cambridge Secondary</option>
+                                                <option value="Cambridge Lower Secondary">Cambridge Lower Secondary</option>
 
                                             </select>
                                         </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "../cambridge-secondary/ConfidenceSection.module.css";
+import styles from "../cambridge-lower-secondary/ConfidenceSection.module.css";
 import { useState } from "react";
 
 interface Step {

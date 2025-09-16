@@ -66,8 +66,8 @@ function Header() {
                           </Link>
                         </li>
                         <li>
-                          <Link className="dropdown-item" href="/cambridge-secondary">
-                            Cambridge Secondary
+                          <Link className="dropdown-item" href="/cambridge-lower-secondary">
+                            Cambridge Lower Secondary
                           </Link>
                         </li>
                       </ul>
