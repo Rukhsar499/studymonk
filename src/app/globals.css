@@ -792,7 +792,10 @@ button.btn.btn-login {
   font-size: 14px;
   text-transform: capitalize !important;
 }
-
+.fvcd{
+  font-size: 18px;
+  line-height: 30px;
+}
 .btn-book {
   padding: 5px 40px !important;
   border-radius: 20px !important;
@@ -813,7 +816,7 @@ button.btn.btn-login {
   font-family: "Poppins", sans-serif !important;
   font-size: 15px;
   color: #000 !important;
-  text-align: left;
+  text-align: center;
   border: none;
   text-transform: capitalize !important;
   font-weight: 400 !important;

@@ -564,16 +564,17 @@ export default function Page() {
                                     className="img-fluid"
                                 />
                                 <Link href="/mentors"><div className="hover-arrow">
+                                    
+                                    <div>
+                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white">English Teacher</p>
+                                    </div>
                                     <Image
                                         src="/assets/img/part-arrow.png"
                                         alt="arrow icon"
                                         width={50}
                                         height={50}
                                     />
-                                    <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                        <p className="text-white">English Teacher</p>
-                                    </div>
                                 </div>
                                 </Link>
                             </div>
@@ -588,16 +589,17 @@ export default function Page() {
                                     className="img-fluid"
                                 />
                                 <Link href="/mentors"><div className="hover-arrow">
+                                    
+                                    <div>
+                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white">English Teacher</p>
+                                    </div>
                                     <Image
                                         src="/assets/img/part-arrow.png"
                                         alt="arrow icon"
                                         width={50}
                                         height={50}
                                     />
-                                    <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                        <p className="text-white">English Teacher</p>
-                                    </div>
                                 </div>
                                 </Link>
                             </div>
@@ -612,16 +614,17 @@ export default function Page() {
                                     className="img-fluid"
                                 />
                                 <Link href="/mentors"><div className="hover-arrow">
+                                  
+                                    <div>
+                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white">English Teacher</p>
+                                    </div>
                                     <Image
                                         src="/assets/img/part-arrow.png"
                                         alt="arrow icon"
                                         width={50}
                                         height={50}
                                     />
-                                    <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                        <p className="text-white">English Teacher</p>
-                                    </div>
                                 </div>
                                 </Link>
                             </div>
@@ -646,7 +649,7 @@ export default function Page() {
                                 <div className="col-lg-2 col-md-2 col-1"></div>
                                 <div className="col-lg-5 col-md-5 col-12">
                                     <div className="bluesat-box">
-                                        <p className="text-white">We believe so strongly in our methodology that we invite your child to experience it firsthand with a <span style={{ color: "#FDFFBF" }}><b>Complimentary 7-day trial.</b></span> This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation <span style={{ color: "#FDFFBF" }}><b>Clarity Session</b></span> where we will:</p>
+                                        <p className="text-white fvcd">We believe so strongly in our methodology that we invite your child to experience it firsthand with a <span style={{ color: "#FDFFBF" }}><b>Complimentary 7-day trial.</b></span> This is not a pre-recorded demo; it is real access to our live classes and mentorship. Your journey starts with a brief, no-obligation <span style={{ color: "#FDFFBF" }}><b>Clarity Session</b></span> where we will:</p>
                                     </div>
                                 </div>
                                 <div className="col-lg-3 col-md-5 col-12">
@@ -796,7 +799,7 @@ export default function Page() {
                         <div className="col-lg-1 col-md-1 col-1"></div>
                         <div className="col-lg-6 col-md-6 col-12">
                             <div className="look-txt">
-                                <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme Stage(7-9)  </h2>
+                                <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme (Stages 7-9)  </h2>
                                 <div className="mt-4">
                                     <Link href="/cambridge-secondary"><button className="btn-book mb-3" type="button">
 
