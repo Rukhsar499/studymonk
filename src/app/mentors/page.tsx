@@ -77,22 +77,16 @@ export default function Page() {
         <>
             <Header />
 
-            <section className="blog-rc blog-rcs">
-                <div className="circles">
-                    <span className="circles circle1"></span>
-                    <span className="circles circle2"></span>
-                    <span className="circles circle3"></span>
-                </div>
-
-                <div className="content">
-                    <h1 id="blogs">
+            <section className="mentrs">
+                <div className="container">
+                <h1 id="blogs" style={{ color: "#fff" }} className="mb-2">
                         Our Mentors
                     </h1>
-                    <p className="mt-3" style={{ color: "#001F3F" }}>
+                     <p className="" style={{ color: "#fff" }}>
                         The Heart of the Study Monks Promise
                     </p>
-                </div>
-            </section>
+                    </div>
+             </section>
             <FullWidthImageSection
                 src="/assets/img/studys.webp"
                 alt="Right arrow"

@@ -876,8 +876,22 @@ button.btn.btn-login {
   position: relative;
   margin-top: -69px;
 }
-
-
+.mentrs{
+  background-image: url("/assets/img/mentr-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+.contac-page{
+   background-image: url("/assets/img/contc-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
 
 #partner .image-box {
   position: relative;
