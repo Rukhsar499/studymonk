@@ -317,7 +317,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="master_boz1">
                                     <Image
-                                        src="/assets/img/languages-1.png" // public folder ka path
+                                        src="/assets/img/languages.gif" // public folder ka path
                                         alt="Girl with bag"
                                         width={100}   // required
                                         height={100}  // required
@@ -336,7 +336,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="master_boz1">
                                     <Image
-                                        src="/assets/img/maths 1.png" // public folder ka path
+                                        src="/assets/img/maths.gif" // public folder ka path
                                         alt="Girl with bag"
                                         width={100}   // required
                                         height={100}  // required
@@ -354,7 +354,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="master_boz1">
                                     <Image
-                                        src="/assets/img/science-book1.png" // public folder ka path
+                                        src="/assets/img/science-book.gif" // public folder ka path
                                         alt="Girl with bag"
                                         width={100}   // required
                                         height={100}  // required
@@ -605,16 +605,17 @@ export default function Page() {
                                             className="img-fluid"
                                         />
                                         <Link href="/mentors"><div className="hover-arrow">
+                                            
+                                            <div>
+                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white">English Teacher</p>
+                                            </div>
                                             <Image
                                                 src="/assets/img/part-arrow.png"
                                                 alt="arrow icon"
                                                 width={50}
                                                 height={50}
                                             />
-                                            <div>
-                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                                <p className="text-white">English Teacher</p>
-                                            </div>
                                         </div>
                                         </Link>
                                     </div>
@@ -627,16 +628,17 @@ export default function Page() {
                                             className="img-fluid"
                                         />
                                         <Link href="/mentors"><div className="hover-arrow">
+                                          
+                                            <div>
+                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white">English Teacher</p>
+                                            </div>
                                             <Image
                                                 src="/assets/img/part-arrow.png"
                                                 alt="arrow icon"
                                                 width={50}
                                                 height={50}
                                             />
-                                            <div>
-                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                                <p className="text-white">English Teacher</p>
-                                            </div>
                                         </div>
                                         </Link>
                                     </div>
@@ -651,16 +653,17 @@ export default function Page() {
                                             className="img-fluid"
                                         />
                                         <Link href="/mentors"><div className="hover-arrow">
+                                            
+                                            <div>
+                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white">English Teacher</p>
+                                            </div>
                                             <Image
                                                 src="/assets/img/part-arrow.png"
                                                 alt="arrow icon"
                                                 width={50}
                                                 height={50}
                                             />
-                                            <div>
-                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
-                                                <p className="text-white">English Teacher</p>
-                                            </div>
                                         </div>
                                         </Link>
                                     </div>
