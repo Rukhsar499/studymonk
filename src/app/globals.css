@@ -2129,7 +2129,9 @@ a {
   margin-bottom: 15px !important;
   font-family: "Gilroy-Bold";
 }
-
+.ready-to{
+  margin: 100px 0px;
+}
 .card-title {
   font-size: 1.3rem;
   font-weight: 600;
@@ -3223,7 +3225,8 @@ a {
 }
 
 .pkjl img {
-  height: 30px;
+  width:50px;
+  height:50px;
 }
 
 .pkjl {
@@ -4261,6 +4264,9 @@ padding: 100px 0px 20px 0px;
 }
 .pnj-btnd{
   margin-bottom: 40px;
+}
+.ready-to{
+  margin: 50px 0px;
 }
   @media (max-width: 768px) {
     .popup-form-right {

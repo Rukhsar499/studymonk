@@ -146,7 +146,7 @@ export default function Page() {
 
             <Teacher />
 
-            <section id="philosophy" className="position-relative mb">
+            <section id="philosophy" className="position-relative ready-to">
                 <div className="container">
 
 

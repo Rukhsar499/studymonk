@@ -45,6 +45,9 @@
     height: 450px;
     margin-bottom: 120px;
 }
+/* .heard{
+  margin: 20px 0px !important;
+} */
 @media (max-width: 768px) {
   .yell{
     height: auto;

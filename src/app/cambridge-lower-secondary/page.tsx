@@ -395,8 +395,8 @@ export default function Page() {
                                             <Image
                                                 src="/assets/img/Group3467.png"
                                                 alt="Guardian"
-                                                width={30}
-                                                height={30}
+                                                width={60}
+                                                height={60}
                                                 className="img-fluid me-3"
                                             />
                                             <h4>The Personalised <br />

@@ -85,10 +85,10 @@ export default function SocraticCircle() {
                         alt={feature.title}
                         width={60}
                         height={60}
-                         className={`mb-2 ${styles.featureIcon}`}
+                         className={`mb-3 ${styles.featureIcon}`}
                       />
                       <h5
-                        className="heard mb-2"
+                        className="heard mb-3"
                         dangerouslySetInnerHTML={{ __html: feature.title }}
                       ></h5>
                       {isActive && (

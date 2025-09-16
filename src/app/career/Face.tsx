@@ -63,6 +63,7 @@ export default function HoverSlider() {
                         options={{
                             perPage: 3,
                             gap: "1rem",
+                            arrows:false,
                             breakpoints: {
                                 768: { perPage: 1 },
                                 992: { perPage: 2 },

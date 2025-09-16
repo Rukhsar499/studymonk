@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 
 const ComparisonSection: React.FC = () => {
-    const [active, setActive] = useState<number>(1); // default active = Study Monks
+     
 
     const columns = [
         {
@@ -48,19 +48,15 @@ const ComparisonSection: React.FC = () => {
 
         <Container className="my-5">
             <div className="din-box">
-                <Row>
-
-
+               <Row>
                     {columns.map((col, index) => (
-                        <Col
-                            key={index}
-                            md={3}
-                            onClick={() => setActive(index)}
-                            style={{ cursor: "pointer" }} className="dimensio"
-                        >
+                        <Col key={index} md={3} className="dimensio">
                             <Card
-                                className={`h-100 ${active === index ? "active-box" : "inactive-box"
-                                    }`}
+                                className={`h-100 ${
+                                    col.title === "The Study Monks Way"
+                                        ? "active-box"
+                                        : "inactive-box"
+                                }`}
                             >
                                 <h6 className="fw-bold dimen">{col.title}</h6>
                                 {col.content.map((c, i) => (
