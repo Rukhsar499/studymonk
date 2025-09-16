@@ -92,7 +92,7 @@ export default function Page() {
                                         In exclusive, mentor-led micro-classes, we transform
                                         Cambridge Primary students from passive learners into
                                         confident, collaborative thinkers. We are Cambridge
-                                        specialists—it's all we do. We build the minds that will
+                                        specialists—it&apos;s all we do. We build the minds that will
                                         lead tomorrow.
                                     </p>
                                     <Button className="btn-primarys" type="button" variant="contained"

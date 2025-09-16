@@ -437,7 +437,7 @@ export default function Page() {
                                     <div className="p-k-bhg">
                                         <div className="p-test">
                                             <p>
-                                                Our initial session is a deep dive into your child&apos;s unique strengths and learning style. We don&apos;t just test what they know; we seek to understand how they think allowing us to  to create a 'Personalised Blueprint' that maps their potential and outlines a clear, inspiring path to achieving it.
+                                                Our initial session is a deep dive into your child&apos;s unique strengths and learning style. We don&apos;t just test what they know; we seek to understand how they think allowing us to  to create a &apos;Personalised Blueprint&apos; that maps their potential and outlines a clear, inspiring path to achieving it.
                                             </p>
                                             <hr className="text-bla" />
                                         </div>
