@@ -58,10 +58,10 @@ export default function Page() {
                 {/* decorative img on left side */}
                 <div className="deco-img">
                     <Image
-                        src="/assets/img/dec-1.png"
+                        src="/assets/img/image28.png"
                         alt="Decorative"
-                        width={250}
-                        height={430}
+                        width={270}
+                        height={450}
                     />
                 </div>
 
