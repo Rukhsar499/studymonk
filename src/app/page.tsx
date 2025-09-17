@@ -17,6 +17,8 @@ import StickyFooter from "./component/StickyFooter";
 import MobSlider from "./component/Mobslider";
 import PopupForm from "./component/PopupForm";
 import { Button } from "@mui/material";
+import Link from "next/link";
+
 
 
 
@@ -247,7 +249,7 @@ and thrive without digital noise.
                     <h4 className="assetx">Cambridge Primary (Stages 4-6)</h4>
                     <p><b>Building a Love for Learning</b></p>
                     <p>For our youngest learners, we focus on sparking curiosity and building unshakable confidence. Our mentors create a nurturing environment where foundational concepts in English, Maths, and Science are explored in an engaging, interactive way.</p>
-                    <button className="btgf">
+                    <Link href="/cambridge-primary"><button className="btgf">
                       <span className="text">View More</span>
                       <span>
                         <Image
@@ -257,7 +259,7 @@ and thrive without digital noise.
                           height={25}
                         />
                       </span>
-                    </button>
+                    </button></Link>
                   </div>
                 </div>
 
@@ -266,7 +268,7 @@ and thrive without digital noise.
                     <h4 className="assetx">Cambridge Lower Secondary (Stages 7-9)</h4>
                     <p><b>Deepening Knowledge, Building Skills</b></p>
                     <p>As students advance, we shift focus to developing critical thinking and analytical skills. We guide them through the increasing rigor of English, Maths, and Science, preparing them for the challenges of IGCSE and beyond.</p>
-                    <button className="btgf">
+                    <Link href="/cambridge-lower-secondary"><button className="btgf">
                       <span className="text">View More</span>
                       <span>
                         <Image
@@ -276,7 +278,7 @@ and thrive without digital noise.
                           height={25}
                         />
                       </span>
-                    </button>
+                    </button></Link>
                   </div>
                 </div>
               </div>
