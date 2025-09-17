@@ -3476,6 +3476,7 @@ a {
   position: relative;
   display: inline-block;
   width: 100%;
+  border-left: 7px solid #FFF;
 }
 
 .plk {
