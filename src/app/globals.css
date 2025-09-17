@@ -1211,7 +1211,12 @@ h1 {
   font-size: 45px !important;
   z-index: 999;
 }
-
+#career-page{
+  font-family: 'Gilroy-Bold';
+}
+#etteb{
+ font-family: 'Gilroy-Bold'; 
+}
 .focus {
   font-weight: 900;
   border-bottom: 2px solid #000;
