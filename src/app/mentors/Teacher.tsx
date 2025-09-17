@@ -123,7 +123,7 @@ export default function TeacherList() {
                                 >
                                     <div className="row">
                                         <div className="col-lg-5 col-md-5 col-12">
-                                            <div className="card p-3 shadow-sm">
+                                            <div className="card p-3 shadow-sm mb-3">
                                                 <Image
                                                     src={teacher.photo}
                                                     alt={teacher.name}
