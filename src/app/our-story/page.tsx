@@ -110,7 +110,7 @@ export default function Page() {
                         {/* The Sage Card */}
                         <div className="col-md-6 mb-4">
                             <div className="guardian-card h-100">
-                                <h3 className="saga">
+                                <h3 className="saga" style={{ textAlign: 'center' }}>
                                     The Sage:<br /> Your Expert Guide
                                 </h3>
                                 <div className="title-underline"></div>
@@ -127,7 +127,7 @@ export default function Page() {
                         {/* The Caregiver Card */}
                         <div className="col-md-6 mb-4">
                             <div className="guardian-card h-100">
-                                <h3 className="saga">
+                                <h3 className="saga" style={{ textAlign: 'center' }}>
                                     The Caregiver:<br /> Your Trusted Protector
                                 </h3>
                                 <div className="title-underline"></div>

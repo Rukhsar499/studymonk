@@ -1198,7 +1198,7 @@ p {
 }
 
 h1 {
-  font-size: 50px !important;
+  font-size: 45px !important;
   line-height: 90px;
   letter-spacing: 1px;
   font-family: 'gilroy-regular';
@@ -1209,6 +1209,7 @@ h1 {
 .edu {
   font-family: 'Gilroy-Bold';
   font-size: 45px !important;
+  z-index: 999;
 }
 
 .focus {
@@ -3429,6 +3430,7 @@ a {
 .primary {
   background: #EAF0FF;
   background: linear-gradient(351deg, rgba(234, 240, 255, 1) 33%, rgba(151, 171, 255, 1) 94%);
+  padding-top: 60px;
 }
 
 .career-banner {
