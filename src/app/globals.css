@@ -3571,6 +3571,9 @@ a {
     
     width: 77%;
 }
+.primar_tetx {
+    padding: 50px 70px;
+}
 }
 @media (min-width: 1200px) and (max-width: 1400px) {
   .nav-item a {
@@ -3623,9 +3626,9 @@ a {
     padding: 20px;
   }
 
-  .primar_tetx {
-    padding: 88px 0px 80px 41px;
-  }
+      .primar_tetx {
+        padding: 36px 0px 36px 41px;
+    }
 
   #child {
     font-size: 30px !important;
