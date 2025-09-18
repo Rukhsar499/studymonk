@@ -740,7 +740,7 @@ and thrive without digital noise.
                     Success Plan
                   </Button>
                 </div>
-                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                <div className="ijhg position-absolute" style={{ right: "0px", bottom: "0px" }}>
                   <Image
                     src="/assets/img/mummy.webp"
                     alt="testimonial"

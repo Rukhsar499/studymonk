@@ -449,6 +449,49 @@ h3 {
   padding: 20px 30px;
   height: 580px;
 }
+.faqq-sdeimg {
+  background-image: url("/assets/img/faq-sec-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 30px;
+  height: 580px;
+}
+.faaq-sdeimg {
+  background-image: url("/assets/img/faq-pri-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 30px;
+  height: 580px;
+}
+.faq-stry-sdeimg {
+  background-image: url("/assets/img/faq-stry-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 20px 30px;
+  height: 580px;
+}
+
+@media (max-width: 450px) {
+  .faqq-sdeimg {
+    height: 750px !important;
+  }
+  
+}
+@media (max-width: 450px) {
+  .faaq-sdeimg {
+    height: 750px !important;
+  }
+  
+}
+@media (max-width: 450px) {
+  .faq-stry-sdeimg {
+    height: 680px !important;
+  }
+  
+}
 
 .pwer_box {
   position: relative;
@@ -1039,7 +1082,7 @@ button.btn.btn-login {
 @media only screen and (max-width: 1441px) {
   .ijhg img {
     float: right;
-
+    width: 65%;
     position: relative;
     margin-top: -68px;
   }
@@ -2193,7 +2236,15 @@ a {
     align-items: center;
     width: 70%;
     margin: auto;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+  }
+
+  .monk-stry {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -88%);
   }
 
   #observation p {
@@ -3484,6 +3535,40 @@ a {
   border-left: 7px solid #FFF;
 }
 
+@media (max-width:450px) {
+  .primaryImg{
+
+    border: none;
+  }
+  
+}
+
+.customs-card {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background: #fff;
+}
+
+.card-header-customs {
+  background-color: #0a2540; /* dark blue background */
+  padding: 12px 16px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-header-customs h6 {
+  font-size: 20px;
+}
+
+.card-body-customs {
+  padding: 16px;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.6;
+}
+
+
 .plk {
   position: absolute;
   top: 50%;
@@ -4189,7 +4274,7 @@ padding: 100px 0px 20px 0px;
   }
 
   .hgy img {
-    width: 186px;
+    width: 65%;
   }
 
   .twelvex {
@@ -4266,7 +4351,7 @@ padding: 100px 0px 20px 0px;
   }
 
   .edu {
-    font-size: 30px !important;
+    font-size: 25px !important;
   }
 .loo-imh img{
  margin-bottom: 20px;

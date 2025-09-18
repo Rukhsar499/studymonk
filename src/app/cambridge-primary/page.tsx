@@ -754,7 +754,7 @@ export default function Page() {
                             <PrimaryAccordion />
                         </div>
                         <div className="col-lg-5 col-md-6 col-12">
-                            <div className="faq-sdeimg position-relative">
+                            <div className="faaq-sdeimg position-relative">
                                 <div className="mt-2">
                                     <h3 className="reacf">
                                         For Young Minds, Curiosity is a
@@ -778,7 +778,7 @@ export default function Page() {
                                         Adventure
                                     </Button>
                                 </div>
-                                <div className="ijhg hgy position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                {/* <div className="ijhg hgy position-absolute" style={{ right: "0px", bottom: "0px" }}>
                                     <Image
                                         src="/assets/img/image26.png"
                                         alt="testimonial"
@@ -786,7 +786,7 @@ export default function Page() {
                                         height={260}
                                         className="img-fluid"
                                     />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 

@@ -15,6 +15,7 @@ import { Button } from "@mui/material";
 import PopupForm from "../component/PopupForm";
 import StoryAccordion from "./StoryAccordion";
 import Link from 'next/link';
+import WidthImageSection from "../component/WidthImageSection";
 
 
 export default function Page() {
@@ -80,6 +81,14 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
+
+                <WidthImageSection
+                    src="/assets/img/MONKS.webp"
+                    alt="Right arrow"
+                    className="d-none d-lg-flex monk-stry"
+                    width="100%"
+                    objectFit="cover"
+                />
 
 
 
@@ -363,7 +372,7 @@ export default function Page() {
                             <StoryAccordion />
                         </div>
                         <div className="col-lg-5 col-md-6 col-12">
-                            <div className="faq-sdeimg position-relative">
+                            <div className="faq-stry-sdeimg position-relative">
                                 <div className="mt-2">
                                     <h3 className="reacf">
                                         Our Philosophy Isn&apos;t a Page. It&apos;s a Person.
@@ -377,7 +386,7 @@ export default function Page() {
                                     </p>
                                     <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Meet a Wise Guardian</Button>
                                 </div>
-                                <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                {/* <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
                                     <Image
                                         src="/assets/img/envato-labs.png"
                                         alt="testimonial"
@@ -385,7 +394,7 @@ export default function Page() {
                                         height={260}
                                         className="img-fluid"
                                     />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 

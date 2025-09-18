@@ -15,6 +15,7 @@ import ConfidenceSection from "./ConfidenceSection";
 import StepsSection from "./StepsSection";
 import SocraticCircle from "./SocraticCircle";
 import Link from 'next/link';
+import MobileBlueprintSection from "./MobileBlueprintSection";
 
 
 
@@ -399,7 +400,7 @@ export default function Page() {
                             <h2>Your Child&apos;s Journey to Becoming a Confident Thinker</h2>
                             <p>Our methodology is a deliberate journey designed to unlock your child&apos;s potential and build the cognitive architecture for lifelong success.</p>
                         </div>
-                        <div className="pink_sec">
+                        <div className="pink_sec d-none d-md-block">
                             <div className="row">
                                 <div className="col-lg-4 col-md-4 col-12">
                                     <div className="shg">
@@ -469,6 +470,7 @@ export default function Page() {
                                 </div>
                             </div>
                         </div>
+                        <MobileBlueprintSection />
                     </div>
                 </div>
             </section>
@@ -793,7 +795,7 @@ export default function Page() {
                             <SecondaryAccordion />
                         </div>
                         <div className="col-lg-5 col-md-6 col-12">
-                            <div className="faq-sdeimg position-relative">
+                            <div className="faqq-sdeimg position-relative">
                                 <div className="mt-2">
                                     <h3 className="reacf">
                                         Lower Secondary Cambridge – Don&apos;t Just Learn the Cambridge Curriculum. Challenge It.
@@ -816,7 +818,7 @@ export default function Page() {
                                         Intellectual Edge
                                     </Button>
                                 </div>
-                                <div className="ijhg hgy position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                {/* <div className="ijhg hgy position-absolute" style={{ right: "10px", bottom: "10px" }}>
                                     <Image
                                         src="/assets/img/Gemini.png"
                                         alt="testimonial"
@@ -824,7 +826,7 @@ export default function Page() {
                                         height={260}
                                         className="img-fluid"
                                     />
-                                </div>
+                                </div> */}
                             </div>
                         </div>
 
