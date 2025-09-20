@@ -742,7 +742,7 @@ and thrive without digital noise.
                 </div>
                 <div className="fq">
                   <Image
-                    src="/assets/img/mummy1.webp"
+                    src="/assets/img/mummy1.png"
                     alt="testimonial"
                     width={360}
                     height={260}
