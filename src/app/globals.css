@@ -305,6 +305,7 @@ h3 {
   border-radius: 50%;
   opacity: 0.6;
   animation: swing 10s ease-in-out infinite;
+  z-index: 1;
 }
 
 .circlestr {
@@ -346,7 +347,10 @@ h3 {
     transform: translateX(0) scale(1);
   }
 }
-
+.nbxp{
+  z-index: 2;
+  position: relative;
+}
 .stry-banner {
   position: relative;
   padding: 80px 20px;

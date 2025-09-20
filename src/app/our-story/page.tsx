@@ -45,13 +45,15 @@ export default function Page() {
                     <div className="circlest circlestr"></div>
                     <div className="circlest circlestr2"></div>
 
-                    <div className="mb-3">
-                        <h1 className="edu"><b>An Educator’s Concern. <br />
-                            A Parent’s Dilemma. A Child’s Potential.</b></h1>
+                    <div className="mb-3 ">
+                        <div className="nbxp">
+                            <h1 className="edu"><b>An Educator’s Concern. <br />
+                                A Parent’s Dilemma. A Child’s Potential.</b></h1>
+                        </div>
+                        <Button className="btn-primarys"
+                            type="button" variant="contained"
+                            onClick={handleClickOpen}>Experience the difference</Button>
                     </div>
-                    <Button className="btn-primarys"
-                        type="button" variant="contained"
-                        onClick={handleClickOpen}>Experience the difference</Button>
                 </div>
             </section>
 
