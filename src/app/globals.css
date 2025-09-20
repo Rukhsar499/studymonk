@@ -4478,6 +4478,13 @@ padding: 100px 0px 20px 0px;
         margin-right: -15px;
         width: 290px !important;
     }
+    .mentrs {
+    background-image: url(/assets/img/mentors-hero-mobile.webp);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    height: 600px;
+  }
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;
