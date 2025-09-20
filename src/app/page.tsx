@@ -744,7 +744,7 @@ and thrive without digital noise.
                   <Image
                     src="/assets/img/mummy1.png"
                     alt="testimonial"
-                    width={360}
+                    width={340}
                     height={260}
                     className="img-fluid"
                   />
