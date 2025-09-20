@@ -937,6 +937,7 @@ button.btn.btn-login {
 .mentrs {
   background-image: url("/assets/img/mentrbg1.webp");
   background-repeat: no-repeat;
+  background-position: right;
   background-size: cover;
   height: 600px;
   display: flex;
