@@ -79,10 +79,10 @@ export default function Page() {
 
             <section className="mentrs">
                 <div className="container">
-                <h1 id="blogs" style={{ color: "#fff" }} className="mb-2">
+                <h1 id="blogs" className="mb-2">
                         Our Mentors
                     </h1>
-                     <p className="" style={{ color: "#fff" }}>
+                     <p className="">
                         The Heart of the Study Monks Promise
                     </p>
                     </div>
