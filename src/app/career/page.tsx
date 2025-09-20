@@ -36,11 +36,11 @@ export default function Page() {
                         <div className="row">
                             <div className="col-lg-7 col-md-7 col-12">
                                 <div className="care-txt">
-                                    <h1 style={{ color: "white" }} id="career-page">Find Your Focus. Guide Theirs</h1>
-                                    <p style={{ color: "white" }}>
+                                    <h1 id="career-page">Find Your Focus. Guide Theirs</h1>
+                                    <p>
                                         In a world of digital noise, we are building a sanctuary for deep learning. We are seeking Wise Guardians to join our mission of cultivating focus, curiosity, and confidence in the next generation.
                                     </p>
-                                    <Button className="btn-primarye"
+                                    <Button className="btn-primarys"
                                         type="button" variant="contained"
                                         onClick={handleClickOpen}>Explore Our Sanctuaries</Button>
                                 </div>
