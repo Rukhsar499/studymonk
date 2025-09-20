@@ -458,12 +458,12 @@ h3 {
   height: 580px;
 }
 .faaq-sdeimg {
-  background-image: url("/assets/img/faq-pri-bg.png");
+  background-image: url("/assets/img/faq-pri-bg.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 20px 30px;
-  height: 580px;
+  height: 600px;
 }
 .faq-stry-sdeimg {
   background-image: url("/assets/img/faq-stry-bg.png");
