@@ -110,7 +110,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="primaryImg">
                                     <Image
-                                        src="/assets/img/bgfd.png"
+                                        src="/assets/img/bgfd.webp"
                                         alt="Child Learning"
                                         width={600}
                                         height={400}

@@ -163,7 +163,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 />
                             </div>
 
-                            <div
+                            {/* <div
                                 style={{
                                     width: "80%",
                                     position: "absolute",
@@ -180,7 +180,7 @@ export default function PopupForm({ open, handleClose }: PopupFormProps) {
                                 <span style={{ fontSize: "1rem" }}>
                                     Learn, Grow, and Succeed with Us!
                                 </span>
-                            </div>
+                            </div> */}
                         </div>
                     )}
 
