@@ -822,7 +822,7 @@ export default function Page() {
                                     <Image
                                         src="/assets/img/lowercta.webp"
                                         alt="testimonial"
-                                        width={300}
+                                        width={280}
                                         height={260}
                                         className="img-fluid"
                                     />
