@@ -795,7 +795,7 @@ export default function Page() {
                             <SecondaryAccordion />
                         </div>
                         <div className="col-lg-5 col-md-6 col-12">
-                            <div className="faqq-sdeimg position-relative">
+                            <div className="faq-sdeimg">
                                 <div className="mt-2">
                                     <h3 className="reacf">
                                         Lower Secondary Cambridge – Don&apos;t Just Learn the Cambridge Curriculum. Challenge It.
@@ -818,15 +818,15 @@ export default function Page() {
                                         Intellectual Edge
                                     </Button>
                                 </div>
-                                {/* <div className="ijhg hgy position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                <div className="fqqq">
                                     <Image
-                                        src="/assets/img/Gemini.png"
+                                        src="/assets/img/lowercta.webp"
                                         alt="testimonial"
                                         width={300}
                                         height={260}
                                         className="img-fluid"
                                     />
-                                </div> */}
+                                </div>
                             </div>
                         </div>
 
