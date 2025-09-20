@@ -712,7 +712,7 @@ and thrive without digital noise.
               <BottomAccordion />
             </div>
             <div className="col-lg-5 col-md-6 col-12">
-              <div className="faq-sdeimg position-relative">
+              <div className="faq-sdeimg">
                 <div className="mt-2">
                   <h3 className="reacf">
                     The Cambridge Path is a Promise. We Help Your Child Fulfil It.
@@ -740,12 +740,12 @@ and thrive without digital noise.
                     Success Plan
                   </Button>
                 </div>
-                <div className="ijhg position-absolute" style={{ right: "0px", bottom: "0px" }}>
+                <div className="fq">
                   <Image
-                    src="/assets/img/mummy.webp"
+                    src="/assets/img/mummy1.webp"
                     alt="testimonial"
-                    width={360}
-                    height={260}
+                    width={340}
+                    height={240}
                     className="img-fluid"
                   />
                 </div>

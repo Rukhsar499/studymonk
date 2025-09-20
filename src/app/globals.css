@@ -449,6 +449,7 @@ h3 {
   padding: 20px 30px;
   height: 580px;
 }
+
 .faqq-sdeimg {
   background-image: url("/assets/img/faq-sec-bg.png");
   background-repeat: no-repeat;
@@ -457,6 +458,7 @@ h3 {
   padding: 20px 30px;
   height: 580px;
 }
+
 .faaq-sdeimg {
   background-image: url("/assets/img/faq-pri-bg.webp");
   background-repeat: no-repeat;
@@ -465,6 +467,7 @@ h3 {
   padding: 20px 30px;
   height: 600px;
 }
+
 .faq-stry-sdeimg {
   background-image: url("/assets/img/faq-stry-bg.png");
   background-repeat: no-repeat;
@@ -478,19 +481,21 @@ h3 {
   .faqq-sdeimg {
     height: 750px !important;
   }
-  
+
 }
+
 @media (max-width: 450px) {
   .faaq-sdeimg {
     height: 750px !important;
   }
-  
+
 }
+
 @media (max-width: 450px) {
   .faq-stry-sdeimg {
     height: 680px !important;
   }
-  
+
 }
 
 .pwer_box {
@@ -835,10 +840,12 @@ button.btn.btn-login {
   font-size: 14px;
   text-transform: capitalize !important;
 }
-.fvcd{
+
+.fvcd {
   font-size: 18px;
   line-height: 30px;
 }
+
 .btn-book {
   padding: 5px 40px !important;
   border-radius: 20px !important;
@@ -919,16 +926,18 @@ button.btn.btn-login {
   position: relative;
   margin-top: -69px;
 }
-.mentrs{
-  background-image: url("/assets/img/mentrbg2.webp");
+
+.mentrs {
+  background-image: url("/assets/img/mentrbg1.webp");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
   display: flex;
   align-items: center;
 }
-.contac-page{
-   background-image: url("/assets/img/contc-bg.png");
+
+.contac-page {
+  background-image: url("/assets/img/contc-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
@@ -1254,12 +1263,15 @@ h1 {
   font-size: 45px !important;
   z-index: 999;
 }
-#career-page{
+
+#career-page {
   font-family: 'Gilroy-Bold';
 }
-#etteb{
- font-family: 'Gilroy-Bold'; 
+
+#etteb {
+  font-family: 'Gilroy-Bold';
 }
+
 .focus {
   font-weight: 900;
   border-bottom: 2px solid #000;
@@ -1693,6 +1705,13 @@ a {
   width: 70px;
   height: 70px;
   animation: pulse-border 1.2s linear infinite alternate-reverse;
+}
+
+.fq img {
+  position: relative;
+  margin-top: -115px;
+  margin-right: -33px;
+  float: right;
 }
 
 @keyframes pulse-border {
@@ -2195,9 +2214,11 @@ a {
   margin-bottom: 15px !important;
   font-family: "Gilroy-Bold";
 }
-.ready-to{
+
+.ready-to {
   margin: 100px 0px;
 }
+
 .card-title {
   font-size: 1.3rem;
   font-weight: 600;
@@ -3283,24 +3304,27 @@ a {
 }
 
 .shg {
-    background-color: #001D36;
-    padding: 20px;
-    border-radius: 20px 20px 0px 0px;
-   height: 100%;
+  background-color: #001D36;
+  padding: 20px;
+  border-radius: 20px 20px 0px 0px;
+  height: 100%;
 }
-.p-k-bhg{
+
+.p-k-bhg {
   margin-top: 20px;
 }
-.text-bla{
+
+.text-bla {
   border: 2px dotted #000;
 }
+
 .dotss {
   border: 2px dotted #fff;
 }
 
 .pkjl img {
-  width:50px;
-  height:50px;
+  width: 50px;
+  height: 50px;
 }
 
 .pkjl {
@@ -3333,10 +3357,10 @@ a {
 }
 
 .pik-box {
-    background-image: url(/assets/img/pink.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 30px 30px 0px 30px;
+  background-image: url(/assets/img/pink.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 30px 0px 30px;
 }
 
 .box_sec {
@@ -3536,22 +3560,23 @@ a {
 }
 
 @media (max-width:450px) {
-  .primaryImg{
+  .primaryImg {
 
     border: none;
   }
-  
+
 }
 
 .customs-card {
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background: #fff;
 }
 
 .card-header-customs {
-  background-color: #0a2540; /* dark blue background */
+  background-color: #0a2540;
+  /* dark blue background */
   padding: 12px 16px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
@@ -3651,33 +3676,40 @@ a {
   top: -70px;
   right: 20px;
 }
+
 @media (min-width: 1400px) and (max-width: 1500px) {
-.care-txt {
-    
+  .care-txt {
+
     width: 77%;
-}
-.primar_tetx {
+  }
+
+  .primar_tetx {
     padding: 50px 70px;
+  }
 }
-}
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .nav-item a {
     margin-right: 8px;
     font-size: 13px;
   }
-.bird_img {
-   top: -29%;
-}
 
-.pkjl h4 {
-   font-size: 20px;
-}
-.p-test {
-  width: 100%;
-}
-.p-k-bhg {
+  .bird_img {
+    top: -29%;
+  }
+
+  .pkjl h4 {
+    font-size: 20px;
+  }
+
+  .p-test {
+    width: 100%;
+  }
+
+  .p-k-bhg {
     margin-top: 8px;
-}
+  }
+
   .care-txt {
     padding-right: 110px;
   }
@@ -3685,10 +3717,12 @@ a {
   .section-intro {
     width: 64% !important;
   }
-.care-txt {
-    
+
+  .care-txt {
+
     width: 77%;
-}
+  }
+
   .stdyu-img {
     width: 100%;
   }
@@ -3711,9 +3745,9 @@ a {
     padding: 20px;
   }
 
-      .primar_tetx {
-        padding: 36px 0px 36px 41px;
-    }
+  .primar_tetx {
+    padding: 36px 0px 36px 41px;
+  }
 
   #child {
     font-size: 30px !important;
@@ -4026,8 +4060,13 @@ padding: 100px 0px 20px 0px;
   }
 
   .faq-sdeimg {
-    height: 615px;
+    height: 760px;
     padding: 10px;
+  }
+
+  .fq img {
+    position: relative;
+    margin-left: 20px;
   }
 
   .ijhg img {
@@ -4238,9 +4277,9 @@ padding: 100px 0px 20px 0px;
   }
 
   .pwer_box:after {
-        bottom: -40%;
-        left: 44%;
-    }
+    bottom: -40%;
+    left: 44%;
+  }
 
   .blog_box {
     padding: 5px;
@@ -4353,33 +4392,42 @@ padding: 100px 0px 20px 0px;
   .edu {
     font-size: 25px !important;
   }
-.loo-imh img{
- margin-bottom: 20px;
-}
-.bird_img{
-  display:none;
-}
-.phg {
-     width: 100%; 
-    }
-    .pik-box {
+
+  .loo-imh img {
+    margin-bottom: 20px;
+  }
+
+  .bird_img {
+    display: none;
+  }
+
+  .phg {
+    width: 100%;
+  }
+
+  .pik-box {
     padding: 20px;
     background-image: none;
     background-color: #f9f4fe;
-    }
-    .p-test {
-  width: 100%;
-  padding: 0px;
-}
-.pnj-btn{
-  margin-top: 20px;
-}
-.pnj-btnd{
-  margin-bottom: 40px;
-}
-.ready-to{
-  margin: 50px 0px;
-}
+  }
+
+  .p-test {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .pnj-btn {
+    margin-top: 20px;
+  }
+
+  .pnj-btnd {
+    margin-bottom: 40px;
+  }
+
+  .ready-to {
+    margin: 50px 0px;
+  }
+
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;
