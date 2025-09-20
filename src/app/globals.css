@@ -444,8 +444,8 @@ h3 {
 .faq-sdeimg {
   background-image: url("/assets/img/mummy-bg.webp");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+
+  background-size: contain;
   padding: 20px 30px;
   height: 580px;
 }
@@ -1708,6 +1708,12 @@ a {
 }
 
 .fq img {
+  position: relative;
+  margin-top: -115px;
+  margin-right: -21px;
+  float: right;
+}
+.fqq img {
   position: relative;
   margin-top: -115px;
   margin-right: -21px;
@@ -3693,8 +3699,16 @@ a {
     margin-right: 8px;
     font-size: 13px;
   }
-  .fq img{
-    width: 300px;
+
+  .fq img {
+    width: 250px;
+    margin-top: -124px;
+    margin-right: -28px;
+  }
+.fqq img {
+    width: 270px;
+    margin-top: -124px;
+    margin-right: -28px;
   }
   .bird_img {
     top: -29%;
@@ -4064,14 +4078,22 @@ padding: 100px 0px 20px 0px;
   .faq-sdeimg {
     height: 760px;
     padding: 10px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
   }
 
   .fq img {
     position: relative;
-    margin-right: -19px;
+    margin-right: -9px;
     margin-top: 0px;
   }
-
+.fqq img {
+    position: relative;
+    margin-right: -9px;
+    margin-top: 31px;
+    
+  }
   .ijhg img {
     width: 310px;
   }

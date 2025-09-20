@@ -713,6 +713,7 @@ and thrive without digital noise.
             </div>
             <div className="col-lg-5 col-md-6 col-12">
               <div className="faq-sdeimg">
+              
                 <div className="mt-2">
                   <h3 className="reacf">
                     The Cambridge Path is a Promise. We Help Your Child Fulfil It.
@@ -750,8 +751,8 @@ and thrive without digital noise.
                   />
                 </div>
               </div>
-            </div>
-
+            
+           </div>
           </div>
         </div>
         <PopupForm open={open} handleClose={handleClose} />
