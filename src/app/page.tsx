@@ -744,8 +744,8 @@ and thrive without digital noise.
                   <Image
                     src="/assets/img/mummy1.webp"
                     alt="testimonial"
-                    width={340}
-                    height={240}
+                    width={360}
+                    height={260}
                     className="img-fluid"
                   />
                 </div>

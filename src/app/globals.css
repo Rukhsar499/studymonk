@@ -3693,7 +3693,9 @@ a {
     margin-right: 8px;
     font-size: 13px;
   }
-
+  .fq img{
+    width: 300px;
+  }
   .bird_img {
     top: -29%;
   }
@@ -4066,7 +4068,8 @@ padding: 100px 0px 20px 0px;
 
   .fq img {
     position: relative;
-    margin-left: 20px;
+    margin-right: -19px;
+    margin-top: 0px;
   }
 
   .ijhg img {
