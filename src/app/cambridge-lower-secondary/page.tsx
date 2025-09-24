@@ -621,7 +621,7 @@ export default function Page() {
                                         <Link href="/mentors"><div className="hover-arrow">
 
                                             <div>
-                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white mb-0"><b>Ms. Kamalpreet</b></p>
                                                 <p className="text-white">English Teacher</p>
                                             </div>
                                             <Image
@@ -644,7 +644,7 @@ export default function Page() {
                                         <Link href="/mentors"><div className="hover-arrow">
 
                                             <div>
-                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white mb-0"><b>Ms. Sujatha S</b></p>
                                                 <p className="text-white">English Teacher</p>
                                             </div>
                                             <Image
@@ -669,7 +669,7 @@ export default function Page() {
                                         <Link href="/mentors"><div className="hover-arrow">
 
                                             <div>
-                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white mb-0"><b>Ms. Nivedita P Hadimani</b></p>
                                                 <p className="text-white">English Teacher</p>
                                             </div>
                                             <Image
@@ -697,7 +697,7 @@ export default function Page() {
                                                 height={50}
                                             />
                                             <div>
-                                                <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                                <p className="text-white mb-0"><b>Ms. Thejaswini</b></p>
                                                 <p className="text-white">English Teacher</p>
                                             </div>
                                         </div>
