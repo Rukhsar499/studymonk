@@ -500,26 +500,11 @@ h3 {
   height: 580px;
 }
 
-@media (max-width: 450px) {
-  .faqq-sdeimg {
-    height: 750px !important;
-  }
 
-}
 
-@media (max-width: 450px) {
-  .faaq-sdeimg {
-    height: 750px !important;
-  }
 
-}
 
-@media (max-width: 450px) {
-  .faq-stry-sdeimg {
-    height: 680px !important;
-  }
 
-}
 
 .pwer_box {
   position: relative;
@@ -3597,6 +3582,24 @@ a {
   }
 
 }
+@media (min-width:300px) and (max-width:400px) {
+  .faqs-sdeimg {
+    height: 639px;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+}
+@media (min-width:400px) and (max-width:450px) {
+  .faqs-sdeimg {
+    height: 620px;
+    padding: 10px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+}
 
 .customs-card {
   border-radius: 12px;
@@ -4512,18 +4515,8 @@ padding: 100px 0px 20px 0px;
   .p-h {
     width: 100%; 
     }
-        .fqqs img {
-        position: relative;
-        margin-right: -9px;
-        margin-top: 20px;
-    }
-    .faqs-sdeimg {
-        height: 574px;
-        padding: 10px;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-    }
+      
+    
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;
