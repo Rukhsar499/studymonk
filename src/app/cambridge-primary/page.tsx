@@ -578,7 +578,7 @@ export default function Page() {
                                 <Link href="/mentors"><div className="hover-arrow">
 
                                     <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white mb-0"><b>Ms. Nidhi Malik</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
                                     <Image
@@ -603,7 +603,7 @@ export default function Page() {
                                 <Link href="/mentors"><div className="hover-arrow">
 
                                     <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white mb-0"><b>Ms. Shruthi Bharath</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
                                     <Image
@@ -628,7 +628,7 @@ export default function Page() {
                                 <Link href="/mentors"><div className="hover-arrow">
 
                                     <div>
-                                        <p className="text-white mb-0"><b>Dr. Ananya Sharma</b></p>
+                                        <p className="text-white mb-0"><b>Ms. Thejaswini</b></p>
                                         <p className="text-white">English Teacher</p>
                                     </div>
                                     <Image
