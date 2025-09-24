@@ -23,7 +23,7 @@ const teachers: Teacher[] = [
     {
         id: 1,
         name: "Ms. Nidhi Malik",
-        qualification: "PhD, Astrophysics",
+        qualification: "Maths & Science",
         intro: "I help students see the universe in a grain of sand, connecting physics to the current world.",
         photo: "assets/img/nidhi.png",
         video: "/assets/video/nidhi.mp4",
@@ -61,7 +61,7 @@ const teachers: Teacher[] = [
     {
         id: 3,
         name: "Ms. Sujatha S",
-        qualification: "PhD, Chemistry",
+        qualification: "Science",
         intro: "Helping students connect molecules with daily life chemistry.",
         photo: "assets/img/sujatha.png",
         video: "/assets/video/sujatha.mp4",
@@ -99,7 +99,7 @@ const teachers: Teacher[] = [
     {
         id: 5,
         name: "Ms. Shruthi Bharath",
-        qualification: "PhD, Biology",
+        qualification: "Maths & Science",
         intro: "Exploring the wonders of life sciences with students.",
         photo: "assets/img/shruthi.png",
         video: "/assets/video/shruthi.mp4",
@@ -118,7 +118,7 @@ const teachers: Teacher[] = [
     {
         id: 6,
         name: "Ms. Thejaswini S",
-        qualification: "PhD, Biology",
+        qualification: "Maths & Science",
         intro: "Exploring the wonders of life sciences with students.",
         photo: "assets/img/thejaswini.png",
         video: "/assets/video/thejaswini.mp4",
