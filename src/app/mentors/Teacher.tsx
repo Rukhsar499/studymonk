@@ -118,7 +118,7 @@ const teachers: Teacher[] = [
     {
         id: 6,
         name: "Ms. Thejaswini S",
-        qualification: "Maths & Science",
+        qualification: "Science",
         intro: "Exploring the wonders of life sciences with students.",
         photo: "assets/img/thejaswini.png",
         video: "/assets/video/thejaswini.mp4",
