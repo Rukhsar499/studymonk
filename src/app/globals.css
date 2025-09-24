@@ -189,7 +189,11 @@ h3 {
     opacity: 0.8;
   }
 }
-
+.fqqm img{
+  float: right;
+    margin-top: 31px;
+    margin-right: -10px;
+}
 .blog-rc {
   position: relative;
   overflow: hidden;
@@ -3599,6 +3603,10 @@ a {
     background-size: cover;
     width: 100%;
   }
+  .fqqm img {
+    float: right;
+    margin-top: 15px;
+  }
 }
 
 .customs-card {
@@ -3737,6 +3745,12 @@ a {
         width: 240px;
         margin-top: -7px;
         margin-right: -28px;
+    }
+    .fqqm img {
+        width: 160px;
+        margin-top: -7px;
+        margin-right: -28px;
+        float: right;
     }
 .fqqq img {
         width: 210px;

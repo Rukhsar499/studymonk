@@ -194,7 +194,7 @@ export default function Page() {
                                         Mentors – Our Method Has a Heartbeat.
                                     </h3>
                                     <p>
-                                        A platform offers lessons, but a true mentor delivers a breakthrough. Our Mentors are more than experts in the Cambridge curriculum; they are experts in your child. And the right mentor can change a child's entire academic trajectory, unlocking their true potential. 
+                                        A platform offers lessons, but a true mentor delivers a breakthrough. Our Mentors are more than experts in the Cambridge curriculum; they are experts in your child. And the right mentor can change a child&apos;s entire academic trajectory, unlocking their true potential. 
                                         </p>
 
                                     <p>
@@ -202,7 +202,7 @@ export default function Page() {
                                     </p>
                                     <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Meet a Wise Guardian</Button>
                                 </div>
-                                <div className="fqqs">
+                                <div className="fqqm">
                                     <Image
                                         src="/assets/img/mentor-cta.png"
                                         alt="testimonial"
