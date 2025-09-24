@@ -569,9 +569,9 @@ export default function Page() {
                         <div className="col-lg-4 col-md-4 col-12">
                             <div className="image-box mt-3">
                                 <Image
-                                    src="/assets/img/mentor-3.png"
+                                    src="/assets/img/nidhi.png"
                                     alt="Guardian"
-                                    width={300}
+                                    width={250}
                                     height={200}
                                     className="img-fluid"
                                 />
@@ -594,9 +594,9 @@ export default function Page() {
                         <div className="col-lg-4 col-md-4 col-12">
                             <div className="image-box mt-3">
                                 <Image
-                                    src="/assets/img/mentor-3.png"
+                                    src="/assets/img/shruthi.png"
                                     alt="Guardian"
-                                    width={300}
+                                    width={250}
                                     height={200}
                                     className="img-fluid"
                                 />
@@ -619,9 +619,9 @@ export default function Page() {
                         <div className="col-lg-4 col-md-4 col-12">
                             <div className="image-box mt-3">
                                 <Image
-                                    src="/assets/img/mentor-3.png"
+                                    src="/assets/img/thejaswini.png"
                                     alt="Guardian"
-                                    width={300}
+                                    width={250}
                                     height={200}
                                     className="img-fluid"
                                 />

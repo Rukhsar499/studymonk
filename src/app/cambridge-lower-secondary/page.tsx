@@ -612,7 +612,7 @@ export default function Page() {
                                 <div className="col-lg-6 col-md-6 col-12">
                                     <div className="image-box mt-3">
                                         <Image
-                                            src="/assets/img/mentor-3.png"
+                                            src="/assets/img/kamalpreet.png"
                                             alt="Guardian"
                                             width={250}
                                             height={200}
@@ -635,7 +635,7 @@ export default function Page() {
                                     </div>
                                     <div className="image-box mt-3">
                                         <Image
-                                            src="/assets/img/mentor-3.png"
+                                            src="/assets/img/sujatha.png"
                                             alt="Guardian"
                                             width={250}
                                             height={200}
@@ -660,7 +660,7 @@ export default function Page() {
                                 <div className="col-lg-6 col-md-6 col-12">
                                     <div className="image-box mt-3">
                                         <Image
-                                            src="/assets/img/mentor-3.png"
+                                            src="/assets/img/nivedita.png"
                                             alt="Guardian"
                                             width={250}
                                             height={200}
@@ -683,7 +683,7 @@ export default function Page() {
                                     </div>
                                     <div className="image-box mt-3">
                                         <Image
-                                            src="/assets/img/mentor-3.png"
+                                            src="/assets/img/thejaswini.png"
                                             alt="Guardian"
                                             width={250}
                                             height={200}
