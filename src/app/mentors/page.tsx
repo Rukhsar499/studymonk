@@ -13,6 +13,7 @@ import { Button } from "@mui/material";
 import FullWidthImageSection from "../component/FullWidthImageSection";
 import WidthImageSection from "../component/WidthImageSection";
 import Teacher from "../mentors/Teacher";
+import MentorAccordion from "../mentors/MentorAccordion";
 
 
 
@@ -83,7 +84,7 @@ export default function Page() {
                         Our Mentors
                     </h1>
                      <p className="">
-                        The Heart of the Study Monks Promise
+                        The Heartbeat of the Method
                     </p>
                     </div>
              </section>
@@ -179,7 +180,44 @@ export default function Page() {
                 <PopupForm open={open} handleClose={handleClose} />
             </section>
 
+ <section className="fad mb">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-7 col-md-6 col-12">
+                            <h2 className="text-center fres">Frequently Asked Questions</h2>
+                            <MentorAccordion />
+                        </div>
+                        <div className="col-lg-5 col-md-6 col-12">
+                            <div className="faqs-sdeimg">
+                                <div className="mt-2">
+                                    <h3 className="reacf">
+                                        Mentors – Our Method Has a Heartbeat.
+                                    </h3>
+                                    <p>
+                                        A platform offers lessons, but a true mentor delivers a breakthrough. Our Mentors are more than experts in the Cambridge curriculum; they are experts in your child. And the right mentor can change a child's entire academic trajectory, unlocking their true potential. 
+                                        </p>
 
+                                    <p>
+                                        Find that perfect mentor for your child. Unlock their potential.
+                                    </p>
+                                    <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Meet a Wise Guardian</Button>
+                                </div>
+                                <div className="fqqs">
+                                    <Image
+                                        src="/assets/img/mentor-cta.png"
+                                        alt="testimonial"
+                                        width={220}
+                                        height={260}
+                                        className="img-fluid"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <PopupForm open={open} handleClose={handleClose} />
+            </section>
 
 
 
