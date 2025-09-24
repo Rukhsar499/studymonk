@@ -267,6 +267,12 @@ h3 {
   float: right;
   margin-right: -20px;
 }
+.fqqs img {
+  position: relative;
+ margin-top: 32px;
+  float: right;
+  margin-right: -20px;
+}
 
 .blog_box img {
   width: 100%;
@@ -455,7 +461,13 @@ h3 {
 .faq-sdeimg {
   background-image: url("/assets/img/mummy-bg.webp");
   background-repeat: no-repeat;
-
+  background-size: contain;
+  padding: 20px 30px;
+  height: 580px;
+}
+.faqs-sdeimg {
+  background-image: url("/assets/img/mummy-bg.webp");
+  background-repeat: no-repeat;
   background-size: contain;
   padding: 20px 30px;
   height: 580px;
@@ -3718,6 +3730,11 @@ a {
     margin-top: -124px;
     margin-right: -28px;
   }
+  .fqqs img {
+        width: 240px;
+        margin-top: -7px;
+        margin-right: -28px;
+    }
 .fqqq img {
         width: 210px;
         margin-top: -123px;
@@ -4494,6 +4511,18 @@ padding: 100px 0px 20px 0px;
   }
   .p-h {
     width: 100%; 
+    }
+        .fqqs img {
+        position: relative;
+        margin-right: -9px;
+        margin-top: 20px;
+    }
+    .faqs-sdeimg {
+        height: 574px;
+        padding: 10px;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
     }
   @media (max-width: 768px) {
     .popup-form-right {

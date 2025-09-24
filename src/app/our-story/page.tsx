@@ -374,7 +374,7 @@ export default function Page() {
                             <StoryAccordion />
                         </div>
                         <div className="col-lg-5 col-md-6 col-12">
-                            <div className="faq-stry-sdeimg position-relative">
+                            <div className="faqs-sdeimg">
                                 <div className="mt-2">
                                     <h3 className="reacf">
                                         Our Philosophy Isn&apos;t a Page. It&apos;s a Person.
@@ -388,15 +388,15 @@ export default function Page() {
                                     </p>
                                     <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Meet a Wise Guardian</Button>
                                 </div>
-                                {/* <div className="ijhg position-absolute" style={{ right: "10px", bottom: "10px" }}>
+                                <div className="fqqs">
                                     <Image
-                                        src="/assets/img/envato-labs.png"
+                                        src="/assets/img/story-cta.png"
                                         alt="testimonial"
-                                        width={360}
+                                        width={340}
                                         height={260}
                                         className="img-fluid"
                                     />
-                                </div> */}
+                                </div>
                             </div>
                         </div>
 
