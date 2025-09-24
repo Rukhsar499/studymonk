@@ -29,29 +29,57 @@ export default function Page() {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const handleOpen = () => setIsOpen(true);
-    const handleClose2 = () => setIsOpen(false);
+const handleOpen = () => setIsOpen(true);
+const handleClose2 = () => setIsOpen(false);
 
-    const [formData, setFormData] = useState({
+const [formData, setFormData] = useState({
+  name: "",
+  phone: "",
+  email: "",
+  stage: "",
+  message: "",
+});
+
+const handleChange = (
+  e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+) => {
+  setFormData({ ...formData, [e.target.name]: e.target.value });
+};
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+// console.log (formData)
+  try {
+    const response = await fetch("https://studymonks.com/api/leads.php", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      const result = await response.json();
+      console.log("✅ Form submitted successfully:", result);
+      alert("Form submitted successfully!");
+      // Reset form
+      setFormData({
         name: "",
         phone: "",
         email: "",
-        service: "",
+        stage: "",
         message: "",
-    });
+      });
+    } else {
+      console.error("❌ Error submitting form:", response.statusText);
+      alert("Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    console.error("🚨 Network error:", error);
+    alert("Network error. Please try again later.");
+  }
+};
 
-    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
-
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log("Form Data Submitted: ", formData);
-
-        // 👉 Yaha aap API call kar sakte ho (fetch/axios ke through)
-        // Example:
-        // fetch("/api/contact", { method: "POST", body: JSON.stringify(formData) });
-    };
     useEffect(() => {
         const stepBoxes = document.querySelectorAll<HTMLDivElement>(".step-box");
 
@@ -226,8 +254,8 @@ export default function Page() {
                                             <label className="form-label">Stage</label>
                                             <select
                                                 className="form-select form-select-sm"
-                                                name="service"
-                                                value={formData.service}
+                                                name="stage"
+                                                value={formData.stage}
                                                 onChange={handleChange}
                                                 required
                                             >
