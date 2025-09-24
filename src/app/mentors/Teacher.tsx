@@ -165,7 +165,7 @@ export default function TeacherList() {
                                                 <Image
                                                     src={teacher.photo}
                                                     alt={teacher.name}
-                                                    className="img-fluid rounded mb-3"
+                                                    className="img-fluid rounded"
                                                     width={300}
                                                     height={200}
                                                 />
