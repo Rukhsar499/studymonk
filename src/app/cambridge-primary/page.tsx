@@ -828,7 +828,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         <div className="col-lg-4 col-md-3 col-12">
                             <div className="loo-imh ">
                                 <Image
-                                    src="/assets/img/im.png"
+                                    src="/assets/img/image22.jpg"
                                     alt="testimonial"
                                     width={450}
                                     height={260}
