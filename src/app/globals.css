@@ -189,11 +189,13 @@ h3 {
     opacity: 0.8;
   }
 }
-.fqqm img{
+
+.fqqm img {
   float: right;
-    margin-top: 31px;
-    margin-right: -10px;
+  margin-top: 31px;
+  margin-right: -10px;
 }
+
 .blog-rc {
   position: relative;
   overflow: hidden;
@@ -271,9 +273,10 @@ h3 {
   float: right;
   margin-right: -20px;
 }
+
 .fqqs img {
   position: relative;
- margin-top: 32px;
+  margin-top: 32px;
   float: right;
   margin-right: -20px;
 }
@@ -357,10 +360,12 @@ h3 {
     transform: translateX(0) scale(1);
   }
 }
-.nbxp{
+
+.nbxp {
   z-index: 2;
   position: relative;
 }
+
 .stry-banner {
   position: relative;
   padding: 80px 20px;
@@ -469,6 +474,7 @@ h3 {
   padding: 20px 30px;
   height: 580px;
 }
+
 .faqs-sdeimg {
   background-image: url("/assets/img/mummy-bg.webp");
   background-repeat: no-repeat;
@@ -822,7 +828,7 @@ h3 {
   top: 0;
   display: block;
   z-index: -1;
-   opacity: 0.6;
+  opacity: 0.6;
 }
 
 
@@ -3586,6 +3592,7 @@ a {
   }
 
 }
+
 @media (min-width:300px) and (max-width:400px) {
   .faqs-sdeimg {
     height: 639px;
@@ -3595,6 +3602,7 @@ a {
     width: 100%;
   }
 }
+
 @media (min-width:400px) and (max-width:450px) {
   .faqs-sdeimg {
     height: 620px;
@@ -3603,6 +3611,7 @@ a {
     background-size: cover;
     width: 100%;
   }
+
   .fqqm img {
     float: right;
     margin-top: 15px;
@@ -3741,22 +3750,26 @@ a {
     margin-top: -124px;
     margin-right: -28px;
   }
+
   .fqqs img {
-        width: 240px;
-        margin-top: -7px;
-        margin-right: -28px;
-    }
-    .fqqm img {
-        width: 160px;
-        margin-top: -7px;
-        margin-right: -28px;
-        float: right;
-    }
-.fqqq img {
-        width: 210px;
-        margin-top: -123px;
-        margin-right: -32px;
-    }
+    width: 240px;
+    margin-top: -7px;
+    margin-right: -28px;
+  }
+
+  .fqqm img {
+    width: 160px;
+    margin-top: -7px;
+    margin-right: -28px;
+    float: right;
+  }
+
+  .fqqq img {
+    width: 210px;
+    margin-top: -123px;
+    margin-right: -32px;
+  }
+
   .fqq img {
     width: 270px;
     margin-top: -124px;
@@ -3815,7 +3828,7 @@ a {
   }
 
   .primar_tetx {
-    padding: 36px 0px 36px 41px;
+    padding: 20px 0px 10px 41px;
   }
 
   #child {
@@ -4507,18 +4520,21 @@ padding: 100px 0px 20px 0px;
   .ready-to {
     margin: 50px 0px;
   }
-.fqqq img {
-        margin-top: 34px;
-        margin-right: -15px;
-        width: 290px !important;
-    }
-    .mentrs {
+
+  .fqqq img {
+    margin-top: 34px;
+    margin-right: -15px;
+    width: 290px !important;
+  }
+
+  .mentrs {
     background-image: url(/assets/img/mentors-hero-mobile.webp);
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
     height: 600px;
   }
+
   .career-banner {
     background-image: url(/assets/img/career-hero-mobile.webp);
     background-repeat: no-repeat;
@@ -4526,11 +4542,12 @@ padding: 100px 0px 20px 0px;
     background-position: right;
     height: 600px;
   }
+
   .p-h {
-    width: 100%; 
-    }
-      
-    
+    width: 100%;
+  }
+
+
   @media (max-width: 768px) {
     .popup-form-right {
       flex: 1 1 100% !important;
