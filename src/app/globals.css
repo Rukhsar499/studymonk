@@ -77,6 +77,10 @@ h3 {
   font-family: 'Gilroy-Medium';
 }
 
+.flip img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 
 .for {
   font-weight: 600;
@@ -3734,9 +3738,9 @@ a {
     width: 77%;
   }
 
-      .primar_tetx {
-        padding: 50px 53px;
-    }
+  .primar_tetx {
+    padding: 50px 53px;
+  }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
