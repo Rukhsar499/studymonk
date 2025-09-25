@@ -3728,7 +3728,7 @@ a {
   right: 20px;
 }
 
-@media (min-width: 1400px) and (max-width: 1500px) {
+@media (min-width: 1400px) and (max-width: 1600px) {
   .care-txt {
 
     width: 77%;
