@@ -3734,9 +3734,9 @@ a {
     width: 77%;
   }
 
-  .primar_tetx {
-    padding: 50px 70px;
-  }
+      .primar_tetx {
+        padding: 50px 59px;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
