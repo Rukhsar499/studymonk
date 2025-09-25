@@ -262,7 +262,7 @@ export default function Page() {
                                 <h3 className="saga" style={{ textAlign: "left" }}>A Commitment to True Expertise</h3>
                                 <p>
                                     Every mentor is rigorously trained in Cambridge pedagogy. We believe so strongly in the Wise
-                                    Guardian’ model that <strong>fewer than 2% of applicants</strong> meet our standards for
+                                    Guardian’ model that <strong>fewer than 20% of applicants</strong> meet our standards for
                                     both academic excellence and empathetic guidance.
                                 </p>
                             </div>
