@@ -135,7 +135,7 @@ export default function Page() {
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="primaryImg">
                                     <Image
-                                        src="/assets/img/image22.png"
+                                        src="/assets/img/image22.jpg"
                                         alt="Child Learning"
                                         width={600}
                                         height={400}
