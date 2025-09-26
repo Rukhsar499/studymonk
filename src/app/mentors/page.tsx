@@ -80,14 +80,21 @@ export default function Page() {
 
             <section className="mentrs">
                 <div className="container">
-                <h1 id="blogs" className="mb-2">
-                        Our Mentors
-                    </h1>
-                     <p className="">
-                        The Heartbeat of the Method
-                    </p>
+                    <h1 id="blogs" className="mb-2 d-lg-flex d-none">
+                            Our Mentors
+                        </h1>
+                        <p className="d-lg-flex d-none">
+                            The Heartbeat of the Method
+                        </p>
+                        <h1 id="blogs" className="mb-2 d-lg-none d-flex">
+                            Our <br /> Mentors
+                        </h1>
+                        <p className="d-lg-none d-flex">
+                            The Heartbeat <br /> of the Method
+                        </p>
                     </div>
-             </section>
+                
+            </section>
             <FullWidthImageSection
                 src="/assets/img/studys.webp"
                 alt="Right arrow"
@@ -180,7 +187,7 @@ export default function Page() {
                 <PopupForm open={open} handleClose={handleClose} />
             </section>
 
- <section className="fad mb">
+            <section className="fad mb">
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-7 col-md-6 col-12">
@@ -194,8 +201,8 @@ export default function Page() {
                                         Mentors – Our Method Has a Heartbeat.
                                     </h3>
                                     <p>
-                                        A platform offers lessons, but a true mentor delivers a breakthrough. Our Mentors are more than experts in the Cambridge curriculum; they are experts in your child. And the right mentor can change a child&apos;s entire academic trajectory, unlocking their true potential. 
-                                        </p>
+                                        A platform offers lessons, but a true mentor delivers a breakthrough. Our Mentors are more than experts in the Cambridge curriculum; they are experts in your child. And the right mentor can change a child&apos;s entire academic trajectory, unlocking their true potential.
+                                    </p>
 
                                     <p>
                                         Find that perfect mentor for your child. Unlock their potential.
