@@ -114,7 +114,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                 <div className="primar_tetx">
                                     <h1 id="child">
                                         Your Child is Learning What to Think. <br />
-                                        We Teach Them How to Think.
+                                        <span className="grefd">We Teach Them How to Think.</span>
                                     </h1>
                                     <p className="spec">
                                         In exclusive, mentor-led micro-classes, we transform
