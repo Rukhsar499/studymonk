@@ -443,7 +443,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                                             mixBlendMode: "multiply", // try 'darken', 'screen', 'overlay' bhi
                                         }}
                                     />
-                                    <h3 className="saga" style={{ textAlign: "left" }}>English: The Art <br />of Influence</h3>
+                                    <h3 className="saga" style={{ textAlign: "left" }}>English: </h3>
+                                    <p>
+                                        The Art of Influence
+                                    </p>
                                     <div className="title-underlines"></div>
                                     <p>
                                         Group analysis and debates to deconstruct arguments and build compelling narratives.
@@ -464,7 +467,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                                             mixBlendMode: "multiply", // try 'darken', 'screen', 'overlay' bhi
                                         }}
                                     />
-                                    <h3 className="saga" style={{ textAlign: "left" }}>Mathematics: The <br />Science of Logic </h3>
+                                    <h3 className="saga" style={{ textAlign: "left" }}>Mathematics:  </h3>
+                                    <p>
+                                        The Science of Logic
+                                    </p>
                                     <div className="title-underlines"></div>
                                     <p>
                                         Collaborative problem-solving for multi-step problems, articulating approaches for elegant solutions.
@@ -484,7 +490,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                                             mixBlendMode: "multiply", // try 'darken', 'screen', 'overlay' bhi
                                         }}
                                     />
-                                    <h3 className="saga" style={{ textAlign: "left" }}>Science: The Practice  <br />of Inquiry</h3>
+                                    <h3 className="saga" style={{ textAlign: "left" }}>Science: </h3>
+                                    <p>
+                                        The Practice  of Inquiry
+                                    </p>
                                     <div className="title-underlines"></div>
                                     <p>
                                         Group-based inquiry to plan investigations, analyze data, and debate conclusions.
