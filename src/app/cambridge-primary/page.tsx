@@ -510,13 +510,14 @@ const handleSubmit = async (e: React.FormEvent) => {
                             <div className="row">
                                 <div className="col-lg-3 col-md-3 col-12">
                                     <div className="path_one">
+                                        <h5 className="one_first d-lg-none d-flex mb-3">01</h5>
                                         <h5>Building Confident <br />
                                             Communicators</h5>
                                         <hr />
                                         <p>
                                             Tutors identify and address individual learning gaps.
                                         </p>
-                                        <h5 className="one_first">01</h5>
+                                        <h5 className="one_first d-lg-flex d-none">01</h5>
                                         <div className="line-arrow">
                                             <Image
                                                 src="/assets/img/v-line.png"
@@ -530,6 +531,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-12">
                                     <div className="path_one path2">
+                                        <h5 className="one_first d-lg-none d-flex mb-3">02</h5>
                                         <h5>Increased
                                             <br />
                                             Participation</h5>
@@ -537,7 +539,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                         <p>
                                             Students feel safe to ask, explore, and collaborate.
                                         </p>
-                                        <h5 className="one_first">02</h5>
+                                        <h5 className="one_first d-lg-flex d-none">02</h5>
                                         <div className="line-arrow2">
                                             <Image
                                                 src="/assets/img/v-2.png"
@@ -551,6 +553,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-12">
                                     <div className="path_one">
+                                        <h5 className="one_first d-lg-none d-flex mb-3">03</h5>
                                         <h5>Boosted
                                             <br />
                                             Confidence</h5>
@@ -558,7 +561,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                         <p>
                                             Mastery of concepts builds self-esteem and courage.
                                         </p>
-                                        <h5 className="one_first">03</h5>
+                                        <h5 className="one_first d-lg-flex d-none">03</h5>
                                         <div className="line-arrow3">
                                             <Image
                                                 src="/assets/img/v-3.png"
@@ -572,6 +575,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                 </div>
                                 <div className="col-lg-3 col-md-3 col-12">
                                     <div className="path_one path2">
+                                        <h5 className="one_first d-lg-none d-flex mb-3">04</h5>
                                         <h5>Exam
                                             <br />
                                             Readiness</h5>
@@ -579,7 +583,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                         <p>
                                             Tutors identify and address individual learning gaps.
                                         </p>
-                                        <h5 className="one_first">04</h5>
+                                        <h5 className="one_first d-lg-flex d-none">04</h5>
                                     </div>
                                 </div>
                             </div>
@@ -839,7 +843,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                             <div className="look-txt">
                                 <h2 style={{ textAlign: "left" }}>Looking for lower  <br />secondary Programme (Stages 7-9)  </h2>
                                 <div className="mt-4">
-                                    <Link href="/cambridge-secondary"><button className="btn-book mb-3" type="button">
+                                    <Link href="/cambridge-lower-secondary"><button className="btn-book mb-3" type="button">
 
                                         Click Here
                                     </button></Link>
