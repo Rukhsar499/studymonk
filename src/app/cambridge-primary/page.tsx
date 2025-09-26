@@ -144,14 +144,14 @@ const handleSubmit = async (e: React.FormEvent) => {
                                         height={400}
                                         className="img-fluid w-100"
                                     />
-                                    <div className="plk" onClick={handleOpen}>
+                                    {/* <div className="plk" onClick={handleOpen}>
                                         <Image
                                             src="/assets/img/banne-play.png"
                                             alt="Play Button"
                                             width={80}
                                             height={80}
                                         />
-                                    </div>
+                                    </div> */}
                                     {isOpen && (
                                         <div className="videoModal">
                                             <div className="videoWrapper">
@@ -253,7 +253,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                         <div className="mb-3">
                                             <label className="form-label">Stage</label>
                                             <select
-                                                className="form-select form-select-sm"
+                                                className="form-select form-select"
                                                 name="stage"
                                                 value={formData.stage}
                                                 onChange={handleChange}
@@ -493,9 +493,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                             </div>
                         </div>
                         <div className="text-center">
-                            <Button className="btn-primarys"
-                                type="button" variant="contained"
-                                onClick={handleClickOpen}>Book Free Diagnostic & 7-Day Trial</Button>
+                            <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book  FREE Diagnostic & day Free Trial</Button>
                         </div>
                     </div>
                 </div>
@@ -607,7 +605,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
                                     <div>
                                         <p className="text-white mb-0"><b>Ms. Nidhi Malik</b></p>
-                                        <p className="text-white">English Teacher</p>
+                                        
                                     </div>
                                     <Image
                                         src="/assets/img/part-arrow.png"
@@ -632,7 +630,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
                                     <div>
                                         <p className="text-white mb-0"><b>Ms. Shruthi Bharath</b></p>
-                                        <p className="text-white">English Teacher</p>
+                                       
                                     </div>
                                     <Image
                                         src="/assets/img/part-arrow.png"
@@ -657,7 +655,7 @@ const handleSubmit = async (e: React.FormEvent) => {
 
                                     <div>
                                         <p className="text-white mb-0"><b>Ms. Thejaswini</b></p>
-                                        <p className="text-white">English Teacher</p>
+                                       
                                     </div>
                                     <Image
                                         src="/assets/img/part-arrow.png"
@@ -702,7 +700,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                         </div>
                         <div className="text-center mt-4">
                             <p><b>Limited complimentary sessions available each week. Book now to secure your spot and start their journey towards intellectual independence.</b></p>
-                            <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book  FREE Daignostic & day Free Trial</Button>
+                            <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book  FREE Diagnostic & day Free Trial</Button>
 
                         </div>
 
