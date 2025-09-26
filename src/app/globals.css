@@ -3380,7 +3380,12 @@ a {
   padding: 20px 0px 20px 20px;
   width: 80%;
 }
-
+.p-test2{
+  padding: 0px 0px 20px 20px;
+}
+.p-test3{
+  padding: 0px 0px 20px 20px;
+}
 #blogs {
   color: #003C79;
   font-family: "Gilroy-Bold";

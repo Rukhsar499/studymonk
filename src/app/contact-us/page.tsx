@@ -236,7 +236,7 @@ export default function Page() {
                                             <div className="mb-3">
                                                 <label className="form-label">stage</label>
                                                 <select
-                                                    className="form-select form-select-sm"
+                                                    className="form-select form-select"
                                                     name="stage"
                                                     value={formData.stage}
                                                     onChange={handleChange}

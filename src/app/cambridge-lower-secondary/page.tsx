@@ -44,43 +44,43 @@ export default function Page() {
     });
 
     const handleChange = (
-      e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+        e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
     ) => {
-      setFormData({ ...formData, [e.target.name]: e.target.value });
+        setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-    
+
     const handleSubmit = async (e: React.FormEvent) => {
-      e.preventDefault();
-    // console.log (formData)
-      try {
-        const response = await fetch("https://studymonks.com/api/leads.php", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        });
-    
-        if (response.ok) {
-          const result = await response.json();
-          console.log("✅ Form submitted successfully:", result);
-          alert("Form submitted successfully!");
-          // Reset form
-          setFormData({
-            name: "",
-            phone: "",
-            email: "",
-            stage: "",
-            message: "",
-          });
-        } else {
-          console.error("❌ Error submitting form:", response.statusText);
-          alert("Something went wrong. Please try again.");
+        e.preventDefault();
+        // console.log (formData)
+        try {
+            const response = await fetch("https://studymonks.com/api/leads.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                const result = await response.json();
+                console.log("✅ Form submitted successfully:", result);
+                alert("Form submitted successfully!");
+                // Reset form
+                setFormData({
+                    name: "",
+                    phone: "",
+                    email: "",
+                    stage: "",
+                    message: "",
+                });
+            } else {
+                console.error("❌ Error submitting form:", response.statusText);
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("🚨 Network error:", error);
+            alert("Network error. Please try again later.");
         }
-      } catch (error) {
-        console.error("🚨 Network error:", error);
-        alert("Network error. Please try again later.");
-      }
     };
     useEffect(() => {
         const stepBoxes = document.querySelectorAll<HTMLDivElement>(".step-box");
@@ -141,14 +141,14 @@ export default function Page() {
                                         height={400}
                                         className="img-fluid w-100"
                                     />
-                                    <div className="plk" onClick={handleOpen}>
+                                    {/* <div className="plk" onClick={handleOpen}>
                                         <Image
                                             src="/assets/img/banne-play.png"
                                             alt="Play Button"
                                             width={80}
                                             height={80}
                                         />
-                                    </div>
+                                    </div> */}
                                     {isOpen && (
                                         <div className="videoModal">
                                             <div className="videoWrapper">
@@ -272,7 +272,7 @@ export default function Page() {
                                         <div className="mb-3">
                                             <label className="form-label">Stage</label>
                                             <select
-                                                className="form-select form-select-sm"
+                                                className="form-select form-select"
                                                 name="stage"
                                                 value={formData.stage}
                                                 onChange={handleChange}
@@ -412,9 +412,7 @@ export default function Page() {
                             </div>
                         </div>
                         <div className="text-center pnj-btn">
-                            <Button className="btn-primarys"
-                                type="button" variant="contained"
-                                onClick={handleClickOpen}>Book Free Diagnostic & 7-Day Trial</Button>
+                            <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book  FREE Diagnostic & day Free Trial</Button>
                         </div>
                     </div>
                 </div>
@@ -481,13 +479,13 @@ export default function Page() {
                                             </p>
                                             <hr className="text-bla" />
                                         </div>
-                                        <div className="p-test">
+                                        <div className="p-test2">
                                             <p>
                                                 This is where the magic happens. Our sessions are not lectures; they are dynamic Socratic dialogues. Wise Guardians are expert facilitators who guide the micro-class through a process of collaborative discovery. They use strategic questioning to spark debate, encourage different viewpoints, and help the group arrive at a deeper understanding
                                             </p>
                                             <hr className="text-bla" />
                                         </div>
-                                        <div className="p-test">
+                                        <div className="p-test3">
                                             <p>
                                                 True mastery isn&apos;t just knowing the answer; it&apos;s being able to apply and communicate it with confidence. We challenge each cohort with complex, IGCSE-style problems that require them to synthesise their knowledge and present a unified solution. This is where they learn the invaluable skills of teamwork, leadership, and persuasive communication
                                             </p>
@@ -609,7 +607,7 @@ export default function Page() {
                                 <p className="mb-0">
                                     Experience our teaching methodology firsthand. If it&apos;s not the perfect fit, simply walk away. </p>
                                 <p>No commitment, no questions asked.</p>
-
+                                <Button className="mentr" type="button" variant="contained" onClick={handleClickOpen}>Book  FREE Diagnostic & day Free Trial</Button>
                             </div>
                         </div>
                         <div>
@@ -648,8 +646,8 @@ export default function Page() {
                                         <Link href="/mentors"><div className="hover-arrow">
 
                                             <div>
-                                                <p className="text-white mb-0"><b>Ms. Kamalpreet</b></p>
-                                                <p className="text-white">English Teacher</p>
+                                                <p className="text-white mb-0"><b>Ms. Kamalpreet Kaur Bagga</b></p>
+                                                
                                             </div>
                                             <Image
                                                 src="/assets/img/part-arrow.png"
@@ -671,8 +669,8 @@ export default function Page() {
                                         <Link href="/mentors"><div className="hover-arrow">
 
                                             <div>
-                                                <p className="text-white mb-0"><b>Ms. Sujatha S</b></p>
-                                                <p className="text-white">English Teacher</p>
+                                                <p className="text-white mb-0"><b>Ms. Nivedita B Hadimani</b></p>
+                                                
                                             </div>
                                             <Image
                                                 src="/assets/img/part-arrow.png"
@@ -696,8 +694,8 @@ export default function Page() {
                                         <Link href="/mentors"><div className="hover-arrow">
 
                                             <div>
-                                                <p className="text-white mb-0"><b>Ms. Nivedita P Hadimani</b></p>
-                                                <p className="text-white">English Teacher</p>
+                                                <p className="text-white mb-0"><b>MMs. Sujatha S</b></p>
+                                               
                                             </div>
                                             <Image
                                                 src="/assets/img/part-arrow.png"
@@ -725,7 +723,7 @@ export default function Page() {
                                             />
                                             <div>
                                                 <p className="text-white mb-0"><b>Ms. Thejaswini</b></p>
-                                                <p className="text-white">English Teacher</p>
+                                                
                                             </div>
                                         </div>
                                         </Link>
