@@ -180,7 +180,7 @@ export default function Page() {
                     <div className="text-center hid-sec">
                         <h2>The Hidden Potential: Is Your Child&apos;s <br />
                             Brilliance Trapped by Traditional Methods?</h2>
-                        <p>
+                        <p className="mb-0">
                             Traditional tuition models are broken. One-on-one can be isolating, while large classes leave students anonymous. We have engineered the single most effective environment for intellectual growth: The Socratic Circle. In a curated cohort of just 8 ambitious peers, your child experiences the perfect balance of personalised mentorship and dynamic group collaboration.
                         </p>
                     </div>
@@ -823,7 +823,7 @@ export default function Page() {
                             <div className="faq-sdeimg">
                                 <div className="mt-2">
                                     <h3 className="reacf">
-                                        Lower Secondary Cambridge – Don&apos;t Just Learn the Cambridge Curriculum. Challenge It.
+                                         Don&apos;t Just Learn the Cambridge Curriculum. Challenge It.
                                     </h3>
                                     <p>
                                         Lower Secondary is where learning deepens—the pivotal stage where students move from collecting facts to constructing arguments. This is the critical foundation for IGCSE success; let&apos;s build it together. Your complimentary 7-day trial starts with a free Skill Assessment Session.

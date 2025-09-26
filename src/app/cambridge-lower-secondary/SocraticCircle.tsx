@@ -43,7 +43,7 @@ const features: Feature[] = [
 ];
 
 export default function SocraticCircle() {
-  const [defaultActiveId] = useState<number>(2); // always fallback active
+  const [defaultActiveId] = useState<number>(1); // always fallback active
   const [hoveredId, setHoveredId] = useState<number | null>(null);
 
   return (
