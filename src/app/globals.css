@@ -4555,7 +4555,9 @@ padding: 100px 0px 20px 0px;
   .p-h {
     width: 100%;
   }
-
+.box_sec, .vcx{
+  margin-top: 30px;
+}
 
   @media (max-width: 768px) {
     .popup-form-right {

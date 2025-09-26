@@ -34,7 +34,7 @@ export default function StepsSection() {
   const [activeId, setActiveId] = useState<number>(2);
 
   return (
-    <div className="container">
+    <div className="container vcx">
       <div className="d-flex flex-column gap-3">
         {stepsData.map((step) => (
           <Card
