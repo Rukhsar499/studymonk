@@ -242,7 +242,7 @@ export default function Page() {
                                                     onChange={handleChange}
                                                     required
                                                 >
-                                                    <option value=""></option>
+                                                    <option value="Select Stage">Select Stage</option>
                                                     <option value="Cambridge Primary">Cambridge Primary</option>
                                                     <option value="Cambridge Secondary">Cambridge Secondary</option>
 
@@ -258,7 +258,7 @@ export default function Page() {
                                                     name="message"
                                                     value={formData.message}
                                                     onChange={handleChange}
-                                                    required
+                                                    
                                                 />
                                             </div>
                                             <button className="animated-button">

@@ -295,7 +295,7 @@ export default function Page() {
                                                 name="message"
                                                 value={formData.message}
                                                 onChange={handleChange}
-                                                required
+                                                
                                             />
                                         </div>
                                         <button className="animated-button">

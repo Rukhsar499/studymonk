@@ -276,7 +276,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                                                 name="message"
                                                 value={formData.message}
                                                 onChange={handleChange}
-                                                required
+                                                
                                             />
                                         </div>
                                         <button className="animated-button">
