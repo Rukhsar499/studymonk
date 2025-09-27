@@ -13,6 +13,7 @@ import { Button } from "@mui/material";
 import PrimaryAccordion from "../cambridge-primary/PrimaryAccordion";
 import Link from 'next/link';
 import StickyFooter from "../component/StickyFooter";
+import Mentor from "../cambridge-primary/Mentor"
 
 
 
@@ -601,7 +602,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 </div>
             </section>
 
-            <section id="partner" className="mb">
+            {/* <section id="partner" className="mb">
                 <div className="container">
                     <h2>Meet the Wise Guardians: Facilitators of High-Level Thinking</h2>
                     <div className="row">
@@ -681,12 +682,10 @@ const handleSubmit = async (e: React.FormEvent) => {
                             </div>
                         </div>
                     </div>
-                    <div className="text-center p-h">
-                        <p>Wise Guardians are expert facilitators, rigorously trained in our Socratic, micro-class methodology. Their mission is to guide conversation, ensuring every child participates, is challenged, and learns from the group&apos;s collective intelligence.</p>
-                        <Link href="/mentors"><button className="mentr">Learn About Our Mentors</button></Link>
-                    </div>
+                   
                 </div>
-            </section>
+            </section> */}
+            <Mentor/>
 
             <section className="see mb">
                 <div className="container">
