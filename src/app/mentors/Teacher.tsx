@@ -143,15 +143,15 @@ export default function TeacherList() {
             <div className="container">
                 <div className="mnt">
                     <h2 className="finb">Find the Right Guide for Your Child</h2>
-                    <div className="row">
+                    <div className="row gy-3">
                         {teachers.map((teacher) => (
-                            <div key={teacher.id} className="col-12 col-md-6">
+                            <div key={teacher.id} className="col-12 col-md-6 mb-3">
                                 <div
-                                    className={`m-bvx ${activeTeacherId === teacher.id ? "active" : "inactive"}`}
+                                    className={`h-100 m-bvx ${activeTeacherId === teacher.id ? "active" : "inactive"}`}
                                 >
                                     <div className="row">
                                         <div className="col-lg-5 col-md-5 col-12">
-                                            <div className="card p-3 shadow-sm mb-3">
+                                            <div className="card p-3 shadow-sm">
                                                 <Image
                                                     src={teacher.photo}
                                                     alt={teacher.name}
