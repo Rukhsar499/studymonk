@@ -279,7 +279,7 @@ export default function Page() {
                                                 onChange={handleChange}
                                                 required
                                             >
-                                                <option value=""></option>
+                                                <option value="Select Stage">Select Stage</option>
                                                 <option value="Cambridge Primary">Cambridge Primary</option>
                                                 <option value="Cambridge Lower Secondary">Cambridge Lower Secondary</option>
 

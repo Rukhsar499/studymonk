@@ -24,7 +24,7 @@ const teachers: Teacher[] = [
         id: 1,
         name: "Ms. Nidhi Malik",
         qualification: "B.Ed. Science",
-        intro: "“Ms. Nidhi is very systematic and structured in her teaching. Under her guidance, Vaani has grown remarkably confident. She has helped Vaani develop a genuine interest in Mathematics —Vaani now enjoys the subject and puts in effort to understand and apply concepts with ease.”",
+        intro: "“I believe in making learning engaging and meaningful. By blending diverse teaching methods with technology, I encourage critical thinking, creativity, and higher-order skills—helping students succeed not just academically, but in life beyond the classroom.”",
         photo: "assets/img/nidhi.png",
         video: "/assets/video/nidhi.mp4",
         heading: "My Teaching Philosophy",
