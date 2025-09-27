@@ -47,8 +47,11 @@ export default function Page() {
 
                     <div className="mb-3 ">
                         <div className="nbxp">
-                            <h1 className="edu"><b>An Educator’s Concern. <br />
+                            <h1 className="edu d-lg-flex d-none"><b>An Educator’s Concern. <br />
                                 A Parent’s Dilemma. A Child’s Potential.</b></h1>
+                                <h1 className="edu d-lg-none d-block"><b>An Educator’s Concern. <br />
+                                A Parent’s Dilemma. 
+                                <br />A Child’s Potential.</b></h1>
                         </div>
                         <Button className="btn-primarys"
                             type="button" variant="contained"
