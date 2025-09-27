@@ -43,7 +43,7 @@ const teachers: Teacher[] = [
         qualification: "PhD, Mathematics",
         intro: "Making numbers fun and easy for students with real-world applications.",
         photo: "assets/img/kamalpreet.png",
-        video: "https://www.w3schools.com/html/mov_bbb.mp4",
+        video: "/assets/video/kamalpreet.mp4",
         heading: "My Teaching Philosophy",
         title: "What Parents & Students Say",
         desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
@@ -59,7 +59,7 @@ const teachers: Teacher[] = [
     {
         id: 3,
         name: "Ms. Sujatha S",
-        qualification: "Ms. Sujatha S",
+        qualification: "B.Ed. Mathematics, B.Sc. in Electronics",
         intro: "“My philosophy is that education is a transformative journey—one that empowers students to unlock their potential, grow in confidence, and develop the skills they need for lifelong success.”",
         photo: "assets/img/sujatha.png",
         video: "/assets/video/sujatha.mp4",

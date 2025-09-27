@@ -16,6 +16,7 @@ import StepsSection from "./StepsSection";
 import SocraticCircle from "./SocraticCircle";
 import Link from 'next/link';
 import MobileBlueprintSection from "./MobileBlueprintSection";
+import Mentor from "../cambridge-lower-secondary/Mentor"
 
 
 
@@ -633,7 +634,7 @@ export default function Page() {
                         </div>
                         <div className="col-lg-1 col-md-1 col-1"></div>
                         <div className="col-lg-6 col-md-6 col-12">
-                            <div className="row">
+                            {/* <div className="row">
                                 <div className="col-lg-6 col-md-6 col-12">
                                     <div className="image-box mt-3">
                                         <Image
@@ -729,9 +730,10 @@ export default function Page() {
                                         </Link>
                                     </div>
                                 </div>
-                            </div>
-
+                            </div> */}
+                           <Mentor/>
                         </div>
+                    
                     </div>
                 </div>
             </section>
