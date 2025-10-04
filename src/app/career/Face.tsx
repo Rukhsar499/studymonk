@@ -16,32 +16,32 @@ type Card = {
 const cards: Card[] = [
     {
         id: 1,
-        img: "/assets/img/Ellipse109.png",
-        title: "Dr. Ananya Sharma",
-        short: "Astrophysics Guide",
+        img: "/assets/img/nidhi.png",
+        title: "Ms. Nidhi",
+        short: "Mentor- Math and Science",
         full: [
-            "I help students see the universe in a grain of sand, connecting physics to the current world.",
-            "My teaching focuses on curiosity and critical thinking.",
+            "I encourage critical thinking, creativity, and higher-order skills.",
+          
         ],
     },
     {
         id: 2,
-        img: "/assets/img/Ellipse110.png",
-        title: "Dr. Rahul Verma",
-        short: "Mathematics Mentor",
+        img: "/assets/img/sujatha.png",
+        title: "Ms. Sujatha",
+        short: "Mentor- Science",
         full: [
-            "I help students see the universe in a grain of sand, connecting physics to the current world.",
-            "My teaching focuses on curiosity and critical thinking.",
+            "I believe that education is a transformative journey.",
+           
         ],
     },
     {
         id: 3,
-        img: "/assets/img/Ellipse109.png",
-        title: "Dr. Kavita Mehta",
-        short: "Chemistry Specialist",
+        img: "/assets/img/nivedita.png",
+        title: "Ms. Nivedita",
+        short: "Mentor- English",
         full: [
-            "I help students see the universe in a grain of sand, connecting physics to the current world.",
-            "My teaching focuses on curiosity and critical thinking.",
+            "I believe learning should be fun, joyful, and creative. ",
+           
         ],
     },
 ];
@@ -81,7 +81,7 @@ export default function HoverSlider() {
                                         alt={card.title}
                                         width={200}
                                         height={200}
-                                        className="img-fluid rounded mb-2"
+                                        className="met-img mb-3"
                                     />
                                     <h5>{card.title}</h5>
                                     <p>{card.short}</p>
@@ -91,11 +91,11 @@ export default function HoverSlider() {
                                             <div className="overlay-content">
                                                 <div className="text-center">
                                                 <h5 className="fw-bold mb-2">{card.title}</h5>
-                                                <p className="text-muted">{card.short}</p>
+                                                <p className="text-muted ">{card.short}</p>
                                                 <hr />
                                                 </div>
                                                 {card.full.map((para, i) => (
-                                                    <p key={i} className="full-text">
+                                                    <p key={i} className="full-text text-center">
                                                         {para}
                                                     </p>
                                                 ))}
