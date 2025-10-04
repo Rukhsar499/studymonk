@@ -319,8 +319,8 @@ export default function Page() {
                         <div className="row">
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="bl-box">
-                                    <h3 className="ment">Mentor, IGCSE Mathematics</h3>
-                                    <p style={{ color: "white" }}>Crafting clarity and confidence in numbers.</p>
+                                    <h3 className="ment">Mentor, Cambridge Primary </h3>
+                                    <p style={{ color: "white" }}>Homeroom Teacher</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
                                         onClick={handleClickOpen}>Apply Now</Button>
@@ -328,8 +328,8 @@ export default function Page() {
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="bl-box">
-                                    <h3 className="ment">Mentor, IGCSE Mathematics</h3>
-                                    <p style={{ color: "white" }}>Crafting clarity and confidence in numbers.</p>
+                                    <h3 className="ment">Mentor, Cambridge Primary</h3>
+                                    <p style={{ color: "white" }}>Mathematics</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
                                         onClick={handleClickOpen}>Apply Now</Button>
@@ -337,8 +337,8 @@ export default function Page() {
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="bl-box">
-                                    <h3 className="ment">Mentor, IGCSE Mathematics</h3>
-                                    <p style={{ color: "white" }}>Crafting clarity and confidence in numbers.</p>
+                                    <h3 className="ment">Mentor, Cambridge Primary</h3>
+                                    <p style={{ color: "white" }}>English</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
                                         onClick={handleClickOpen}>Apply Now</Button>
@@ -346,8 +346,8 @@ export default function Page() {
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="bl-box">
-                                    <h3 className="ment">Mentor, IGCSE Mathematics</h3>
-                                    <p style={{ color: "white" }}>Crafting clarity and confidence in numbers.</p>
+                                    <h3 className="ment">Mentor, Cambridge Lower Secondary</h3>
+                                    <p style={{ color: "white" }}>Mathematics</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
                                         onClick={handleClickOpen}>Apply Now</Button>
@@ -355,8 +355,8 @@ export default function Page() {
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="bl-box">
-                                    <h3 className="ment">Mentor, IGCSE Mathematics</h3>
-                                    <p style={{ color: "white" }}>Crafting clarity and confidence in numbers.</p>
+                                    <h3 className="ment">Mentor, Cambridge Lower Secondary</h3>
+                                    <p style={{ color: "white" }}>Science</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
                                         onClick={handleClickOpen}>Apply Now</Button>
@@ -364,8 +364,8 @@ export default function Page() {
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="bl-box">
-                                    <h3 className="ment">Mentor, IGCSE Mathematics</h3>
-                                    <p style={{ color: "white" }}>Crafting clarity and confidence in numbers.</p>
+                                    <h3 className="ment">Mentor, Cambridge Lower Secondary</h3>
+                                    <p style={{ color: "white" }}>English </p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
                                         onClick={handleClickOpen}>Apply Now</Button>

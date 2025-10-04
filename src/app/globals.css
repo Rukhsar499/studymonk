@@ -3755,7 +3755,9 @@ a {
     margin-right: 8px;
     font-size: 13px;
   }
-
+.ment {
+   font-size: 18px;
+  }
   .fq img {
     width: 250px;
     margin-top: -124px;
