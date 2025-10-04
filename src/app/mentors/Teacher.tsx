@@ -79,7 +79,7 @@ const teachers: Teacher[] = [
         qualification: "B.A., M.A. in English, B.Ed. (English)",
         intro: "“I believe learning should be fun, joyful, and creative. When students enjoy the process, they stop fearing mistakes and begin to embrace the language with confidence and enthusiasm.”",
         photo: "assets/img/nivedita.png",
-        video: "https://www.w3schools.com/html/mov_bbb.mp4",
+        video: "assets/video/msnivedita.mp4",
         heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
         desc: "“I really appreciate the teaching skills of Ms. Nivedita Maa’m. Thank you for your great support, guidance, making complex topics easy to understand and your approach in understanding my son’s pros n cons and changing your teaching methods which had a great impact on him. I wish and let this continue in the long run for his successful future.”",
