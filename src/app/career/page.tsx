@@ -13,6 +13,7 @@ import { Button } from "@mui/material";
 // import CareerAccodion from "../career/CareerAccodion";
 import ComparisonSection from "../career/ComparisonSection";
 import Face from "../career/Face";
+import CareerForm from "../component/CareerForm";
 
 
 
@@ -25,6 +26,15 @@ export default function Page() {
 
     const handleClose = () => {
         setOpen(false);
+    };
+
+const [open2, setOpen2] = useState(false);
+    const handleClickOpen2 = () => {
+        setOpen2(true);
+    };
+
+    const handleClose2 = () => {
+        setOpen2(false);
     };
     return (
         <>
@@ -323,7 +333,7 @@ export default function Page() {
                                     <p style={{ color: "white" }}>Homeroom Teacher</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
-                                        onClick={handleClickOpen}>Apply Now</Button>
+                                        onClick={handleClickOpen2}>Apply Now</Button>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
@@ -332,7 +342,7 @@ export default function Page() {
                                     <p style={{ color: "white" }}>Mathematics</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
-                                        onClick={handleClickOpen}>Apply Now</Button>
+                                        onClick={handleClickOpen2}>Apply Now</Button>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
@@ -341,7 +351,7 @@ export default function Page() {
                                     <p style={{ color: "white" }}>English</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
-                                        onClick={handleClickOpen}>Apply Now</Button>
+                                        onClick={handleClickOpen2}>Apply Now</Button>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
@@ -350,7 +360,7 @@ export default function Page() {
                                     <p style={{ color: "white" }}>Mathematics</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
-                                        onClick={handleClickOpen}>Apply Now</Button>
+                                        onClick={handleClickOpen2}>Apply Now</Button>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
@@ -359,21 +369,27 @@ export default function Page() {
                                     <p style={{ color: "white" }}>Science</p>
                                     <Button className="btn-primarya"
                                         type="button" variant="contained"
-                                        onClick={handleClickOpen}>Apply Now</Button>
+                                        onClick={handleClickOpen2}>Apply Now</Button>
                                 </div>
                             </div>
                             <div className="col-lg-4 col-md-4 col-12">
                                 <div className="bl-box">
-                                    <h3 className="ment">Mentor, Cambridge Lower Secondary</h3>
-                                    <p style={{ color: "white" }}>English </p>
-                                    <Button className="btn-primarya"
-                                        type="button" variant="contained"
-                                        onClick={handleClickOpen}>Apply Now</Button>
+                                    <h3 className="ment">Mentor, Cambridge Primary</h3>
+                                    <p style={{ color: "white" }}>Maths </p>
+                                    <Button
+                                        className="btn-primarya"
+                                        type="button"
+                                        variant="contained"
+                                        onClick={() => setOpen2(true)}
+                                    >
+                                        Apply Now
+                                    </Button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                 <CareerForm open={open2} handleClose2={() => setOpen2(false)} />
             </section>
 
             <section id="philosophy" className="position-relative mb">
