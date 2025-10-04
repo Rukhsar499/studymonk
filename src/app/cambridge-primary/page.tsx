@@ -342,7 +342,7 @@ const handleSubmit = async (e: React.FormEvent) => {
             </section>
             <section className="power mb">
                 <div className="container">
-                    <h2>The Power of the Socratic Circles: Personalized <br />
+                    <h2>The Power of the Socratic Circles: <br /> Personalized 
                         Attention Meets Collaborative Genius.</h2>
                     <div className="pwer_box">
                         <div className="row">
