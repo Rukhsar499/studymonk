@@ -30,30 +30,30 @@ const mentors: Mentor[] = [
         intro: "“I believe in making learning engaging and meaningful. By blending diverse teaching methods with technology, I encourage critical thinking, creativity, and higher-order skills—helping students succeed not just academically, but in life beyond the classroom.”",
         photo: "assets/img/nidhi.png",
         video: "/assets/video/nidhi.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
         desc: "“Ms. Nidhi is very systematic and structured in her teaching. Under her guidance, Vaani has grown remarkably confident. She has helped Vaani develop a genuine interest in Mathematics —Vaani now enjoys the subject and puts in effort to understand and apply concepts with ease.”",
         stage: "– Ms. Rajini Chaudhary, Parent of Vaani Chaudhary, Stage 5",
         teach: "Credentials & Experience",
         credentials: [
             "A certified Cambridge Math and Science facilitator, Ms. Nidhi has over 5 years of experience teaching international curricula and more than a decade of experience with Indian schools. She is dedicated to creating engaging and supportive learning environments where children thrive.",
-            
+
         ],
     },
     {
         id: 2,
         name: "Ms. Shruthi Bharath",
         qualification: "B.E. Electronics and Communication",
-        intro: "Ms. Shruthi has over 2 years of experience teaching Mathematics and Science at the Primary and Lower Secondary levels. She is well-versed in the Cambridge curriculum, its standards, and teaching methodologies. With her ability to simplify complex concepts, she helps students develop a clear understanding while maintaining high academic standards and excellence.",
+        intro: "“My philosophy is that education is a transformative journey—one that empowers students to unlock their potential, grow in confidence, and develop the skills they need for lifelong success.”",
         photo: "assets/img/shruthi.png",
         video: "/assets/video/shruthi.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
-        desc: "“Shruthi Ma’am’s Science classes are engaging and inspiring. Her deep knowledge, combined with her patient and clear teaching style, makes even the most complex topics easy to understand. Under her guidance, students not only learn thoroughly but also develop a genuine interest in Science”.",
+        desc: "“Karthikeya’s mentor is an amazing teacher who brings passion and dedication to her students’ success. My child is not only excelling academically but also growing into a more confident and responsible person. His love for Science has flourished under Sujatha Ma’am’s guidance.",
         stage: "– Ms. Poonam Garg, Parent of Pranav Garg, Stage 6",
         teach: "Credentials & Experience",
         credentials: [
-            "Ms. Shruthi has over 2 years of experience teaching Mathematics and Science at the Primary and Lower Secondary levels. She is well-versed in the Cambridge curriculum, its standards, and teaching methodologies. With her ability to simplify complex concepts, she helps students develop a clear understanding while maintaining high academic standards and excellence.",
+            "With 17 years of experience in both teaching and leadership roles, Ms. Sujatha brings a strong academic foundation and a wealth of expertise to her classroom. She holds a Bachelor’s degree in Education with a focus on Mathematics and Science and has also served as the Head of Department for Science.",
 
         ],
     },
@@ -61,12 +61,12 @@ const mentors: Mentor[] = [
         id: 3,
         name: "Ms. Thejaswini S",
         qualification: "B.Sc. Mathematics, B.Ed. Mathematics",
-        intro: "With 7 years of teaching experience, Ms. Thejaswini brings both expertise and passion to her classroom. She holds a Bachelor of Science in Mathematics, Statistics, and Computer Science, along with a Bachelor of Education specializing in Mathematics.",
+        intro: "“My goal is to make Mathematics a subject that is understood and enjoyed, not feared. I focus on building strong foundations, nurturing problem-solving skills, and fostering confidence in every student.”",
         photo: "assets/img/thejaswini.png",
         video: "/assets/video/thejaswini.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
-        desc: "With 7 years of teaching experience, Ms. Thejaswini brings both expertise and passion to her classroom. She holds a Bachelor of Science in Mathematics, Statistics, and Computer Science, along with a Bachelor of Education specializing in Mathematics.",
+        desc: "“Thank you for creating such a positive and supportive environment where my child feels confident to ask questions without hesitation. This has greatly boosted their curiosity and willingness to learn, making the classroom a place they truly enjoy.”",
         stage: "-	Ms. Manasa Kalva, Parent of Ved Kalva, Stage 8",
         teach: "Credentials & Experience",
         credentials: [
@@ -151,11 +151,9 @@ export default function MentorsSection() {
                                         className="img-fluid rounded mb-3"
                                     />
                                     <h4 className="h-msnt">{selectedMentor.teach}</h4>
-                                    <ul>
-                                        {selectedMentor.credentials.map((item, index) => (
-                                            <li key={index}>{item}</li>
-                                        ))}
-                                    </ul>
+                                    {selectedMentor.credentials.map((item, index) => (
+                                        <p key={index}>{item}</p>
+                                    ))}
                                 </div>
                             </div>
                             <div className="col-md-8">

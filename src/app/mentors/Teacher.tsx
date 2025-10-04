@@ -27,7 +27,7 @@ const teachers: Teacher[] = [
         intro: "“I believe in making learning engaging and meaningful. By blending diverse teaching methods with technology, I encourage critical thinking, creativity, and higher-order skills—helping students succeed not just academically, but in life beyond the classroom.”",
         photo: "assets/img/nidhi.png",
         video: "/assets/video/nidhi.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
         desc: "“Ms. Nidhi is very systematic and structured in her teaching. Under her guidance, Vaani has grown remarkably confident. She has helped Vaani develop a genuine interest in Mathematics —Vaani now enjoys the subject and puts in effort to understand and apply concepts with ease.”",
         stage: "– Ms. Rajini Chaudhary, Parent of Vaani Chaudhary, Stage 5",
@@ -44,7 +44,7 @@ const teachers: Teacher[] = [
         intro: "Making numbers fun and easy for students with real-world applications.",
         photo: "assets/img/kamalpreet.png",
         video: "/assets/video/kamalpreet.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
         desc: "Dr. Sharma made complex topics so clear. For the first time, my son enjoys physics and feels confident.",
         stage: "— Parent of a Stage 9 Student",
@@ -63,14 +63,14 @@ const teachers: Teacher[] = [
         intro: "“My philosophy is that education is a transformative journey—one that empowers students to unlock their potential, grow in confidence, and develop the skills they need for lifelong success.”",
         photo: "assets/img/sujatha.png",
         video: "/assets/video/sujatha.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
-        desc: "With 17 years of experience in both teaching and leadership roles, Ms. Sujatha brings a strong academic foundation and a wealth of expertise to her classroom. She holds a Bachelor’s degree in Education with a focus on Mathematics and Science and has also served as the Head of Department for Science.",
+        desc: "“Karthikeya’s mentor is an amazing teacher who brings passion and dedication to her students’ success. My child is not only excelling academically but also growing into a more confident and responsible person. His love for Science has flourished under Sujatha Ma’am’s guidance.”",
         stage: "– Ms. Madhuri D, Parent of Karthikeya D, Stage 6",
         teach: "Credentials & Experience",
         credentials: [
             "With 17 years of experience in both teaching and leadership roles, Ms. Sujatha brings a strong academic foundation and a wealth of expertise to her classroom. She holds a Bachelor’s degree in Education with a focus on Mathematics and Science and has also served as the Head of Department for Science.",
-            
+
         ],
     },
     {
@@ -80,48 +80,48 @@ const teachers: Teacher[] = [
         intro: "“I believe learning should be fun, joyful, and creative. When students enjoy the process, they stop fearing mistakes and begin to embrace the language with confidence and enthusiasm.”",
         photo: "assets/img/nivedita.png",
         video: "https://www.w3schools.com/html/mov_bbb.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
         desc: "“I really appreciate the teaching skills of Ms. Nivedita Maa’m. Thank you for your great support, guidance, making complex topics easy to understand and your approach in understanding my son’s pros n cons and changing your teaching methods which had a great impact on him. I wish and let this continue in the long run for his successful future.”",
         stage: "- Parent of Sriyansh Kalva, Stage 8",
         teach: "Credentials & Experience",
         credentials: [
             "Ms. Nivedita brings 17 years of teaching experience and is a specialist in English language education. She has extensive experience in teaching English and is committed to helping students build strong communication skills in a positive and supportive environment.",
-            
+
         ],
     },
     {
         id: 5,
         name: "Ms. Shruthi Bharath",
         qualification: "B.E. Electronics and Communication",
-        intro: "Ms. Shruthi has over 2 years of experience teaching Mathematics and Science at the Primary and Lower Secondary levels. She is well-versed in the Cambridge curriculum, its standards, and teaching methodologies. With her ability to simplify complex concepts, she helps students develop a clear understanding while maintaining high academic standards and excellence.",
+        intro: "“My philosophy is that education is a transformative journey—one that empowers students to unlock their potential, grow in confidence, and develop the skills they need for lifelong success.”",
         photo: "assets/img/shruthi.png",
         video: "/assets/video/shruthi.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
-        desc: "“Shruthi Ma’am’s Science classes are engaging and inspiring. Her deep knowledge, combined with her patient and clear teaching style, makes even the most complex topics easy to understand. Under her guidance, students not only learn thoroughly but also develop a genuine interest in Science”.",
+        desc: "“Karthikeya’s mentor is an amazing teacher who brings passion and dedication to her students’ success. My child is not only excelling academically but also growing into a more confident and responsible person. His love for Science has flourished under Sujatha Ma’am’s guidance.",
         stage: "– Ms. Poonam Garg, Parent of Pranav Garg, Stage 6",
         teach: "Credentials & Experience",
         credentials: [
-            "Ms. Shruthi has over 2 years of experience teaching Mathematics and Science at the Primary and Lower Secondary levels. She is well-versed in the Cambridge curriculum, its standards, and teaching methodologies. With her ability to simplify complex concepts, she helps students develop a clear understanding while maintaining high academic standards and excellence.",
-            
+            "With 17 years of experience in both teaching and leadership roles, Ms. Sujatha brings a strong academic foundation and a wealth of expertise to her classroom. She holds a Bachelor’s degree in Education with a focus on Mathematics and Science and has also served as the Head of Department for Science.",
+
         ],
     },
     {
         id: 6,
         name: "Ms. Thejaswini S",
         qualification: "B.Sc. Mathematics, B.Ed. Mathematics",
-        intro: "With 7 years of teaching experience, Ms. Thejaswini brings both expertise and passion to her classroom. She holds a Bachelor of Science in Mathematics, Statistics, and Computer Science, along with a Bachelor of Education specializing in Mathematics.",
+        intro: "“My goal is to make Mathematics a subject that is understood and enjoyed, not feared. I focus on building strong foundations, nurturing problem-solving skills, and fostering confidence in every student.”",
         photo: "assets/img/thejaswini.png",
         video: "/assets/video/thejaswini.mp4",
-        heading: "My Teaching Philosophy",
+        heading: "Teaching Philosophy",
         title: "What Parents & Students Say",
-        desc: "With 7 years of teaching experience, Ms. Thejaswini brings both expertise and passion to her classroom. She holds a Bachelor of Science in Mathematics, Statistics, and Computer Science, along with a Bachelor of Education specializing in Mathematics.",
+        desc: "“Thank you for creating such a positive and supportive environment where my child feels confident to ask questions without hesitation. This has greatly boosted their curiosity and willingness to learn, making the classroom a place they truly enjoy.”",
         stage: "-	Ms. Manasa Kalva, Parent of Ved Kalva, Stage 8",
         teach: "Credentials & Experience",
         credentials: [
             "With 7 years of teaching experience, Ms. Thejaswini brings both expertise and passion to her classroom. She holds a Bachelor of Science in Mathematics, Statistics, and Computer Science, along with a Bachelor of Education specializing in Mathematics.",
-            
+
         ],
     },
 ];
@@ -198,11 +198,9 @@ export default function TeacherList() {
                                         className="img-fluid rounded mb-3"
                                     />
                                     <h4 className="h-msnt">{selectedTeacher.teach}</h4>
-                                    <ul>
                                         {selectedTeacher.credentials.map((item, index) => (
-                                            <li key={index}>{item}</li>
+                                            <p key={index}>{item}</p>
                                         ))}
-                                    </ul>
                                 </div>
                             </div>
                             <div className="col-md-8">
