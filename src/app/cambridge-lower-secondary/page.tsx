@@ -622,7 +622,7 @@ export default function Page() {
                     <div className="row align-items-center">
                         <div className="col-lg-5 col-md-4 col-12">
                             <div className="pt-text">
-                                <h2 style={{ textAlign: "left" }}>Meet the Wise Guardians:
+                                <h2 style={{ textAlign: "left" }} className="metf">Meet the Wise Guardians: <br />
                                     Your Child&apos;s Personal Thinking
                                     Partner</h2>
                                 <p>Our Wise Guardians are more than a tutor; they are an expert facilitator of intellectual discovery. We are relentlessly selective—just 1 in 5 applicants are chosen—seeking not only deep Cambridge curriculum expertise but the rare ability to manage and elevate a high-potential group discussion.
