@@ -49,8 +49,8 @@ export default function Page() {
                         <div className="nbxp">
                             <h1 className="edu d-lg-flex d-none"><b>An Educator’s Concern. <br />
                                 A Parent’s Dilemma. A Child’s Potential.</b></h1>
-                                <h1 className="edu d-lg-none d-block"><b>An Educator’s Concern. <br />
-                                A Parent’s Dilemma. 
+                            <h1 className="edu d-lg-none d-block"><b>An Educator’s Concern. <br />
+                                A Parent’s Dilemma.
                                 <br />A Child’s Potential.</b></h1>
                         </div>
                         <Button className="btn-primarys"
@@ -264,8 +264,7 @@ export default function Page() {
                             <div className="cambridge mb-4">
                                 <h3 className="saga" style={{ textAlign: "left" }}>A Commitment to True Expertise</h3>
                                 <p>
-                                    Every mentor is rigorously trained in Cambridge pedagogy. We believe so strongly in the Wise
-                                    Guardian’ model that <strong>fewer than 20% of applicants</strong> meet our standards for
+                                    Every mentor is rigorously trained in Cambridge pedagogy. We believe so strongly in the ‘Wise guardian’ model that <strong>fewer than 20% of applicants</strong> meet our standards for
                                     both academic excellence and empathetic guidance.
                                 </p>
                             </div>
@@ -320,7 +319,7 @@ export default function Page() {
                                 <p style={{ color: "#fff" }}>
                                     We are committed to cultivating students who are not only academically successful
                                     but are also focused, curious, and confident global citizens. Because when students
-                                    feel understood, they don&apos;s just improve—they excel.
+                                    feel understood, they don&apos;t just improve—they excel.
                                 </p>
                             </div>
                         </div>
