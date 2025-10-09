@@ -9,6 +9,7 @@ type Teacher = {
     name: string;
     qualification: string;
     intro: string;
+    fintro: string;
     photo: string;
     video: string;
     heading: string;
@@ -25,6 +26,7 @@ const teachers: Teacher[] = [
         name: "Ms. Nidhi Malik",
         qualification: "B.Ed. Science",
         intro: "“I believe in making learning engaging and meaningful. By blending diverse teaching methods with technology, I encourage critical thinking, creativity, and higher-order skills—helping students succeed not just academically, but in life beyond the classroom.”",
+        fintro:"Developing critical thinking, creativity, and higher-order skills.",
         photo: "assets/img/nidhi.png",
         video: "/assets/video/nidhi.mp4",
         heading: "Teaching Philosophy",
@@ -42,6 +44,7 @@ const teachers: Teacher[] = [
         name: "Ms. Kamalpreet",
         qualification: "PhD, Mathematics",
         intro: "Making numbers fun and easy for students with real-world applications.",
+        fintro:"Making math simple, clear, and genuinely enjoyable for every student.",
         photo: "assets/img/kamalpreet.png",
         video: "/assets/video/kamalpreet.mp4",
         heading: "Teaching Philosophy",
@@ -61,6 +64,7 @@ const teachers: Teacher[] = [
         name: "Ms. Sujatha S",
         qualification: "B.Ed. Mathematics, B.Sc. in Electronics",
         intro: "“My philosophy is that education is a transformative journey—one that empowers students to unlock their potential, grow in confidence, and develop the skills they need for lifelong success.”",
+        fintro:"Guiding students through a transformative journey in education.",
         photo: "assets/img/sujatha.png",
         video: "/assets/video/sujatha.mp4",
         heading: "Teaching Philosophy",
@@ -78,6 +82,7 @@ const teachers: Teacher[] = [
         name: "Ms. Nivedita B. Hadimani",
         qualification: "B.A., M.A. in English, B.Ed. (English)",
         intro: "“I believe learning should be fun, joyful, and creative. When students enjoy the process, they stop fearing mistakes and begin to embrace the language with confidence and enthusiasm.”",
+        fintro:"Fostering fun, joyful, and creative learning that lasts a lifetime.",
         photo: "assets/img/nivedita.png",
         video: "assets/video/msnivedita.mp4",
         heading: "Teaching Philosophy",
@@ -95,6 +100,7 @@ const teachers: Teacher[] = [
         name: "Ms. Shruthi Bharath",
         qualification: "B.E. Electronics and Communication",
         intro: "“I believe true learning goes beyond memorization. My goal is to nurture problem-solving skills and critical thinking, unlocking each student’s true potential for excellence.”",
+        fintro:"Unlocking true learning that goes far beyond simple memorization.",
         photo: "assets/img/shruthi.png",
         video: "/assets/video/shruthi.mp4",
         heading: "Teaching Philosophy",
@@ -112,6 +118,7 @@ const teachers: Teacher[] = [
         name: "Ms. Thejaswini S",
         qualification: "B.Sc. Mathematics, B.Ed. Mathematics",
         intro: "“My goal is to make Mathematics a subject that is understood and enjoyed, not feared. I focus on building strong foundations, nurturing problem-solving skills, and fostering confidence in every student.”",
+        fintro:"Turning math fear into confidence: understanding and enjoyment guaranteed.",
         photo: "assets/img/thejaswini.png",
         video: "/assets/video/thejaswini.mp4",
         heading: "Teaching Philosophy",
@@ -147,7 +154,7 @@ export default function TeacherList() {
                         {teachers.map((teacher) => (
                             <div key={teacher.id} className="col-12 col-md-6 mb-3">
                                 <div
-                                    className={`h-100 m-bvx ${activeTeacherId === teacher.id ? "active" : "inactive"}`}
+                                    className={` m-bvx ${activeTeacherId === teacher.id ? "active" : "inactive"}`}
                                 >
                                     <div className="row">
                                         <div className="col-lg-5 col-md-5 col-12">
@@ -165,7 +172,7 @@ export default function TeacherList() {
                                             <div className="mn-txt">
                                                 <h5 className="finb">{teacher.name}</h5>
                                                 <p className="finb">{teacher.qualification}</p>
-                                                <p className="finb">{teacher.intro}</p>
+                                                <p className="finb">{teacher.fintro}</p>
                                                 <Button onClick={() => handleShow(teacher)} className="b-ment">
                                                     <span className="text">View Profile</span>
                                                     <span>View Profile</span>
